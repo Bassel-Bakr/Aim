@@ -16,7 +16,7 @@ Follow the steps in [README.md](README.md#run-the-site-locally).
 
 1. Copy a template from `templates/`:
    - `concept.md` for pages that explain aim concepts or training advice.
-   - `resource.md` for pages about a community, trainer, or creator.
+   - `resource.md` for pages about a community or a trainer.
 2. Save the file in the matching folder under `docs/`.
 3. Add the page to the `nav` list in `mkdocs.yml`.
 4. Link the new page from at least one related page.
@@ -44,7 +44,7 @@ body.
 
 Use only these tags in the `tags:` front matter field:
 
-- Type (resource pages only): `community`, `trainer`, `creator`
+- Type (resource pages only): `community`, `trainer`
 - Topic: `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`
 
 To propose a new tag, open an issue.

@@ -25,7 +25,7 @@ Public detail about Jade Palace's internal activity is limited, since most of it
 
 ## Key content
 
-- No guides, routines, or videos are published under the Jade Palace name itself. Individual members' public content is found through their own channels, such as [VT Matty (MattyOW)](../creators/matty-ow.md), who has announced the server.
+- No guides, routines, or videos are published under the Jade Palace name itself. Individual members publish their own content on their own channels.
 
 ## Our take
 
@@ -33,5 +33,4 @@ Jade Palace is worth knowing about as a landmark in the elite aim-training scene
 
 ## Related wiki pages
 
-- [VT Matty (MattyOW)](../creators/matty-ow.md)
 - [Routines](../../training/routines.md)

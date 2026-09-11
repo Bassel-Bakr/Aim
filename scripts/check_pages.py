@@ -12,7 +12,7 @@ import yaml
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 ALLOWED_TAGS = {
-    "community", "trainer", "creator",
+    "community", "trainer",
     "clicking", "tracking", "switching",
     "benchmarks", "routines", "sensitivity", "beginner",
 }
