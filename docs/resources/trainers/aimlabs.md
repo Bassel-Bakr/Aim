@@ -25,7 +25,7 @@ Players who want built-in, game-specific practice rather than assembling their o
 - **Game-specific training** for hundreds of FPS titles, including official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege, covering [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md), per the [Aimlabs homepage](https://aimlabs.com/).
 - **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings, per the [Aimlabs homepage](https://aimlabs.com/).
 - **Benchmarks**: Aimlabs runs its own official Benchmarks (Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories), separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs, per the [Aimlabs Benchmarks announcement](https://aimlabs.com/articles/aimlabs/the-aimlabs-official-benchmarks-first-season-is-now-live/) and Voltaic's [Season 3 announcement](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/).
-- **Stats**: recent task results and leaderboards shown per task, per [Aimlabs articles](https://aimlabs.com/articles/aimlabs/it-came-from-the-workshop-our-second-look-at-trending-tasks-and-playlists-on-aimlabs/).
+- **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator, per the [Aimlabs leaderboards page](https://aimlabs.com/leaderboards).
 
 ## Key content
 
