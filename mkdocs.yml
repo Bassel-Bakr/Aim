@@ -1,0 +1,90 @@
+site_name: Aim Wiki
+site_description: Aim training concepts, routines, and a guide to the best existing resources.
+site_url: https://bassel-bakr.github.io/aim-wiki/
+repo_url: https://github.com/bassel-bakr/aim-wiki
+repo_name: bassel-bakr/aim-wiki
+edit_uri: edit/main/docs/
+copyright: Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/index.md
+      - getting-started/sensitivity.md
+      - getting-started/setup.md
+      - getting-started/aim-trainers.md
+  - Fundamentals:
+      - fundamentals/index.md
+      - fundamentals/how-aim-works.md
+      - fundamentals/practice-principles.md
+      - fundamentals/transfer-to-games.md
+  - Skills:
+      - skills/index.md
+      - skills/clicking.md
+      - skills/tracking.md
+      - skills/switching.md
+  - Training:
+      - training/index.md
+      - training/routines.md
+      - training/benchmarks.md
+      - training/progress-and-plateaus.md
+      - training/health.md
+  - Resources:
+      - resources/index.md
+      - Communities:
+          - resources/communities/voltaic.md
+          - resources/communities/jade-palace.md
+          - resources/communities/revosect.md
+      - Trainers:
+          - resources/trainers/kovaaks.md
+          - resources/trainers/aimlabs.md
+      - Creators:
+          - resources/creators/corporate-serf.md
+          - resources/creators/matty-ow.md
+          - resources/creators/aimer-lew.md
+          - resources/creators/viscose.md
+  - Glossary: glossary.md
+  - Tags: tags.md
