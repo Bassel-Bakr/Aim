@@ -16,7 +16,8 @@
 - Use only features supported by both Zensical and Material for MkDocs 9.7.
 - Site URL: `https://bassel-bakr.github.io/aim-wiki/`. Repository: `https://github.com/bassel-bakr/aim-wiki`. Default branch: `main`.
 - Content license: CC BY-SA 4.0.
-- Allowed tags, and no others: type tags `community`, `trainer`, `creator`; topic tags `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`.
+- Scope change (2026-09-11): the owner dropped creator pages. Task 6 now removes them, and later tasks must not link to or mention creator pages.
+- Allowed tags, and no others: type tags `community`, `trainer`; topic tags `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`.
 - Every page in `docs/` except `tags.md` starts (after front matter) with this exact banner:
 
   ```markdown
@@ -879,52 +880,91 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 
 ---
 
-### Task 6: Creator resource pages
+### Task 6: Remove creator pages (scope change)
+
+The owner dropped creator pages on 2026-09-11. This task removes every trace of them from the site and
+the contributor docs. `specs/` was already updated by the controller.
 
 **Files:**
-- Modify: `docs/resources/creators/corporate-serf.md`, `docs/resources/creators/matty-ow.md`, `docs/resources/creators/aimer-lew.md`, `docs/resources/creators/viscose.md`
+- Delete: `docs/resources/creators/` (all four files: `corporate-serf.md`, `matty-ow.md`, `aimer-lew.md`, `viscose.md`)
+- Modify: `mkdocs.yml`, `docs/resources/communities/jade-palace.md`, `scripts/check_pages.py`, `CONTRIBUTING.md`, `README.md`
 
 **Interfaces:**
-- Consumes: `templates/resource.md`. Links to Task 4 and Task 5 pages.
+- Produces: allowed type tags are now `community` and `trainer` only. No page may link to `resources/creators/`.
 
-For each creator:
+- [ ] **Step 1: Delete the creator pages**
 
-- Find the official YouTube channel and confirm the handle. The owner named: Corporate Serf, MattyOW, `@AimerLew`, ViscoseOC.
-- Find other official links (X, Twitch, Discord) only from the creator's own channel or profile.
-- Describe the creator's focus (for example tutorials, routines, analysis, benchmarks) from their channel and video list.
-- List 3–5 representative videos or guides under "Key content", each with a one-line summary in our own words. Pick videos that match wiki topics.
-- Add topic tags that match their main focus.
-- Do not state subscriber counts, ranks, or achievements unless an official source confirms them. Such numbers change, so avoid them where they add little.
-
-- [ ] **Step 1: Draft `corporate-serf.md`**
-
-In "Related wiki pages", link at least two skills or training pages that match the creator's content.
-
-- [ ] **Step 2: Draft `matty-ow.md`**
-
-Research questions: What is Matty's connection to Voltaic (the "VT" prefix) and to Jade Palace? Confirm from official profiles.
-
-In "Related wiki pages", link: `../communities/jade-palace.md`, `../communities/voltaic.md`, and at least one skills or training page.
-
-- [ ] **Step 3: Draft `aimer-lew.md`**
-
-In "Related wiki pages", link at least two skills or training pages that match the creator's content.
-
-- [ ] **Step 4: Draft `viscose.md`**
-
-Research questions: Does Viscose publish a written aim guide or document in addition to videos? If yes, link it under "Key content".
-
-In "Related wiki pages", link at least two skills or training pages that match the creator's content.
-
-- [ ] **Step 5: Verify**
-
-Run the content task verification commands. Expected: `All pages OK`, `No issues found`.
-
-- [ ] **Step 6: Commit**
+`docs/resources/creators/corporate-serf.md` may have uncommitted edits from an interrupted draft. Discard them.
 
 ```bash
-git add docs/resources/creators
-git commit -m "docs: draft creator resource pages
+git checkout -- docs/resources/creators
+git rm -r -q docs/resources/creators
+```
+
+- [ ] **Step 2: Remove the Creators nav block from `mkdocs.yml`**
+
+Delete these five lines from the `nav:` list (under `Resources:`):
+
+```yaml
+      - Creators:
+          - resources/creators/corporate-serf.md
+          - resources/creators/matty-ow.md
+          - resources/creators/aimer-lew.md
+          - resources/creators/viscose.md
+```
+
+- [ ] **Step 3: Remove creator links from `docs/resources/communities/jade-palace.md`**
+
+In the "Key content" section, replace this sentence:
+
+```text
+Individual members' public content is found through their own channels, such as [VT Matty (MattyOW)](../creators/matty-ow.md), who has announced the server.
+```
+
+with:
+
+```text
+Individual members publish their own content on their own channels.
+```
+
+In the "Related wiki pages" section, delete the line `- [VT Matty (MattyOW)](../creators/matty-ow.md)`. Keep the other related links.
+
+- [ ] **Step 4: Remove the `creator` tag**
+
+In `scripts/check_pages.py`, change the first line of `ALLOWED_TAGS` from:
+
+```python
+    "community", "trainer", "creator",
+```
+
+to:
+
+```python
+    "community", "trainer",
+```
+
+In `CONTRIBUTING.md`, change `` - `resource.md` for pages about a community, trainer, or creator. `` to `` - `resource.md` for pages about a community or a trainer. ``, and change `` - Type (resource pages only): `community`, `trainer`, `creator` `` to `` - Type (resource pages only): `community`, `trainer` ``.
+
+- [ ] **Step 5: Update `README.md`**
+
+Change `resources, such as Voltaic, Jade Palace, Revosect, KovaaK's, Aimlabs, and aim training creators.` to `resources, such as Voltaic, Jade Palace, Revosect, KovaaK's, and Aimlabs.`
+
+- [ ] **Step 6: Verify**
+
+```bash
+grep -rn -E 'creators/|^\s*- creator\s*$|"creator"|`creator`|or creator|training creators' mkdocs.yml docs scripts CONTRIBUTING.md README.md templates || echo "no creator references"
+.venv/Scripts/python scripts/check_pages.py --drafts
+.venv/Scripts/zensical build --clean --strict
+ls site/resources
+```
+
+Expected: `no creator references` (generic phrases such as "content creators" on the Jade Palace page and Aimlabs' "Creator Studio" are fine and do not match), `All pages OK`, `No issues found`, and `site/resources` lists `communities`, `index.html`, `trainers` with no `creators`.
+
+- [ ] **Step 7: Commit**
+
+```bash
+git add -A mkdocs.yml docs scripts CONTRIBUTING.md README.md
+git commit -m "docs: drop creator pages
 
 Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ```
@@ -937,7 +977,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 - Modify: `docs/getting-started/index.md`, `docs/getting-started/sensitivity.md`, `docs/getting-started/setup.md`, `docs/getting-started/aim-trainers.md`
 
 **Interfaces:**
-- Consumes: resource pages from Tasks 4–6. Links forward to Fundamentals, Skills, and Training pages (stubs exist, so links resolve).
+- Consumes: resource pages from Tasks 4–5. Links forward to Fundamentals, Skills, and Training pages (stubs exist, so links resolve).
 
 - [ ] **Step 1: Draft `getting-started/index.md` (overview page)**
 
@@ -953,13 +993,13 @@ Content: who the wiki is for, and a numbered roadmap:
 
 Cover: cm/360 (definition and how to measure it), eDPI (DPI × in-game sensitivity; only comparable within one game), trade-offs of low and high sensitivity, how to choose a starting point, converting sensitivity between games and trainers (KovaaK's sensitivity matching, reputable converter tools), when to change sensitivity and when not to. Research whether well-known sources (for example Voltaic) recommend sensitivity variation in training, and cite the source if so. Do not invent "ideal" numeric ranges. Cite any range you give.
 
-Further resources: `../resources/trainers/kovaaks.md`, plus any creator page with a relevant sensitivity video.
+Further resources: `../resources/trainers/kovaaks.md`, `../resources/trainers/aimlabs.md`.
 
 - [ ] **Step 3: Draft `setup.md`**
 
 Cover: mouse (shape and weight matter more than sensor for most players), mousepad (control versus speed surfaces), grip styles (palm, claw, fingertip), posture and arm position, monitor refresh rate and FPS, and essential settings: raw input on, mouse acceleration off, Windows "Enhance pointer precision" off. Keep gear advice brand-neutral.
 
-Further resources: at least one resource page with setup content, found in Tasks 4–6.
+Further resources: at least one resource page with setup content, from Tasks 4–5.
 
 - [ ] **Step 4: Draft `aim-trainers.md`**
 
@@ -988,7 +1028,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 - Modify: `docs/fundamentals/index.md`, `docs/fundamentals/how-aim-works.md`, `docs/fundamentals/practice-principles.md`, `docs/fundamentals/transfer-to-games.md`
 
 **Interfaces:**
-- Consumes: resource pages from Tasks 4–6.
+- Consumes: resource pages from Tasks 4–5.
 
 - [ ] **Step 1: Draft `fundamentals/index.md` (overview page)**
 
@@ -998,19 +1038,19 @@ Content: one paragraph on why fundamentals come before specific skills, and one 
 
 Cover: arm, wrist, and finger aim, and when each is used; large corrections versus micro-adjustments; the speed versus accuracy trade-off; smoothness; reaction versus prediction. Use the concept template sections: Explanation, Common mistakes, How to train it.
 
-Further resources: resource pages with fundamentals content found in Tasks 4–6.
+Further resources: resource pages with fundamentals content from Tasks 4–5.
 
 - [ ] **Step 3: Draft `practice-principles.md`**
 
-Cover: deliberate practice (focused attention on one weakness), quality over volume, scenario variety versus repetition, score chasing versus technique focus, rest and consistency. Cite a source for each principle attributed to a community or creator.
+Cover: deliberate practice (focused attention on one weakness), quality over volume, scenario variety versus repetition, score chasing versus technique focus, rest and consistency. Cite a source for each principle attributed to a community or other named source.
 
-Further resources: `../resources/communities/voltaic.md`, plus creator pages with practice-method content.
+Further resources: `../resources/communities/voltaic.md`, `../resources/communities/revosect.md`.
 
 - [ ] **Step 4: Draft `transfer-to-games.md`**
 
 Cover: what aim trainers train well (mechanics), what they do not train (crosshair placement, movement, positioning, game sense, recoil), and how to combine trainer practice with in-game practice.
 
-Further resources: at least one resource page on the topic found in Tasks 4–6.
+Further resources: at least one resource page on the topic from Tasks 4–5.
 
 - [ ] **Step 5: Verify**
 
@@ -1072,7 +1112,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 - Modify: `docs/training/index.md`, `docs/training/routines.md`, `docs/training/benchmarks.md`, `docs/training/progress-and-plateaus.md`, `docs/training/health.md`
 
 **Interfaces:**
-- Consumes: resource pages from Tasks 4–6. Links to Skills pages from Task 9.
+- Consumes: resource pages from Tasks 4–5. Links to Skills pages from Task 9.
 
 - [ ] **Step 1: Draft `training/index.md` (overview page)**
 
@@ -1080,7 +1120,7 @@ Content: one paragraph on how to structure training over weeks, and one line plu
 
 - [ ] **Step 2: Draft `routines.md`**
 
-Cover: parts of a routine (warm-up, focus block, review), session length, how to pick scenarios for your weaknesses, using existing playlists (link the Voltaic page and any creator routines found in Task 6), and how often to change a routine.
+Cover: parts of a routine (warm-up, focus block, review), session length, how to pick scenarios for your weaknesses, using existing playlists (link the Voltaic and Revosect pages), and how often to change a routine.
 
 - [ ] **Step 3: Draft `benchmarks.md`**
 
@@ -1131,7 +1171,7 @@ Content: what the wiki is (a few sentences), a "Start here" link to `getting-sta
 
 - [ ] **Step 2: Draft `docs/resources/index.md`**
 
-Content: one paragraph on what the resource pages are for. Then three `##` sections (Communities, Trainers, Creators), each listing its pages with a one-line summary taken from that page's "What it is" section. End with links to the Tags page (`../tags.md`) for filtering by topic.
+Content: one paragraph on what the resource pages are for. Then two `##` sections (Communities, Trainers), each listing its pages with a one-line summary taken from that page's "What it is" section. End with links to the Tags page (`../tags.md`) for filtering by topic.
 
 - [ ] **Step 3: Draft `docs/glossary.md`**
 
