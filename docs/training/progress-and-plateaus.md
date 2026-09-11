@@ -16,9 +16,12 @@ what actually helps you past one.
 ## Explanation
 
 **Normal progress patterns.** Early practice on a new scenario tends to produce large, fast gains,
-and those gains shrink the more time you put in, a pattern well documented in motor-learning
-research generally rather than something specific to aim training, see
-[How Aim Works](../fundamentals/how-aim-works.md) on Fitts's law. Eventually most learners hit a
+and those gains shrink as you get more skilled: general motor-learning research describes an early
+stage of learning marked by large, inconsistent jumps in performance, followed by a slower stage
+of smaller gains spent on conscious adjustment and refinement, a pattern that isn't specific to aim
+training, per
+[Human Kinetics on the stages of motor learning](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction).
+Eventually most learners hit a
 stretch some researchers call a "learning plateau": performance holds roughly steady for a while
 no matter how consistently you show up and train, which motor-learning research treats as an
 ordinary, expected stage rather than evidence that something in your training has broken, per a
