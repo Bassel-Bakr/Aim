@@ -32,8 +32,8 @@ per [Aimlabs](https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-wh
 emphasize acquisition, jumping to a new target; [Tracking](../skills/tracking.md) scenarios tend
 to emphasize correction, staying on a target that's already moving.
 
-**The speed-accuracy trade-off.** Moving faster leaves your visual and motor system less time to
-make precise adjustments, so accuracy tends to drop as speed goes up. This holds across aimed
+**The speed-accuracy trade-off.** Speeding up shortens the window your eyes and hands get to
+correct a movement mid-flight, and a shorter correction window means more misses. This trade-off holds across aimed
 movements generally and is formalized in motor-control research as Fitts's law, which relates how
 long a movement takes to how far it travels and how small the target is, per a
 [Human Kinetics summary of that research](https://us.humankinetics.com/blogs/excerpt/understanding-fitts-law).
@@ -43,9 +43,10 @@ speed, tends to hold up as you get faster, per [Aimlabs](https://aimlabs.com/art
 
 **Smoothness.** Smoothness isn't a separate skill from tracking or flicking so much as a quality
 that runs through all of them: whether your crosshair moves as one continuous motion or as a
-series of separate corrections. The underlying mechanic is speed matching, keeping your mouse's
-speed synchronized with the target's speed on screen instead of catching up to it after the fact,
-and treating direction changes as a smooth decelerate-and-re-accelerate rather than a hard stop,
+series of separate corrections. The underlying mechanic is speed matching: your crosshair moves at
+the same rate the target does in the moment, rather than lagging behind and then snapping forward
+to catch up. That same continuity applies to direction changes too, which read as a smooth
+decelerate-and-re-accelerate rather than a hard stop,
 per [Aimlabs](https://aimlabs.com/articles/aimlabs/what-smoothness-actually-is-and-why-it-makes-everything-else-better/).
 The same source notes that a lot of "smoothness problems" are really tension problems: gripping
 the mouse too tightly gets in the way of fluid motion no matter how much you practice.

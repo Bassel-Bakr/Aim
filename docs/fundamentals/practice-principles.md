@@ -14,16 +14,20 @@ raises your ceiling from practice that just feels productive.
 
 ## Explanation
 
-**Deliberate practice.** Practice that reliably builds skill is not just repetition: it targets a
-specific, current weakness, pushes just past what you can already do comfortably, and includes
-feedback you can act on, rather than aiming at vague overall improvement, per
-[research summarizing Anders Ericsson's deliberate-practice framework](https://pmc.ncbi.nlm.nih.gov/articles/PMC6731745/).
-In aim training, that means picking a scenario because it targets something you're specifically
-bad at, not because it's the one you're best at or the one everyone else is running.
+**Deliberate practice.** Psychologist Anders Ericsson's original definition of deliberate practice
+is narrower than "practice on purpose": it is individualized training built around a specific,
+well-defined performance goal, with immediate feedback on each attempt and a sequence of tasks
+that gets harder as the trainee improves, traditionally under the direction of a qualified coach,
+per [a 2019 review examining Ericsson's original definition](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full).
+Most solo aim training has no coach designing the sequence, but the same shape still applies
+without one: pick a scenario because it targets a specific weakness rather than because it's
+comfortable, use a stat or replay to check whether a given attempt actually improved, and only add
+difficulty once that weakness is under control.
 
-**Quality over volume.** Hours logged is not the same as improvement. Grinding a scenario at a
-difficulty where you keep missing isn't effective training, and easy or slowed-down variants are
-worth taking seriously rather than skipping past, since running a scenario at a pace where your
+**Quality over volume.** Hours logged is not the same as improvement. Repeating a scenario at a
+setting that beats you more often than it doesn't produces little more than frustration, and easy
+or slowed-down variants are worth taking seriously rather than skipping past, since running a
+scenario at a pace where your
 crosshair actually lands cleanly is what builds the technique that holds up once you push the
 difficulty back up, per [Aimlabs](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/).
 
@@ -58,8 +62,8 @@ same mechanics you're trying to train.
   your actual weakness.
 - Running only the same benchmark scenarios and calling it training, per the
   [Revosect Benchmarks Guide](https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit).
-- Grinding at a difficulty where you're consistently missing instead of dropping down until your
-  technique is clean, then building back up.
+- Staying on a setting that's currently too hard to hit reliably instead of stepping back down
+  until your technique is clean, then working back up from there.
 - Treating a leaderboard score as the goal rather than as a rough signal of whether your technique
   is actually improving.
 - Skipping sleep or stacking long sessions with no rest between them and expecting consistency to
