@@ -43,6 +43,11 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   does not exist and no public copy of the Chinese original could be found. M0NARK offers a
   higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
 
+## Tracking
+
+- [The Corporate Serf smoothness training method](https://www.youtube.com/watch?v=a-MShVYe3kY) —
+  Corporate Serf, 2025 — a smoothness method for tracking, worked through on PGT.
+
 ## Techniques
 
 - [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076) — VT Matty,
