@@ -16,9 +16,9 @@ all three rather than lean on one.[^aimlabs-playlist]
 
 | Skill | What it is | What varies |
 | --- | --- | --- |
-| [Clicking](clicking.md) | Acquiring a target and timing a single click or short burst on it. | Whether the target is moving, and how readably. |
-| [Tracking](tracking.md) | Keeping the crosshair on a target that's already moving. | How predictable the target's path is. |
-| [Switching](switching.md) | Moving the crosshair from a cleared target to the next one. | Target spacing, and whether targets hold still. |
+| [Clicking](clicking.md){ .aim-skill .aim-skill--clicking } | Acquiring a target and timing a single click or short burst on it. | Whether the target is moving, and how readably. |
+| [Tracking](tracking.md){ .aim-skill .aim-skill--tracking } | Keeping the crosshair on a target that's already moving. | How predictable the target's path is. |
+| [Switching](switching.md){ .aim-skill .aim-skill--switching } | Moving the crosshair from a cleared target to the next one. | Target spacing, and whether targets hold still. |
 
 Each page splits its skill along the axis in the last column, from the easiest case to the hardest,
 and ends with a note on what the benchmark communities call those splits. Those labels move between

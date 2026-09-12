@@ -13,6 +13,8 @@ already own an aim trainer, know your sensitivity, or know what a benchmark is t
 
 A first pass through the wiki looks like this:
 
+<div class="aim-steps" markdown>
+
 1. **Set up your gear and sensitivity.** Get your mouse, mousepad, and Windows settings out of the
    way first so later practice is not undermined by acceleration or a cramped pad. See
    [Setup and Gear](setup.md) and [Sensitivity](sensitivity.md).
@@ -27,6 +29,8 @@ A first pass through the wiki looks like this:
 6. **Track progress and handle plateaus.** Improvement is not linear; know how to measure it and
    what to do when your scores stop moving. See
    [Progress and Plateaus](../training/progress-and-plateaus.md).
+
+</div>
 
 You do not have to follow these steps in strict order, but doing setup and sensitivity first
 avoids relearning aim on top of gear you later change.

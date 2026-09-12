@@ -19,18 +19,22 @@ need them.
 
 ## Sections
 
-- [Getting Started](getting-started/index.md): gear, sensitivity, and choosing an aim trainer, the
+<div class="aim-cards" markdown>
+
+- **[Getting Started](getting-started/index.md)**: gear, sensitivity, and choosing an aim trainer, the
   setup that should come before you start drilling scenarios.
-- [Fundamentals](fundamentals/index.md): the mechanics behind mouse aim and the practice habits
+- **[Fundamentals](fundamentals/index.md)**: the mechanics behind mouse aim and the practice habits
   that decide whether training time actually improves your aim.
-- [Skills](skills/index.md): the three underlying skills, clicking, tracking, and switching, that
+- **[Skills](skills/index.md)**: the three underlying skills, clicking, tracking, and switching, that
   every scenario and benchmark on this wiki is built from.
-- [Training](training/index.md): building a routine, reading a benchmark, and handling progress
+- **[Training](training/index.md)**: building a routine, reading a benchmark, and handling progress
   that stalls out.
-- [Resources](resources/index.md): the communities and trainers this wiki's benchmarks, routines,
+- **[Resources](resources/index.md)**: the communities and trainers this wiki's benchmarks, routines,
   and scenario recommendations come from.
-- [Glossary](glossary.md): short definitions of the aim-training terms used across the wiki.
-- [Tags](tags.md): every page filtered by topic.
+- **[Glossary](glossary.md)**: short definitions of the aim-training terms used across the wiki.
+- **[Tags](tags.md)**: every page filtered by topic.
+
+</div>
 
 ## About this wiki
 

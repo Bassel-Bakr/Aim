@@ -8,6 +8,9 @@ copyright: Content licensed under <a href="https://creativecommons.org/licenses/
 
 theme:
   name: material
+  favicon: assets/favicon.svg
+  icon:
+    logo: lucide/crosshair
   features:
     - content.action.edit
     - navigation.tabs
@@ -28,6 +31,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+extra_css:
+  - assets/stylesheets/aim.css
 
 plugins:
   - search

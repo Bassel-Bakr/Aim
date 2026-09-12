@@ -61,6 +61,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `docs/index.md` | Site landing page. Not a wiki page. |
 | `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
 | `docs/guides/` | Signed first-person guides. Not wiki pages, not open — see below. |
+| `docs/assets/` | Favicon and `stylesheets/aim.css`, which documents each page component it defines. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |

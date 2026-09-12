@@ -1,0 +1,235 @@
+/* Aim wiki theme.
+ *
+ * Two parts: a colour and type layer that overrides the theme's own custom properties, and a small
+ * set of page components the Markdown pages opt into with `attr_list` or `md_in_html`.
+ *
+ * Components: .aim-hero, .aim-cards, .aim-steps, .aim-skill. Each one is documented above its
+ * rules, including the Markdown that produces it.
+ */
+
+/* ---------------------------------------------------------------------------
+ * Colour
+ * ------------------------------------------------------------------------ */
+
+:root {
+  --aim-ink: #14171c;
+  --aim-ink-light: #2a2f39;
+  --aim-accent: #b3341b;
+  --aim-clicking: #b3341b;
+  --aim-tracking: #1d6a8c;
+  --aim-switching: #6a4396;
+
+  /* The site mark: a ring, four ticks, and a centre dot. Used as a mask so it inherits a colour. */
+  --aim-crosshair: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round"><circle cx="16" cy="16" r="11"/><path d="M16 1.5v5M16 25.5v5M1.5 16h5M25.5 16h5"/><circle cx="16" cy="16" r="2" fill="black" stroke="none"/></svg>');
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--aim-ink);
+  --md-primary-fg-color--light: var(--aim-ink-light);
+  --md-primary-fg-color--dark: #0b0d11;
+  --md-accent-fg-color: var(--aim-accent);
+  --md-typeset-a-color: var(--aim-accent);
+}
+
+[data-md-color-scheme="slate"] {
+  --aim-ink: #0f1116;
+  --aim-accent: #ff7a52;
+  --aim-clicking: #ff7a52;
+  --aim-tracking: #56b6d8;
+  --aim-switching: #b18cf0;
+
+  --md-default-bg-color: #0f1115;
+  --md-primary-fg-color: #0b0d11;
+  --md-primary-fg-color--light: #2a2f39;
+  --md-primary-fg-color--dark: #07080b;
+  --md-accent-fg-color: var(--aim-accent);
+  --md-typeset-a-color: var(--aim-accent);
+  --md-code-bg-color: #171a21;
+}
+
+/* ---------------------------------------------------------------------------
+ * Type and tables
+ * ------------------------------------------------------------------------ */
+
+/* Numbers are read against each other all over this wiki: sensitivities, cm/360, refresh rates,
+ * benchmark scores. Tabular figures keep them aligned in a table column. */
+.md-typeset table:not([class]) td {
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* ---------------------------------------------------------------------------
+ * .aim-hero — landing page opener.
+ *
+ *   <div class="aim-hero" markdown>
+ *   Lead paragraph.
+ *
+ *   [Open the wiki](wiki/index.md){ .md-button .md-button--primary }
+ *   </div>
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2.5rem;
+  padding: 2rem 2rem 2.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  background-color: var(--md-code-bg-color);
+}
+
+/* A crosshair sitting off the right edge. It is drawn as a mask rather than an image so it takes
+ * its colour from the accent, which differs between the light and dark schemes. */
+.md-typeset .aim-hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2.5rem;
+  width: 13rem;
+  height: 13rem;
+  transform: translateY(-50%);
+  background-color: var(--aim-accent);
+  opacity: 0.16;
+  mask: var(--aim-crosshair) center/contain no-repeat;
+  -webkit-mask: var(--aim-crosshair) center/contain no-repeat;
+}
+
+.md-typeset .aim-hero > * {
+  position: relative;
+  max-width: 34rem;
+}
+
+.md-typeset .aim-hero > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .aim-hero > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------
+ * .aim-cards — a list of links rendered as a card grid.
+ *
+ *   <div class="aim-cards" markdown>
+ *
+ *   - **[Skills](wiki/skills/index.md)** — what the section covers.
+ *   - **[Training](wiki/training/index.md)** — what the section covers.
+ *
+ *   </div>
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.8rem;
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .aim-cards > ul > li {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 3px solid var(--aim-accent);
+  border-radius: 0.3rem;
+  transition: border-color 125ms, background-color 125ms;
+}
+
+.md-typeset .aim-cards > ul > li:hover {
+  border-color: var(--aim-accent);
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset .aim-cards > ul > li > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .aim-cards > ul > li > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------
+ * .aim-steps — an ordered list read as a route through the wiki.
+ *
+ *   <div class="aim-steps" markdown>
+ *
+ *   1. **Set up your gear.** Why it comes first.
+ *
+ *   </div>
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-steps > ol {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: aim-step;
+}
+
+.md-typeset .aim-steps > ol > li {
+  position: relative;
+  margin-bottom: 1.1em;
+  padding-left: 2.6rem;
+  counter-increment: aim-step;
+}
+
+.md-typeset .aim-steps > ol > li::before {
+  content: counter(aim-step);
+  position: absolute;
+  top: 0.05em;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid var(--aim-accent);
+  border-radius: 50%;
+  color: var(--aim-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The line joining one step to the next, so the list reads as a route rather than as six
+ * unrelated items. */
+.md-typeset .aim-steps > ol > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 2.1rem;
+  left: calc(0.9rem - 1px);
+  bottom: -1.1em;
+  width: 2px;
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* ---------------------------------------------------------------------------
+ * .aim-skill — an inline badge naming one of the three skills.
+ *
+ *   [Clicking](clicking.md){ .aim-skill .aim-skill--clicking }
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-skill {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  border: 1px solid currentcolor;
+  border-radius: 0.6em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 125ms;
+}
+
+.md-typeset a.aim-skill:hover {
+  background-color: color-mix(in srgb, currentcolor 12%, transparent);
+}
+
+.md-typeset .aim-skill--clicking { color: var(--aim-clicking); }
+.md-typeset .aim-skill--tracking { color: var(--aim-tracking); }
+.md-typeset .aim-skill--switching { color: var(--aim-switching); }
