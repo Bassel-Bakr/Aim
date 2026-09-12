@@ -609,7 +609,10 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  padding-left: 0.8rem;
+  /* The theme indents a title past its icon. There is no icon here, and the tag that replaces it
+   * is a filled box, so the indent is dropped and the tag's left edge starts on the same column
+   * the body text below it starts on. */
+  padding-left: 0;
   color: var(--aim-accent);
 }
 
