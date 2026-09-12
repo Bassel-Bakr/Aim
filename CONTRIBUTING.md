@@ -24,7 +24,7 @@ Follow the steps in [README.md](README.md#run-the-site-locally).
    `templates/topic.md` is not a wiki template; see
    [Topics are not part of the wiki](#topics-are-not-part-of-the-wiki).
 2. Save the file in the matching folder under `docs/wiki/`. (`docs/index.md` is the site's landing page, not a wiki page.)
-3. Add the page to the `nav` list in `mkdocs.yml`.
+3. Add the page to the `nav` list in `zensical.toml`.
 4. Link the new page from at least one related page.
 
 Page titles come from the `title:` field in the front matter. Do not add a `#` heading in the page

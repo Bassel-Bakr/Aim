@@ -26,9 +26,11 @@ send pull requests later.
 - **Zensical 0.0.60**, pinned in `requirements.txt`. Zensical is the successor to Material for MkDocs
   (maintenance mode since November 2025, end of life on November 5, 2026). MkDocs 1.x core has not
   been maintained since August 2024.
-- **Configuration in `mkdocs.yml`**, which Zensical reads natively. The configuration uses only
-  features supported by both Zensical and Material for MkDocs 9.7, so `mkdocs build` with Material
-  stays available as a fallback.
+- **Configuration in `zensical.toml`** (2026-09-12: was `mkdocs.yml`). The original reason for the
+  MkDocs format was keeping `mkdocs build` with Material available as a fallback, but Material
+  reaches end of life on 2026-11-05, so the fallback expires before it is likely to be needed.
+  Both formats parse to the same configuration in Zensical, and the two were diffed to confirm the
+  migration changed nothing.
 - Features used: light/dark palette toggle, built-in search, `tags` plugin, admonitions, content tabs,
   glossary abbreviations shown as tooltips, "edit this page" action.
 - 2026-09-12: a theme layer was added — `extra_css` pointing at `docs/assets/stylesheets/aim.css`,
@@ -40,7 +42,7 @@ send pull requests later.
 
 ```
 Aim/
-  mkdocs.yml
+  zensical.toml
   requirements.txt
   README.md
   CONTRIBUTING.md
@@ -194,7 +196,7 @@ sourcing rules, plus both templates.
 
 ## Collaboration
 
-- `repo_url` and `edit_uri` are set in `mkdocs.yml`, so each page shows an edit button that opens the
+- `repo_url` and `edit_uri` are set in `zensical.toml`, so each page shows an edit button that opens the
   file on GitHub.
 - `CONTRIBUTING.md` covers: running the site locally, using the templates, the sourcing rules, the
   allowed tags, and the pull request flow.

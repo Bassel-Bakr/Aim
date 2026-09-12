@@ -1,0 +1,119 @@
+[project]
+site_name = "Aim"
+site_description = "Aim training concepts, routines, and a guide to the best existing resources."
+site_url = "https://bassel-bakr.github.io/aim/"
+repo_url = "https://github.com/Bassel-Bakr/aim"
+repo_name = "Bassel-Bakr/aim"
+edit_uri = "edit/main/docs/"
+copyright = "Content licensed under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a>"
+
+extra_css = ["assets/stylesheets/aim.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "Wiki" = [
+    "wiki/index.md",
+    { "Getting Started" = [
+      "wiki/getting-started/index.md",
+      "wiki/getting-started/sensitivity.md",
+      "wiki/getting-started/setup.md",
+      "wiki/getting-started/aim-trainers.md",
+    ] },
+    { "Fundamentals" = [
+      "wiki/fundamentals/index.md",
+      "wiki/fundamentals/how-aim-works.md",
+      "wiki/fundamentals/practice-principles.md",
+      "wiki/fundamentals/transfer-to-games.md",
+    ] },
+    { "Skills" = [
+      "wiki/skills/index.md",
+      "wiki/skills/clicking.md",
+      "wiki/skills/tracking.md",
+      "wiki/skills/switching.md",
+    ] },
+    { "Techniques" = [
+      "wiki/techniques/underaiming.md",
+    ] },
+    { "Training" = [
+      "wiki/training/index.md",
+      "wiki/training/routines.md",
+      "wiki/training/benchmarks.md",
+      "wiki/training/progress-and-plateaus.md",
+      "wiki/training/health.md",
+    ] },
+    { "Resources" = [
+      "wiki/resources/index.md",
+      { "Communities" = [
+        "wiki/resources/communities/voltaic.md",
+        "wiki/resources/communities/jade-palace.md",
+        "wiki/resources/communities/revosect.md",
+      ] },
+      { "Trainers" = [
+        "wiki/resources/trainers/kovaaks.md",
+        "wiki/resources/trainers/aimlabs.md",
+        "wiki/resources/trainers/aimbeast.md",
+      ] },
+      { "Tools" = [
+        "wiki/resources/tools/evxl.md",
+        "wiki/resources/tools/kova.md",
+        "wiki/resources/tools/kovobs.md",
+      ] },
+    ] },
+    { "Glossary" = "wiki/glossary.md" },
+    { "Tags" = "wiki/tags.md" },
+  ] },
+  { "Links" = "links.md" },
+  { "Topics" = [
+    "topics/index.md",
+  ] },
+]
+
+[project.theme]
+name = "material"
+favicon = "assets/favicon.svg"
+icon.logo = "lucide/crosshair"
+features = [
+  "content.action.edit",
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.indexes",
+  "navigation.footer",
+  "search.suggest",
+  "search.highlight",
+  "toc.follow",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[project.plugins]
+search = {}
+tags = {}
+
+# Pages that moved after the site was already live. Keep an entry here rather
+# than letting an old link 404.
+[project.plugins.redirects.redirect_maps]
+"guides/index.md" = "topics/index.md"
+"wiki/resources/links.md" = "links.md"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+footnotes = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true
+pymdownx.snippets.auto_append = ["includes/abbreviations.md"]

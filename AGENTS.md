@@ -8,7 +8,7 @@ that contradicts them.
 
 A static documentation site about aim training, built with [Zensical](https://zensical.org) from
 Markdown in `docs/`. Content is prose, not code. Most changes are edits to Markdown files plus a
-matching `nav` entry in `mkdocs.yml`.
+matching `nav` entry in `zensical.toml`.
 
 ## Setup
 
@@ -66,7 +66,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
 | `scripts/` | Repository checks. |
-| `mkdocs.yml` | Site config and the `nav` tree. |
+| `zensical.toml` | Site config and the `nav` tree. |
 
 ## Page components
 
@@ -104,7 +104,7 @@ agents most often miss:
 1. Start from a template in `templates/` — `concept.md` for explanations, `resource.md` for
    communities, trainers and tools.
 2. Page titles come from the `title:` field in front matter. Do not add an `#` heading in the body.
-3. Every new page needs a `nav` entry in `mkdocs.yml` and at least one inbound link from a related
+3. Every new page needs a `nav` entry in `zensical.toml` and at least one inbound link from a related
    page.
 4. Use only the tags listed in [CONTRIBUTING.md](CONTRIBUTING.md#tags). Do not invent new ones.
 5. Write in your own words, and note that reusing a source's sentence with a few words changed is
