@@ -58,7 +58,7 @@ Add new terms to `docs/wiki/glossary.md`. If the term is an abbreviation, also a
 
 ```bash
 python scripts/check_pages.py
-zensical build --clean --strict
+zensical build --clean
 ```
 
 Both commands must finish without problems. The same checks run automatically on every pull request.
