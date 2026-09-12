@@ -31,6 +31,9 @@
 
   --aim-ink: #14171c;
   --aim-accent: #b3341b;
+  /* Section headings take the accent pulled back off the link colour, so a heading reads as a
+   * heading rather than as something to click. */
+  --aim-heading: #8c3a26;
   --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
   --aim-tracking: #1d6a8c;
@@ -52,6 +55,7 @@
 
 [data-md-color-scheme="slate"][data-md-color-primary] {
   --aim-accent: #ff7a52;
+  --aim-heading: #ff9c7a;
   --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
   --aim-tracking: #56b6d8;
@@ -217,6 +221,7 @@ body {
 }
 
 .md-typeset h2 {
+  color: var(--aim-heading);
   letter-spacing: 0.01em;
 }
 
