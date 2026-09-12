@@ -14,50 +14,44 @@ aim's three foundational categories alongside tracking and switching.[^aimlabs-i
 
 What varies between one flick and the next is whether the target is going anywhere. A stationary
 target makes the shot purely a question of precision; a moving one means the flick has to account
-for where the target will be when the click lands. The sections below run from no motion to
-unpredictable motion.
+for where the target will be when the click lands. Aimlabs splits flicking two ways, static and
+dynamic;[^aimlabs-intro] [Voltaic](../resources/communities/voltaic.md)'s Season 5 KovaaK's
+benchmark adds linear between them.[^voltaic-s5]
 
-## Stationary targets
+## Static clicking
 
-The target stays where it is once you flick onto it, so the task comes down to precision and
-timing. Good execution is a flick that settles directly on the target rather than overshooting and
-correcting back onto it afterward.
+Static clicking is the stationary case: the target stays where it is once you flick onto it, so the
+task comes down to precision and timing. Good execution is a flick that settles directly on the
+target rather than overshooting and correcting back onto it afterward.
 
 The most common mistake is treating every flick as a rough first pass to be fine-tuned, which
 trains a habit of imprecise flicks propped up by correction instead of an accurate first flick.
 Practice at a target size and distance where you land most flicks clean, then gradually shrink the
 target or widen the distance, rather than starting at a setting you can't consistently hit.
 
-## Predictably moving targets
+## Dynamic clicking
 
-The target moves, but along a single readable line rather than erratically. Good execution
-approaches the target's line of travel smoothly and times the click to where it will be, rather
-than clicking reactively once it's already close.
-
-The common mistake is treating predictable movement as effectively stationary: a target moving
-along a readable path still punishes a flick aimed at its current position instead of its
-near-future one. This is a reasonable middle step between the two other cases.
-
-## Unpredictably moving targets
-
-The target is already moving, and changing, as you flick onto it. Good execution means the flick
-itself accounts for where the target will be when the click lands, not just where it started, and
-finishes with whatever small correction its ongoing motion still needs. Aimlabs describes proper
-flicking technique in general as "the initial flicking motion with controlled microcorrections to
-adjust for the subtle motions of the targets."[^aimlabs-finals]
+Dynamic clicking is the moving case: the target is already moving, and changing, as you flick onto
+it. Good execution means the flick itself accounts for where the target will be when the click
+lands, not just where it started, and finishes with whatever small correction its ongoing motion
+still needs. Aimlabs describes proper flicking technique in general as "the initial flicking motion
+with controlled microcorrections to adjust for the subtle motions of the targets."[^aimlabs-finals]
 
 The common mistake is flicking to where the target was at the start of the motion and only
 reacting to its movement afterward, which turns one clean flick into a chase. Train it on scenarios
 that isolate target motion at a pace you can still land cleanly before pushing speed, since the
 [speed-accuracy trade-off](../fundamentals/how-aim-works.md) applies here as much as anywhere else.
 
-## How communities name these
+## Linear clicking
 
-[Aimlabs](../resources/trainers/aimlabs.md) uses a two-way split, static and dynamic
-flicking.[^aimlabs-intro] [Voltaic](../resources/communities/voltaic.md)'s Season 5 KovaaK's
-benchmark uses a finer one, static, linear, and dynamic, with linear added that season as a hybrid
-category "bridging traditional subcategory gaps."[^voltaic-s5] Labels shift between benchmark
-seasons; whether the target is moving, and how readably, does not.
+Linear clicking sits between the two, added by Voltaic in Season 5 as a hybrid category "bridging
+traditional subcategory gaps":[^voltaic-s5] the target moves, but along a single readable line
+rather than erratically. Good execution approaches the target's line of travel smoothly and times
+the click to where it will be, rather than clicking reactively once it's already close.
+
+The common mistake is treating predictable movement as effectively stationary: a target moving
+along a readable path still punishes a flick aimed at its current position instead of its
+near-future one. That makes it a reasonable middle step between the two cases above.
 
 ## Further resources
 

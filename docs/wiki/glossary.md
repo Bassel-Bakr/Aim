@@ -52,7 +52,7 @@ correction left over, rather than a rough first pass fixed up afterward. See
 
 Field of view (FOV) is the extent of the game world visible on screen at once, usually set in
 degrees.[^fov]
-See [Target Switching](skills/switching.md).
+See [Switching](skills/switching.md).
 
 ### FPS
 
@@ -117,11 +117,13 @@ rather than lagging behind and then snapping forward to catch up. It runs throug
 flicking, and switching alike rather than being a separate skill of its own. See
 [How Aim Works](fundamentals/how-aim-works.md).
 
-### Target switching
+### Switching
 
-Target switching is the skill of moving your crosshair from a target you just cleared to the next
-one, closing that gap quickly without losing the accuracy needed to land the next click. See
-[Target Switching](skills/switching.md).
+Switching is the skill of moving your crosshair from a target you just cleared to the next
+one, closing that gap quickly without losing the accuracy needed to land the next click. Speed
+switching puts the weight on the transition itself, evasive switching adds targets that keep moving
+after you arrive, and stability switching is a hybrid where targets hop or jitter in place. See
+[Switching](skills/switching.md).
 
 ### Tracking
 

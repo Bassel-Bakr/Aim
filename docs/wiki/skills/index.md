@@ -18,11 +18,13 @@ all three rather than lean on one.[^aimlabs-playlist]
 | --- | --- | --- |
 | [Clicking](clicking.md){ .aim-skill .aim-skill--clicking } | Acquiring a target and timing a single click or short burst on it. | Whether the target is moving, and how readably. |
 | [Tracking](tracking.md){ .aim-skill .aim-skill--tracking } | Keeping the crosshair on a target that's already moving. | How predictable the target's path is. |
-| [Switching](switching.md){ .aim-skill .aim-skill--switching } | Moving the crosshair from a cleared target to the next one. | Target spacing, and whether targets hold still. |
+| [Switching](switching.md){ .aim-skill .aim-skill--switching } | Moving the crosshair from a cleared target to the next one. | Target spacing, and how much the targets move once you arrive. |
 
-Each page splits its skill along the axis in the last column, from the easiest case to the hardest,
-and ends with a note on what the benchmark communities call those splits. Those labels move between
-benchmark seasons, so the pages are organized around the underlying distinction rather than around
-any one season's naming. See [Benchmarks](../training/benchmarks.md) for how the scoring works.
+Each page splits its skill along the axis in the last column, under the names the benchmark
+communities use: static, dynamic and linear clicking; precise, reactive and control tracking;
+speed, evasive and stability switching.[^voltaic-s5] Those labels move between benchmark seasons,
+so each page explains the distinction underneath rather than only the label. See
+[Benchmarks](../training/benchmarks.md) for how the scoring works.
 
 [^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
+[^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
