@@ -69,12 +69,12 @@ aim per title:
 
 A common fear is that changing sensitivity will permanently damage your aim. Voltaic's own
 breakdown of "muscle memory" in aiming pushes back on this directly: changing your sensitivity
-does not ruin your aim, it only requires a period of readjustment, and the community has plenty of
-anecdotal cases of players changing sensitivity constantly, even using sensitivity randomizers,
-without a lasting penalty, per [Voltaic](https://blog.voltaic.gg/muscle-memory/). The same article
-notes that deliberately changing sensitivity is sometimes suggested as a way to break out of a
-plateau, since a new sensitivity gives you a fresh starting point to improve from, per
-[Voltaic](https://blog.voltaic.gg/muscle-memory/). The practical takeaway is not to avoid changing
+costs you some short-term readjustment rather than any lasting setback, and it points to community
+members who swap settings often, some even rolling a new sensitivity at random, with no long-run
+drop in their aim, per [Voltaic](https://blog.voltaic.gg/muscle-memory/). The same article
+notes that switching sensitivity on purpose is one way people try to break a plateau, since
+starting from an unfamiliar setting can reset your sense of what feels "normal" and open room to
+improve, per [Voltaic](https://blog.voltaic.gg/muscle-memory/). The practical takeaway is not to avoid changing
 your sensitivity out of fear, but to avoid changing it constantly without a reason, since every
 change costs you some readjustment time. See [Progress and Plateaus](../training/progress-and-plateaus.md)
 for more on working through a stalled score.

@@ -19,7 +19,7 @@ Elite aimers and aim-focused content creators who already have some standing in 
 
 ## What it covers
 
-Public detail about Jade Palace's internal activity is limited, since most of it happens inside the private Discord. What is confirmed publicly: applications to join open and close over time, and were reopened as of an [August 2025 post](https://x.com/Matty_OW/status/1961519224884523098), which also mentions a new channel for members and followers to submit questions and suggestions about what they want to see from elite aim-training players.
+Public detail about Jade Palace's internal activity is limited, since most of it happens inside the private Discord. What is confirmed publicly: applications to join open and close over time, and were reopened as of an [August 2025 post](https://x.com/Matty_OW/status/1961519224884523098), which also announced a new channel where the community can propose topics they would like Jade Palace's elite aim-training members to cover.
 
 <!-- REVIEW: confirm who currently runs/moderates Jade Palace day to day, and whether an official public application link or form is posted anywhere besides these X posts. -->
 
