@@ -591,15 +591,12 @@ body {
  * quiet treatment. It sets its own border-style because the chrome block sets a width without
  * one.
  *
- * The title bar is a flex row of three parts, in order: the icon, the tag, then the claim. The
- * tag is the title's ::after pulled in front of the claim with a negative order, because a
- * pseudo-element is the only place to put a word the Markdown does not carry — and the Markdown
- * must not carry it, since the title has to match the hub heading character for character. */
-:root {
-  /* A crossed-out claim: a ring with a slash through it. */
-  --md-admonition-icon--myth: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2c1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.9 7.9 0 0 1 4 12a8 8 0 0 1 8-8m0 16a7.9 7.9 0 0 1-4.9-1.69L18.31 7.1A7.9 7.9 0 0 1 20 12a8 8 0 0 1-8 8"/></svg>');
-}
-
+ * The title bar is a flex row of two parts: the tag, then the claim. The tag is the title's
+ * ::after pulled in front of the claim with a negative order, because a pseudo-element is the only
+ * place to put a word the Markdown does not carry — and the Markdown must not carry it, since the
+ * title has to match the hub heading character for character. The theme's admonition icon is
+ * dropped: the tag already says what the block is, and the icon only pushed the claim further off
+ * the left margin. */
 .md-typeset .admonition.myth,
 .md-typeset details.myth {
   border-left: 3px solid var(--aim-accent);
@@ -617,12 +614,7 @@ body {
 
 .md-typeset .myth > .admonition-title::before,
 .md-typeset .myth > summary::before {
-  position: static;
-  flex: none;
-  order: -2;
-  background-color: var(--aim-accent);
-  -webkit-mask-image: var(--md-admonition-icon--myth);
-  mask-image: var(--md-admonition-icon--myth);
+  display: none;
 }
 
 /* The tag naming what the reader is looking at, so the claim beside it is never mistaken for the
