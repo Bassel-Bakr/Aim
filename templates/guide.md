@@ -1,7 +1,5 @@
 ---
 title: "Guide Title"
-tags:
-  - tracking
 ---
 
 !!! info "Written by Bassel Bakr"
@@ -37,4 +35,4 @@ progress" apart from "wrong approach".
 
 ## Further resources
 
-- [Page title](../skills/tracking.md): why it is worth reading next.
+- [Tracking](../wiki/skills/tracking.md): why the wiki page is worth reading next.

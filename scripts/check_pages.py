@@ -19,10 +19,11 @@ ALLOWED_TAGS = {
     "benchmarks", "routines", "sensitivity", "beginner",
 }
 CONCEPT_DIRS = {"getting-started", "fundamentals", "skills", "training"}
-# Guides are signed, first-person pages. They carry a byline instead of the draft banner,
-# because their trust model is the author's name rather than a citation trail.
-GUIDE_DIR = "guides"
 BANNER = '!!! warning "Draft"'
+# Guides live outside docs/wiki/ because they run on a different trust model: signed opinion
+# written from experience, carrying the author's name instead of a citation trail. They are not
+# wiki pages and do not follow wiki rules.
+GUIDES = DOCS / "guides"
 BYLINE = '!!! info "Written by '
 
 
@@ -39,6 +40,7 @@ def check(path, drafts):
     # Wiki pages live under docs/wiki/; their section is the first segment below that.
     in_wiki = path.is_relative_to(WIKI)
     section = path.relative_to(WIKI).as_posix().split("/")[0] if in_wiki else ""
+    in_guides = path.is_relative_to(GUIDES)
     is_index = path.name == "index.md"
     errors = []
 
@@ -49,13 +51,15 @@ def check(path, drafts):
         errors.append(f"{rel}: missing '## Further resources' section")
     if section == "resources" and not is_index and "\n## Related wiki pages" not in text:
         errors.append(f"{rel}: missing '## Related wiki pages' section")
-    if section == GUIDE_DIR:
-        # Guides are signed opinion; a byline replaces the draft banner entirely.
+    if in_guides:
+        # A byline replaces the draft banner: guides are signed, not pending review.
         if not is_index:
             if BYLINE not in text:
                 errors.append(f'{rel}: missing byline, expected \'{BYLINE}<name>"\'')
             if "\n## Further resources" not in text:
                 errors.append(f"{rel}: missing '## Further resources' section")
+        if front_matter(text).get("tags"):
+            errors.append(f"{rel}: guides do not carry tags")
     elif drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
     return errors

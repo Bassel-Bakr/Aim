@@ -16,6 +16,9 @@ routines, and trainers worth your time.
   scenario and benchmark is built from.
 - [Resources](wiki/resources/index.md): the communities and trainers this wiki draws on, including
   Voltaic, Revosect, KovaaK's, and Aimlabs.
+- [Guides](guides/index.md): signed, first-person walkthroughs of specific problems, written from
+  experience rather than from sources.
 
-Every page cites where its facts came from, and pages still marked "Draft" are waiting on a review
-pass.
+Every wiki page cites where its facts came from, and pages still marked "Draft" are waiting on a
+review pass. Guides work differently: they carry their author's name instead of citations, because
+they are one person's method rather than sourced reference.

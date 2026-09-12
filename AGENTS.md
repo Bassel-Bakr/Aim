@@ -59,8 +59,8 @@ so a dead outbound link will not show up in the checks you run locally.
 | Path | Contents |
 | --- | --- |
 | `docs/index.md` | Site landing page. Not a wiki page. |
-| `docs/wiki/` | All wiki pages, grouped by section. |
-| `docs/wiki/guides/` | Signed first-person guides. Different rules — see below. |
+| `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
+| `docs/guides/` | Signed first-person guides. Not wiki pages, not open — see below. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
@@ -73,7 +73,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) in full before adding a page. These are 
 agents most often miss:
 
 1. Start from a template in `templates/` — `concept.md` for explanations, `resource.md` for
-   communities, trainers and tools, `guide.md` for signed first-person guides.
+   communities, trainers and tools.
 2. Page titles come from the `title:` field in front matter. Do not add an `#` heading in the body.
 3. Every new page needs a `nav` entry in `mkdocs.yml` and at least one inbound link from a related
    page.
@@ -89,11 +89,17 @@ agents most often miss:
 7. A page written from research but not yet fact-checked keeps the draft banner at the top, exactly
    as shown in [CONTRIBUTING.md](CONTRIBUTING.md).
 8. New abbreviations go in both `docs/wiki/glossary.md` and `includes/abbreviations.md`.
-9. Pages under `docs/wiki/guides/` are the exception to rules 5 and 7. They are signed opinion
-   written from the author's experience, so they carry a `!!! info "Written by <name>"` byline
-   instead of the draft banner, footnotes are optional rather than required, and first person is
-   expected. Do not write one on your own initiative: authorship is not open, and a byline names a
-   real person as accountable for the claims. The own-words rule still applies in full.
+
+## Guides are not wiki pages
+
+`docs/guides/` is a separate part of the site at `/guides`, and none of the rules above apply to
+it. Guides are signed opinion written from the maintainer's own experience: they use
+`templates/guide.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
+take no tags, and do not require footnotes. `scripts/check_pages.py` enforces that.
+
+Never write or edit a guide on your own initiative. A byline names a real person as accountable for
+every claim on the page, so its content is theirs to decide. Fix a typo or a dead link if asked;
+send anything touching the method or the argument back to the author.
 
 ## Deployment
 

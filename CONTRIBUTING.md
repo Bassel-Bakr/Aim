@@ -1,11 +1,14 @@
 # Contributing to Aim Wiki
 
-Thank you for helping. This guide explains how to add or change pages.
+Thank you for helping. This guide explains how to add or change wiki pages.
+
+It covers the wiki at `/wiki` only. [Guides](#guides-are-not-part-of-the-wiki) at `/guides` are
+signed, authored pages and are not open to contributions.
 
 ## Ways to contribute
 
-- Fix a mistake: click the edit button (pencil icon) on any page. GitHub opens the file so you can
-  propose a change.
+- Fix a mistake: click the edit button (pencil icon) on any wiki page. GitHub opens the file so you
+  can propose a change.
 - Add a page or a large change: open an issue first, so we can agree on scope.
 
 ## Run the site locally
@@ -17,7 +20,9 @@ Follow the steps in [README.md](README.md#run-the-site-locally).
 1. Copy a template from `templates/`:
    - `concept.md` for pages that explain aim concepts or training advice.
    - `resource.md` for pages about a community, a trainer, or a tool.
-   - `guide.md` for a signed, first-person guide. See [Guides](#guides) first.
+
+   `templates/guide.md` is not a wiki template; see
+   [Guides are not part of the wiki](#guides-are-not-part-of-the-wiki).
 2. Save the file in the matching folder under `docs/wiki/`. (`docs/index.md` is the site's landing page, not a wiki page.)
 3. Add the page to the `nav` list in `mkdocs.yml`.
 4. Link the new page from at least one related page.
@@ -58,36 +63,19 @@ body.
    `<!-- REVIEW: what needs checking -->`. HTML comments are hidden on the page but still visible
    in the page source.
 
-## Guides
+## Guides are not part of the wiki
 
-Pages under `docs/wiki/guides/` run on a different trust model from the rest of the wiki. A
-reference page earns trust by citing a public source for each claim. A guide earns it by carrying
-its author's name: the reader decides whether to trust the method by deciding whether to trust the
-person. Both are honest; they are just not the same thing, and a reader has to be able to tell
-which one they are reading.
+Guides live at `/guides`, outside `docs/wiki/`, because they run on a different trust model. A wiki
+page earns trust by citing a public source for each claim, and anyone may correct it. A guide earns
+trust by carrying its author's name, and is not open to contributions. Keeping them in separate
+trees means neither set of rules needs an exception clause for the other.
 
-So a guide follows different rules:
+Nothing in this document applies to guides. They are written by the site's maintainer from
+`templates/guide.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
+take no tags, and do not require footnotes. `scripts/check_pages.py` enforces those rules for
+anything under `docs/guides/`.
 
-- It carries a byline admonition at the top instead of the draft banner, and
-  `scripts/check_pages.py` enforces this:
-
-  ```markdown
-  !!! info "Written by Bassel Bakr"
-      A practical guide from my own training and experience, not a summary of published sources.
-      Treat it as one informed opinion rather than settled fact.
-  ```
-
-- First person is expected. A guide says what its author does and why, so write "I" rather than
-  hedging into the passive voice.
-- Footnotes are welcome but not required. Cite a source where one exists; do not manufacture
-  citations for a judgment call, and do not leave out a useful method because no article backs it.
-- Writing rules 1 and 3 still apply in full. A guide is your own words and your own experience;
-  being signed does not license summarizing someone else's video or guide closely.
-
-Guides are written by this wiki's maintainer for now. Authorship is not open to contributors yet,
-so open an issue rather than a pull request that adds one. Corrections to a published guide, such
-as a factual error, a dead link, or a typo, are welcome from anyone; changes to the method or the
-argument go to the author, because the byline has to keep meaning what it says.
+To suggest a guide, or a correction to one, open an issue rather than a pull request.
 
 ## Tags
 
