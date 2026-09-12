@@ -34,6 +34,15 @@ body.
 
 1. Write in your own words and link to the original source. Do not copy guides, tables, or images
    from other sites.
+
+   Keeping a source's sentence and swapping a few words is still copying, and it is the easy
+   mistake to make, because the result reads as though you wrote it. Work out what the source
+   claims, then say that from scratch. Where the exact wording is the point, such as a term whose
+   definition is disputed, quote it in quotation marks and attribute it:
+
+   ```markdown
+   Matty defines it as a deliberate choice to "withhold extra motion on a target."[^matty]
+   ```
 2. Cite facts with a footnote. Put a `[^label]` marker at the end of the sentence, and define the
    source at the bottom of the file:
 

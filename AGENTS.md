@@ -107,7 +107,9 @@ agents most often miss:
 3. Every new page needs a `nav` entry in `mkdocs.yml` and at least one inbound link from a related
    page.
 4. Use only the tags listed in [CONTRIBUTING.md](CONTRIBUTING.md#tags). Do not invent new ones.
-5. Write in your own words and cite each fact with a footnote — a `[^label]` marker at the end of
+5. Write in your own words, and note that reusing a source's sentence with a few words changed is
+   still copying — restate the claim from scratch, or quote and attribute it. Cite each fact with a
+   footnote — a `[^label]` marker at the end of
    the sentence, defined at the bottom of the file. Reuse one label for repeat citations of the
    same source, keep the definition list in order of first use, and use descriptive labels rather
    than numbers. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full rule and its two exceptions.
