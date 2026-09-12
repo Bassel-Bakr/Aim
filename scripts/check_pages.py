@@ -17,6 +17,7 @@ ALLOWED_TAGS = {
     "community", "trainer", "tool",
     "clicking", "tracking", "switching",
     "benchmarks", "routines", "sensitivity", "beginner",
+    "myth",
 }
 CONCEPT_DIRS = {"getting-started", "fundamentals", "categories", "techniques", "training"}
 BANNER = '!!! warning "Draft"'

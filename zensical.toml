@@ -59,6 +59,7 @@ nav = [
         "wiki/resources/tools/kovobs.md",
       ] },
     ] },
+    { "Myths" = "wiki/myths.md" },
     { "Glossary" = "wiki/glossary.md" },
     { "Tags" = "wiki/tags.md" },
   ] },
