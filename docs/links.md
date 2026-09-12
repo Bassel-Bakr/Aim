@@ -16,6 +16,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   Aimlabs — the three skill categories.
 - [Aim training and FPS mechanics glossary](https://aimlabs.com/articles/aimlabs/aim-training-fps-mechanics-glossary-key-terms-explained/) —
   Aimlabs — the vocabulary everything here assumes.
+- [Aim Training Starter Series 2026](https://www.youtube.com/playlist?list=PLJJwQ02KYw9w) —
+  MattyOW, 2026 — five parts for a first week in a trainer.
 
 ## Full courses
 
@@ -23,6 +25,9 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   Valkie, 2023 — seven parts: settings first, then one per skill.
 - [Aim Training Crash Course](https://www.youtube.com/playlist?list=PL-uHvMUvTR9RZMJ_8lzf30V19hgtf4htU) —
   RiddBTW — twelve parts, two on each skill.
+- [Guides by MattyOW](https://www.youtube.com/playlist?list=PLqMr3im6WvTQ8Y7q7SCV5r0i_lx4oPaRX) —
+  MattyOW — 25 guides, one per problem rather than one per skill, plus the Unraveling the Secrets
+  of Aim series on how specific top players aim.
 
 ## How aim works
 
