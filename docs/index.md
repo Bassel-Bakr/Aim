@@ -19,11 +19,13 @@ trainers worth your time.
 <div class="aim-cards" markdown>
 
 - **[Start Here](wiki/getting-started/index.md)**: gear, sensitivity, and picking an aim trainer,
-  in the order most players need them.
+  in the order most people need them.
 - **[Categories](wiki/categories/index.md)**: clicking, tracking, and switching, the three categories
   every scenario and benchmark is built from.
 - **[Resources](wiki/resources/index.md)**: the communities and trainers this wiki draws on,
   including Voltaic, Revosect, KovaaK's, and Aimlabs.
+- **[Links](links.md)**: guides and videos from across the community, grouped by what they help
+  you fix.
 - **[Topics](topics/index.md)**: signed, first-person pages written from experience rather than
   from sources.
 
