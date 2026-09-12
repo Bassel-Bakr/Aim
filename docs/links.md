@@ -17,6 +17,13 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Aim training and FPS mechanics glossary](https://aimlabs.com/articles/aimlabs/aim-training-fps-mechanics-glossary-key-terms-explained/) —
   Aimlabs — the vocabulary everything here assumes.
 
+## Full courses
+
+- [Aim Trainer Complete Course](https://www.youtube.com/playlist?list=PLQm82wd6DO4OUt_GUW3BQqfmjBNLYq5sV) —
+  Valkie, 2023 — seven parts: settings first, then one per skill.
+- [Aim Training Crash Course](https://www.youtube.com/playlist?list=PL-uHvMUvTR9RZMJ_8lzf30V19hgtf4htU) —
+  RiddBTW — twelve parts, two on each skill.
+
 ## How aim works
 
 - [Wrist aiming vs arm aiming](https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/) —
