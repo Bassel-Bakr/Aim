@@ -24,11 +24,12 @@ target reading."[^aimlabs-apex]
 ## Precise tracking
 
 Precise tracking is the readable case: the target moves smoothly along a path you can read ahead of
-time, so the difficulty is staying exactly on it rather than reacting to surprises. The scenarios
-Voltaic scores it with use small targets that you have to approach, acquire, and hold smoothly, so
-any wobble costs accuracy immediately.[^voltaic-s5] Good execution means the crosshair moves at the
-same rate as the target instead of lagging and snapping forward to catch up, the smoothness quality
-covered in more depth on [How Aim Works](../fundamentals/how-aim-works.md).
+time, so the difficulty is staying exactly on it rather than reacting to surprises. Voltaic scores
+it on scenarios built around small targets, where the crosshair has to arrive and settle without
+wobbling, since a target that small leaves nowhere to hide a correction.[^voltaic-s5] Good execution
+means the crosshair moves at the same rate as the target instead of lagging and snapping forward to
+catch up, the smoothness quality covered in more depth on [How Aim
+Works](../fundamentals/how-aim-works.md).
 
 The common mistake is over-correcting a small mismatch, which turns a smooth track into a series
 of jerky snaps. Train it on slower, predictable paths first, so you can hold a clean continuous
@@ -50,11 +51,10 @@ for this skill specifically.
 ## Control tracking
 
 Control tracking sits between the two, added by Voltaic in Season 5 as a hybrid category "bridging
-traditional subcategory gaps": the target strafes continuously on every axis, but its direction
-changes are smoother than a reactive scenario's.[^voltaic-s5] Real targets rarely sit at either
-extreme, and tracking movement like this means switching between the two modes above as the
-target's path demands: staying smooth through the parts you can read, reacting cleanly when it
-changes.
+traditional subcategory gaps": the target strafes on all three axes, but its changes of direction
+are rounded rather than sharp.[^voltaic-s5] Real targets rarely sit at either extreme, and tracking
+movement like this means switching between the two modes above as the target's path demands: staying
+smooth through the parts you can read, reacting cleanly when it changes.
 
 The common mistake is defaulting entirely to one mode, either smoothing through direction changes
 you should be reacting to, or over-reacting to motion that is actually smooth and predictable.
