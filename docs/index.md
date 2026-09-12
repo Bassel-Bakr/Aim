@@ -4,6 +4,8 @@ title: "Aim training wiki"
 
 <div class="aim-hero" markdown>
 
+## Aim training wiki
+
 Aim is a training wiki for first-person and third-person shooter players. It explains how mouse aim
 works, breaks aim into skills you can practise on purpose, and collects the community benchmarks,
 routines, and trainers worth your time.

@@ -1,39 +1,58 @@
 /* Aim wiki theme.
  *
- * Two parts: a colour and type layer that overrides the theme's own custom properties, and a small
- * set of page components the Markdown pages opt into with `attr_list` or `md_in_html`.
+ * The look is a shooting range HUD: dark chrome across the top and bottom, a technical display
+ * face for anything that labels rather than reads, reticle brackets on the cards, and a faint
+ * range grid behind the page.
  *
- * Components: .aim-hero, .aim-cards, .aim-steps, .aim-skill. Each one is documented above its
- * rules, including the Markdown that produces it.
+ * Three parts, in order: the colour and type layer, which overrides the theme's own custom
+ * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
+ * page components. Each component is documented above its rules with the Markdown that produces
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-skill.
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
+
 /* ---------------------------------------------------------------------------
- * Colour
+ * Colour and type
  * ------------------------------------------------------------------------ */
 
 :root {
+  /* Chakra Petch labels a control rather than sets prose. It is used for headings, the wordmark,
+   * table headers, buttons and badges, and never for running text. */
+  --aim-display: "Chakra Petch", "Inter", -apple-system, system-ui, sans-serif;
+
+  /* The chrome is the same near-black in both schemes, so the site keeps one silhouette whichever
+   * scheme the reader is in. The accent on it has to hold up against that black, so it is the
+   * dark-scheme accent in both. */
+  --aim-chrome: #0b0d12;
+  --aim-chrome-fg: #e8eaf0;
+  --aim-chrome-accent: #ff7a52;
+  --aim-chrome-line: #ffffff1f;
+
   --aim-ink: #14171c;
-  --aim-ink-light: #2a2f39;
   --aim-accent: #b3341b;
+  --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
   --aim-tracking: #1d6a8c;
   --aim-switching: #6a4396;
 
-  /* The site mark: a ring, four ticks, and a centre dot. Used as a mask so it inherits a colour. */
+  /* The site mark: a ring, four ticks, and a centre dot. Used as a mask so it takes a colour. */
   --aim-crosshair: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round"><circle cx="16" cy="16" r="11"/><path d="M16 1.5v5M16 25.5v5M1.5 16h5M25.5 16h5"/><circle cx="16" cy="16" r="2" fill="black" stroke="none"/></svg>');
 }
 
-[data-md-color-scheme="default"] {
+/* The theme sets its link colour per scheme and primary colour together, so these blocks have to
+ * carry both attributes to override it rather than lose on specificity. */
+[data-md-color-scheme="default"][data-md-color-primary] {
   --md-primary-fg-color: var(--aim-ink);
-  --md-primary-fg-color--light: var(--aim-ink-light);
+  --md-primary-fg-color--light: #2a2f39;
   --md-primary-fg-color--dark: #0b0d11;
   --md-accent-fg-color: var(--aim-accent);
   --md-typeset-a-color: var(--aim-accent);
 }
 
-[data-md-color-scheme="slate"] {
-  --aim-ink: #0f1116;
+[data-md-color-scheme="slate"][data-md-color-primary] {
   --aim-accent: #ff7a52;
+  --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
   --aim-tracking: #56b6d8;
   --aim-switching: #b18cf0;
@@ -47,59 +66,249 @@
   --md-code-bg-color: #171a21;
 }
 
+::selection {
+  background-color: var(--aim-accent);
+  color: #fff;
+}
+
+/* The range grid. It has to stay at the edge of visible: a hint that the page sits on a range,
+ * not a texture anyone should notice while reading. */
+body {
+  background-image:
+    linear-gradient(var(--aim-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--aim-grid) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+  background-position: center;
+}
+
 /* ---------------------------------------------------------------------------
- * Type and tables
+ * Chrome: header, tabs, footer
  * ------------------------------------------------------------------------ */
 
+.md-header {
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-chrome);
+  border-bottom: 1px solid var(--aim-chrome-line);
+}
+
+.md-header__button.md-logo :is(img, svg) {
+  color: var(--aim-chrome-accent);
+}
+
+/* The first topic in the header title is the site name; the second is the current page. */
+.md-header__topic:first-child .md-ellipsis {
+  font-family: var(--aim-display);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.md-header .md-search__button,
+.md-header .md-source {
+  color: var(--aim-chrome-fg);
+  border-color: var(--aim-chrome-line);
+}
+
+.md-tabs {
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-chrome);
+  box-shadow: none;
+  font-family: var(--aim-display);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.md-tabs__link {
+  font-size: 0.66rem;
+  opacity: 0.72;
+}
+
+.md-tabs__link:is(:hover, :focus),
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  box-shadow: 0 -0.12rem 0 inset var(--aim-chrome-accent);
+}
+
+/* The footer is chrome in both schemes, so its foreground has to be set for the light scheme too,
+ * or the copyright line comes out dark on black. The meta strip takes its colours from the default
+ * tokens rather than the footer ones, so both sets are redefined here. */
+.md-footer,
+.md-footer-meta {
+  --md-footer-bg-color: var(--aim-chrome);
+  --md-footer-bg-color--dark: var(--aim-chrome);
+  --md-footer-fg-color: var(--aim-chrome-fg);
+  --md-footer-fg-color--light: #ffffffb3;
+  --md-footer-fg-color--lighter: #ffffff73;
+
+  --md-default-fg-color: var(--aim-chrome-fg);
+  --md-default-fg-color--light: #ffffffb3;
+  --md-default-fg-color--lighter: #ffffff73;
+  --md-default-fg-color--lightest: var(--aim-chrome);
+
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-chrome);
+}
+
+/* Tags name a topic, so they are labels like the skill badges, not prose. */
+.md-typeset .md-tag {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0;
+  background-color: transparent;
+  font-family: var(--aim-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Both sidebars are lists of labels, so they take the display face: the section headings in the
+ * navigation, and "On this page" over the table of contents. */
+.md-nav__title {
+  font-family: var(--aim-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  font-weight: 600;
+}
+
+/* The tick marking where you are, matching the one under the page title. */
+.md-sidebar--primary .md-nav__link--active {
+  box-shadow: -0.5rem 0 0 -0.36rem var(--aim-accent);
+}
+
+/* ---------------------------------------------------------------------------
+ * Typeset defaults
+ * ------------------------------------------------------------------------ */
+
+.md-typeset :is(h1, h2, h3, h4) {
+  font-family: var(--aim-display);
+  font-weight: 700;
+}
+
+/* The page title reads as the name of a range, so it is set as a label: uppercase, tracked, and
+ * closed off with a rule that runs the measure. */
+.md-typeset h1 {
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  margin-top: 0.6rem;
+  margin-bottom: -0.7rem;
+  background-color: var(--aim-accent);
+}
+
+.md-typeset h2 {
+  letter-spacing: 0.01em;
+}
+
 /* Numbers are read against each other all over this wiki: sensitivities, cm/360, refresh rates,
- * benchmark scores. Tabular figures keep them aligned in a table column. */
+ * benchmark scores. Tabular figures keep them aligned down a column. */
 .md-typeset table:not([class]) td {
   font-variant-numeric: tabular-nums;
 }
 
 .md-typeset table:not([class]) th {
-  background-color: var(--md-default-fg-color--lightest);
+  border-bottom: 2px solid var(--aim-accent);
+  background-color: transparent;
+  font-family: var(--aim-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.md-typeset .md-button {
+  font-family: var(--aim-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* The draft banner sits at the top of every unreviewed page, so it has to say "unreviewed"
+ * without taking the page over. A bar and a label do that; a filled block does not. */
+.md-typeset .admonition[class],
+.md-typeset details[class] {
+  border-width: 0 0 0 3px;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset :is(.admonition-title, summary)[class] {
+  font-family: var(--aim-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 /* ---------------------------------------------------------------------------
  * .aim-hero — landing page opener.
  *
  *   <div class="aim-hero" markdown>
+ *   ## Heading
+ *
  *   Lead paragraph.
  *
  *   [Open the wiki](wiki/index.md){ .md-button .md-button--primary }
  *   </div>
+ *
+ * A page with a hero has the theme's generated page title hidden: the hero is the title.
  * ------------------------------------------------------------------------ */
+
+.md-content__inner:has(> .aim-hero) > h1 {
+  display: none;
+}
 
 .md-typeset .aim-hero {
   position: relative;
   overflow: hidden;
   margin: 0 0 2.5rem;
-  padding: 2rem 2rem 2.2rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.4rem;
-  background-color: var(--md-code-bg-color);
+  padding: 2.4rem 2.2rem 2.6rem;
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-chrome);
+  background-image:
+    linear-gradient(#ffffff0a 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+  background-size: 2rem 2rem;
 }
 
-/* A crosshair sitting off the right edge. It is drawn as a mask rather than an image so it takes
- * its colour from the accent, which differs between the light and dark schemes. */
+/* A crosshair sitting off the right edge, drawn as a mask so it takes the accent colour. */
 .md-typeset .aim-hero::before {
   content: "";
   position: absolute;
   top: 50%;
   right: -2.5rem;
-  width: 13rem;
-  height: 13rem;
+  width: 14rem;
+  height: 14rem;
   transform: translateY(-50%);
-  background-color: var(--aim-accent);
-  opacity: 0.16;
+  background-color: var(--aim-chrome-accent);
+  opacity: 0.22;
   mask: var(--aim-crosshair) center/contain no-repeat;
   -webkit-mask: var(--aim-crosshair) center/contain no-repeat;
 }
 
 .md-typeset .aim-hero > * {
   position: relative;
-  max-width: 34rem;
+  max-width: 32rem;
 }
 
 .md-typeset .aim-hero > :first-child {
@@ -110,13 +319,34 @@
   margin-bottom: 0;
 }
 
+.md-typeset .aim-hero h2 {
+  margin-bottom: 0.8rem;
+  color: inherit;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.md-typeset .aim-hero .md-button--primary {
+  color: var(--aim-chrome);
+  background-color: var(--aim-chrome-accent);
+  border-color: var(--aim-chrome-accent);
+}
+
+.md-typeset .aim-hero .md-button--primary:is(:hover, :focus) {
+  color: var(--aim-chrome);
+  background-color: #fff;
+  border-color: #fff;
+}
+
 /* ---------------------------------------------------------------------------
- * .aim-cards — a list of links rendered as a card grid.
+ * .aim-cards — a list of links rendered as a card grid, each card bracketed like a reticle.
  *
  *   <div class="aim-cards" markdown>
  *
- *   - **[Skills](wiki/skills/index.md)** — what the section covers.
- *   - **[Training](wiki/training/index.md)** — what the section covers.
+ *   - **[Skills](wiki/skills/index.md)**: what the section covers.
+ *   - **[Training](wiki/training/index.md)**: what the section covers.
  *
  *   </div>
  * ------------------------------------------------------------------------ */
@@ -131,17 +361,46 @@
 }
 
 .md-typeset .aim-cards > ul > li {
+  position: relative;
   margin: 0;
-  padding: 1rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-left: 3px solid var(--aim-accent);
-  border-radius: 0.3rem;
+  padding: 1.1rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
   transition: border-color 125ms, background-color 125ms;
 }
 
 .md-typeset .aim-cards > ul > li:hover {
-  border-color: var(--aim-accent);
+  border-color: var(--md-default-fg-color--light);
   background-color: var(--md-code-bg-color);
+}
+
+/* Two opposite corner brackets. With the box border they read as a reticle framing the card, and
+ * they come up to full strength on hover. */
+.md-typeset .aim-cards > ul > li::before,
+.md-typeset .aim-cards > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 0 solid var(--aim-accent);
+  opacity: 0.55;
+  transition: opacity 125ms;
+}
+
+.md-typeset .aim-cards > ul > li::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.md-typeset .aim-cards > ul > li::after {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+.md-typeset .aim-cards > ul > li:hover::before,
+.md-typeset .aim-cards > ul > li:hover::after {
+  opacity: 1;
 }
 
 .md-typeset .aim-cards > ul > li > :first-child {
@@ -177,7 +436,7 @@
 }
 
 .md-typeset .aim-steps > ol > li::before {
-  content: counter(aim-step);
+  content: counter(aim-step, decimal-leading-zero);
   position: absolute;
   top: 0.05em;
   left: 0;
@@ -187,11 +446,12 @@
   width: 1.8rem;
   height: 1.8rem;
   border: 2px solid var(--aim-accent);
-  border-radius: 50%;
   color: var(--aim-accent);
-  font-size: 0.7rem;
+  font-family: var(--aim-display);
+  font-size: 0.62rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
 }
 
 /* The line joining one step to the next, so the list reads as a route rather than as six
@@ -214,12 +474,12 @@
 
 .md-typeset .aim-skill {
   display: inline-block;
-  padding: 0.1em 0.5em;
+  padding: 0.15em 0.55em;
   border: 1px solid currentcolor;
-  border-radius: 0.6em;
-  font-size: 0.72em;
+  font-family: var(--aim-display);
+  font-size: 0.68em;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -227,7 +487,7 @@
 }
 
 .md-typeset a.aim-skill:hover {
-  background-color: color-mix(in srgb, currentcolor 12%, transparent);
+  background-color: color-mix(in srgb, currentcolor 14%, transparent);
 }
 
 .md-typeset .aim-skill--clicking { color: var(--aim-clicking); }
