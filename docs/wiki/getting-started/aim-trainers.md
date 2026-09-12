@@ -27,19 +27,6 @@ to abilities and recoil that a scenario does not reproduce. See
 [Transfer to Games](../fundamentals/transfer-to-games.md) for how trainer practice does and does
 not carry over.
 
-The three dedicated trainers this wiki covers, side by side. Each resource page carries the
-sources for its own row.
-
-<div class="aim-table-stack" markdown>
-
-| Trainer | Cost | Built around | Benchmarks |
-| --- | --- | --- | --- |
-| [KovaaK's](../resources/trainers/kovaaks.md) | Paid, one-time on Steam | A Sandbox and the largest scenario library of the three, assembled by you | Built-in game-specific ones, and the base game for Voltaic and Revosect seasons |
-| [Aimlabs](../resources/trainers/aimlabs.md) | Free to play, optional Aimlabs+ subscription | Adaptive Training Programs that pick playlists per game and adjust difficulty | Its own official tiered benchmark, plus Voltaic Season 3 |
-| [Aimbeast](../resources/trainers/aimbeast.md) | Paid, on Steam | Community-made scenarios and ladders, plus a ranked one-on-one arena | Community sheets, gathered by the [Evxl](../resources/tools/evxl.md) tracker |
-
-</div>
-
 **KovaaK's versus Aimlabs.** Both are dedicated aim-training platforms with large scenario
 libraries, benchmarks, and sensitivity tools, but they lean in different directions. KovaaK's is a
 paid, one-time Steam purchase with a Sandbox-first design: you get access to a huge library of
