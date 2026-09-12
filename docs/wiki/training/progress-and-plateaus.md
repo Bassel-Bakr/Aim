@@ -76,7 +76,8 @@ your hand to adapt again instead of coasting on one you've already mastered.
   you've broken through.
 - Responding to a fatigue-driven plateau by training harder instead of resting.
 - Repeating the exact same scenarios indefinitely and assuming a flat score means you've hit your
-  ceiling, rather than that your practice has stopped varying.
+  ceiling, rather than that your practice has stopped varying. See
+  [Myths](../myths.md#a-plateau-means-you-have-hit-your-ceiling).
 
 ## Further resources
 

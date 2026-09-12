@@ -13,7 +13,8 @@ answers it from the same sources the rest of this wiki cites.
 
 A myth here is a claim someone would state as fact: "lower sensitivity means better aim." That is
 a different thing from a habit that costs you progress, such as only running the scenarios you
-already score well in. Habits like that belong to the **Common mistakes** section of the page whose
+already score well in. Habits like that belong to the
+[**Common mistakes**](fundamentals/how-aim-works.md#common-mistakes) section of the page whose
 subject they belong to, and they stay there.
 
 ## Reps burn a motion into muscle memory
@@ -21,11 +22,14 @@ subject they belong to, and they stay there.
 **The claim.** Repeat a flick enough times and the motion is stored. From then on it replays on
 demand, so anything that disturbs it, a new sensitivity or a new mouse, wipes out the work.
 
-**What sources say.** Voltaic's breakdown of muscle memory in aiming pushes back on the second
-half directly. Changing your sensitivity costs some short-term readjustment rather than any lasting
-setback, and the piece points to community members who swap settings often, some rolling a new
-sensitivity at random, with no long-run drop in their aim.[^muscle] A stored motion that could be
-wiped would not survive that.
+**What sources say.** Motor-learning research describes skill as moving through stages: large,
+inconsistent gains early, then a slower stage spent consciously judging and correcting the
+movement, which is a process of learning rather than a motion filed away in storage.[^hk-stages]
+Research on how to space practice makes the same point from a different angle: retention comes
+from shorter sessions spread out over time, not from piling up enough reps to fill a
+store.[^hk-distribution] The disturbance half doesn't hold either: Voltaic's muscle-memory piece
+finds no long-run drop in aim among players who change sensitivity often, the same evidence the
+next entry covers in full.[^muscle]
 
 **What to do instead.** Judge practice by whether your read of a target and your corrections are
 getting better, which is what carries across settings, and read a score as a trend across several
@@ -36,12 +40,10 @@ getting better, which is what carries across settings, and read a score as a tre
 **The claim.** Your current sensitivity is what your hand knows. Change it and you start from
 nothing, so the safe move is to never touch it again.
 
-**What sources say.** This one is common enough that this wiki's own
-[Sensitivity](getting-started/sensitivity.md) page names it as a fear rather than a finding.
-Voltaic's muscle-memory piece answers it: a change costs short-term readjustment, not a lasting
-setback.[^muscle] The same piece lists a deliberate sensitivity change among the ways players work
-past a stall, on the logic that an unfamiliar setting puts you back where there is obvious room to
-improve.[^muscle]
+**What sources say.** Voltaic's muscle-memory piece answers the claim directly: a change costs
+short-term readjustment, not a lasting setback.[^muscle] The same piece lists a deliberate
+sensitivity change among the ways players work past a stall, on the logic that an unfamiliar
+setting puts you back where there is obvious room to improve.[^muscle]
 
 **What to do instead.** Change it for a reason and then leave it alone long enough to judge it.
 What costs you is changing constantly, since every change spends readjustment time, not the fact

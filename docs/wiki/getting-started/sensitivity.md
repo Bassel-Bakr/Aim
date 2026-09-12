@@ -71,9 +71,9 @@ aim per title:
     A change costs some short-term readjustment rather than any lasting setback.
     See [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim).
 
-Switching sensitivity on purpose is also one way people try to break a plateau, since starting
+Switching sensitivity on purpose is one way people try to break a plateau, since starting
 from an unfamiliar setting can reset your sense of what feels "normal" and open room to
-improve.[^muscle] The practical takeaway is not to avoid changing your sensitivity out of fear,
+improve.[^muscle] The practical takeaway is not to avoid changing your sensitivity at all,
 but to avoid changing it constantly without a reason, since every change costs you some
 readjustment time. See [Progress and Plateaus](../training/progress-and-plateaus.md) for more on
 working through a stalled score.

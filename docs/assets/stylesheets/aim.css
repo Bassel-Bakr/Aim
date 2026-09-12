@@ -571,9 +571,11 @@ body {
  * and carries no footnote: the citation lives on the hub, so a myth is only ever sourced in one
  * place and cannot go stale in two.
  *
- * The bar and transparent title come from the admonition rules in the chrome section above; these
- * rules only set the colour and the icon. They come later in the file, so they win the tie on
- * specificity against that section's [class] selectors. */
+ * The transparent title comes from the admonition rules in the chrome section above; the rules
+ * below only set the border colour, for when the site's admonition border is given a
+ * border-style, and the icon. Source order doesn't decide anything for either property: the
+ * chrome block never sets border-color or the ::before background, so there's no tie to
+ * resolve. */
 :root {
   /* A crossed-out claim: a ring with a slash through it. */
   --md-admonition-icon--myth: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2c1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.9 7.9 0 0 1 4 12a8 8 0 0 1 8-8m0 16a7.9 7.9 0 0 1-4.9-1.69L18.31 7.1A7.9 7.9 0 0 1 20 12a8 8 0 0 1-8 8"/></svg>');

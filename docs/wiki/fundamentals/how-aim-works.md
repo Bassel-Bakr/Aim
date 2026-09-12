@@ -58,12 +58,14 @@ built-in lag but can't be juked the same way.[^reactive]
 
 ## Common mistakes
 
-- Treating arm and wrist aim as a single either/or choice instead of letting fingers, wrist, and
-  arm each handle the motion they're suited for, which limits both precision and range.
+- Treating arm and wrist aim as a single either/or choice instead of letting fingers, wrist, and arm
+  each handle the motion they're suited for, which limits both precision and range. See
+  [Myths](../myths.md#arm-aiming-is-strictly-better-than-wrist-aiming).
 - Pushing scenario speed before accuracy at a slower pace is solid, which builds habits that are
   harder to unlearn later than they were to avoid.[^speed-accuracy]
 - Anticipating where a target is going instead of tracking where it is, which falls apart against
-  any opponent using evasive movement.
+  any opponent using evasive movement. See
+  [Myths](../myths.md#good-tracking-means-predicting-where-the-target-will-go).
 - Treating a jerky track as purely a tracking problem to practice through, when it's often a
   tension problem.[^smoothness]
 
