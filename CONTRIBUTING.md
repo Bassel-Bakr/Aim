@@ -17,7 +17,7 @@ Follow the steps in [README.md](README.md#run-the-site-locally).
 1. Copy a template from `templates/`:
    - `concept.md` for pages that explain aim concepts or training advice.
    - `resource.md` for pages about a community or a trainer.
-2. Save the file in the matching folder under `docs/`.
+2. Save the file in the matching folder under `docs/wiki/`. (`docs/index.md` is the site's landing page, not a wiki page.)
 3. Add the page to the `nav` list in `mkdocs.yml`.
 4. Link the new page from at least one related page.
 
@@ -51,7 +51,7 @@ To propose a new tag, open an issue.
 
 ## Glossary
 
-Add new terms to `docs/glossary.md`. If the term is an abbreviation, also add it to
+Add new terms to `docs/wiki/glossary.md`. If the term is an abbreviation, also add it to
 `includes/abbreviations.md`, so the site shows its meaning as a tooltip on every page.
 
 ## Check before you open a pull request

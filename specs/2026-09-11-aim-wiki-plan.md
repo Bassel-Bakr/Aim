@@ -14,8 +14,9 @@
 
 - Build tool: `zensical==0.0.60`, pinned in `requirements.txt`. Configuration file: `mkdocs.yml`.
 - Use only features supported by both Zensical and Material for MkDocs 9.7.
-- Site URL: `https://bassel-bakr.github.io/aim-wiki/`. Repository: `https://github.com/bassel-bakr/aim-wiki`. Default branch: `main`.
+- Site URL: `https://bassel-bakr.github.io/aim/`. Repository: `https://github.com/bassel-bakr/aim`. Default branch: `main`.
 - Content license: CC BY-SA 4.0.
+- Structure change (2026-09-12): the repo is `bassel-bakr/aim`, the site is `https://bassel-bakr.github.io/aim/`, wiki pages live under `docs/wiki/` (served at `/wiki/`), and `docs/index.md` is a landing page with no draft banner. Task text below predates this move.
 - Scope change (2026-09-11): the owner dropped creator pages. Task 6 now removes them, and later tasks must not link to or mention creator pages.
 - Allowed tags, and no others: type tags `community`, `trainer`; topic tags `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`.
 - Every page in `docs/` except `tags.md` starts (after front matter) with this exact banner:
@@ -199,9 +200,9 @@ rm docs/skills/bad.md docs/resources/trainers/bad.md
 ```yaml
 site_name: Aim Wiki
 site_description: Aim training concepts, routines, and a guide to the best existing resources.
-site_url: https://bassel-bakr.github.io/aim-wiki/
-repo_url: https://github.com/bassel-bakr/aim-wiki
-repo_name: bassel-bakr/aim-wiki
+site_url: https://bassel-bakr.github.io/aim/
+repo_url: https://github.com/bassel-bakr/aim
+repo_name: bassel-bakr/aim
 edit_uri: edit/main/docs/
 copyright: Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 
@@ -479,7 +480,7 @@ Strengths, limits, and when to use this resource.
 An aim training wiki. It explains aim concepts in its own words and points to the best existing
 resources, such as Voltaic, Jade Palace, Revosect, KovaaK's, Aimlabs, and aim training creators.
 
-Site: <https://bassel-bakr.github.io/aim-wiki/>
+Site: <https://bassel-bakr.github.io/aim/>
 
 ## Run the site locally
 
@@ -1225,7 +1226,7 @@ Run `.venv/Scripts/zensical serve` and open <http://localhost:8000>. Confirm:
 - Every navigation tab opens and every page in the nav renders.
 - The Tags page lists pages under each tag.
 - Hovering "eDPI" on the Sensitivity page shows the tooltip.
-- The edit button on a page links to `https://github.com/bassel-bakr/aim-wiki/edit/main/docs/...`.
+- The edit button on a page links to `https://github.com/bassel-bakr/aim/edit/main/docs/...`.
 - The footer shows the CC BY-SA 4.0 notice.
 - The light/dark toggle works.
 
@@ -1246,6 +1247,6 @@ Skip this step if no files changed.
 
 ## Owner steps after the plan (not automated)
 
-1. Create the repository `bassel-bakr/aim-wiki` on GitHub and push `main`.
+1. Create the repository `bassel-bakr/aim` on GitHub and push `main`.
 2. In repository Settings → Pages, set Source to "GitHub Actions".
 3. Fact-check each drafted page, resolve `REVIEW:` markers, and remove the draft banner.

@@ -11,6 +11,8 @@ from pathlib import Path
 import yaml
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
+WIKI = DOCS / "wiki"
+EXEMPT_FROM_BANNER = {"index.md", "wiki/tags.md"}
 ALLOWED_TAGS = {
     "community", "trainer",
     "clicking", "tracking", "switching",
@@ -30,7 +32,9 @@ def front_matter(text):
 def check(path, drafts):
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(DOCS).as_posix()
-    section = rel.split("/")[0]
+    # Wiki pages live under docs/wiki/; their section is the first segment below that.
+    in_wiki = path.is_relative_to(WIKI)
+    section = path.relative_to(WIKI).as_posix().split("/")[0] if in_wiki else ""
     is_index = path.name == "index.md"
     errors = []
 
@@ -41,7 +45,7 @@ def check(path, drafts):
         errors.append(f"{rel}: missing '## Further resources' section")
     if section == "resources" and not is_index and "\n## Related wiki pages" not in text:
         errors.append(f"{rel}: missing '## Related wiki pages' section")
-    if drafts and rel != "tags.md" and BANNER not in text:
+    if drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
     return errors
 
