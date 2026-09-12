@@ -22,7 +22,9 @@ and [Revosect](../resources/communities/revosect.md), both built primarily on
 are comparable across people and across your own attempts over time. Voltaic's current KovaaK's
 benchmark is Season 5 and its Aimlabs benchmark is Season 3, each split further into
 precise/reactive/control-style subcategories per skill across three difficulty bands, per the
-[Season 5 announcement](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/).
+[Season 5 KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
+and [Season 3 Aimlabs](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/)
+announcements.
 Revosect's current Season 5 KovaaK's benchmark covers six subcategories across the same three
 skills, per its [benchmarks page](https://revosect.com/benchmarks).
 

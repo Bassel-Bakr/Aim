@@ -7,7 +7,7 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-This wiki is for FPS and TPS players who want to train aim deliberately instead of only playing
+This wiki is for first-person and third-person shooter players who want to train aim deliberately instead of only playing
 their game and hoping to improve. It assumes no prior aim-training experience: you do not need to
 already own an aim trainer, know your sensitivity, or know what a benchmark is to start here.
 

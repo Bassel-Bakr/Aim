@@ -44,6 +44,10 @@ Aim-Wiki/
   templates/              # page templates, not published
     concept.md
     resource.md
+  scripts/                # tag/section checker, not published
+    check_pages.py
+  includes/               # abbreviation snippets, injected into built pages
+    abbreviations.md
   docs/                   # published content
     index.md
     getting-started/

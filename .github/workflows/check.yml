@@ -32,7 +32,7 @@ jobs:
           args: >-
             --no-progress
             --max-retries 3
-            --accept 200,206,429
+            --accept 200,206,403,429
             --exclude "^https://(x|twitter)\.com/"
             --exclude "^https://discord\.(gg|com)/"
             "docs/**/*.md"

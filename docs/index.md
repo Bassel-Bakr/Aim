@@ -7,7 +7,7 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-This wiki is for FPS and TPS players who want to train aim deliberately: the mechanics behind
+This wiki is for first-person and third-person shooter players who want to train aim deliberately: the mechanics behind
 mouse aim, the skills that break aim down into parts you can practice on purpose, how to structure
 a training session, and the community benchmarks, routines, and trainers this wiki draws on to
 back it up. Every page is written in our own words from public guides and articles, with facts

@@ -21,7 +21,7 @@ BANNER = '!!! warning "Draft"'
 
 
 def front_matter(text):
-    match = re.match(r"---\n(.*?)\n---\n", text, re.S)
+    match = re.match(r"---\r?\n(.*?)\r?\n---\r?\n", text, re.S)
     if not match:
         return {}
     return yaml.safe_load(match.group(1)) or {}

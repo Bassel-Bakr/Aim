@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a Zensical-powered aim training wiki with 30 Markdown pages (29 drafted, plus the generated Tags page), page templates, contributor docs, and GitHub Pages CI.
+**Goal:** Build a Zensical-powered aim training wiki with 26 Markdown pages (25 drafted, plus the generated Tags page), page templates, contributor docs, and GitHub Pages CI.
 
 **Architecture:** Plain Markdown in `docs/`, configured by `mkdocs.yml` and built by Zensical into a static site. Page templates and design documents stay outside `docs/`, so they are never published. `scripts/check_pages.py` enforces the tag list and required sections. `zensical build --clean --strict` catches broken internal links.
 

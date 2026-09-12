@@ -27,7 +27,7 @@ position all session a chance to loosen up again, per
 For your eyes specifically, the American Academy of Ophthalmology recommends periodically looking
 away from the screen at something farther off rather than staring at one fixed distance for hours,
 often summarized as the 20-20-20 rule, roughly 20 feet away for about 20 seconds every 20 minutes,
-per the [AAO's guidance on computer usage and eye strain](https://www.aao.org/eye-health/tips-prevention/computer-usage).
+per the [AAO's guidance on eye strain](https://www.aao.org/eye-health/diseases/what-is-eye-strain).
 
 **Warm-up before intense sessions.** Long stretches of repetitive mouse movement and static
 posture build up strain on the same joints and tendons session after session, and

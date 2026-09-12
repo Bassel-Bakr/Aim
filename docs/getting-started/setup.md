@@ -58,7 +58,7 @@ and a frame rate that comfortably exceeds it help you see and react to targets s
 
 - **Raw input: on.** With raw input enabled, a game reads mouse movement more directly from the
   device instead of relying only on the Windows pointer path, which makes sensitivity more
-  predictable; turn it on in any FPS that supports it, per a
+  predictable; turn it on in any first-person or third-person shooter that supports it, per a
   [mouse settings guide](https://mousedpianalyzer.com/post/best-mouse-settings-for-gaming/). It is
   not a substitute for a clean sensor or stable frame times, per the same guide, just a setting
   worth checking is enabled.
