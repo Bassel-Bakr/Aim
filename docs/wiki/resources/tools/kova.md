@@ -1,0 +1,59 @@
+---
+title: "kova"
+tags:
+  - tool
+  - benchmarks
+  - sensitivity
+---
+
+!!! warning "Draft"
+    Written from public sources, pending review.
+
+**Links:** [Website](https://pyvno.xyz)
+
+## What it is
+
+A profile site for aim trainers, describing itself as "a portfolio for aimers who obsess over their
+gear." A profile collects your peripherals, your in-game settings, your recent
+[KovaaK's](../trainers/kovaaks.md) personal bests, and the aimgroup you belong to on one public
+page.[^kova]
+
+## Who it suits
+
+Players who want a single link that answers "what mouse, what pad, what
+[sensitivity](../../getting-started/sensitivity.md)" without retyping it, and groups that want a
+shared roster. It is a presentation and reference layer rather than a training tool: nothing here
+scores your aim or tells you what to practise.
+
+## What it covers
+
+- **Peripherals**: a per-profile list of the mouse, mousepad, and other gear in use, drawn from a
+  shared catalog that also carries user reviews.[^kova]
+- **[Sensitivity](../../getting-started/sensitivity.md) and settings**: cm/360, DPI, polling rate,
+  and grip style shown on the profile, which is the set of numbers needed to actually reproduce
+  someone's setup.[^kova]
+- **Benchmark personal bests**: recent KovaaK's scores with the community
+  [benchmark](../../training/benchmarks.md) and rank they correspond to.[^kova]
+- **Aimgroups**: group pages listing member profiles, for the aim communities and teams that use
+  the site.[^kova]
+
+## Key content
+
+- [kova](https://pyvno.xyz): browse existing profiles to see how other players document their gear
+  and settings before building your own.
+
+## Our take
+
+Most gear and sensitivity questions in aim communities are answered by pasting the same numbers
+into chat repeatedly, and a profile link replaces that. Treat the peripherals side as reference
+rather than recommendation: knowing what a high-ranked player uses tells you what works for them,
+not what will work for you, and the wiki's [Setup](../../getting-started/setup.md) page covers why
+grip and hand size matter more than matching someone else's mouse.
+
+## Related wiki pages
+
+- [Setup](../../getting-started/setup.md)
+- [Sensitivity](../../getting-started/sensitivity.md)
+- [Benchmarks](../../training/benchmarks.md)
+
+[^kova]: kova, [pyvno.xyz](https://pyvno.xyz)

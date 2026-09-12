@@ -14,7 +14,7 @@ DOCS = Path(__file__).resolve().parent.parent / "docs"
 WIKI = DOCS / "wiki"
 EXEMPT_FROM_BANNER = {"index.md", "wiki/tags.md"}
 ALLOWED_TAGS = {
-    "community", "trainer",
+    "community", "trainer", "tool",
     "clicking", "tracking", "switching",
     "benchmarks", "routines", "sensitivity", "beginner",
 }

@@ -61,7 +61,7 @@ body.
 
 Use only these tags in the `tags:` front matter field:
 
-- Type (resource pages only): `community`, `trainer`
+- Type (resource pages only): `community`, `trainer`, `tool`
 - Topic: `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`
 
 To propose a new tag, open an issue.
