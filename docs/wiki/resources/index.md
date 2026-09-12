@@ -25,6 +25,8 @@ to spend time instead of guessing.
   of developer- and community-made scenarios and playlists.
 - [Aimlabs](trainers/aimlabs.md): a free-to-play aim trainer with adaptive, game-specific Training
   Programs and an optional Aimlabs+ subscription for extra coaching features.
+- [Aimbeast](trainers/aimbeast.md): a paid aim trainer whose ranked one-on-one arena sets it apart
+  from the other two, alongside community-made scenarios and ladders.
 
 ## Tools
 

@@ -15,10 +15,11 @@ measure it.
 ## Explanation
 
 **Why use an aim trainer at all.** In a real game, the pace, target size, and target behavior are
-whatever that moment of the match gives you. Both major trainers build their libraries around
+whatever that moment of the match gives you. Dedicated trainers build their libraries around
 scenarios that isolate one skill at a time, for example a scenario that only tests
 [tracking](../skills/tracking.md) or only tests fast [switching](../skills/switching.md),
-per the [KovaaK's](../resources/trainers/kovaaks.md) and [Aimlabs](../resources/trainers/aimlabs.md)
+per the [KovaaK's](../resources/trainers/kovaaks.md),
+[Aimlabs](../resources/trainers/aimlabs.md), and [Aimbeast](../resources/trainers/aimbeast.md)
 resource pages, so you can work on a specific weakness instead of whatever situations happen to
 come up in a match. The trade-off is that a scenario is not identical to a real engagement: aim
 trainers isolate mechanics, while a real match also demands game sense, positioning, and adjusting
@@ -37,6 +38,13 @@ per game and adjust difficulty automatically, plus its own official tiered bench
 have it adapt to you, Aimlabs' free tier is the lower-friction start; if you want the largest
 scenario library and are willing to follow a community routine (see
 [Routines](../training/routines.md)) to decide what to play, KovaaK's is the deeper tool.
+
+**Where Aimbeast fits.** A third paid trainer,
+[Aimbeast](../resources/trainers/aimbeast.md), covers the same scenario ground and adds ranked
+one-on-one duels against other players, which neither of the other two has, per its resource page.
+What you give up is reach: the benchmark seasons most published routines are written against run
+on KovaaK's and Aimlabs, so an Aimbeast player measures progress on that trainer's own ladders and
+community sheets instead of the seasons this wiki covers.
 
 **Dedicated trainer versus in-game practice.** Your game's own deathmatch, practice range, or
 custom-game modes have one advantage a trainer cannot fully replicate: they use your actual
@@ -57,9 +65,12 @@ split between isolated trainer practice and in-game application.
   adaptive Training Programs.
 - If you want the largest scenario library and are willing to follow a community-built
   [routine](../training/routines.md), KovaaK's Sandbox gives you more to work with.
-- Either trainer works with a third-party benchmark community such as
-  [Voltaic](../resources/communities/voltaic.md), so your choice of trainer does not lock you out
-  of structured benchmarks and routines.
+- If you want to practise against a person rather than a scenario, Aimbeast is the only one of the
+  three with a ranked duel mode, at the cost of a smaller pool of published routines written for
+  it.
+- Either KovaaK's or Aimlabs works with a third-party benchmark community such as
+  [Voltaic](../resources/communities/voltaic.md), so choosing between those two does not lock you
+  out of structured benchmarks and routines.
 
 ## Further resources
 
@@ -67,5 +78,7 @@ split between isolated trainer practice and in-game application.
   tools for the Sandbox-first trainer.
 - [Aimlabs](../resources/trainers/aimlabs.md): free-to-play trainer with adaptive Training
   Programs and its own official benchmark.
+- [Aimbeast](../resources/trainers/aimbeast.md): paid trainer with community-made ladders and a
+  ranked arena against other players.
 - [Voltaic](../resources/communities/voltaic.md): benchmark seasons and routines that run on top
-  of both trainers.
+  of KovaaK's and Aimlabs.
