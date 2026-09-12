@@ -26,6 +26,10 @@ BANNER = '!!! warning "Draft"'
 # wiki pages and do not follow wiki rules.
 TOPICS = DOCS / "topics"
 BYLINE = '!!! info "Written by '
+# The inline .aim-myth block's title is the anchor into wiki/myths.md: it must match a hub
+# heading word for word, or the link it ships with silently lands at the top of the page.
+MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
+MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
 
 
 def front_matter(text):
@@ -35,7 +39,12 @@ def front_matter(text):
     return yaml.safe_load(match.group(1)) or {}
 
 
-def check(path, drafts):
+def myth_headings():
+    text = (WIKI / "myths.md").read_text(encoding="utf-8")
+    return set(MYTH_HEADING.findall(text))
+
+
+def check(path, drafts, headings):
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(DOCS).as_posix()
     # Wiki pages live under docs/wiki/; their section is the first segment below that.
@@ -63,12 +72,19 @@ def check(path, drafts):
             errors.append(f"{rel}: topic pages do not carry tags")
     elif drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
+    if in_wiki:
+        for title in MYTH_BLOCK.findall(text):
+            if title not in headings:
+                errors.append(
+                    f"{rel}: myth block title '{title}' has no matching heading on wiki/myths.md"
+                )
     return errors
 
 
 def main():
     drafts = "--drafts" in sys.argv[1:]
-    errors = [error for path in sorted(DOCS.rglob("*.md")) for error in check(path, drafts)]
+    headings = myth_headings()
+    errors = [error for path in sorted(DOCS.rglob("*.md")) for error in check(path, drafts, headings)]
     for error in errors:
         print(error)
     print(f"{len(errors)} problem(s) found" if errors else "All pages OK")
