@@ -37,9 +37,7 @@ to spend time instead of guessing.
 - [KovOBS](tools/kovobs.md): saves an OBS replay clip automatically whenever you set a personal
   best in KovaaK's.
 
-## Links
-
-- [Links](links.md): individual guides, articles, and videos from the resources above and
-  elsewhere, grouped by what they help with rather than by who published them.
+[Links](../../links.md) catalogues individual guides and videos from these resources and
+elsewhere, grouped by what they help with rather than by who published them.
 
 Browse by topic instead on the [Tags](../tags.md) page.

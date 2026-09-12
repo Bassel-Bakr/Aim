@@ -93,12 +93,12 @@ nav:
               - wiki/resources/trainers/kovaaks.md
               - wiki/resources/trainers/aimlabs.md
               - wiki/resources/trainers/aimbeast.md
-          - wiki/resources/links.md
           - Tools:
               - wiki/resources/tools/evxl.md
               - wiki/resources/tools/kova.md
               - wiki/resources/tools/kovobs.md
       - Glossary: wiki/glossary.md
       - Tags: wiki/tags.md
+  - Links: links.md
   - Topics:
       - topics/index.md
