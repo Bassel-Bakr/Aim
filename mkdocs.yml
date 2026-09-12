@@ -98,5 +98,5 @@ nav:
               - wiki/resources/tools/kovobs.md
       - Glossary: wiki/glossary.md
       - Tags: wiki/tags.md
-  - Guides:
-      - guides/index.md
+  - Topics:
+      - topics/index.md

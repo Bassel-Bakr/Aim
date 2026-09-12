@@ -41,7 +41,7 @@ need them.
 Every page here carries the "Draft" banner above because it is pending review: content is written
 from public sources and has not yet had a human check pass over it.
 
-[Guides](../guides/index.md) are a separate part of this site, not part of the wiki. They are
+[Topics](../topics/index.md) are a separate part of this site, not part of the wiki. They are
 signed, first-person pages written from experience, so they carry their author's name instead of a
 citation trail, and they are not open to contributions.
 

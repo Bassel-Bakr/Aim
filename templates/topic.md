@@ -1,13 +1,12 @@
 ---
-title: "Guide Title"
+title: "Topic Title"
 ---
 
 !!! info "Written by Bassel Bakr"
-    A practical guide from my own training and experience, not a summary of published sources.
-    Treat it as one informed opinion rather than settled fact.
+    Written from my own training and experience, not assembled from published sources. Treat it
+    as one informed opinion rather than settled fact.
 
-One or two sentences naming the specific problem this guide solves, in the words a player would
-use to describe it themselves.
+One or two sentences naming what this page is about, in the words a player would use themselves.
 
 ## The problem
 

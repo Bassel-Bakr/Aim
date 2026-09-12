@@ -60,7 +60,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | --- | --- |
 | `docs/index.md` | Site landing page. Not a wiki page. |
 | `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
-| `docs/guides/` | Signed first-person guides. Not wiki pages, not open — see below. |
+| `docs/topics/` | Signed first-person pages. Not wiki pages, not open — see below. |
 | `docs/assets/` | Favicon and `stylesheets/aim.css`, which documents each page component it defines. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `templates/` | Page templates. Not published. |
@@ -121,16 +121,16 @@ agents most often miss:
    as shown in [CONTRIBUTING.md](CONTRIBUTING.md).
 8. New abbreviations go in both `docs/wiki/glossary.md` and `includes/abbreviations.md`.
 
-## Guides are not wiki pages
+## Topics are not wiki pages
 
-`docs/guides/` is a separate part of the site at `/guides`, and none of the rules above apply to
-it. Guides are signed opinion written from the maintainer's own experience: they use
-`templates/guide.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
+`docs/topics/` is a separate part of the site at `/topics`, and none of the rules above apply to
+it. Topic pages are signed opinion written from the maintainer's own experience: they use
+`templates/topic.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
 take no tags, and do not require footnotes. `scripts/check_pages.py` enforces that.
 
-Never write or edit a guide on your own initiative. A byline names a real person as accountable for
-every claim on the page, so its content is theirs to decide. Fix a typo or a dead link if asked;
-send anything touching the method or the argument back to the author.
+Never write or edit a topic page on your own initiative. A byline names a real person as
+accountable for every claim on the page, so its content is theirs to decide. Fix a typo or a dead
+link if asked; send anything touching the method or the argument back to the author.
 
 ## Deployment
 
