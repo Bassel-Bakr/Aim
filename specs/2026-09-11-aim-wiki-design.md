@@ -34,7 +34,7 @@ send pull requests later.
 ## Repository layout
 
 ```
-Aim-Wiki/
+Aim/
   mkdocs.yml
   requirements.txt
   README.md
