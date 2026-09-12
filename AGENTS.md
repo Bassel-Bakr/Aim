@@ -130,7 +130,7 @@ take no tags, and do not require footnotes. `scripts/check_pages.py` enforces th
 
 Never write or edit a topic page on your own initiative. A byline names a real person as
 accountable for every claim on the page, so its content is theirs to decide. Fix a typo or a dead
-link if asked; send anything touching the method or the argument back to the author.
+link if asked; send anything touching the argument itself back to the author.
 
 ## Deployment
 

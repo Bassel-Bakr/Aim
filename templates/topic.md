@@ -6,31 +6,19 @@ title: "Topic Title"
     Written from my own training and experience, not assembled from published sources. Treat it
     as one informed opinion rather than settled fact.
 
-One or two sentences naming what this page is about, in the words a player would use themselves.
+One or two sentences naming what this page is about and what view it takes, in the words a player
+would use themselves.
 
-## The problem
+## A heading of your own
 
-What is actually going wrong, described concretely enough that a reader can tell whether this is
-their problem. Name what it feels like, not just what it is.
+Topic pages are signed, so their shape is the author's to decide: an argument, a walkthrough, a
+correction of something commonly repeated, an account of what worked. Use whatever headings the
+subject needs and delete this note.
 
-## How to approach it
-
-The method. Break it into the steps you would actually give someone, in the order you would give
-them. Say why each step comes where it does.
-
-## Drills
-
-- **[Scenario name]**: what to run, at what setting, and what you are watching for while you run
-  it. The thing to watch for matters more than the scenario.
-
-## What progress looks like
-
-How a reader knows this is working, and roughly how long it takes. Give them a way to tell "slow
-progress" apart from "wrong approach".
-
-## Common mistakes
-
-- The mistake, and what it looks like from the inside so a reader recognizes themselves doing it.
+A page that walks through fixing a specific problem tends to want something like: what is going
+wrong, how to approach it, what to drill and what to watch for while drilling it, how to tell it is
+working, and the mistakes that look like progress. A page arguing a position tends to want the
+claim, the case for it, and the strongest objection to it. Neither is required.
 
 ## Further resources
 
