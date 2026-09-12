@@ -113,17 +113,40 @@ citing `[^muscle]`. That passage becomes an `!!! myth` block linking the hub ent
 `[^muscle]` footnote leaves the page if no other reference to it remains. This is the only page
 whose prose changes.
 
+## Entry points
+
+The page is reachable from three places, because the site has three lists a wiki page belongs to.
+
+**Nav**, inside the `Wiki` list, between `Resources` and `Glossary`.
+
+**The landing page**, `docs/index.md`, gets a card in the `## Where to start` grid. That grid is
+curated rather than exhaustive, so the card has to earn its place: it does, because a reader who
+arrives believing one of the eight claims is better served by having it answered than by being
+sent to gear and sensitivity first. It goes last, after `Topics`, since it corrects the other
+cards rather than sequencing before them.
+
+**The wiki index**, `docs/wiki/index.md`, gets a card in the `## Sections` grid. Unlike the
+landing page's grid, this one lists every sibling the nav holds, down to `Glossary` and `Tags`, so
+a missing entry reads as an oversight rather than a choice. It goes between `Resources` and
+`Glossary`, matching nav order.
+
+Both grids use `.aim-cards`, where the whole card is the link, so each item carries exactly one
+link written as its title. A second link in the same item lands under the stretched hit area and
+cannot be clicked.
+
 ## Files
 
 ```
 docs/wiki/myths.md                           new   hub page, eight entries
 docs/assets/stylesheets/aim.css              edit  .aim-myth component, and the header list
 docs/wiki/training/progress-and-plateaus.md  edit  muscle memory passage becomes a myth block
+docs/index.md                                edit  card in the Where to start grid
+docs/wiki/index.md                           edit  card in the Sections grid
 zensical.toml                                edit  nav entry
 scripts/check_pages.py                       edit  "myth" added to ALLOWED_TAGS
 ```
 
-Nav places `Myths` between `Resources` and `Glossary`, as a page rather than a section:
+The nav entry is a page rather than a section:
 
 ```toml
 { "Myths" = "wiki/myths.md" },
