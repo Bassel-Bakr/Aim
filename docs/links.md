@@ -34,12 +34,6 @@ resource pages.
 
 ## Clicking
 
-- [What is static clicking?](https://note.com/ziyu_wo_tsukame/n/n043102c00d3e?hl=en) — 式 (shiki),
-  2026 — what the category actually trains, written out rather than demonstrated.
-- [20 recommended static clicking scenarios](https://note.com/ziyu_wo_tsukame/n/nae08ea5b8741?hl=en) —
-  式 (shiki), 2026 — a practice order with the reasoning for it, not just a list of names.
-- [Flick training](https://aimbetween.games/modes/flick) — aimbetween.games — why an overshoot
-  costs more to fix than an undershoot, and how to retrain the burst.
 - [Static aiming guide](https://www.youtube.com/watch?v=B0Y1KSYxuo4) — bardOZ, 2021 — nine minutes
   on how to approach Sixshot and 1wall6targets small, from the player the Bardoz method is named
   after.
@@ -51,17 +45,17 @@ resource pages.
   <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
   does not exist and no public copy of the Chinese original could be found. M0NARK offers a
   higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
-
-## Techniques
-
-- [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076) — VT Matty,
-  2024 — the distinction between the two, from someone who runs benchmarks for a living.
 - [Zeonlo's Static Guide 2026](https://www.youtube.com/watch?v=4cdQpKCCOGM) — Zeonlo, 2026 —
   tension, fluidity, pathing, and playstyles in six minutes, opening with the Bardoz method.
 - [This simple aim tech makes flicking 10x easier](https://www.youtube.com/watch?v=PEkz4YncixM) —
   ARandomDeadDude, 2025 — how to find the undershoot distance that suits you, and how to drill it
   on pokeball scenarios. Note that it uses "underflicking" for landing a flick short, which is not
-  the same thing as underaiming above.
+  the same thing as the underaiming in Techniques below.
+
+## Techniques
+
+- [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076) — VT Matty,
+  2024 — the distinction between the two, from someone who runs benchmarks for a living.
 
 ## Practice and routines
 

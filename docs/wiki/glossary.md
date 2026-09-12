@@ -52,7 +52,6 @@ correction left over, rather than a rough first pass fixed up afterward. See
 
 Field of view (FOV) is the extent of the game world visible on screen at once, usually set in
 degrees.[^fov]
-See [Switching](skills/switching.md).
 
 ### FPS
 
