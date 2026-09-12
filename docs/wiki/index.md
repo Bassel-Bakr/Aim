@@ -31,6 +31,8 @@ need them.
   that stalls out.
 - **[Resources](resources/index.md)**: the communities and trainers this wiki's benchmarks, routines,
   and scenario recommendations come from.
+- **[Myths](myths.md)**: the claims about aim training that get repeated as fact, and what the
+  sources actually say.
 - **[Glossary](glossary.md)**: short definitions of the aim-training terms used across the wiki.
 - **[Tags](tags.md)**: every page filtered by topic.
 

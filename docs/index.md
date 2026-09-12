@@ -28,6 +28,8 @@ trainers worth your time.
   you fix.
 - **[Topics](topics/index.md)**: signed, first-person pages written from experience rather than
   from sources.
+- **[Myths](wiki/myths.md)**: the claims players repeat as fact, answered from the same sources
+  the rest of the wiki cites.
 
 </div>
 
