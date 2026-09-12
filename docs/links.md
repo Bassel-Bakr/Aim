@@ -60,6 +60,13 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [The Corporate Serf smoothness training method](https://www.youtube.com/watch?v=a-MShVYe3kY) —
   Corporate Serf, 2025 — a smoothness method for tracking, worked through on PGT.
 
+## Switching
+
+- [How to train target switching](https://www.youtube.com/watch?v=DOr5duloAog) — Corporate Serf,
+  2025 — novice and advanced playlists, and what to watch while running them.
+- [How to play evasive target switching](https://www.youtube.com/watch?v=9YpEKjQE2cU) — MattyOW,
+  2025 — the hybrid case, where the switch has to survive the target moving.
+
 ## Techniques
 
 - [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076) — VT Matty,
