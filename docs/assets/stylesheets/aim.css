@@ -577,12 +577,13 @@ body {
  *
  *   !!! myth "Changing your sensitivity will ruin your aim"
  *       A change costs short-term readjustment, not a lasting setback.
- *       See [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim).
+ *       [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
  *
  * Two rules. The title is the myth stated as the claim, word for word as its heading on the hub
  * page, because that heading is the anchor. The body is at most two sentences plus the hub link,
  * and carries no footnote: the citation lives on the hub, so a myth is only ever sourced in one
- * place and cannot go stale in two.
+ * place and cannot go stale in two. The link takes .aim-myth-more and is written as the page name
+ * alone, no "see" and no full stop.
  *
  * It is the one admonition on the site that is allowed to raise its voice. The chrome section
  * above deliberately keeps admonitions quiet, because the draft banner sits on every page and
@@ -615,6 +616,24 @@ body {
 .md-typeset .myth > .admonition-title::before,
 .md-typeset .myth > summary::before {
   display: none;
+}
+
+/* The hub link, set as a control rather than as prose so the correction reads as one sentence and
+ * stops. It keeps its word: a bare arrow would leave a sighted reader guessing where it goes, and
+ * the word is what a screen reader announces. */
+.md-typeset .myth .aim-myth-more {
+  margin-left: 0.3rem;
+  color: var(--aim-accent);
+  font-family: var(--aim-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.md-typeset .myth .aim-myth-more::after {
+  content: " \2197";
 }
 
 /* The tag naming what the reader is looking at, so the claim beside it is never mistaken for the
