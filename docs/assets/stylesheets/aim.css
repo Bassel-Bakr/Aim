@@ -7,7 +7,7 @@
  * Three parts, in order: the colour and type layer, which overrides the theme's own custom
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
- * it: .aim-hero, .aim-cards, .aim-steps, .aim-skill, .aim-table-stack.
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -486,12 +486,12 @@ body {
 }
 
 /* ---------------------------------------------------------------------------
- * .aim-skill — an inline badge naming one of the three skills.
+ * .aim-category — an inline badge naming one of the three skills.
  *
- *   [Clicking](clicking.md){ .aim-skill .aim-skill--clicking }
+ *   [Clicking](clicking.md){ .aim-category .aim-category--clicking }
  * ------------------------------------------------------------------------ */
 
-.md-typeset .aim-skill {
+.md-typeset .aim-category {
   display: inline-block;
   padding: 0.15em 0.55em;
   border: 1px solid currentcolor;
@@ -505,13 +505,13 @@ body {
   transition: background-color 125ms;
 }
 
-.md-typeset a.aim-skill:hover {
+.md-typeset a.aim-category:hover {
   background-color: color-mix(in srgb, currentcolor 14%, transparent);
 }
 
-.md-typeset .aim-skill--clicking { color: var(--aim-clicking); }
-.md-typeset .aim-skill--tracking { color: var(--aim-tracking); }
-.md-typeset .aim-skill--switching { color: var(--aim-switching); }
+.md-typeset .aim-category--clicking { color: var(--aim-clicking); }
+.md-typeset .aim-category--tracking { color: var(--aim-tracking); }
+.md-typeset .aim-category--switching { color: var(--aim-switching); }
 
 /* ---------------------------------------------------------------------------
  * .aim-table-stack — a table whose last column drops onto its own line on a

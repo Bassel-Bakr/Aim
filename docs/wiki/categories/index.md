@@ -16,15 +16,15 @@ all three rather than lean on one.[^aimlabs-playlist]
 
 <div class="aim-table-stack" markdown>
 
-| Skill | What it is | What varies | Subcategories |
+| Category | What it is | What varies | Subcategories |
 | --- | --- | --- | --- |
-| [Clicking](clicking.md){ .aim-skill .aim-skill--clicking } | Acquiring a target and timing a single click or short burst on it. | Whether the target is moving, and how readably. | [Static](clicking.md#static-clicking), [dynamic](clicking.md#dynamic-clicking), [linear](clicking.md#linear-clicking) |
-| [Tracking](tracking.md){ .aim-skill .aim-skill--tracking } | Keeping the crosshair on a target that's already moving. | How predictable the target's path is. | [Precise](tracking.md#precise-tracking), [reactive](tracking.md#reactive-tracking), [control](tracking.md#control-tracking) |
-| [Switching](switching.md){ .aim-skill .aim-skill--switching } | Moving the crosshair from a cleared target to the next one. | Target spacing, and how much the targets move once you arrive. | [Speed](switching.md#speed-switching), [evasive](switching.md#evasive-switching), [stability](switching.md#stability-switching) |
+| [Clicking](clicking.md){ .aim-category .aim-category--clicking } | Acquiring a target and timing a single click or short burst on it. | Whether the target is moving, and how readably. | [Static](clicking.md#static-clicking), [dynamic](clicking.md#dynamic-clicking), [linear](clicking.md#linear-clicking) |
+| [Tracking](tracking.md){ .aim-category .aim-category--tracking } | Keeping the crosshair on a target that's already moving. | How predictable the target's path is. | [Precise](tracking.md#precise-tracking), [reactive](tracking.md#reactive-tracking), [control](tracking.md#control-tracking) |
+| [Switching](switching.md){ .aim-category .aim-category--switching } | Moving the crosshair from a cleared target to the next one. | Target spacing, and how much the targets move once you arrive. | [Speed](switching.md#speed-switching), [evasive](switching.md#evasive-switching), [stability](switching.md#stability-switching) |
 
 </div>
 
-Each page splits its skill along the axis in the third column, under the names the benchmark
+Each page splits its category along the axis in the third column, under the names the benchmark
 communities use, with the hybrid subcategory last.[^voltaic-s5] Those labels move between benchmark
 seasons, so each page explains the distinction underneath rather than only the label. See
 [Benchmarks](../training/benchmarks.md) for how the scoring works.

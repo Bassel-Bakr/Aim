@@ -79,10 +79,10 @@ that before using one, and add a new component only when a page actually needs i
 | `.aim-hero` | Landing-page opener. A page with a hero has the theme's generated title hidden, so the hero has to carry the title itself. |
 | `.aim-cards` | Turns a list of links into a card grid. The whole card is the link, so each item needs exactly one link, written as its title. A second link in the same item ends up under the stretched hit area and cannot be clicked. |
 | `.aim-steps` | Turns an ordered list into a numbered route. |
-| `.aim-skill` | Inline badge on a link naming a skill, with `.aim-skill--clicking`, `--tracking` or `--switching` alongside it. |
+| `.aim-category` | Inline badge on a link naming a skill, with `.aim-category--clicking`, `--tracking` or `--switching` alongside it. |
 | `.aim-table-stack` | Wraps a table whose last column should drop onto its own line below 38em instead of squeezing. |
 
-All of these except `.aim-skill` are wrappers:
+All of these except `.aim-category` are wrappers:
 
 ```markdown
 <div class="aim-cards" markdown>
@@ -93,8 +93,8 @@ All of these except `.aim-skill` are wrappers:
 ```
 
 The `markdown` attribute and the blank lines around the content are both required, or the Markdown
-inside the wrapper is passed through as literal text. `.aim-skill` goes on the link itself with
-`attr_list`: `[Clicking](clicking.md){ .aim-skill .aim-skill--clicking }`.
+inside the wrapper is passed through as literal text. `.aim-category` goes on the link itself with
+`attr_list`: `[Clicking](clicking.md){ .aim-category .aim-category--clicking }`.
 
 ## Rules that are easy to get wrong
 
