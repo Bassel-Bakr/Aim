@@ -13,7 +13,7 @@ tags:
 
 ## What it is
 
-Voltaic is an aim-training community and coaching group built around structured skill benchmarks for [KovaaK's](../trainers/kovaaks.md) and [Aimlabs](../trainers/aimlabs.md). It publishes benchmark seasons, training routines, and guides through its [blog](https://blog.voltaic.gg) and companion [app](https://app.voltaic.gg), and runs an active [Discord](https://discord.gg/voltaic) server for training discussion. Voltaic also offers paid coaching for competitive players and content creators through a program called Amped, aimed at pros and creators working on mechanics such as flicking, tracking, and target switching, as described on the [Voltaic homepage](https://voltaic.gg).
+Voltaic is an aim-training community and coaching group built around structured benchmarks for [KovaaK's](../trainers/kovaaks.md) and [Aimlabs](../trainers/aimlabs.md). It publishes benchmark seasons, training routines, and guides through its [blog](https://blog.voltaic.gg) and companion [app](https://app.voltaic.gg), and runs an active [Discord](https://discord.gg/voltaic) server for training discussion. Voltaic also offers paid coaching for competitive players and content creators through a program called Amped, aimed at pros and creators working on mechanics such as flicking, tracking, and target switching, as described on the [Voltaic homepage](https://voltaic.gg).
 
 ## Who it suits
 
@@ -21,7 +21,7 @@ Players at any level who want a structured way to measure raw mouse-control skil
 
 ## What it covers
 
-- **Benchmarks** for the three core aiming skills, [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md). The current KovaaK's season is Season 5, and the current Aimlabs season is Season 3, each split per skill into static/dynamic, precise/reactive, and speed/evasive subcategories, plus a hybrid category bridging each pair (linear, control, and stability, respectively), across three difficulty bands.[^s5][^s3] Ranks are grouped within each difficulty band and climbed by an overall "Energy" score that combines your subcategory scores using a harmonic mean, which weights your weakest subcategory more heavily than your strongest.[^lb]
+- **Benchmarks** for the three core categories, [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). The current KovaaK's season is Season 5, and the current Aimlabs season is Season 3, each split per skill into static/dynamic, precise/reactive, and speed/evasive subcategories, plus a hybrid category bridging each pair (linear, control, and stability, respectively), across three difficulty bands.[^s5][^s3] Ranks are grouped within each difficulty band and climbed by an overall "Energy" score that combines your subcategory scores using a harmonic mean, which weights your weakest subcategory more heavily than your strongest.[^lb]
 - **[Routines](../../training/routines.md)**: fundamental routines for general mouse control, game-specific routines, and weakness-specific routines built from Voltaic's recommended scenario lists.[^start]
 - **Guides** on health, lifestyle, and improvement mindset, also linked from the Getting Started guide.
 
@@ -39,7 +39,7 @@ Voltaic is one of the most established benchmark providers covering both KovaaK'
 
 - [Benchmarks](../../training/benchmarks.md)
 - [Routines](../../training/routines.md)
-- [Skills](../../skills/index.md)
+- [Categories](../../categories/index.md)
 - [KovaaK's](../trainers/kovaaks.md)
 - [Aimlabs](../trainers/aimlabs.md)
 

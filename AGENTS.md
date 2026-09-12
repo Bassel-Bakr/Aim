@@ -87,7 +87,7 @@ All of these except `.aim-skill` are wrappers:
 ```markdown
 <div class="aim-cards" markdown>
 
-- **[Skills](wiki/skills/index.md)**: what the section covers.
+- **[Categories](wiki/categories/index.md)**: what the section covers.
 
 </div>
 ```

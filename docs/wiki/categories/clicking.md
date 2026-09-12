@@ -7,7 +7,7 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-Clicking is the skill of acquiring a target and landing a single shot or short burst on it: closing
+Clicking is the category covering acquiring a target and landing a single shot or short burst on it: closing
 the gap between your crosshair and the target, then timing the click so it actually connects.
 [Aimlabs](../resources/trainers/aimlabs.md) groups this under what it calls "flicking," one of
 aim's three foundational categories alongside tracking and switching.[^aimlabs-intro]
@@ -57,7 +57,7 @@ near-future one. That makes it a reasonable middle step between the two cases ab
 
 - [How Aim Works](../fundamentals/how-aim-works.md): the speed-accuracy trade-off, and why
   acquisition and correction feel like different skills.
-- [Tracking](tracking.md): the counterpart skill, staying on a target rather than acquiring it.
+- [Tracking](tracking.md): the counterpart category, staying on a target rather than acquiring it.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 
 [^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)

@@ -21,8 +21,8 @@ Players who want to practise against something that shoots back as well as again
 
 ## What it covers
 
-- **Scenarios and routines** built by the community, covering [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md), with per-scenario settings, saved routines, and a map editor that publishes through the Steam Workshop.[^steam]
-- **Ranked playlists**: several ladders, each made by a different community, split across the same three skill categories and awarding a rank from bronze up to grandmaster. Weekly challenges rotate three scenarios each week.[^steam]
+- **Scenarios and routines** built by the community, covering [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md), with per-scenario settings, saved routines, and a map editor that publishes through the Steam Workshop.[^steam]
+- **Ranked playlists**: several ladders, each made by a different community, split across the same three categories and awarding a rank from bronze up to grandmaster. Weekly challenges rotate three scenarios each week.[^steam]
 - **Arena**: ranked one-on-one duels against other players on dedicated servers in Europe, North America, and Asia, plus custom games for up to 32 players. Duels are built around tracking, reactivity, precision, and movement rather than static drills.[^steam]
 - **Bots**: the selling point of the single-player side is bot movement that behaves like a player rather than on a fixed pattern, and it is configurable.[^steam]
 - **[Sensitivity](../../getting-started/sensitivity.md) and input**: sensitivity can be matched to another game directly, and controllers are supported with selectable input curves.[^steam]

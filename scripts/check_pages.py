@@ -18,7 +18,7 @@ ALLOWED_TAGS = {
     "clicking", "tracking", "switching",
     "benchmarks", "routines", "sensitivity", "beginner",
 }
-CONCEPT_DIRS = {"getting-started", "fundamentals", "skills", "techniques", "training"}
+CONCEPT_DIRS = {"getting-started", "fundamentals", "categories", "techniques", "training"}
 BANNER = '!!! warning "Draft"'
 # Topics live outside docs/wiki/ because they run on a different trust model: signed opinion
 # written from experience, carrying the author's name instead of a citation trail. They are not

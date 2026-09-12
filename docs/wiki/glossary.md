@@ -16,9 +16,9 @@ See [Benchmarks](training/benchmarks.md).
 
 ### Clicking
 
-Clicking is the skill of acquiring a target and landing a single shot or short burst on it. Dynamic
+Clicking is the category covering acquiring a target and landing a single shot or short burst on it. Dynamic
 clicking targets something already moving, static clicking a stationary target, and linear clicking
-a hybrid where the target moves along a single predictable line. See [Clicking](skills/clicking.md).
+a hybrid where the target moves along a single predictable line. See [Clicking](categories/clicking.md).
 
 ### cm/360
 
@@ -46,7 +46,7 @@ specific game, but eDPI is only comparable within one game, not across different
 A flick is the fast, committed mouse motion that acquires a target you are not already on, the core
 motion behind clicking scenarios. Good technique lands the flick on the target with only a small
 correction left over, rather than a rough first pass fixed up afterward. See
-[Clicking](skills/clicking.md).
+[Clicking](categories/clicking.md).
 
 ### FOV
 
@@ -77,7 +77,7 @@ arm-driven motion, used to settle precisely onto a target or hold a track. See
 Overflicking (also called overshooting) is landing a flick past the target, so the crosshair has to
 reverse direction and drag back onto it, which costs more correction time than landing slightly
 short in the same direction.[^flick] See
-[Clicking](skills/clicking.md) for how this wiki describes a clean flick.
+[Clicking](categories/clicking.md) for how this wiki describes a clean flick.
 
 ### Playlist
 
@@ -94,7 +94,7 @@ of relying only on the Windows pointer path, which makes sensitivity more predic
 ### Routine
 
 A routine is the specific set of scenarios you run in a session, in some order, for some length of
-time, usually built around whichever skill a benchmark shows as your current weakness. See
+time, usually built around whichever category a benchmark shows as your current weakness. See
 [Routines](training/routines.md).
 
 ### Scenario
@@ -118,25 +118,25 @@ flicking, and switching alike rather than being a separate skill of its own. See
 
 ### Switching
 
-Switching is the skill of moving your crosshair from a target you just cleared to the next
+Switching is the category covering moving your crosshair from a target you just cleared to the next
 one, closing that gap quickly without losing the accuracy needed to land the next click. Speed
 switching puts the weight on the transition itself, evasive switching adds targets that keep moving
 after you arrive, and stability switching is a hybrid where targets hop or jitter in place. See
-[Switching](skills/switching.md).
+[Switching](categories/switching.md).
 
 ### Tracking
 
-Tracking is the skill of keeping your crosshair on a target that is already moving, rather than
+Tracking is the category covering keeping your crosshair on a target that is already moving, rather than
 acquiring it fresh. Precise tracking follows smooth, largely predictable movement, reactive tracking
 follows a target that changes direction and speed less predictably, and control tracking is a
-hybrid of the two. See [Tracking](skills/tracking.md).
+hybrid of the two. See [Tracking](categories/tracking.md).
 
 ### Underflick
 
 Underflicking (also called undershooting) is landing a flick just short of the target. It is
 cheaper to fix than an overflick because your hand is already moving in the right direction and
 only needs a small forward nudge, rather than a full reversal.[^flick] See
-[Clicking](skills/clicking.md) for how this wiki describes a clean flick.
+[Clicking](categories/clicking.md) for how this wiki describes a clean flick.
 
 [^fov]: Wikipedia, [Field of view in video games](https://en.wikipedia.org/wiki/Field_of_view_in_video_games)
 [^flick]: aimbetween.games, [flick training](https://aimbetween.games/modes/flick)

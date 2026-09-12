@@ -16,8 +16,8 @@ practice in the game itself.
 
 **What aim trainers train well: mechanics.** [KovaaK's](../resources/trainers/kovaaks.md) and
 [Aimlabs](../resources/trainers/aimlabs.md) both build their scenario libraries around isolating
-one mechanical skill at a time, [Clicking](../skills/clicking.md), [Tracking](../skills/tracking.md),
-or [Switching](../skills/switching.md), so you can put in far more focused reps on, say, tracking a
+one category at a time, [Clicking](../categories/clicking.md), [Tracking](../categories/tracking.md),
+or [Switching](../categories/switching.md), so you can put in far more focused reps on, say, tracking a
 moving target than any single match would give you, per the
 [KovaaK's](../resources/trainers/kovaaks.md) and [Aimlabs](../resources/trainers/aimlabs.md)
 resource pages. Benchmark communities such as [Voltaic](../resources/communities/voltaic.md) build

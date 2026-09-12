@@ -13,7 +13,7 @@ to spend time instead of guessing.
 ## Communities
 
 - [Voltaic](communities/voltaic.md): an aim-training community and coaching group built around
-  structured skill benchmarks and routines for KovaaK's and Aimlabs.
+  structured benchmarks and routines for KovaaK's and Aimlabs.
 - [Jade Palace](communities/jade-palace.md): an application-only Discord server where elite aimers
   and aim-training creators collaborate; not a general public resource.
 - [Revosect](communities/revosect.md): a community running its own benchmark seasons, training

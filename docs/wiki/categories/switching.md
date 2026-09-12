@@ -7,7 +7,7 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-Switching is the skill of moving your crosshair from a target you've just cleared to the next one,
+Switching is the category covering moving your crosshair from a target you've just cleared to the next one,
 closing that gap quickly without losing the accuracy you need to land the next click.
 [Aimlabs](../resources/trainers/aimlabs.md) calls it "the heart of dynamic decision-making in
 aiming," where focus transfers from target to target in a swift, seamless motion.[^aimlabs-intro]
@@ -58,7 +58,7 @@ halves before combining them.
 
 ## Further resources
 
-- [Tracking](tracking.md): the skill that switching onto moving targets partly depends on.
+- [Tracking](tracking.md): the category that switching onto moving targets partly depends on.
 - [Clicking](clicking.md): the acquisition half of a switch, in isolation.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 

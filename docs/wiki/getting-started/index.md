@@ -22,7 +22,7 @@ A first pass through the wiki looks like this:
    both. See [Aim Trainers](aim-trainers.md).
 3. **Learn the fundamentals.** Understand what "aim" is actually made of and how deliberate
    practice works before you start drilling. See [Fundamentals](../fundamentals/index.md).
-4. **Run a benchmark to find weaknesses.** A benchmark score tells you which of the core skills,
+4. **Run a benchmark to find weaknesses.** A benchmark score tells you which of the core categories,
    clicking, tracking, or switching, is holding you back. See [Benchmarks](../training/benchmarks.md).
 5. **Follow a routine.** Turn your benchmark result into a repeatable practice session instead of
    randomly picking scenarios. See [Routines](../training/routines.md).

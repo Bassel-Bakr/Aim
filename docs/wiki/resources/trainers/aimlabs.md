@@ -22,7 +22,7 @@ Players who want built-in, game-specific practice rather than assembling their o
 ## What it covers
 
 - **Tasks and playlists**: 50,000+ tasks and playlists,[^home] including community-built ones made with Aimlabs' Creator Studio and Playlist Editor and shared through the Aimlabs Steam Workshop.[^workshop]
-- **Game-specific training** for hundreds of first-person and third-person shooter titles, including official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege, covering [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md).[^home]
+- **Game-specific training** for hundreds of first-person and third-person shooter titles, including official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege, covering [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md).[^home]
 - **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings.[^home]
 - **Benchmarks**: Aimlabs runs its own official Benchmarks (Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories), separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs.[^bench][^v3]
 - **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator.[^leaderboards]

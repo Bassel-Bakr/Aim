@@ -14,8 +14,8 @@ felt.
 ## Explanation
 
 **What a benchmark measures.** A benchmark is a fixed list of scenarios, split across
-[Clicking](../skills/clicking.md), [Tracking](../skills/tracking.md), and
-[Switching](../skills/switching.md) subcategories, that every player runs the same way so scores
+[Clicking](../categories/clicking.md), [Tracking](../categories/tracking.md), and
+[Switching](../categories/switching.md) subcategories, that every player runs the same way so scores
 are comparable across people and across your own attempts over time. The fixed list is the point:
 change the scenarios and you lose the comparison, which is why benchmarks are versioned into
 seasons rather than edited in place.
@@ -41,13 +41,13 @@ Two communities run the benchmarks most players on this wiki will encounter, bot
 on [KovaaK's](../resources/trainers/kovaaks.md):
 
 - [Voltaic](../resources/communities/voltaic.md) runs a Season 5 KovaaK's benchmark and a Season 3
-  [Aimlabs](../resources/trainers/aimlabs.md) one, each split into subcategories per skill across
+  [Aimlabs](../resources/trainers/aimlabs.md) one, each split into subcategories per category across
   three difficulty bands: Novice, Intermediate, and Advanced.[^voltaic-s5][^voltaic-s3] A rank is
   granted only once you have a score in every subcategory, and is driven by an overall "Energy"
   score combining subcategories with a harmonic mean, which weights your weakest more heavily than
   your strongest.[^volt-lb]
 - [Revosect](../resources/communities/revosect.md) runs a Season 5 KovaaK's benchmark covering six
-  subcategories across the same three skills, with Entry, Intermediate, and Advanced tiers and a
+  subcategories across the same three categories, with Entry, Intermediate, and Advanced tiers and a
   recorded VOD required to verify a score at the top tier.[^revo-bench]
 
 Rank names and season numbering are independent between the two, so a rank on one does not

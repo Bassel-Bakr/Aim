@@ -16,7 +16,7 @@ name, and on whether it holds up against your own training.
 
 Because they are opinions, expect them to disagree with each other eventually, and to disagree with
 how you already train. Nothing here overrides the wiki's sourced pages on
-[Fundamentals](../wiki/fundamentals/index.md) or [Skills](../wiki/skills/index.md); a topic page is
+[Fundamentals](../wiki/fundamentals/index.md) or [Categories](../wiki/categories/index.md); a topic page is
 one person's reading of that material, not a correction to it.
 
 ## Topics

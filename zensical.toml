@@ -25,11 +25,11 @@ nav = [
       "wiki/fundamentals/practice-principles.md",
       "wiki/fundamentals/transfer-to-games.md",
     ] },
-    { "Skills" = [
-      "wiki/skills/index.md",
-      "wiki/skills/clicking.md",
-      "wiki/skills/tracking.md",
-      "wiki/skills/switching.md",
+    { "Categories" = [
+      "wiki/categories/index.md",
+      "wiki/categories/clicking.md",
+      "wiki/categories/tracking.md",
+      "wiki/categories/switching.md",
     ] },
     { "Techniques" = [
       "wiki/techniques/underaiming.md",
@@ -104,6 +104,10 @@ tags = {}
 [project.plugins.redirects.redirect_maps]
 "guides/index.md" = "topics/index.md"
 "wiki/resources/links.md" = "links.md"
+"wiki/skills/index.md" = "wiki/categories/index.md"
+"wiki/skills/clicking.md" = "wiki/categories/clicking.md"
+"wiki/skills/tracking.md" = "wiki/categories/tracking.md"
+"wiki/skills/switching.md" = "wiki/categories/switching.md"
 
 [project.markdown_extensions]
 abbr = {}

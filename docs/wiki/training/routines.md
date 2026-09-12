@@ -40,8 +40,8 @@ through it.
 
 ## Choosing scenarios for your weaknesses
 
-Your weakest area is whichever [Clicking](../skills/clicking.md), [Tracking](../skills/tracking.md),
-or [Switching](../skills/switching.md) subcategory scores lowest relative to the others on a
+Your weakest area is whichever [Clicking](../categories/clicking.md), [Tracking](../categories/tracking.md),
+or [Switching](../categories/switching.md) subcategory scores lowest relative to the others on a
 benchmark, not necessarily whichever one feels hardest in the moment, see
 [Benchmarks](benchmarks.md). Build your focus block from scenarios in that subcategory, and keep at
 least a little time on the others so a fixed weakness doesn't quietly become a new one, per the

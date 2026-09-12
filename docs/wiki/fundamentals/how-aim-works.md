@@ -28,8 +28,8 @@ useful than picking a side in an "arm versus wrist" debate.
 flick onto a far-away target and a small correction to stay on a target you're already tracking
 feel like different skills: one leans on the arm and shoulder, the other on the fingers and
 wrist.[^wrist-vs-arm]
-[Clicking](../skills/clicking.md) and [Switching](../skills/switching.md) scenarios tend to
-emphasize acquisition, jumping to a new target; [Tracking](../skills/tracking.md) scenarios tend
+[Clicking](../categories/clicking.md) and [Switching](../categories/switching.md) scenarios tend to
+emphasize acquisition, jumping to a new target; [Tracking](../categories/tracking.md) scenarios tend
 to emphasize correction, staying on a target that's already moving.
 
 **The speed-accuracy trade-off.** Speeding up shortens the window your eyes and hands get to

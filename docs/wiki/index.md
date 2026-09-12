@@ -8,7 +8,7 @@ tags:
     Written from public sources, pending review.
 
 This wiki is for anyone who wants to train aim deliberately: the mechanics behind
-mouse aim, the skills that break aim down into parts you can practice on purpose, how to structure
+mouse aim, the categories that break aim down into parts you can practice on purpose, how to structure
 a training session, and the community benchmarks, routines, and trainers this wiki draws on to
 back it up. Every page is written in our own words from public guides and articles, with facts
 linked back to where they came from.
@@ -25,7 +25,7 @@ need them.
   setup that should come before you start drilling scenarios.
 - **[Fundamentals](fundamentals/index.md)**: the mechanics behind mouse aim and the practice habits
   that decide whether training time actually improves your aim.
-- **[Skills](skills/index.md)**: the three underlying skills, clicking, tracking, and switching, that
+- **[Categories](categories/index.md)**: the three underlying categories, clicking, tracking, and switching, that
   every scenario and benchmark on this wiki is built from.
 - **[Training](training/index.md)**: building a routine, reading a benchmark, and handling progress
   that stalls out.

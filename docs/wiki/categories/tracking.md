@@ -7,7 +7,7 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-Tracking is the skill of keeping your crosshair on a target that's already moving, rather than
+Tracking is the category covering keeping your crosshair on a target that's already moving, rather than
 acquiring it fresh or hopping to the next one. [Aimlabs](../resources/trainers/aimlabs.md)
 describes it as making sure your "crosshair remains glued to your opponents," which matters most
 in longer engagements where a target stays alive and mobile.[^aimlabs-intro]
@@ -46,7 +46,7 @@ outright. See [How Aim Works](../fundamentals/how-aim-works.md) on reacting vers
 The common mistake is exactly that, predicting a pattern instead of reacting to it, which works
 only until the target breaks the pattern. Train it with scenarios that deliberately vary target
 direction, and treat any target whose path you can fully predict as too easy to be useful practice
-for this skill specifically.
+for this category specifically.
 
 ## Control tracking
 

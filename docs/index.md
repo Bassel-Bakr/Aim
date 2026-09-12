@@ -7,7 +7,7 @@ title: "Aim training wiki"
 ## Aim training wiki
 
 Aim is a training wiki for anyone working on their aim. It explains how mouse aim works, breaks aim
-into skills you can practise on purpose, and collects the community benchmarks, routines, and
+into categories you can practise on purpose, and collects the community benchmarks, routines, and
 trainers worth your time.
 
 [**Open the wiki**](wiki/index.md){ .md-button .md-button--primary }
@@ -20,7 +20,7 @@ trainers worth your time.
 
 - **[Start Here](wiki/getting-started/index.md)**: gear, sensitivity, and picking an aim trainer,
   in the order most players need them.
-- **[Skills](wiki/skills/index.md)**: clicking, tracking, and switching, the three skills
+- **[Categories](wiki/categories/index.md)**: clicking, tracking, and switching, the three categories
   every scenario and benchmark is built from.
 - **[Resources](wiki/resources/index.md)**: the communities and trainers this wiki draws on,
   including Voltaic, Revosect, KovaaK's, and Aimlabs.

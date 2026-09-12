@@ -13,7 +13,7 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Getting started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/) — Voltaic,
   2023 — how benchmarks, routines and ranks fit together.
 - [Introduction to aim training](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/) —
-  Aimlabs — the three skill categories.
+  Aimlabs — the three categories.
 - [Aim training and FPS mechanics glossary](https://aimlabs.com/articles/aimlabs/aim-training-fps-mechanics-glossary-key-terms-explained/) —
   Aimlabs — the vocabulary everything here assumes.
 - [Aim Training Starter Series 2026](https://www.youtube.com/playlist?list=PLJJwQ02KYw9w) —
@@ -22,9 +22,9 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 ## Full courses
 
 - [Aim Trainer Complete Course](https://www.youtube.com/playlist?list=PLQm82wd6DO4OUt_GUW3BQqfmjBNLYq5sV) —
-  Valkie, 2023 — seven parts: settings first, then one per skill.
+  Valkie, 2023 — seven parts: settings first, then one per category.
 - [Aim Training Crash Course](https://www.youtube.com/playlist?list=PL-uHvMUvTR9RZMJ_8lzf30V19hgtf4htU) —
-  RiddBTW — twelve parts, two on each skill.
+  RiddBTW — twelve parts, two on each category.
 - [Guides by MattyOW](https://www.youtube.com/playlist?list=PLqMr3im6WvTQ8Y7q7SCV5r0i_lx4oPaRX) —
   MattyOW — 25 guides, one per problem rather than one per skill, plus the Unraveling the Secrets
   of Aim series on how specific top players aim.
@@ -128,5 +128,5 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 ## Related wiki pages
 
 - [Resources](wiki/resources/index.md) — who publishes these.
-- [Skills](wiki/skills/index.md), [Techniques](wiki/techniques/underaiming.md),
+- [Categories](wiki/categories/index.md), [Techniques](wiki/techniques/underaiming.md),
   [Training](wiki/training/index.md) — the same ground in this wiki's words.

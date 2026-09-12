@@ -21,9 +21,9 @@ the technique is framed as making aim cleaner and more efficient rather than as 
 Matty points to it as a trait of professional play rather than a trainer habit, naming donk,
 sarah_frags, EliGE, and Prophet among players it is visible in.[^matty]
 
-**It belongs to no single skill.** The restraint holds anywhere a target is in front of you, so it
-turns up in [clicking](../skills/clicking.md) and [switching](../skills/switching.md) as readily as
-in [tracking](../skills/tracking.md).[^matty]
+**It belongs to no single category.** The restraint holds anywhere a target is in front of you, so it
+turns up in [clicking](../categories/clicking.md) and [switching](../categories/switching.md) as readily as
+in [tracking](../categories/tracking.md).[^matty]
 
 **Edge tracking is one place it lands.** What aim trainers call edge tracking is underaiming worked
 out in a tracking scenario. The two names describe different scopes, one general and one specific,
@@ -37,7 +37,7 @@ a single one.[^matty]
 ## Common mistakes
 
 **Reading it as a flicking rule.** Understood as "stop short and correct forward," the idea
-collapses into one skill at one moment, and loses the part that makes it worth naming: it governs
+collapses into one category at one moment, and loses the part that makes it worth naming: it governs
 the quantity of movement everywhere, not the endpoint of a flick.[^matty]
 
 **Answering every twitch with a correction.** Movements added in response to target motion that did
@@ -49,8 +49,8 @@ they were meant to support.[^matty]
 What is trainable here is the decision, not a motion: commit no more movement than the shot calls
 for, and treat each extra correction as something that needs a reason.[^matty] Being a restraint
 rather than a technique with its own shape, it is practised inside scenarios you already run for
-[clicking](../skills/clicking.md), [tracking](../skills/tracking.md), and
-[switching](../skills/switching.md) rather than in scenarios built for it.
+[clicking](../categories/clicking.md), [tracking](../categories/tracking.md), and
+[switching](../categories/switching.md) rather than in scenarios built for it.
 
 <!-- REVIEW: no public source found for scenario-level guidance or drills specific to underaiming
 or edge tracking. Leave this section at the level of the principle until one exists. -->
@@ -59,8 +59,8 @@ or edge tracking. Leave this section at the level of the principle until one exi
 
 - [How Aim Works](../fundamentals/how-aim-works.md): smoothness and correction, the mechanics this
   restraint operates on.
-- [Tracking](../skills/tracking.md): where underaiming shows up as edge tracking.
-- [Clicking](../skills/clicking.md) and [Switching](../skills/switching.md): the other two skills
+- [Tracking](../categories/tracking.md): where underaiming shows up as edge tracking.
+- [Clicking](../categories/clicking.md) and [Switching](../categories/switching.md): the other two categories
   the same restraint applies to.
 - [Glossary](../glossary.md): underflick and overflick, which describe single flicks rather than
   this habit.

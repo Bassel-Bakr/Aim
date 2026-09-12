@@ -16,8 +16,8 @@ measure it.
 
 **Why use an aim trainer at all.** In a real game, the pace, target size, and target behavior are
 whatever that moment of the match gives you. Dedicated trainers build their libraries around
-scenarios that isolate one skill at a time, for example a scenario that only tests
-[tracking](../skills/tracking.md) or only tests fast [switching](../skills/switching.md), so you
+scenarios that isolate one category at a time, for example a scenario that only tests
+[tracking](../categories/tracking.md) or only tests fast [switching](../categories/switching.md), so you
 can work on a specific weakness instead of whatever situations happen to come up in a match. The
 trade-off is that a scenario is not identical to a real engagement: aim trainers isolate mechanics,
 while a real match also demands game sense, positioning, and adjusting to abilities and recoil that
@@ -27,7 +27,7 @@ how trainer practice does and does not carry over.
 **Dedicated trainer versus in-game practice.** Your game's own deathmatch, practice range, or
 custom-game modes have one advantage a trainer cannot fully replicate: they use your actual
 crosshair, recoil pattern, movement, and hitboxes, so what you practice there transfers directly.
-The trade-off is that you cannot isolate a single skill the way a scenario does, and your practice
+The trade-off is that you cannot isolate a single category the way a scenario does, and your practice
 reps are mixed in with everything else happening in that mode. Structured routines commonly
 separate the two: [Voltaic](../resources/communities/voltaic.md) organizes its routines into
 general Fundamental Routines for mouse control and separate game-specific routines that focus on

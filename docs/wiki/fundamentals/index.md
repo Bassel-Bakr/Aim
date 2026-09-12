@@ -7,12 +7,12 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-Every skill on this wiki, from [Tracking](../skills/tracking.md) to [Switching](../skills/switching.md),
+Every category on this wiki, from [Tracking](../categories/tracking.md) to [Switching](../categories/switching.md),
 is built on the same underlying mechanics and the same practice habits. Learning those first means you
 go into a scenario already knowing which part of your arm should be doing the work, why your score
 plateaus, and what a trainer can and cannot fix, instead of discovering all of that by trial and error
 after weeks of unfocused reps. The three pages below are the prerequisite reading behind everything
-else in [Skills](../skills/index.md) and [Training](../training/index.md).
+else in [Categories](../categories/index.md) and [Training](../training/index.md).
 
 - [How Aim Works](how-aim-works.md): the physical mechanics behind mouse aim, from arm, wrist, and
   finger movement to the speed-accuracy trade-off, smoothness, and reacting versus predicting.
