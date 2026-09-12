@@ -403,6 +403,25 @@ body {
   opacity: 1;
 }
 
+/* The whole card is the link's hit area: the card's own title link is stretched over it, so a
+ * click anywhere follows it. The anchor is still the only focusable thing, so tab order and the
+ * status bar target are unchanged; the ring is drawn on the card it now covers. */
+.md-typeset .aim-cards > ul > li {
+  cursor: pointer;
+}
+
+.md-typeset .aim-cards > ul > li > strong:first-child a::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.md-typeset .aim-cards > ul > li:has(a:focus-visible) {
+  outline: 2px solid var(--aim-accent);
+  outline-offset: 2px;
+}
+
 .md-typeset .aim-cards > ul > li > :first-child {
   margin-top: 0;
 }
