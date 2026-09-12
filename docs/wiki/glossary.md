@@ -51,8 +51,7 @@ correction left over, rather than a rough first pass fixed up afterward. See
 ### FOV
 
 Field of view (FOV) is the extent of the game world visible on screen at once, usually set in
-degrees, per
-[Wikipedia's field of view in video games entry](https://en.wikipedia.org/wiki/Field_of_view_in_video_games).
+degrees.[^fov]
 See [Target Switching](skills/switching.md).
 
 ### FPS
@@ -78,8 +77,7 @@ arm-driven motion, used to settle precisely onto a target or hold a track. See
 
 Overflicking (also called overshooting) is landing a flick past the target, so the crosshair has to
 reverse direction and drag back onto it, which costs more correction time than landing slightly
-short in the same direction, per
-[aimbetween.games' flick training explainer](https://aimbetween.games/modes/flick). See
+short in the same direction.[^flick] See
 [Clicking](skills/clicking.md) for how this wiki describes a clean flick.
 
 ### Playlist
@@ -136,6 +134,8 @@ hybrid of the two. See [Tracking](skills/tracking.md).
 
 Underflicking (also called undershooting) is landing a flick just short of the target. It is
 cheaper to fix than an overflick because your hand is already moving in the right direction and
-only needs a small forward nudge, rather than a full reversal, per
-[aimbetween.games' flick training explainer](https://aimbetween.games/modes/flick). See
+only needs a small forward nudge, rather than a full reversal.[^flick] See
 [Clicking](skills/clicking.md) for how this wiki describes a clean flick.
+
+[^fov]: Wikipedia, [Field of view in video games](https://en.wikipedia.org/wiki/Field_of_view_in_video_games)
+[^flick]: aimbetween.games, [flick training](https://aimbetween.games/modes/flick)

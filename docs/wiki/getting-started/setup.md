@@ -51,15 +51,13 @@ can show, for example a 240Hz display refreshes roughly 2.7ms faster per frame t
 display.[^blur]
 Blur Busters' testing also found that running your in-game frame rate above your monitor's refresh
 rate (with V-Sync off) still measurably reduces input lag, so both a higher refresh-rate monitor
-and a frame rate that comfortably exceeds it help you see and react to targets sooner, per
-[Blur Busters](https://blurbusters.com/faq/benefits-of-frame-rate-above-refresh-rate/).
+and a frame rate that comfortably exceeds it help you see and react to targets sooner.[^blur]
 
 ## Essential settings
 
 - **Raw input: on.** With raw input enabled, a game reads mouse movement more directly from the
   device instead of relying only on the Windows pointer path, which makes sensitivity more
-  predictable; turn it on in any first-person or third-person shooter that supports it, per a
-  [mouse settings guide](https://mousedpianalyzer.com/post/best-mouse-settings-for-gaming/). It is
+  predictable; turn it on in any first-person or third-person shooter that supports it.[^mousecfg] It is
   not a substitute for a clean sensor or stable frame times, per the same guide, just a setting
   worth checking is enabled.
 - **Mouse acceleration: off.** Acceleration changes how far the cursor or camera moves based on how
@@ -68,8 +66,7 @@ and a frame rate that comfortably exceeds it help you see and react to targets s
   acceleration toggle.
 - **Windows "Enhance pointer precision": off.** This is Windows' own built-in pointer acceleration,
   found under **Settings > Bluetooth & devices > Mouse > Additional mouse settings > Pointer
-  Options**, or **Control Panel > Mouse > Pointer Options** on older builds, per
-  [Microsoft's mouse settings support page](https://support.microsoft.com/en-us/windows/change-mouse-settings-e81356a4-0e74-fe38-7d01-9d79fbf8712b).
+  Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^ms-mouse]
   Most competitive games apply raw input and bypass this setting entirely, but leaving it on can
   still affect desktop use and any game that does not use raw input, so turning it off is the safer
   default.
@@ -84,3 +81,5 @@ and a frame rate that comfortably exceeds it help you see and react to targets s
 [^grip]: WASD Life, [mouse grip styles](https://wasdlife.com/mice/mouse-grip-styles/)
 [^1hp]: 1HP, [Esports health: it starts with ergonomics and posture](https://1-hp.org/blog/hpforgamers/esports-health-it-starts-with-ergonomics-and-posture/)
 [^blur]: Blur Busters, [Benefits of frame rate above refresh rate](https://blurbusters.com/faq/benefits-of-frame-rate-above-refresh-rate/)
+[^mousecfg]: Mouse DPI Analyzer, [Best mouse settings for gaming](https://mousedpianalyzer.com/post/best-mouse-settings-for-gaming/)
+[^ms-mouse]: Microsoft, [Change mouse settings](https://support.microsoft.com/en-us/windows/change-mouse-settings-e81356a4-0e74-fe38-7d01-9d79fbf8712b)

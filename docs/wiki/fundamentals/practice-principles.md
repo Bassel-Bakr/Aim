@@ -31,26 +31,21 @@ crosshair actually lands cleanly is what builds the technique that holds up once
 difficulty back up.[^speed-accuracy]
 
 **Scenario variety versus repetition.** Running the same handful of scenarios forever can make you
-better at those specific scenarios without making you better at aiming in general. Revosect's own
-benchmark guide makes this point about its own benchmark scenarios directly: using only the
-benchmarks to train is possible but "not recommended," since you risk getting better at the
-specific tasks rather than improving mechanically, and it recommends mixing in other scenarios
-from the workshop instead, per the
-[Revosect Benchmarks Guide](https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit)
-(linked from [Revosect](../resources/communities/revosect.md)'s resources page).
+better at those specific scenarios without making you better at aiming in general. Benchmark
+authors say so about their own benchmarks: training on the benchmark scenarios alone is possible
+but "not recommended," because you risk getting better at those specific tasks rather than
+improving mechanically, and mixing in other scenarios is the suggested fix.[^revo-guide]
 
 **Score chasing versus technique focus.** A high score can come from finding a scenario's quirks
 as easily as from good technique, so treating the score itself as the goal can reward the wrong
 thing. [Voltaic](../resources/communities/voltaic.md)'s benchmark ranking system is deliberately
 built so that a strong score in one favorite scenario cannot carry a rank on its own, pushing
-players to improve broadly instead of maximizing a single number, per the
-[Voltaic leaderboards page](https://app.voltaic.gg/leaderboards/about).
+players to improve broadly instead of maximizing a single number.[^volt-lb]
 
 **Rest and consistency.** Skill develops during the rest between sessions as well as during the
 sessions themselves. General motor-learning research finds that shorter, more frequent sessions
 with real rest between them tend to beat one long session, both for how well you retain a skill
-and for how fatigue affects your performance while training, per a
-[Human Kinetics summary of that research](https://us.humankinetics.com/blogs/excerpt/distribution-of-practice-in-motor-learning-and-development).
+and for how fatigue affects your performance while training.[^hk-distribution]
 Sleep specifically factors in too: [Voltaic's own lifestyle guide](https://blog.voltaic.gg/lifestyle/)
 cites research tying insufficient sleep to measurably slower reaction time, which undercuts the
 same mechanics you're trying to train.
@@ -59,8 +54,7 @@ same mechanics you're trying to train.
 
 - Practicing whatever scenario you enjoy or are already good at instead of the one that targets
   your actual weakness.
-- Running only the same benchmark scenarios and calling it training, per the
-  [Revosect Benchmarks Guide](https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit).
+- Running only the same benchmark scenarios and calling it training.[^revo-guide]
 - Staying on a setting that's currently too hard to hit reliably instead of stepping back down
   until your technique is clean, then working back up from there.
 - Treating a leaderboard score as the goal rather than as a rough signal of whether your technique
@@ -77,3 +71,6 @@ same mechanics you're trying to train.
 
 [^ericsson]: Macnamara & Hambrick, [a 2019 review examining Ericsson's original definition of deliberate practice](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full)
 [^speed-accuracy]: Aimlabs, [The speed-accuracy tradeoff and what it means for your aim training](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/)
+[^volt-lb]: Voltaic, [about the leaderboards](https://app.voltaic.gg/leaderboards/about)
+[^hk-distribution]: Human Kinetics, [Distribution of practice in motor learning and development](https://us.humankinetics.com/blogs/excerpt/distribution-of-practice-in-motor-learning-and-development)
+[^revo-guide]: Revosect, [Benchmarks guide](https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit)

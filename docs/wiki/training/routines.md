@@ -16,8 +16,7 @@ assemble a session and a rotation of scenarios around that idea.
 
 **Warm-up.** Repetitive mouse movement and a long static posture build up strain on the same
 joints and tendons over a session, and [Aimlabs](../resources/trainers/aimlabs.md) argues a short
-stretch or warm-up pass belongs inside the routine itself rather than sitting outside it, per
-[Are You Taking Care of Your Body Between Gaming Sessions?](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/).
+stretch or warm-up pass belongs inside the routine itself rather than sitting outside it.[^aimlabs-body]
 In practice this means starting on an easier, slower version of your usual scenarios instead of
 jumping straight into your hardest setting cold.
 
@@ -30,8 +29,7 @@ run at a difficulty where your technique holds up rather than one you can barely
 couple of minutes of honest self-assessment, turns a session into feedback you can act on next
 time instead of just more repetitions. Voltaic frames this kind of after-the-fact analysis as
 belonging to a separate "Learning Zone," distinct from staying focused and uncritical while you're
-actually training, per
-[Constructing an Improvement Based Mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/).
+actually training.[^volt-mentality]
 
 **Session length.** There's no single correct length, but general motor-learning research favors
 several shorter sessions with real rest between them over one marathon session, both for how well
@@ -55,8 +53,7 @@ You don't need to build a routine from nothing. Both [Voltaic](../resources/comm
 and [Revosect](../resources/communities/revosect.md) publish ready-made routines. Voltaic splits
 its routines into fundamental routines for general mouse control, game-specific routines for the
 aiming your particular game leans on most, and weakness-specific routines layered on top of
-whichever of those you're already running, per
-[Getting Started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/). Revosect
+whichever of those you're already running.[^volt-start] Revosect
 covers similar ground with foundational and weakness-specific routines plus separate game-specific
 playlists for a wide range of shooters. Starting from one of these and adjusting it as you learn
 your own weak points is a reasonable default instead of guessing at scenario selection from
@@ -90,3 +87,7 @@ that's the signal to rebuild the routine around whatever is now your lowest scor
 - [Practice Principles](../fundamentals/practice-principles.md): the deliberate-practice reasoning
   behind focus blocks and session length.
 - [Benchmarks](benchmarks.md): how to find which subcategory to build a routine around.
+
+[^aimlabs-body]: Aimlabs, [Are you taking care of your body between gaming sessions?](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/)
+[^volt-mentality]: Voltaic, [Constructing an improvement based mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/)
+[^volt-start]: Voltaic, [Getting started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/)

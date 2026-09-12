@@ -19,13 +19,11 @@ what actually helps you past one.
 and those gains shrink as you get more skilled: general motor-learning research describes an early
 stage of learning marked by large, inconsistent jumps in performance, followed by a slower stage
 of smaller gains spent on conscious adjustment and refinement, a pattern that isn't specific to aim
-training, per
-[Human Kinetics on the stages of motor learning](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction).
+training.[^hk-stages]
 Eventually most learners hit a
 stretch some researchers call a "learning plateau": performance holds roughly steady for a while
 no matter how consistently you show up and train, which motor-learning research treats as an
-ordinary, expected stage rather than evidence that something in your training has broken, per a
-[study on plateaued motor skill](https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/). Knowing a
+ordinary, expected stage rather than evidence that something in your training has broken.[^plateau-study] Knowing a
 stall is expected doesn't fix it on its own, but it does mean a flat week or two isn't evidence
 you've hit a hard ceiling.
 
@@ -40,8 +38,7 @@ noise.
 
 **Fatigue.** Training hard without enough recovery between sessions can tip into overreaching, and
 if that continues, into overtraining syndrome, a state where performance actually declines rather
-than just stalling, per a
-[clinical review of overtraining syndrome](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435910/). A
+than just stalling.[^overtraining] A
 plateau that shows up alongside feeling generally run down, not just a flat score, is worth
 treating as a fatigue problem first.
 
@@ -90,3 +87,7 @@ your hand to adapt again instead of coasting on one you've already mastered.
   break a plateau.
 - [Voltaic](../resources/communities/voltaic.md): source of the muscle-memory and
   sensitivity-change guidance.
+
+[^hk-stages]: Human Kinetics, [Understanding motor learning stages improves skill instruction](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction)
+[^plateau-study]: Journal of Neuroscience via PMC, [a study on plateaued motor skill](https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/)
+[^overtraining]: Sports Health via PMC, [a clinical review of overtraining syndrome](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435910/)
