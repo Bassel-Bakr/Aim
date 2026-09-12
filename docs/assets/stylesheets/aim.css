@@ -34,6 +34,9 @@
   /* Section headings take the accent pulled back off the link colour, so a heading reads as a
    * heading rather than as something to click. */
   --aim-heading: #8c3a26;
+  /* The wash behind a myth block. Light enough to read body text on, strong enough that the block
+   * is visibly not the draft banner. */
+  --aim-myth-wash: #b3341b0f;
   --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
   --aim-tracking: #1d6a8c;
@@ -59,6 +62,7 @@
 [data-md-color-scheme="slate"][data-md-color-primary] {
   --aim-accent: #ff7a52;
   --aim-heading: #ff9c7a;
+  --aim-myth-wash: #ff7a5214;
   --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
   --aim-tracking: #56b6d8;
@@ -580,11 +584,17 @@ body {
  * and carries no footnote: the citation lives on the hub, so a myth is only ever sourced in one
  * place and cannot go stale in two.
  *
- * The transparent title comes from the admonition rules in the chrome section above; the rules
- * below only set the border colour, for when the site's admonition border is given a
- * border-style, and the icon. Source order doesn't decide anything for either property: the
- * chrome block never sets border-color or the ::before background, so there's no tie to
- * resolve. */
+ * It is the one admonition on the site that is allowed to raise its voice. The chrome section
+ * above deliberately keeps admonitions quiet, because the draft banner sits on every page and
+ * must not take it over; a myth block appears once on a page, to contradict something the reader
+ * may believe, so it takes an accent wash, a solid accent rule, and a MYTH tag rather than the
+ * quiet treatment. It sets its own border-style because the chrome block sets a width without
+ * one.
+ *
+ * The title bar is a flex row of three parts, in order: the icon, the tag, then the claim. The
+ * tag is the title's ::after pulled in front of the claim with a negative order, because a
+ * pseudo-element is the only place to put a word the Markdown does not carry — and the Markdown
+ * must not carry it, since the title has to match the hub heading character for character. */
 :root {
   /* A crossed-out claim: a ring with a slash through it. */
   --md-admonition-icon--myth: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2c1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.9 7.9 0 0 1 4 12a8 8 0 0 1 8-8m0 16a7.9 7.9 0 0 1-4.9-1.69L18.31 7.1A7.9 7.9 0 0 1 20 12a8 8 0 0 1-8 8"/></svg>');
@@ -592,12 +602,38 @@ body {
 
 .md-typeset .admonition.myth,
 .md-typeset details.myth {
-  border-color: var(--aim-accent);
+  border-left: 3px solid var(--aim-accent);
+  background-color: var(--aim-myth-wash);
+}
+
+.md-typeset .myth > .admonition-title,
+.md-typeset .myth > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-left: 0.8rem;
+  color: var(--aim-accent);
 }
 
 .md-typeset .myth > .admonition-title::before,
 .md-typeset .myth > summary::before {
+  position: static;
+  flex: none;
+  order: -2;
   background-color: var(--aim-accent);
   -webkit-mask-image: var(--md-admonition-icon--myth);
   mask-image: var(--md-admonition-icon--myth);
+}
+
+/* The tag naming what the reader is looking at, so the claim beside it is never mistaken for the
+ * wiki asserting it. */
+.md-typeset .myth > .admonition-title::after,
+.md-typeset .myth > summary::after {
+  content: "Myth";
+  order: -1;
+  padding: 0.05rem 0.3rem;
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-accent);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
 }
