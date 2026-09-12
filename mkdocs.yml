@@ -75,6 +75,8 @@ nav:
           - wiki/skills/clicking.md
           - wiki/skills/tracking.md
           - wiki/skills/switching.md
+      - Techniques:
+          - wiki/techniques/underaiming.md
       - Training:
           - wiki/training/index.md
           - wiki/training/routines.md

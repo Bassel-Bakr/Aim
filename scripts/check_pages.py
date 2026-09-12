@@ -18,7 +18,7 @@ ALLOWED_TAGS = {
     "clicking", "tracking", "switching",
     "benchmarks", "routines", "sensitivity", "beginner",
 }
-CONCEPT_DIRS = {"getting-started", "fundamentals", "skills", "training"}
+CONCEPT_DIRS = {"getting-started", "fundamentals", "skills", "techniques", "training"}
 BANNER = '!!! warning "Draft"'
 # Guides live outside docs/wiki/ because they run on a different trust model: signed opinion
 # written from experience, carrying the author's name instead of a citation trail. They are not

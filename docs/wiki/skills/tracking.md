@@ -68,6 +68,8 @@ what makes them a bridge between the two.
 - [KovaaK's](../resources/trainers/kovaaks.md): scenario library, plus a dedicated Tracking Trainer
   DLC with eleven tracking-focused modules and dynamic difficulty, built by the game's own
   developer.[^kovaaks-dlc]
+- [Underaiming](../techniques/underaiming.md): withholding motion a shot does not need, and the
+  technique behind what aim trainers call edge tracking.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 
 [^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)
