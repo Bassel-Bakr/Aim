@@ -82,6 +82,9 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   Voltaic, 2023 — reading a bad session without dropping the routine.
 - [Why 'muscle memory' is seen as a meme](https://blog.voltaic.gg/muscle-memory/) — Voltaic, 2023 —
   what the phrase hides.
+- [e1se routines scoresheet](https://docs.google.com/spreadsheets/d/1KxW46nYH3pVZoCK-dtWHISbYC41X6O_o8h5KnSFICys/edit) —
+  e1se, 2022 — tracking, flicking and dodge routines, each scenario carrying its own notes, a
+  target score, and the rule for when to move up.
 
 ## Making and editing scenarios
 
