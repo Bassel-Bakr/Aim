@@ -38,6 +38,12 @@ extra_css:
 plugins:
   - search
   - tags
+  # Pages that moved after the site was already live. Keep an entry here rather
+  # than letting an old link 404.
+  - redirects:
+      redirect_maps:
+        guides/index.md: topics/index.md
+        wiki/resources/links.md: links.md
 
 markdown_extensions:
   - abbr
