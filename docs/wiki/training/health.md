@@ -26,8 +26,7 @@ position all session a chance to loosen up again, per
 [OSHA's Computer Workstations eTool](https://www.osha.gov/etools/computer-workstations/work-process).
 For your eyes specifically, the American Academy of Ophthalmology recommends periodically looking
 away from the screen at something farther off rather than staring at one fixed distance for hours,
-often summarized as the 20-20-20 rule, roughly 20 feet away for about 20 seconds every 20 minutes,
-per the [AAO's guidance on eye strain](https://www.aao.org/eye-health/diseases/what-is-eye-strain).
+often summarized as the 20-20-20 rule, roughly 20 feet away for about 20 seconds every 20 minutes.[^aao]
 
 **Warm-up before intense sessions.** Long stretches of repetitive mouse movement and static
 posture build up strain on the same joints and tendons session after session, and
@@ -72,3 +71,5 @@ of how both the skill and the body actually adapt, not time taken away from trai
 - [Setup and Gear](../getting-started/setup.md): mouse, pad, grip, and posture in more detail.
 - [Practice Principles](../fundamentals/practice-principles.md): rest and consistency as part of
   effective practice, not separate from it.
+
+[^aao]: American Academy of Ophthalmology, [What is eye strain?](https://www.aao.org/eye-health/diseases/what-is-eye-strain)

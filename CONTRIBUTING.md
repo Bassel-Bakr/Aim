@@ -28,7 +28,24 @@ body.
 
 1. Write in your own words and link to the original source. Do not copy guides, tables, or images
    from other sites.
-2. Link facts to their source inline.
+2. Cite facts with a footnote. Put a `[^label]` marker at the end of the sentence, and define the
+   source at the bottom of the file:
+
+   ```markdown
+   Fingers make small adjustments and the arm drives large turns.[^wrist-vs-arm]
+
+   [^wrist-vs-arm]: Aimlabs, [Wrist aiming vs arm aiming: why not both?](https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/)
+   ```
+
+   Reuse the same label whenever you cite that source again on the page; it renders as one numbered
+   entry with a link back to each use. Use descriptive labels (`wrist-vs-arm`), not numbers, so
+   citations never need renumbering. Footnotes are numbered in the order their definitions appear,
+   so keep the definition list in order of first use. Name the publisher first in the definition,
+   then link the page title.
+
+   Two exceptions stay in the prose rather than becoming footnotes: links to other wiki pages,
+   which are navigation rather than citation, and cases where the source's identity is part of the
+   claim, such as whose benchmark a rank belongs to.
 3. Pages written from research but not yet fact-checked keep this banner at the top:
 
    ```markdown

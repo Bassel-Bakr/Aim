@@ -21,8 +21,8 @@ Players who want a tiered benchmark to measure raw aim, similar in spirit to [Vo
 
 ## What it covers
 
-- **Benchmarks**: the current flagship benchmark on Revosect's site is Season 5, built for [KovaaK's](../trainers/kovaaks.md), covering six subcategories under [Clicking](../../skills/clicking.md) (static, dynamic), [Tracking](../../skills/tracking.md) (precise, reactive), and [Switching](../../skills/switching.md) (speed, evasive), per the [benchmarks page](https://revosect.com/benchmarks). Revosect has also published benchmark seasons and progression sheets for [Aimlabs](../trainers/aimlabs.md), currently at Season 2, listed on its [resources page](https://revosect.com/resources).
-- **[Routines](../../training/routines.md)**: foundational Aimlabs routines plus weakness- and smoothness-specific routines, and separate game-specific practice routines and playlists for titles including Valorant, Apex Legends, Overwatch 2, Call of Duty/Warzone, Battlefield, Counter-Strike 2, and Fortnite, per the [resources page](https://revosect.com/resources).
+- **Benchmarks**: the current flagship benchmark on Revosect's site is Season 5, built for [KovaaK's](../trainers/kovaaks.md), covering six subcategories under [Clicking](../../skills/clicking.md) (static, dynamic), [Tracking](../../skills/tracking.md) (precise, reactive), and [Switching](../../skills/switching.md) (speed, evasive).[^bench] Revosect has also published benchmark seasons and progression sheets for [Aimlabs](../trainers/aimlabs.md), currently at Season 2.[^res]
+- **[Routines](../../training/routines.md)**: foundational Aimlabs routines plus weakness- and smoothness-specific routines, and separate game-specific practice routines and playlists for titles including Valorant, Apex Legends, Overwatch 2, Call of Duty/Warzone, Battlefield, Counter-Strike 2, and Fortnite.[^res]
 - **Guides**: general aiming terminology and a beginner-oriented guide to Aimlabs benchmarks, also on the resources page.
 
 ## Key content
@@ -39,3 +39,6 @@ Revosect covers similar ground to [Voltaic](voltaic.md): benchmarks and routines
 - [Voltaic](voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
 - [Skills](../../skills/index.md)
+
+[^bench]: Revosect, [benchmarks](https://revosect.com/benchmarks)
+[^res]: Revosect, [resources](https://revosect.com/resources)

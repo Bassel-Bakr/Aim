@@ -77,8 +77,12 @@ agents most often miss:
 3. Every new page needs a `nav` entry in `mkdocs.yml` and at least one inbound link from a related
    page.
 4. Use only the tags listed in [CONTRIBUTING.md](CONTRIBUTING.md#tags). Do not invent new ones.
-5. Write in your own words and link each fact to its source inline. Never copy guides, tables, or
-   images from other sites — content here is CC BY-SA 4.0 and the sources are not.
+5. Write in your own words and cite each fact with a footnote — a `[^label]` marker at the end of
+   the sentence, defined at the bottom of the file. Reuse one label for repeat citations of the
+   same source, keep the definition list in order of first use, and use descriptive labels rather
+   than numbers. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full rule and its two exceptions.
+   Never copy guides, tables, or images from other sites — content here is CC BY-SA 4.0 and the
+   sources are not.
 6. Do not assert a claim you cannot verify from a public source. Leave it out, or mark it with
    `<!-- REVIEW: what needs checking -->`.
 7. A page written from research but not yet fact-checked keeps the draft banner at the top, exactly

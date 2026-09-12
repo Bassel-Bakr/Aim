@@ -17,8 +17,7 @@ raises your ceiling from practice that just feels productive.
 **Deliberate practice.** Psychologist Anders Ericsson's original definition of deliberate practice
 is narrower than "practice on purpose": it is individualized training built around a specific,
 well-defined performance goal, with immediate feedback on each attempt and a sequence of tasks
-that gets harder as the trainee improves, traditionally under the direction of a qualified coach,
-per [a 2019 review examining Ericsson's original definition](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full).
+that gets harder as the trainee improves, traditionally under the direction of a qualified coach.[^ericsson]
 Most solo aim training has no coach designing the sequence, but the same shape still applies
 without one: pick a scenario because it targets a specific weakness rather than because it's
 comfortable, use a stat or replay to check whether a given attempt actually improved, and only add
@@ -29,7 +28,7 @@ setting that beats you more often than it doesn't produces little more than frus
 or slowed-down variants are worth taking seriously rather than skipping past, since running a
 scenario at a pace where your
 crosshair actually lands cleanly is what builds the technique that holds up once you push the
-difficulty back up, per [Aimlabs](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/).
+difficulty back up.[^speed-accuracy]
 
 **Scenario variety versus repetition.** Running the same handful of scenarios forever can make you
 better at those specific scenarios without making you better at aiming in general. Revosect's own
@@ -75,3 +74,6 @@ same mechanics you're trying to train.
   improvement, plus lifestyle guides on rest and recovery.
 - [Revosect](../resources/communities/revosect.md): benchmark guide advising scenario variety over
   repeating only the benchmarks.
+
+[^ericsson]: Macnamara & Hambrick, [a 2019 review examining Ericsson's original definition of deliberate practice](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full)
+[^speed-accuracy]: Aimlabs, [The speed-accuracy tradeoff and what it means for your aim training](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/)

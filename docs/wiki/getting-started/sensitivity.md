@@ -19,16 +19,16 @@ you from relearning your aim every time you switch titles.
 **cm/360** is the physical distance your mouse travels across your pad to turn your in-game view a
 full 360 degrees. You can measure it by aiming at a fixed point, turning a full circle, and
 measuring how far your hand moved, or by using a calculator that combines your DPI and in-game
-sensitivity value, per [Aimlabs' cm/360 explainer](https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/).
+sensitivity value.[^cm360]
 Because it is measured in real-world distance, cm/360 is comparable across any game, engine, or
 mouse.
 
 **eDPI** (effective DPI) is your mouse DPI multiplied by your in-game sensitivity multiplier, for
-example 800 DPI × 0.27 sensitivity = 216 eDPI, per [ProSettings.net](https://prosettings.net/blog/what-is-dpi-edpi/).
+example 800 DPI × 0.27 sensitivity = 216 eDPI.[^edpi]
 Two players with the same eDPI move their crosshair the same amount for the same hand movement in
 that game, regardless of their raw DPI or sensitivity values. Unlike cm/360, eDPI is only
 comparable **within one game**, because different games apply different scaling to the sensitivity
-multiplier, per [ProSettings.net](https://prosettings.net/blog/what-is-dpi-edpi/).
+multiplier.[^edpi]
 
 **Low versus high sensitivity** is a trade-off in how much of the work your arm does versus your
 wrist and fingers. A lower sensitivity (higher cm/360) spreads a given turn over more physical
@@ -71,10 +71,9 @@ A common fear is that changing sensitivity will permanently damage your aim. Vol
 breakdown of "muscle memory" in aiming pushes back on this directly: changing your sensitivity
 costs you some short-term readjustment rather than any lasting setback, and it points to community
 members who swap settings often, some even rolling a new sensitivity at random, with no long-run
-drop in their aim, per [Voltaic](https://blog.voltaic.gg/muscle-memory/). The same article
-notes that switching sensitivity on purpose is one way people try to break a plateau, since
+drop in their aim.[^muscle] Switching sensitivity on purpose is also one way people try to break a plateau, since
 starting from an unfamiliar setting can reset your sense of what feels "normal" and open room to
-improve, per [Voltaic](https://blog.voltaic.gg/muscle-memory/). The practical takeaway is not to avoid changing
+improve.[^muscle] The practical takeaway is not to avoid changing
 your sensitivity out of fear, but to avoid changing it constantly without a reason, since every
 change costs you some readjustment time. See [Progress and Plateaus](../training/progress-and-plateaus.md)
 for more on working through a stalled score.
@@ -85,3 +84,7 @@ for more on working through a stalled score.
   Sensitivity Matcher tool for matching sensitivity to games it does not directly support.
 - [Aimlabs](../resources/trainers/aimlabs.md): built-in Sensitivity Finder for calibrating
   sensitivity inside the trainer.
+
+[^cm360]: Aimlabs, [A quick explainer on cm/360 and the common cm/360 by game](https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/)
+[^edpi]: ProSettings.net, [What is DPI and eDPI?](https://prosettings.net/blog/what-is-dpi-edpi/)
+[^muscle]: Voltaic, [Muscle memory](https://blog.voltaic.gg/muscle-memory/)

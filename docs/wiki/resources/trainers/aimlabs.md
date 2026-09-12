@@ -13,19 +13,19 @@ tags:
 
 ## What it is
 
-Aimlabs is a free-to-play aim-training platform used by more than 40 million players, available on Windows through [Steam](https://store.steampowered.com/app/714010/Aimlabs/) and the Epic Games Store, and also on Xbox and PlayStation, per the [Aimlabs homepage](https://aimlabs.com/). An optional Aimlabs+ subscription adds extra training and coaching features on top of the free tier, per the [Aimlabs+ page](https://aimlabs.com/aimlabs-plus).
+Aimlabs is a free-to-play aim-training platform used by more than 40 million players, available on Windows through [Steam](https://store.steampowered.com/app/714010/Aimlabs/) and the Epic Games Store, and also on Xbox and PlayStation.[^home] An optional Aimlabs+ subscription adds extra training and coaching features on top of the free tier.[^plus]
 
 ## Who it suits
 
-Players who want built-in, game-specific practice rather than assembling their own routine: Aimlabs ships Training Programs that curate playlists per game or aim category and adapt task difficulty to the player's skill level, per the [Aimlabs homepage](https://aimlabs.com/). Its scale and free access also suit complete beginners, while Aimlabs+ adds tools aimed at players chasing measurable improvement.
+Players who want built-in, game-specific practice rather than assembling their own routine: Aimlabs ships Training Programs that curate playlists per game or aim category and adapt task difficulty to the player's skill level.[^home] Its scale and free access also suit complete beginners, while Aimlabs+ adds tools aimed at players chasing measurable improvement.
 
 ## What it covers
 
-- **Tasks and playlists**: 50,000+ tasks and playlists, per the [Aimlabs homepage](https://aimlabs.com/), including community-built ones made with Aimlabs' Creator Studio and Playlist Editor and shared through the Aimlabs Steam Workshop, per [Aimlabs articles](https://aimlabs.com/articles/aimlabs/it-came-from-the-workshop-our-second-look-at-trending-tasks-and-playlists-on-aimlabs/).
-- **Game-specific training** for hundreds of first-person and third-person shooter titles, including official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege, covering [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md), per the [Aimlabs homepage](https://aimlabs.com/).
-- **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings, per the [Aimlabs homepage](https://aimlabs.com/).
-- **Benchmarks**: Aimlabs runs its own official Benchmarks (Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories), separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs, per the [Aimlabs Benchmarks announcement](https://aimlabs.com/articles/aimlabs/the-aimlabs-official-benchmarks-first-season-is-now-live/) and Voltaic's [Season 3 announcement](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/).
-- **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator, per the [Aimlabs leaderboards page](https://aimlabs.com/leaderboards).
+- **Tasks and playlists**: 50,000+ tasks and playlists,[^home] including community-built ones made with Aimlabs' Creator Studio and Playlist Editor and shared through the Aimlabs Steam Workshop.[^workshop]
+- **Game-specific training** for hundreds of first-person and third-person shooter titles, including official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege, covering [Clicking](../../skills/clicking.md), [Tracking](../../skills/tracking.md), and [Switching](../../skills/switching.md).[^home]
+- **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings.[^home]
+- **Benchmarks**: Aimlabs runs its own official Benchmarks (Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories), separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs.[^bench][^v3]
+- **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator.[^leaderboards]
 
 ## Key content
 
@@ -35,10 +35,17 @@ Players who want built-in, game-specific practice rather than assembling their o
 
 ## Our take
 
-Aimlabs leans toward a guided, curated experience compared to KovaaK's, with adaptive Training Programs and its own official benchmark rather than relying only on third-party ones. It is free to start, which makes it a low-friction entry point, though its most advanced coaching and analysis tools sit behind the Aimlabs+ subscription rather than the free tier, per the [Aimlabs+ page](https://aimlabs.com/aimlabs-plus).
+Aimlabs leans toward a guided, curated experience compared to KovaaK's, with adaptive Training Programs and its own official benchmark rather than relying only on third-party ones. It is free to start, which makes it a low-friction entry point, though its most advanced coaching and analysis tools sit behind the Aimlabs+ subscription rather than the free tier.[^plus]
 
 ## Related wiki pages
 
 - [Choosing an Aim Trainer](../../getting-started/aim-trainers.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
+
+[^home]: Aimlabs, [homepage](https://aimlabs.com/)
+[^plus]: Aimlabs, [Aimlabs+](https://aimlabs.com/aimlabs-plus)
+[^workshop]: Aimlabs, [It came from the Workshop: our second look at trending tasks and playlists](https://aimlabs.com/articles/aimlabs/it-came-from-the-workshop-our-second-look-at-trending-tasks-and-playlists-on-aimlabs/)
+[^bench]: Aimlabs, [The Aimlabs official benchmarks first season is now live](https://aimlabs.com/articles/aimlabs/the-aimlabs-official-benchmarks-first-season-is-now-live/)
+[^v3]: Voltaic, [Announcing the Voltaic Season 3 aiming benchmarks beta for Aimlabs](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/)
+[^leaderboards]: Aimlabs, [leaderboards](https://aimlabs.com/leaderboards)
