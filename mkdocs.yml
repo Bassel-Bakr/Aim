@@ -1,8 +1,8 @@
-site_name: Aim Wiki
+site_name: Aim
 site_description: Aim training concepts, routines, and a guide to the best existing resources.
-site_url: https://bassel-bakr.github.io/aim-wiki/
-repo_url: https://github.com/bassel-bakr/aim-wiki
-repo_name: bassel-bakr/aim-wiki
+site_url: https://bassel-bakr.github.io/aim/
+repo_url: https://github.com/bassel-bakr/aim
+repo_name: bassel-bakr/aim
 edit_uri: edit/main/docs/
 copyright: Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 
@@ -51,35 +51,37 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - getting-started/index.md
-      - getting-started/sensitivity.md
-      - getting-started/setup.md
-      - getting-started/aim-trainers.md
-  - Fundamentals:
-      - fundamentals/index.md
-      - fundamentals/how-aim-works.md
-      - fundamentals/practice-principles.md
-      - fundamentals/transfer-to-games.md
-  - Skills:
-      - skills/index.md
-      - skills/clicking.md
-      - skills/tracking.md
-      - skills/switching.md
-  - Training:
-      - training/index.md
-      - training/routines.md
-      - training/benchmarks.md
-      - training/progress-and-plateaus.md
-      - training/health.md
-  - Resources:
-      - resources/index.md
-      - Communities:
-          - resources/communities/voltaic.md
-          - resources/communities/jade-palace.md
-          - resources/communities/revosect.md
-      - Trainers:
-          - resources/trainers/kovaaks.md
-          - resources/trainers/aimlabs.md
-  - Glossary: glossary.md
-  - Tags: tags.md
+  - Wiki:
+      - wiki/index.md
+      - Getting Started:
+          - wiki/getting-started/index.md
+          - wiki/getting-started/sensitivity.md
+          - wiki/getting-started/setup.md
+          - wiki/getting-started/aim-trainers.md
+      - Fundamentals:
+          - wiki/fundamentals/index.md
+          - wiki/fundamentals/how-aim-works.md
+          - wiki/fundamentals/practice-principles.md
+          - wiki/fundamentals/transfer-to-games.md
+      - Skills:
+          - wiki/skills/index.md
+          - wiki/skills/clicking.md
+          - wiki/skills/tracking.md
+          - wiki/skills/switching.md
+      - Training:
+          - wiki/training/index.md
+          - wiki/training/routines.md
+          - wiki/training/benchmarks.md
+          - wiki/training/progress-and-plateaus.md
+          - wiki/training/health.md
+      - Resources:
+          - wiki/resources/index.md
+          - Communities:
+              - wiki/resources/communities/voltaic.md
+              - wiki/resources/communities/jade-palace.md
+              - wiki/resources/communities/revosect.md
+          - Trainers:
+              - wiki/resources/trainers/kovaaks.md
+              - wiki/resources/trainers/aimlabs.md
+      - Glossary: wiki/glossary.md
+      - Tags: wiki/tags.md

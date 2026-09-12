@@ -49,14 +49,16 @@ Aim-Wiki/
   includes/               # abbreviation snippets, injected into built pages
     abbreviations.md
   docs/                   # published content
-    index.md
-    getting-started/
-    fundamentals/
-    skills/
-    training/
-    resources/
-    glossary.md
-    tags.md
+    index.md              # landing page, served at /
+    wiki/                 # the wiki itself, served at /wiki/
+      index.md
+      getting-started/
+      fundamentals/
+      skills/
+      training/
+      resources/
+      glossary.md
+      tags.md
   .github/workflows/
     deploy.yml
     check.yml
@@ -64,7 +66,7 @@ Aim-Wiki/
 
 ## Content structure
 
-Navigation follows a learner journey. 26 pages.
+Navigation follows a learner journey. 26 wiki pages under `docs/wiki/`, plus a landing page at `docs/index.md` (2026-09-12: the wiki moved to the `/wiki/` subpath; page paths below are relative to `docs/wiki/`).
 
 - **Home** — `index.md`: what the wiki is, how to use it, "start here" links.
 - **Getting Started** — `getting-started/`

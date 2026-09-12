@@ -3,7 +3,7 @@
 An aim training wiki. It explains aim concepts in its own words and points to the best existing
 resources, such as Voltaic, Jade Palace, Revosect, KovaaK's, and Aimlabs.
 
-Site: <https://bassel-bakr.github.io/aim-wiki/>
+Site: <https://bassel-bakr.github.io/aim/>
 
 ## Run the site locally
 

@@ -1,41 +1,21 @@
 ---
-title: "Aim Wiki"
-tags:
-  - beginner
+title: "Aim"
 ---
 
-!!! warning "Draft"
-    Written from public sources, pending review.
+Aim is a training wiki for first-person and third-person shooter players. It explains how mouse aim
+works, breaks aim into skills you can practise on purpose, and collects the community benchmarks,
+routines, and trainers worth your time.
 
-This wiki is for first-person and third-person shooter players who want to train aim deliberately: the mechanics behind
-mouse aim, the skills that break aim down into parts you can practice on purpose, how to structure
-a training session, and the community benchmarks, routines, and trainers this wiki draws on to
-back it up. Every page is written in our own words from public guides and articles, with facts
-linked back to where they came from.
+[**Open the wiki**](wiki/index.md){ .md-button .md-button--primary }
 
-[**Start here**](getting-started/index.md) if this is your first visit. It walks through gear and
-sensitivity, picking a trainer, and running your first benchmark, roughly in the order most players
-need them.
+## Where to start
 
-## Sections
+- [Start Here](wiki/getting-started/index.md): gear, sensitivity, and picking an aim trainer, in the
+  order most players need them.
+- [Skills](wiki/skills/index.md): clicking, tracking, and target switching, the three skills every
+  scenario and benchmark is built from.
+- [Resources](wiki/resources/index.md): the communities and trainers this wiki draws on, including
+  Voltaic, Revosect, KovaaK's, and Aimlabs.
 
-- [Getting Started](getting-started/index.md): gear, sensitivity, and choosing an aim trainer, the
-  setup that should come before you start drilling scenarios.
-- [Fundamentals](fundamentals/index.md): the mechanics behind mouse aim and the practice habits
-  that decide whether training time actually improves your aim.
-- [Skills](skills/index.md): the three underlying skills, clicking, tracking, and switching, that
-  every scenario and benchmark on this wiki is built from.
-- [Training](training/index.md): building a routine, reading a benchmark, and handling progress
-  that stalls out.
-- [Resources](resources/index.md): the communities and trainers this wiki's benchmarks, routines,
-  and scenario recommendations come from.
-- [Glossary](glossary.md): short definitions of the aim-training terms used across the wiki.
-- [Tags](tags.md): every page filtered by topic.
-
-## About this wiki
-
-Every page here carries the "Draft" banner above because it is pending review: content is written
-from public sources and has not yet had a human check pass over it. If you spot something wrong,
-the pencil icon at the top of any page opens an edit against this wiki's source, see
-[CONTRIBUTING](https://github.com/bassel-bakr/aim-wiki/blob/main/CONTRIBUTING.md) for how that
-works, or browse the [source repository](https://github.com/bassel-bakr/aim-wiki) directly.
+Every page cites where its facts came from, and pages still marked "Draft" are waiting on a review
+pass.
