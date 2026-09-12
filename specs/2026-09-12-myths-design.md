@@ -22,8 +22,9 @@ behaviour:
 - A myth is a false claim someone would say out loud as fact. "Lower sens means better aim."
 - A common mistake is a behaviour. "Only running scenarios you already score well in."
 
-Existing `## Common mistakes` sections keep their content. Nothing moves out of them except the
-muscle memory passage named below, which is a claim rather than a behaviour.
+Existing `## Common mistakes` sections keep their content: nothing moves out of them. The one
+passage that does move is prose outside those sections, named under "Version 1 inline conversion"
+below.
 
 ## Non-goals (version 1)
 
@@ -75,12 +76,20 @@ Footnotes collect at the bottom of the page, matching every other wiki page.
 
 Eight, each answerable from a footnote already present on the site.
 
+2026-09-12: "Accuracy comes first, so train slow" was approved in brainstorming and then dropped
+while the entries were being grounded. It is not a myth on this site —
+`docs/wiki/fundamentals/how-aim-works.md` asserts the same thing as fact, that pushing speed before
+accuracy is solid builds habits that are harder to unlearn, citing the same Aimlabs article, so
+publishing it as a myth would contradict a live page. "Changing your sensitivity will ruin your
+aim" replaces it, a claim `docs/wiki/getting-started/sensitivity.md` already names as a common
+fear. The count stays at eight.
+
 | Myth stated as the claim | Source |
 | --- | --- |
 | Reps burn a motion into muscle memory | Voltaic, `blog.voltaic.gg/muscle-memory` |
 | Arm aiming is strictly better than wrist aiming | Aimlabs, wrist aiming vs arm aiming |
 | Lower sensitivity means better aim | Aimlabs cm/360, ProSettings eDPI |
-| Accuracy comes first, so train slow | Aimlabs, speed-accuracy tradeoff |
+| Changing your sensitivity will ruin your aim | Voltaic, `blog.voltaic.gg/muscle-memory` |
 | Good tracking means predicting where the target will go | Aimlabs, reactive tracking |
 | A plateau means you have hit your ceiling | plateau study, `PMC3186792` |
 | More hours is more progress | overtraining review, `PMC3435910` |
@@ -108,10 +117,18 @@ the body is at most two sentences plus the hub link, with no citation.
 
 ## Version 1 inline conversion
 
-`docs/wiki/training/progress-and-plateaus.md` already answers the muscle memory claim in prose,
-citing `[^muscle]`. That passage becomes an `!!! myth` block linking the hub entry, and the
-`[^muscle]` footnote leaves the page if no other reference to it remains. This is the only page
-whose prose changes.
+`docs/wiki/getting-started/sensitivity.md` already answers a myth in prose. Its section "When to
+change sensitivity, and when not to" opens "A common fear is that changing sensitivity will
+permanently damage your aim," then answers it from `[^muscle]`. That opening passage becomes an
+`!!! myth` block linking the hub entry; the rest of the section stays, and so does the `[^muscle]`
+footnote, which the sentences after the block still cite. This is the only page whose prose
+changes.
+
+2026-09-12: this was `docs/wiki/training/progress-and-plateaus.md` at approval. That page turned
+out to carry no such passage — it cites the muscle-memory piece only inside "Ways past a plateau",
+as one route past a stall, which is guidance rather than a claim being corrected. The passage that
+states a myth in prose is the one on `sensitivity.md` named above, so the conversion moved there
+and `progress-and-plateaus.md` is no longer touched.
 
 ## Entry points
 
@@ -139,7 +156,7 @@ cannot be clicked.
 ```
 docs/wiki/myths.md                           new   hub page, eight entries
 docs/assets/stylesheets/aim.css              edit  .aim-myth component, and the header list
-docs/wiki/training/progress-and-plateaus.md  edit  muscle memory passage becomes a myth block
+docs/wiki/getting-started/sensitivity.md     edit  the common-fear passage becomes a myth block
 docs/index.md                                edit  card in the Where to start grid
 docs/wiki/index.md                           edit  card in the Sections grid
 zensical.toml                                edit  nav entry
