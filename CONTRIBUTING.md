@@ -86,6 +86,18 @@ anything under `docs/topics/`.
 
 To suggest a topic page, or a correction to one, open an issue rather than a pull request.
 
+## The Links page
+
+`docs/wiki/resources/links.md` catalogues individual guides, articles, and videos, grouped by what
+they help with. It works differently from the rest of the wiki in two ways.
+
+The entry is the citation. A line there names the piece, its publisher, and its year where the
+source states one, so it takes no footnote; adding one would double every line.
+
+A link earns its place by teaching something this wiki does not, and keeps it only while it still
+resolves. Prefer a primary source over a re-upload, and do not add a mirror of someone else's
+document. Write the one-line description in your own words, as the rest of the wiki requires.
+
 ## Tags
 
 Use only these tags in the `tags:` front matter field:
