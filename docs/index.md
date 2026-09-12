@@ -1,5 +1,5 @@
 ---
-title: "Aim"
+title: "Aim training wiki"
 ---
 
 Aim is a training wiki for first-person and third-person shooter players. It explains how mouse aim

@@ -37,5 +37,5 @@ need them.
 Every page here carries the "Draft" banner above because it is pending review: content is written
 from public sources and has not yet had a human check pass over it. If you spot something wrong,
 the pencil icon at the top of any page opens an edit against this wiki's source, see
-[CONTRIBUTING](https://github.com/bassel-bakr/aim/blob/main/CONTRIBUTING.md) for how that
-works, or browse the [source repository](https://github.com/bassel-bakr/aim) directly.
+[CONTRIBUTING](https://github.com/Bassel-Bakr/aim/blob/main/CONTRIBUTING.md) for how that
+works, or browse the [source repository](https://github.com/Bassel-Bakr/aim) directly.
