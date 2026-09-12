@@ -39,18 +39,18 @@ resource pages.
   after.
 - [The best static dots tutorial in the world (probably not)](https://www.youtube.com/watch?v=CLpA6mXaCvw) —
   rensi, 2024 — static dots in two and a half minutes, with nothing padded out.
-- [Weakness targeted static flowchart](https://x.com/m0_nark/status/1905578974505251059) — M0NARK,
-  2025 — a Chinese static guide translated into a flowchart that starts from the symptom you have
-  and routes you to the scenarios for it.
-  <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
-  does not exist and no public copy of the Chinese original could be found. M0NARK offers a
-  higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
 - [Zeonlo's Static Guide 2026](https://www.youtube.com/watch?v=4cdQpKCCOGM) — Zeonlo, 2026 —
   tension, fluidity, pathing, and playstyles in six minutes, opening with the Bardoz method.
 - [This simple aim tech makes flicking 10x easier](https://www.youtube.com/watch?v=PEkz4YncixM) —
   ARandomDeadDude, 2025 — how to find the undershoot distance that suits you, and how to drill it
   on pokeball scenarios. Note that it uses "underflicking" for landing a flick short, which is not
   the same thing as the underaiming in Techniques below.
+- [Weakness targeted static flowchart](https://x.com/m0_nark/status/1905578974505251059) — M0NARK,
+  2025 — a Chinese static guide translated into a flowchart that starts from the symptom you have
+  and routes you to the scenarios for it.
+  <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
+  does not exist and no public copy of the Chinese original could be found. M0NARK offers a
+  higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
 
 ## Techniques
 
