@@ -64,6 +64,19 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Why 'muscle memory' is seen as a meme](https://blog.voltaic.gg/muscle-memory/) — Voltaic, 2023 —
   what the phrase hides.
 
+## Making and editing scenarios
+
+- [How to edit scenarios in KovaaKs](https://www.youtube.com/watch?v=4NWWLmhBxA0) — KovaaK's, 2021
+  — the built-in editor, from the developer.
+- [How to edit scenarios in KovaaKs (bot size/shape, speed, health)](https://www.youtube.com/watch?v=jUDRnl1i85c) —
+  Blaze_33, 2023 — the bot parameters worth changing first.
+- [How to modify your training for pro aim](https://www.youtube.com/watch?v=DzzoBNAdCt0) —
+  Corporate Serf, 2026 — bending existing scenarios toward your own weakness.
+- [KovaaK's map and scenario creator tutorial](https://www.youtube.com/watch?v=CZNf5v7Hlx4) —
+  Blaze_33, 2023 — building one from nothing, start to finish.
+- [KovaaK's map creator wiki](https://wiki.kovaaks.com/home/KovaaK'sMapCreator/map-editing) —
+  KovaaK's — the reference the videos skim over.
+
 ## Gear and settings
 
 - [How to choose a gaming mouse](https://1healthpoint.org/blog/hpforgamers/how-to-choose-a-gaming-mouse-ergonomics-calculator/) —
