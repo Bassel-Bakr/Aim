@@ -51,11 +51,9 @@ correction left over, rather than a rough first pass fixed up afterward. See
 ### FOV
 
 Field of view (FOV) is the extent of the game world visible on screen at once, usually set in
-degrees; a wider FOV shows more of the map but makes distant targets appear smaller, which changes
-how far a flick or track has to travel, per
+degrees, per
 [Wikipedia's field of view in video games entry](https://en.wikipedia.org/wiki/Field_of_view_in_video_games).
-See [Target Switching](skills/switching.md), where a wide field of view is part of what a scenario
-like Voltaic's DotTS tests.
+See [Target Switching](skills/switching.md).
 
 ### FPS
 
