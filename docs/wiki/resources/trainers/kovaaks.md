@@ -38,7 +38,7 @@ KovaaK's has the larger scenario library of the two main trainers on this wiki a
 
 ## Related wiki pages
 
-- [Choosing an Aim Trainer](../../getting-started/aim-trainers.md)
+- [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)

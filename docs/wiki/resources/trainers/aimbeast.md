@@ -40,7 +40,7 @@ Aimbeast is the third trainer worth knowing about, and the arena is the reason: 
 
 ## Related wiki pages
 
-- [Choosing an Aim Trainer](../../getting-started/aim-trainers.md)
+- [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Benchmarks](../../training/benchmarks.md)
 - [Evxl Benchmark Tracker](../tools/evxl.md)
 - [Sensitivity](../../getting-started/sensitivity.md)

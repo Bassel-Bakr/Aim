@@ -26,7 +26,7 @@ your raw mouse control is improving over time.
 
 **What they don't train.** A scenario doesn't reproduce the recoil pattern, movement, hitboxes, or
 crosshair you actually use in a match, so what you practice in a trainer isolates mechanics rather
-than transferring one-to-one, as covered in [Choosing an Aim Trainer](../getting-started/aim-trainers.md).
+than transferring one-to-one, as covered in [Aim Trainers](../getting-started/aim-trainers.md).
 Crosshair placement (keeping your aim where a target is about to appear) and positioning (where
 you stand and how you move through a map) depend on that specific game's angles, sightlines, and
 abilities, which no generic scenario reproduces. Even Voltaic, whose own benchmarks measure raw
@@ -61,5 +61,5 @@ positioning, and game sense you can rely on in a match.
 
 - [Voltaic](../resources/communities/voltaic.md): states directly that its benchmarks are one
   piece of the puzzle, and splits routines into fundamental versus game-specific practice.
-- [Choosing an Aim Trainer](../getting-started/aim-trainers.md): covers the same
-  trainer-versus-in-game trade-off from the trainer-selection side.
+- [Aim Trainers](../getting-started/aim-trainers.md): covers the same trainer-versus-in-game
+  trade-off from the other side.

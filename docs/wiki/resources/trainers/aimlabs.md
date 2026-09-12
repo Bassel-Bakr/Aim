@@ -39,7 +39,7 @@ Aimlabs leans toward a guided, curated experience compared to KovaaK's, with ada
 
 ## Related wiki pages
 
-- [Choosing an Aim Trainer](../../getting-started/aim-trainers.md)
+- [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
 

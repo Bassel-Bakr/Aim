@@ -102,7 +102,7 @@ time, usually built around whichever skill a benchmark shows as your current wea
 
 A scenario is a single drill inside an aim trainer built to isolate one specific mechanical skill,
 such as tracking a moving target, rather than reproducing a full match. See
-[Choosing an Aim Trainer](getting-started/aim-trainers.md).
+[Aim Trainers](getting-started/aim-trainers.md).
 
 ### Sensitivity
 

@@ -19,7 +19,7 @@ A first pass through the wiki looks like this:
    way first so later practice is not undermined by acceleration or a cramped pad. See
    [Setup and Gear](setup.md) and [Sensitivity](sensitivity.md).
 2. **Pick a trainer.** Decide between a dedicated aim trainer and in-game practice modes, or use
-   both. See [Choosing an Aim Trainer](aim-trainers.md).
+   both. See [Aim Trainers](aim-trainers.md).
 3. **Learn the fundamentals.** Understand what "aim" is actually made of and how deliberate
    practice works before you start drilling. See [Fundamentals](../fundamentals/index.md).
 4. **Run a benchmark to find weaknesses.** A benchmark score tells you which of the core skills,
