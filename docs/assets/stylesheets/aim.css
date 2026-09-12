@@ -7,7 +7,7 @@
  * Three parts, in order: the colour and type layer, which overrides the theme's own custom
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
- * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack.
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -556,4 +556,37 @@ body {
     flex: 1 0 100%;
     border-top: 1px solid var(--md-typeset-table-color);
   }
+}
+
+/* .aim-myth is an admonition type, not a class you write. It marks a claim that is repeated as
+ * fact and is wrong, on the page whose subject it gets wrong, and sends the reader to the full
+ * answer on wiki/myths.md.
+ *
+ *   !!! myth "Changing your sensitivity will ruin your aim"
+ *       A change costs short-term readjustment, not a lasting setback.
+ *       See [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim).
+ *
+ * Two rules. The title is the myth stated as the claim, word for word as its heading on the hub
+ * page, because that heading is the anchor. The body is at most two sentences plus the hub link,
+ * and carries no footnote: the citation lives on the hub, so a myth is only ever sourced in one
+ * place and cannot go stale in two.
+ *
+ * The bar and transparent title come from the admonition rules in the chrome section above; these
+ * rules only set the colour and the icon. They come later in the file, so they win the tie on
+ * specificity against that section's [class] selectors. */
+:root {
+  /* A crossed-out claim: a ring with a slash through it. */
+  --md-admonition-icon--myth: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2c1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.9 7.9 0 0 1 4 12a8 8 0 0 1 8-8m0 16a7.9 7.9 0 0 1-4.9-1.69L18.31 7.1A7.9 7.9 0 0 1 20 12a8 8 0 0 1-8 8"/></svg>');
+}
+
+.md-typeset .admonition.myth,
+.md-typeset details.myth {
+  border-color: var(--aim-accent);
+}
+
+.md-typeset .myth > .admonition-title::before,
+.md-typeset .myth > summary::before {
+  background-color: var(--aim-accent);
+  -webkit-mask-image: var(--md-admonition-icon--myth);
+  mask-image: var(--md-admonition-icon--myth);
 }

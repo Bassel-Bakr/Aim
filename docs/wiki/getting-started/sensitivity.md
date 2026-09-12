@@ -67,16 +67,16 @@ aim per title:
 
 ## When to change sensitivity, and when not to
 
-A common fear is that changing sensitivity will permanently damage your aim. Voltaic's own
-breakdown of "muscle memory" in aiming pushes back on this directly: changing your sensitivity
-costs you some short-term readjustment rather than any lasting setback, and it points to community
-members who swap settings often, some even rolling a new sensitivity at random, with no long-run
-drop in their aim.[^muscle] Switching sensitivity on purpose is also one way people try to break a plateau, since
-starting from an unfamiliar setting can reset your sense of what feels "normal" and open room to
-improve.[^muscle] The practical takeaway is not to avoid changing
-your sensitivity out of fear, but to avoid changing it constantly without a reason, since every
-change costs you some readjustment time. See [Progress and Plateaus](../training/progress-and-plateaus.md)
-for more on working through a stalled score.
+!!! myth "Changing your sensitivity will ruin your aim"
+    A change costs some short-term readjustment rather than any lasting setback.
+    See [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim).
+
+Switching sensitivity on purpose is also one way people try to break a plateau, since starting
+from an unfamiliar setting can reset your sense of what feels "normal" and open room to
+improve.[^muscle] The practical takeaway is not to avoid changing your sensitivity out of fear,
+but to avoid changing it constantly without a reason, since every change costs you some
+readjustment time. See [Progress and Plateaus](../training/progress-and-plateaus.md) for more on
+working through a stalled score.
 
 ## Further resources
 
