@@ -1,9 +1,9 @@
 ## graphify
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+`graphify-out/` holds a knowledge graph of this repository. It is gitignored, so build it with
+`/graphify .` if it is missing.
 
-Rules:
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- Question about the repository, and `graphify-out/graph.json` exists: `graphify query "<question>"`
+  before grep. Also `graphify path "<A>" "<B>"` and `graphify explain "<concept>"`.
+- `graphify-out/GRAPH_REPORT.md` only when those three do not surface enough.
+- After changing files: `graphify update .` (AST-only, no API cost).
