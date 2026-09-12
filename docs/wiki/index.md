@@ -27,6 +27,8 @@ need them.
   every scenario and benchmark on this wiki is built from.
 - [Training](training/index.md): building a routine, reading a benchmark, and handling progress
   that stalls out.
+- [Guides](guides/index.md): signed, first-person walkthroughs of specific problems, written from
+  experience rather than from sources.
 - [Resources](resources/index.md): the communities and trainers this wiki's benchmarks, routines,
   and scenario recommendations come from.
 - [Glossary](glossary.md): short definitions of the aim-training terms used across the wiki.
@@ -34,8 +36,12 @@ need them.
 
 ## About this wiki
 
-Every page here carries the "Draft" banner above because it is pending review: content is written
-from public sources and has not yet had a human check pass over it. If you spot something wrong,
-the pencil icon at the top of any page opens an edit against this wiki's source, see
-[CONTRIBUTING](https://github.com/Bassel-Bakr/aim/blob/main/CONTRIBUTING.md) for how that
-works, or browse the [source repository](https://github.com/Bassel-Bakr/aim) directly.
+Most pages here carry the "Draft" banner above because they are pending review: content is written
+from public sources and has not yet had a human check pass over it. [Guides](guides/index.md) are
+the exception, carrying their author's name instead, because they are signed opinion rather than
+sourced reference.
+
+If you spot something wrong, the pencil icon at the top of any page opens an edit against this
+wiki's source, see [CONTRIBUTING](https://github.com/Bassel-Bakr/aim/blob/main/CONTRIBUTING.md)
+for how that works, or browse the [source repository](https://github.com/Bassel-Bakr/aim)
+directly.

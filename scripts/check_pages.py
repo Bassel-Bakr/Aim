@@ -19,7 +19,11 @@ ALLOWED_TAGS = {
     "benchmarks", "routines", "sensitivity", "beginner",
 }
 CONCEPT_DIRS = {"getting-started", "fundamentals", "skills", "training"}
+# Guides are signed, first-person pages. They carry a byline instead of the draft banner,
+# because their trust model is the author's name rather than a citation trail.
+GUIDE_DIR = "guides"
 BANNER = '!!! warning "Draft"'
+BYLINE = '!!! info "Written by '
 
 
 def front_matter(text):
@@ -45,7 +49,14 @@ def check(path, drafts):
         errors.append(f"{rel}: missing '## Further resources' section")
     if section == "resources" and not is_index and "\n## Related wiki pages" not in text:
         errors.append(f"{rel}: missing '## Related wiki pages' section")
-    if drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
+    if section == GUIDE_DIR:
+        # Guides are signed opinion; a byline replaces the draft banner entirely.
+        if not is_index:
+            if BYLINE not in text:
+                errors.append(f'{rel}: missing byline, expected \'{BYLINE}<name>"\'')
+            if "\n## Further resources" not in text:
+                errors.append(f"{rel}: missing '## Further resources' section")
+    elif drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
     return errors
 
