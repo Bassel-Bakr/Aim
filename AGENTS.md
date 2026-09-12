@@ -68,6 +68,34 @@ so a dead outbound link will not show up in the checks you run locally.
 | `scripts/` | Repository checks. |
 | `mkdocs.yml` | Site config and the `nav` tree. |
 
+## Page components
+
+`docs/assets/stylesheets/aim.css` defines a handful of classes that Markdown pages opt into. Each
+one is documented above its own rules in the stylesheet, with the Markdown that produces it. Read
+that before using one, and add a new component only when a page actually needs it.
+
+| Class | What it does |
+| --- | --- |
+| `.aim-hero` | Landing-page opener. A page with a hero has the theme's generated title hidden, so the hero has to carry the title itself. |
+| `.aim-cards` | Turns a list of links into a card grid. The whole card is the link, so each item needs exactly one link, written as its title. A second link in the same item ends up under the stretched hit area and cannot be clicked. |
+| `.aim-steps` | Turns an ordered list into a numbered route. |
+| `.aim-skill` | Inline badge on a link naming a skill, with `.aim-skill--clicking`, `--tracking` or `--switching` alongside it. |
+| `.aim-table-stack` | Wraps a table whose last column should drop onto its own line below 38em instead of squeezing. |
+
+All of these except `.aim-skill` are wrappers:
+
+```markdown
+<div class="aim-cards" markdown>
+
+- **[Skills](wiki/skills/index.md)**: what the section covers.
+
+</div>
+```
+
+The `markdown` attribute and the blank lines around the content are both required, or the Markdown
+inside the wrapper is passed through as literal text. `.aim-skill` goes on the link itself with
+`attr_list`: `[Clicking](clicking.md){ .aim-skill .aim-skill--clicking }`.
+
 ## Rules that are easy to get wrong
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) in full before adding a page. These are the constraints
