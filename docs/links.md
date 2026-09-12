@@ -48,6 +48,9 @@ resource pages.
 - [Weakness targeted static flowchart](https://x.com/m0_nark/status/1905578974505251059) — M0NARK,
   2025 — a Chinese static guide translated into a flowchart that starts from the symptom you have
   and routes you to the scenarios for it.
+  <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
+  does not exist and no public copy of the Chinese original could be found. M0NARK offers a
+  higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
 
 ## Techniques
 
