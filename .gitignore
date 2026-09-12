@@ -1,0 +1,6 @@
+.venv/
+site/
+.cache/
+__pycache__/
+.claude/
+.serena/
