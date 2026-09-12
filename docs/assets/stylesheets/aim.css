@@ -7,7 +7,7 @@
  * Three parts, in order: the colour and type layer, which overrides the theme's own custom
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
- * it: .aim-hero, .aim-cards, .aim-steps, .aim-skill.
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-skill, .aim-table-stack.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -512,3 +512,48 @@ body {
 .md-typeset .aim-skill--clicking { color: var(--aim-clicking); }
 .md-typeset .aim-skill--tracking { color: var(--aim-tracking); }
 .md-typeset .aim-skill--switching { color: var(--aim-switching); }
+
+/* ---------------------------------------------------------------------------
+ * .aim-table-stack — a table whose last column drops onto its own line on a
+ * narrow screen, so the remaining columns keep a readable width instead of
+ * wrapping to one word per line.
+ *
+ *   <div class="aim-table-stack" markdown>
+ *
+ *   | Skill | What it is | Subcategories |
+ *   | --- | --- | --- |
+ *   | Clicking | Acquiring a target. | Static, dynamic, linear |
+ *
+ *   </div>
+ *
+ * The stacked cell carries no header: its column heading is hidden, because a
+ * heading sitting once at the top of the table no longer lines up with cells
+ * repeated under every row.
+ * ------------------------------------------------------------------------ */
+
+@media screen and (max-width: 38em) {
+  .md-typeset .aim-table-stack table:not([class]) {
+    display: block;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .md-typeset .aim-table-stack tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .md-typeset .aim-table-stack :is(th, td):not(:last-child) {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .md-typeset .aim-table-stack th:last-child {
+    display: none;
+  }
+
+  .md-typeset .aim-table-stack td:last-child {
+    flex: 1 0 100%;
+    border-top: 1px solid var(--md-typeset-table-color);
+  }
+}
