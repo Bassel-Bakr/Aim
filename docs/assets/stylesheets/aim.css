@@ -50,6 +50,9 @@
   --md-primary-fg-color--light: #2a2f39;
   --md-primary-fg-color--dark: #0b0d11;
   --md-accent-fg-color: var(--aim-accent);
+  /* The theme tints the active navigation item and code-in-link hovers with this, and it keeps its
+   * own indigo unless it is set alongside the accent it belongs to. */
+  --md-accent-fg-color--transparent: #b3341b14;
   --md-typeset-a-color: var(--aim-accent);
 }
 
@@ -66,6 +69,7 @@
   --md-primary-fg-color--light: #2a2f39;
   --md-primary-fg-color--dark: #07080b;
   --md-accent-fg-color: var(--aim-accent);
+  --md-accent-fg-color--transparent: #ff7a521f;
   --md-typeset-a-color: var(--aim-accent);
   --md-code-bg-color: #171a21;
 }
