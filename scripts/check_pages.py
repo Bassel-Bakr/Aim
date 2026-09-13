@@ -5,12 +5,12 @@ Usage:
     python scripts/check_pages.py --drafts                 # also require the draft banner
     python scripts/check_pages.py docs/wiki/glossary.md    # check named pages only
 """
-import posixpath
 import re
 import sys
 from pathlib import Path
 
 import yaml
+from aim_related import CONCEPT_DIRS, PLACEHOLDER, kind
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 WIKI = DOCS / "wiki"
@@ -21,7 +21,6 @@ ALLOWED_TAGS = {
     "benchmarks", "routines", "sensitivity", "beginner",
     "myth",
 }
-CONCEPT_DIRS = {"getting-started", "fundamentals", "categories", "techniques", "training"}
 BANNER = '!!! warning "Draft"'
 # Articles live outside docs/wiki/ because they run on a different trust model: signed opinion
 # written from experience, carrying the author's name instead of a citation trail. They are not
@@ -45,7 +44,6 @@ REFERENCE_TYPES = {"article", "document", "documentation", "encyclopedia", "post
 # Related pages are listed in front matter and written out by extensions/aim_related.py.
 RELATED_HEADING = re.compile(r"^## Related( pages)?\s*$", re.M)
 RELATED_FIELDS = {"page", "why"}
-PAGE_LINK = re.compile(r"\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 
 def registry_ids():
@@ -116,16 +114,8 @@ def myth_headings():
     return set(MYTH_HEADING.findall(text))
 
 
-def kind(rel):
-    """'concept' or 'resource' for a wiki page in those sections, else None."""
-    parts = rel.split("/")
-    if len(parts) < 3 or parts[0] != "wiki":
-        return None
-    return "concept" if parts[1] in CONCEPT_DIRS else "resource" if parts[1] == "resources" else None
-
-
 def related_errors(rel, meta):
-    """Problems with a page's related list, including links that do not run both ways."""
+    """Problems with a page's related list."""
     related = meta.get("related")
     if related is None:
         return []
@@ -138,7 +128,7 @@ def related_errors(rel, meta):
             errors.append(f"{where}: expected exactly 'page' and 'why'")
             continue
         page, why = entry["page"], entry["why"]
-        if not isinstance(why, str) or not why.strip():
+        if not isinstance(why, str) or not why.strip() or why.strip() == PLACEHOLDER:
             errors.append(f"{where}: 'why' must say how {page} connects to this page")
         if not isinstance(page, str) or not page.startswith("wiki/") or not page.endswith(".md"):
             errors.append(f"{where}: 'page' must be a docs-relative wiki page, like wiki/training/routines.md")
@@ -151,19 +141,6 @@ def related_errors(rel, meta):
         if page in seen:
             errors.append(f"{where}: {page} is listed twice")
         seen.add(page)
-        # A related link between two concept pages, or two resource pages, runs both ways: the
-        # other page links back, in its own related list or anywhere in its text. Links across the
-        # two kinds are one-way by design, since concept pages point to resources under Resources
-        # only where they are worth a look. Hub pages without a related list are exempt.
-        target = (DOCS / page).read_text(encoding="utf-8")
-        target_related = front_matter(target).get("related")
-        if kind(page) is None or kind(page) != kind(rel) or not isinstance(target_related, list):
-            continue
-        back = {item.get("page") for item in target_related if isinstance(item, dict)}
-        back |= {posixpath.normpath(posixpath.join(posixpath.dirname(page), href))
-                 for href in PAGE_LINK.findall(body(target))}
-        if rel not in back:
-            errors.append(f"{where}: {page} does not link back; add this page to its related list")
     return errors
 
 

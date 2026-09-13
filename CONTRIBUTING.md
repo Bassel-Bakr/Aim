@@ -145,10 +145,17 @@ A concept page ends with up to three sections, in this order, each with one job:
        why: turning these habits into a session plan.
    ```
 
-   Paths are relative to `docs/`. A related link between two concept pages, or between two
-   resource pages, must run both ways: the other page links back, in its related list or its text.
-   A resource page listing a concept page is one-way, and so is a link to a page with no related
-   list, such as the Glossary.
+   Paths are relative to `docs/`. Links between two concept pages, or two resource pages, run both
+   ways on their own: when this page lists another one that does not list it back, that page's
+   Related section gains a bare link back here. Give it a reason by adding this page to that page's
+   list. A resource page listing a concept page stays one-way, and so does a link to a page with
+   no related list, such as the Glossary. A live preview only re-renders the page you edited, so
+   run `zensical build --clean` to see a new link back on the other page.
+
+   To find pages worth listing, run `python scripts/suggest_related.py <page>`. It prints entries
+   to paste, strongest first: pages that already link here, pages linked in this page's text, and
+   pages sharing two or more tags. Each carries `why: TODO`; write the reason or drop the entry, since
+   the checker rejects a TODO.
 2. **Resources**: where to go to learn more — resource pages, and the matching section of
    [Guides](docs/wiki/resources/guides.md). These are recommendations, not evidence.
 3. **References**: the sources for this page's claims. Do not write this heading: it is added

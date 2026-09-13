@@ -11,6 +11,16 @@ heading, then one bullet per page, linked with the target page's title and a pat
 page being rendered. The section goes directly above "## Resources", or at the end of the page when
 there is no Resources section; the references extension appends References after it.
 
+Links between two pages of the same kind run both ways. When a concept page lists another concept
+page, or a resource page lists another resource page, and that page does not list it back, the
+section on that page gains a link back with no reason, after its own entries. Writing a reason for
+it in that page's front matter replaces the bare link. Links across the two kinds stay one-way:
+concept pages point to resources under Resources only where they are worth a look. Pages without a
+related list of their own, such as the Glossary and section index pages, gain no links back.
+
+scripts/check_pages.py and scripts/suggest_related.py import the helpers here, so the rules live in
+one place.
+
 Configured in zensical.toml:
 
     [project.markdown_extensions.aim_related]
@@ -21,48 +31,94 @@ import re
 import yaml
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
-from zensical.extensions.context import ContextPreprocessor
 
-FRONT_MATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.S)
+FRONT_MATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
 TITLE_HEADING = re.compile(r"^# (.+)$", re.M)
+CONCEPT_DIRS = {"getting-started", "fundamentals", "categories", "techniques", "training"}
+# What a suggested entry carries until someone writes its reason; the checker rejects it.
+PLACEHOLDER = "TODO"
+
+
+def front_matter(text):
+    match = FRONT_MATTER.match(text)
+    return (yaml.safe_load(match.group(1)) or {}) if match else {}
+
+
+def kind(page):
+    """'concept' or 'resource' for a docs-relative wiki page in those sections, else None."""
+    parts = page.split("/")
+    if len(parts) < 3 or parts[0] != "wiki":
+        return None
+    return "concept" if parts[1] in CONCEPT_DIRS else "resource" if parts[1] == "resources" else None
+
+
+def listed(meta):
+    """The pages a page's front matter lists as related, in order."""
+    related = meta.get("related")
+    if not isinstance(related, list):
+        return []
+    return [entry["page"] for entry in related if isinstance(entry, dict) and isinstance(entry.get("page"), str)]
+
+
+def related_lists(docs_dir):
+    """Every docs-relative page that carries a related list, mapped to the pages it lists."""
+    lists = {}
+    for root, _, files in os.walk(docs_dir):
+        for name in files:
+            if name.endswith(".md"):
+                path = os.path.join(root, name)
+                page = os.path.relpath(path, docs_dir).replace("\\", "/")
+                meta = front_matter(open(path, encoding="utf-8").read())
+                if isinstance(meta.get("related"), list):
+                    lists[page] = listed(meta)
+    return lists
+
+
+def links_back(lists, page):
+    """Pages of the same kind that list this page when it does not list them."""
+    if page not in lists or kind(page) is None:
+        return []
+    return sorted(source for source, pages in lists.items()
+                  if page in pages and source not in lists[page] and kind(source) == kind(page))
 
 
 def page_title(docs_dir, page):
     """The title a page shows: its front matter title, else its first heading, else its file name."""
     text = open(os.path.join(docs_dir, page), encoding="utf-8").read()
-    match = FRONT_MATTER.match(text)
-    meta = (yaml.safe_load(match.group(1)) or {}) if match else {}
-    if meta.get("title"):
-        return meta["title"]
+    title = front_matter(text).get("title")
+    if title:
+        return title
     heading = TITLE_HEADING.search(text)
     return heading.group(1).strip() if heading else os.path.splitext(os.path.basename(page))[0]
 
 
 class RelatedPreprocessor(Preprocessor):
-    def __init__(self, md):
-        super().__init__(md)
-        self._titles = {}
-
-    def title(self, docs_dir, page):
-        if page not in self._titles:
-            self._titles[page] = page_title(docs_dir, page)
-        return self._titles[page]
-
     def run(self, lines):
+        # Imported here so the checker and the suggestion script can use this module without
+        # Zensical's rendering machinery.
+        from zensical.extensions.context import ContextPreprocessor
+
         context = ContextPreprocessor.from_markdown(self.md)
-        related = context.page.meta.get("related") if context else None
+        if context is None:
+            return lines
+        page = context.page.path.replace("\\", "/")
+        docs_dir = context.config["docs_dir"]
+        related = context.page.meta.get("related")
         if not related:
             return lines
-        docs_dir = context.config["docs_dir"]
-        here = os.path.dirname(context.page.path.replace("\\", "/")) or "."
+        here = os.path.dirname(page) or "."
+
+        def link(target):
+            href = os.path.relpath(target, here).replace("\\", "/")
+            return f"[{page_title(docs_dir, target)}]({href})"
+
         section = ["## Related", ""]
         for entry in related:
-            page = entry["page"]
-            if not os.path.isfile(os.path.join(docs_dir, page)):
-                section.append(f"- **Unknown page {page}.**")
+            if not os.path.isfile(os.path.join(docs_dir, entry["page"])):
+                section.append(f"- **Unknown page {entry['page']}.**")
                 continue
-            link = os.path.relpath(page, here).replace("\\", "/")
-            section.append(f"- [{self.title(docs_dir, page)}]({link}): {entry['why']}")
+            section.append(f"- {link(entry['page'])}: {entry['why']}")
+        section += [f"- {link(source)}" for source in links_back(related_lists(docs_dir), page)]
         section.append("")
         fenced = False
         for index, line in enumerate(lines):

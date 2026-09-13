@@ -12,6 +12,10 @@ related:
     why: one of the communities whose benchmark sheets it collects.
   - page: wiki/training/progress-and-plateaus.md
     why: reading a score trend, which its rank history records.
+  - page: wiki/resources/trainers/aimbeast.md
+    why: one of the trainers it reads scores from.
+  - page: wiki/resources/communities/revosect.md
+    why: one of the communities whose benchmark sheets it collects.
 ---
 
 !!! warning "Draft"

@@ -13,6 +13,10 @@ related:
     why: the tracker that collects Aimbeast benchmark sheets.
   - page: wiki/getting-started/sensitivity.md
     why: choosing a sensitivity, which Aimbeast can match to another game.
+  - page: wiki/resources/trainers/kovaaks.md
+    why: a paid trainer built around a large library of community scenarios.
+  - page: wiki/resources/trainers/aimlabs.md
+    why: a free trainer with curated, game-specific training programs.
 ---
 
 !!! warning "Draft"

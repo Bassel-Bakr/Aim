@@ -45,8 +45,8 @@ zensical build --clean
 ```
 
 `scripts/check_pages.py` enforces three content rules: every `tags:` value is on the allowed list,
-each concept page and each resource page carries a `related:` list in front matter whose links run
-both ways between pages of the same kind, and every citation names an ID in `references.yml`. It also checks that every myth block's title matches a heading on
+each concept page and each resource page carries a `related:` list in front matter where every
+entry has a real reason, and every citation names an ID in `references.yml`. It also checks that every myth block's title matches a heading on
 `docs/wiki/myths.md`, and enforces the readability rules in
 [CONTRIBUTING.md](CONTRIBUTING.md#readability). Pass `--drafts` to also require the draft banner on
 every page. Name pages after the flags to check only those.
@@ -68,7 +68,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `overrides/` | Theme template overrides. `main.html` loads the colour picker script in `<head>`. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `references.yml` | Every source the wiki cites, once, under a stable `REF-<number>` ID. |
-| `extensions/aim_related.py` | Markdown extension that writes the Related section from a page's `related:` front matter. |
+| `extensions/aim_related.py` | Markdown extension that writes the Related section from a page's `related:` front matter, adding bare links back from pages of the same kind that list it. Its helpers are shared by the checker and `scripts/suggest_related.py`. |
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
@@ -139,6 +139,10 @@ agents most often miss:
     committing, where `<base>` is the commit before you started. It must print
     `Invariants unchanged`. A rewrite that drops a link or renames a heading breaks pages that link
     to it, and the build does not always say so.
+11. When you add or edit a page's `related:` list, run `python scripts/suggest_related.py <page>`.
+    Draft a reason for each suggestion worth keeping from what both pages actually say, and drop the
+    rest. A reason names how the other page connects to this one; do not invent a connection the
+    pages do not support. Do the same for any bare link back the build shows on the other page.
 
 ## Articles are not wiki pages
 

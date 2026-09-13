@@ -11,6 +11,12 @@ related:
     why: the trainers community benchmarks run on.
   - page: wiki/training/progress-and-plateaus.md
     why: what to do when a benchmark score stops climbing.
+  - page: wiki/categories/clicking.md
+    why: the clicking subcategories a benchmark scores.
+  - page: wiki/categories/tracking.md
+    why: the tracking subcategories a benchmark scores.
+  - page: wiki/categories/switching.md
+    why: the switching subcategories a benchmark scores.
 ---
 
 !!! warning "Draft"

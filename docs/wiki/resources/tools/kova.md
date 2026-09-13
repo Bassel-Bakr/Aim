@@ -11,6 +11,8 @@ related:
     why: the cm/360 and DPI values a profile records.
   - page: wiki/training/benchmarks.md
     why: the community benchmarks its personal bests are ranked against.
+  - page: wiki/resources/trainers/kovaaks.md
+    why: the trainer whose personal bests a profile shows.
 ---
 
 !!! warning "Draft"

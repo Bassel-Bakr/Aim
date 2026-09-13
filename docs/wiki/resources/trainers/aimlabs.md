@@ -11,6 +11,10 @@ related:
     why: a community whose Season 3 benchmark runs inside Aimlabs.
   - page: wiki/training/benchmarks.md
     why: how official and community benchmarks are scored.
+  - page: wiki/resources/trainers/kovaaks.md
+    why: a paid trainer built around a large library of community scenarios.
+  - page: wiki/resources/trainers/aimbeast.md
+    why: a paid trainer that adds ranked duels against other players.
 ---
 
 !!! warning "Draft"

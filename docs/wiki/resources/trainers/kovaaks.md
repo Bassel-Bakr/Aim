@@ -17,6 +17,12 @@ related:
     why: tracks KovaaK's benchmark scores against community sheets.
   - page: wiki/resources/tools/kovobs.md
     why: saves an OBS clip when a KovaaK's run sets a personal best.
+  - page: wiki/resources/tools/kova.md
+    why: shows your KovaaK's personal bests on a public profile.
+  - page: wiki/resources/trainers/aimlabs.md
+    why: a free trainer with curated, game-specific training programs.
+  - page: wiki/resources/trainers/aimbeast.md
+    why: a paid trainer that adds ranked duels against other players.
 ---
 
 !!! warning "Draft"

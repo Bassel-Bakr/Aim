@@ -11,6 +11,8 @@ related:
     why: how tiered benchmarks like Revosect's measure raw aim.
   - page: wiki/categories/index.md
     why: the three categories its benchmark subcategories fall under.
+  - page: wiki/resources/tools/evxl.md
+    why: tracks Revosect benchmark scores automatically.
 ---
 
 !!! warning "Draft"
