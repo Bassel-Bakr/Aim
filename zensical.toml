@@ -71,6 +71,7 @@ nav = [
 
 [project.theme]
 name = "material"
+custom_dir = "overrides"
 favicon = "assets/favicon.svg"
 icon.logo = "lucide/crosshair"
 features = [

@@ -220,4 +220,90 @@
 
   if (typeof document === "undefined") return;
 
+  /* -------------------------------------------------------------------------------------------
+   * Wiring: storage, painting, and the picker
+   * ---------------------------------------------------------------------------------------- */
+
+  var STORAGE_KEY = "aim.theme.seed";
+  var STYLE_ID = "aim-theme";
+
+  /* The saved seed, lower-cased, or null. Storage can throw in private windows or when a browser
+   * blocks site data; that reads as nothing saved. A malformed value is removed. */
+  function readSeed() {
+    try {
+      var seed = localStorage.getItem(STORAGE_KEY);
+      if (seed === null) return null;
+      if (parseHex(seed)) return seed.trim().toLowerCase();
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (error) { /* storage unavailable */ }
+    return null;
+  }
+
+  function writeSeed(seed) {
+    try {
+      if (seed === null) localStorage.removeItem(STORAGE_KEY);
+      else localStorage.setItem(STORAGE_KEY, seed);
+    } catch (error) { /* storage unavailable: the choice lasts until the page is left */ }
+  }
+
+  /* Write the tokens into one <style> at the end of <head>, or remove it for the default. */
+  function paint(tokens) {
+    var style = document.getElementById(STYLE_ID);
+    if (!tokens) {
+      if (style) style.parentNode.removeChild(style);
+      return;
+    }
+    if (!style) {
+      style = document.createElement("style");
+      style.id = STYLE_ID;
+      document.head.appendChild(style);
+    }
+    style.textContent = toCss(tokens);
+  }
+
+  var active = DEFAULT_SEED;
+  var listeners = [];
+
+  function notify() {
+    listeners.forEach(function (listener) { listener(active); });
+  }
+
+  /* Re-colour the site from a seed and remember it. Brick is the default, so it clears instead.
+   * Returns false, changing nothing, when the seed cannot produce a readable palette. */
+  function apply(seed) {
+    if (isDefault(seed)) {
+      reset();
+      return true;
+    }
+    var tokens = derive(seed);
+    if (!tokens) return false;
+    active = seed.trim().toLowerCase();
+    paint(tokens);
+    writeSeed(active);
+    notify();
+    return true;
+  }
+
+  function reset() {
+    active = DEFAULT_SEED;
+    paint(null);
+    writeSeed(null);
+    notify();
+  }
+
+  api.apply = apply;
+  api.reset = reset;
+
+  // Runs in <head>, before the body is parsed, so a saved colour is in place before first paint.
+  var saved = readSeed();
+  if (saved && !isDefault(saved)) {
+    var tokens = derive(saved);
+    if (tokens) {
+      active = saved;
+      paint(tokens);
+    } else {
+      writeSeed(null);
+    }
+  }
+
 })(typeof globalThis !== "undefined" ? globalThis : this);
