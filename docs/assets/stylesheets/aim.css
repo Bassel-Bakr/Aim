@@ -598,6 +598,8 @@ body {
  * alone, no "see" and no full stop.
  *
  * .aim-key marks the one point on a page a reader should leave with if they read nothing else.
+ * Its tag reads NOTE, but the Markdown type stays key: note is the theme's built-in admonition, so
+ * styling .note would turn every ordinary note on the site into this block.
  *
  *   !!! key "Keep the trainer to a slice of your practice"
  *       A daily playlist of 30 to 40 minutes is enough; past that, the game is better practice.[^x]
@@ -625,7 +627,7 @@ body {
 .md-typeset .key {
   --aim-callout: var(--aim-key);
   --aim-callout-wash: var(--aim-key-wash);
-  --aim-callout-tag: "Key";
+  --aim-callout-tag: "Note";
 }
 
 .md-typeset :is(.admonition, details):is(.myth, .key) {
