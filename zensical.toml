@@ -76,7 +76,6 @@ icon.logo = "lucide/crosshair"
 features = [
   "content.action.edit",
   "navigation.tabs",
-  "navigation.sections",
   "navigation.indexes",
   "navigation.footer",
   "search.suggest",
