@@ -17,13 +17,13 @@ KovaaK's is a paid aim-training platform for Windows, sold on [Steam](https://st
 
 ## Who it suits
 
-Players comfortable choosing and configuring their own scenarios and playlists, from beginners to competitive players, since KovaaK's ships a free-play Sandbox alongside structured Benchmarks and Workouts modes rather than a single guided path.[^steam]
+Players comfortable choosing and configuring their own scenarios and playlists, from beginners to competitive players. KovaaK's ships a free-play Sandbox alongside structured Benchmarks and Workouts modes, rather than a single guided path.[^steam]
 
 ## What it covers
 
 - **Scenarios and playlists** covering [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md) drills, created by the developer and the community and shared through the in-game [Steam Workshop](https://steamcommunity.com/app/824270/workshop/).
-- **Benchmarks**: built-in game-specific benchmarks for VALORANT, Apex Legends, Fortnite, and Overwatch, and the base game that third-party [benchmark](../../training/benchmarks.md) seasons such as [Voltaic](../communities/voltaic.md) Season 5 and Revosect Season 5 are run on.[^steam][^revo]
-- **[Sensitivity](../../getting-started/sensitivity.md) matching**: the official site hosts a web-based [sensitivity converter](https://kovaaks.com/kovaaks/sens-converter) for a set list of games, and the developer separately publishes an open-source [Sensitivity Matcher](https://github.com/KovaaK/SensitivityMatcher) script that measures in-game turn rate to match sensitivity for games not on that list.[^conv][^matcher]
+- **Benchmarks**: built-in game-specific benchmarks for VALORANT, Apex Legends, Fortnite, and Overwatch. It is also the base game that third-party [benchmark](../../training/benchmarks.md) seasons such as [Voltaic](../communities/voltaic.md) Season 5 and Revosect Season 5 run on.[^steam][^revo]
+- **[Sensitivity](../../getting-started/sensitivity.md) matching**: the official site hosts a web-based [sensitivity converter](https://kovaaks.com/kovaaks/sens-converter) for a set list of games.[^conv] The developer separately publishes an open-source [Sensitivity Matcher](https://github.com/KovaaK/SensitivityMatcher) script. It measures in-game turn rate, to match sensitivity for games not on that list.[^matcher]
 - **Stats and editor**: Steam leaderboards and per-scenario stat tracking, plus a map and scenario editor for building custom content.[^steam]
 
 ## Key content
@@ -34,7 +34,9 @@ Players comfortable choosing and configuring their own scenarios and playlists, 
 
 ## Our take
 
-KovaaK's has the larger scenario library of the two main trainers on this wiki and is the base game most benchmark communities, including [Voltaic](../communities/voltaic.md) and Revosect, build their seasons on. It's a one-time Steam purchase rather than free-to-play, and its Sandbox-first design rewards players who are willing to find and set up scenarios and playlists themselves.[^steam]
+KovaaK's has the larger scenario library of the two main trainers on this wiki. It's also the base game most benchmark communities, including [Voltaic](../communities/voltaic.md) and Revosect, build their seasons on.
+
+It's a one-time Steam purchase rather than free-to-play. Its Sandbox-first design rewards players who are willing to find and set up scenarios and playlists themselves.[^steam]
 
 ## Related wiki pages
 
