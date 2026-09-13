@@ -1060,15 +1060,16 @@ body {
 
 /* The References page, which the aim_references extension builds. Each entry starts with an empty
  * anchor, id="ref-12", that a footnote's REF link points at. The entry followed to is tinted, so a
- * reader lands on it instead of hunting for it, and the anchor stops short of the sticky header. */
+ * reader lands on it instead of hunting for it, and the anchor stops short of the sticky header.
+ * The tint reaches past the text with a spread shadow, not margin or padding, so the entry and its
+ * bullet stay exactly where they sit when not targeted. */
 .md-typeset span[id^="ref-"] {
   scroll-margin-top: 6rem;
 }
 
 .md-typeset li:has(> span[id^="ref-"]:target) {
-  margin-inline-start: -0.4rem;
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.2rem;
+  border-radius: 0.1rem;
   background-color: var(--md-accent-fg-color--transparent);
+  box-shadow: 0 0 0 0.3rem var(--md-accent-fg-color--transparent);
 }
 
