@@ -25,7 +25,7 @@
    * with the scheme, so anything that must stay dark reads from it. */
   --aim-night: #0b0d12;
   --aim-night-fg: #e8eaf0;
-  --aim-night-accent: #ff7a52;
+  --aim-night-accent: #e38268;
 
   /* The chrome is the header, tabs and footer. In the dark scheme it is night; the light scheme gives
    * it a warm paper tone instead, set with the light scheme's tokens below, so a light page is not
@@ -44,13 +44,13 @@
   --aim-chrome-on-hover: var(--aim-night);
 
   --aim-ink: #14171c;
-  --aim-accent: #b3341b;
+  --aim-accent: #9c3522;
   /* Section headings take the accent pulled back off the link colour, so a heading reads as a
    * heading rather than as something to click. */
-  --aim-heading: #8c3a26;
+  --aim-heading: #7a291b;
   /* The wash behind a myth block. Light enough to read body text on, strong enough that the block
    * is visibly not the draft banner. */
-  --aim-myth-wash: #b3341b0f;
+  --aim-myth-wash: #9c35220f;
   /* Notes are yellow so red keeps meaning "wrong". Yellow bright enough to read as yellow is too
    * light to set text in on white, so the light scheme splits it: the bright yellow fills the bar and
    * tag, and a dark amber sets the title. The tag always carries dark text, since light text on
@@ -61,7 +61,7 @@
   --aim-key-tag-ink: var(--aim-night);
   --aim-tag-ink: var(--aim-night-fg);
   --aim-grid: #14171c08;
-  --aim-clicking: #b3341b;
+  --aim-clicking: #9c3522;
   --aim-tracking: #1d6a8c;
   --aim-switching: #6a4396;
 
@@ -72,7 +72,7 @@
 /* The theme sets its link colour per scheme and primary colour together, so these blocks have to
  * carry both attributes to override it rather than lose on specificity. */
 [data-md-color-scheme="default"][data-md-color-primary] {
-  --aim-chrome: #ede3d8;
+  --aim-chrome: #e8e4df;
   --aim-chrome-fg: var(--aim-ink);
   --aim-chrome-fg-light: #14171cb3;
   /* 64% rather than the dark scheme's 45%: dark ink on paper loses contrast faster than light ink
@@ -80,6 +80,9 @@
   --aim-chrome-fg-lighter: #14171ca3;
   --aim-chrome-accent: var(--aim-accent);
   --aim-chrome-line: #14171c17;
+  /* The page you are on sits on the header's stone in dark text, tying the sidebar to the chrome. */
+  --aim-nav-active-bg: var(--aim-chrome);
+  --aim-nav-active-fg: var(--aim-ink);
   --aim-chrome-grid: #14171c0d;
   --aim-chrome-on-accent: #fff;
   --aim-chrome-hover: var(--aim-ink);
@@ -91,20 +94,20 @@
   --md-accent-fg-color: var(--aim-accent);
   /* The theme tints the active navigation item and code-in-link hovers with this, and it keeps its
    * own indigo unless it is set alongside the accent it belongs to. */
-  --md-accent-fg-color--transparent: #b3341b14;
+  --md-accent-fg-color--transparent: #9c352214;
   --md-typeset-a-color: var(--aim-accent);
 }
 
 [data-md-color-scheme="slate"][data-md-color-primary] {
-  --aim-accent: #ff7a52;
-  --aim-heading: #ff9c7a;
-  --aim-myth-wash: #ff7a5214;
+  --aim-accent: #e38268;
+  --aim-heading: #f0a590;
+  --aim-myth-wash: #e3826814;
   --aim-key: #f2c14e;
   --aim-key-ink: #f2c14e;
   --aim-key-wash: #f2c14e14;
   --aim-tag-ink: var(--aim-night);
   --aim-grid: #ffffff08;
-  --aim-clicking: #ff7a52;
+  --aim-clicking: #e38268;
   --aim-tracking: #56b6d8;
   --aim-switching: #b18cf0;
 
@@ -113,7 +116,9 @@
   --md-primary-fg-color--light: #2a2f39;
   --md-primary-fg-color--dark: #07080b;
   --md-accent-fg-color: var(--aim-accent);
-  --md-accent-fg-color--transparent: #ff7a521f;
+  --md-accent-fg-color--transparent: #e382681f;
+  --aim-nav-active-bg: var(--md-accent-fg-color--transparent);
+  --aim-nav-active-fg: var(--aim-accent);
   --md-typeset-a-color: var(--aim-accent);
   --md-code-bg-color: #171a21;
 }
@@ -261,15 +266,16 @@ body {
   }
 }
 
-/* The tick marking where you are, matching the one under the page title. */
-.md-sidebar--primary .md-nav__link--active {
-  box-shadow: -0.5rem 0 0 -0.36rem var(--aim-accent);
+/* The page you are on gets one plain highlight, set per scheme: stone with dark text in the light
+ * scheme, an accent tint in the dark one. */
+.md-sidebar--primary .md-nav--primary .md-nav__item .md-nav__link--active {
+  color: var(--aim-nav-active-fg);
+  background-color: var(--aim-nav-active-bg);
 }
 
 /* A section's row is one control: its page link and its open/close arrow share a container. The
  * theme styles the two halves separately, so an active or hovered section showed two rounded pills
- * and two ticks side by side. The container carries the pill and the tick instead, and its halves
- * stay transparent. Keyboard focus lights the whole row too, so focus is still visible. The
+ * side by side. The container carries the pill instead, and its halves stay transparent. Keyboard focus lights the whole row too, so focus is still visible. The
  * selectors are long to outrank the theme's hover rule, which is five classes deep. */
 .md-sidebar--primary .md-nav--primary .md-nav__container {
   gap: 0;
@@ -286,8 +292,7 @@ body {
 }
 
 .md-sidebar--primary .md-nav--primary .md-nav__container:has(> .md-nav__link--active) {
-  background-color: var(--md-accent-fg-color--transparent);
-  box-shadow: -0.5rem 0 0 -0.36rem var(--aim-accent);
+  background-color: var(--aim-nav-active-bg);
 }
 
 /* ---------------------------------------------------------------------------
