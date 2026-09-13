@@ -7,7 +7,7 @@
  * Three parts, in order: the colour and type layer, which overrides the theme's own custom
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
- * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth.
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth, .aim-key.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -37,6 +37,11 @@
   /* The wash behind a myth block. Light enough to read body text on, strong enough that the block
    * is visibly not the draft banner. */
   --aim-myth-wash: #b3341b0f;
+  /* Key points are blue so red keeps meaning "wrong". The tag's text sits on the solid colour, so
+   * it is light on the light scheme's dark blue and dark on the dark scheme's light blue. */
+  --aim-key: #1d6a8c;
+  --aim-key-wash: #1d6a8c0f;
+  --aim-tag-ink: var(--aim-chrome-fg);
   --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
   --aim-tracking: #1d6a8c;
@@ -63,6 +68,9 @@
   --aim-accent: #ff7a52;
   --aim-heading: #ff9c7a;
   --aim-myth-wash: #ff7a5214;
+  --aim-key: #56b6d8;
+  --aim-key-wash: #56b6d814;
+  --aim-tag-ink: var(--aim-chrome);
   --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
   --aim-tracking: #56b6d8;
@@ -571,9 +579,13 @@ body {
   }
 }
 
-/* .aim-myth is an admonition type, not a class you write. It marks a claim that is repeated as
- * fact and is wrong, on the page whose subject it gets wrong, and sends the reader to the full
- * answer on wiki/myths.md.
+/* .aim-myth and .aim-key are admonition types, not classes you write. They share one shape, a
+ * coloured rule, a wash, and a tag naming the block, and differ only in colour and tag word:
+ * red for something wrong, blue for something to remember. Red must keep meaning "wrong", so a key
+ * point never borrows it.
+ *
+ * .aim-myth marks a claim that is repeated as fact and is wrong, on the page whose subject it gets
+ * wrong, and sends the reader to the full answer on wiki/myths.md.
  *
  *   !!! myth "Changing your sensitivity will ruin your aim"
  *       A change costs short-term readjustment, not a lasting setback.
@@ -585,27 +597,43 @@ body {
  * place and cannot go stale in two. The link takes .aim-myth-more and is written as the page name
  * alone, no "see" and no full stop.
  *
- * It is the one admonition on the site that is allowed to raise its voice. The chrome section
- * above deliberately keeps admonitions quiet, because the draft banner sits on every page and
- * must not take it over; a myth block appears once on a page, to contradict something the reader
- * may believe, so it takes an accent wash, a solid accent rule, and a MYTH tag rather than the
- * quiet treatment. It sets its own border-style because the chrome block sets a width without
- * one.
+ * .aim-key marks the one point on a page a reader should leave with if they read nothing else.
  *
- * The title bar is a flex row of two parts: the tag, then the claim. The tag is the title's
- * ::after pulled in front of the claim with a negative order, because a pseudo-element is the only
- * place to put a word the Markdown does not carry — and the Markdown must not carry it, since the
- * title has to match the hub heading character for character. The theme's admonition icon is
- * dropped: the tag already says what the block is, and the icon only pushed the claim further off
- * the left margin. */
-.md-typeset .admonition.myth,
-.md-typeset details.myth {
-  border-left: 3px solid var(--aim-accent);
-  background-color: var(--aim-myth-wash);
+ *   !!! key "Keep the trainer to a slice of your practice"
+ *       A daily playlist of 30 to 40 minutes is enough; past that, the game is better practice.[^x]
+ *
+ * Three rules. At most one per page, which scripts/check_pages.py enforces: a page where several
+ * points are "key" has none. The title is the point stated as an instruction. The body is at most
+ * two sentences and cites its source with a footnote, because unlike a myth there is no hub page
+ * to carry the citation for it.
+ *
+ * Both are allowed to raise their voice where other admonitions are not. The chrome section above
+ * keeps admonitions quiet, because the draft banner sits on every page and must not take it over.
+ * Each sets its own border-style because the chrome block sets a width without one.
+ *
+ * The title bar is a flex row of two parts: the tag, then the title. The tag is the title's ::after
+ * pulled in front with a negative order, because a pseudo-element is the only place to put a word
+ * the Markdown does not carry — and for a myth the Markdown must not carry it, since the title has
+ * to match the hub heading character for character. The theme's admonition icon is dropped: the
+ * tag already says what the block is. */
+.md-typeset .myth {
+  --aim-callout: var(--aim-accent);
+  --aim-callout-wash: var(--aim-myth-wash);
+  --aim-callout-tag: "Myth";
 }
 
-.md-typeset .myth > .admonition-title,
-.md-typeset .myth > summary {
+.md-typeset .key {
+  --aim-callout: var(--aim-key);
+  --aim-callout-wash: var(--aim-key-wash);
+  --aim-callout-tag: "Key";
+}
+
+.md-typeset :is(.admonition, details):is(.myth, .key) {
+  border-left: 3px solid var(--aim-callout);
+  background-color: var(--aim-callout-wash);
+}
+
+.md-typeset :is(.myth, .key) > :is(.admonition-title, summary) {
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -613,12 +641,23 @@ body {
    * is a filled box, so the indent is dropped and the tag's left edge starts on the same column
    * the body text below it starts on. */
   padding-left: 0;
-  color: var(--aim-accent);
+  color: var(--aim-callout);
 }
 
-.md-typeset .myth > .admonition-title::before,
-.md-typeset .myth > summary::before {
+.md-typeset :is(.myth, .key) > :is(.admonition-title, summary)::before {
   display: none;
+}
+
+/* The tag naming what the reader is looking at, so a myth's claim is never mistaken for the wiki
+ * asserting it, and a key point is never mistaken for one more paragraph. */
+.md-typeset :is(.myth, .key) > :is(.admonition-title, summary)::after {
+  content: var(--aim-callout-tag);
+  order: -1;
+  padding: 0.05rem 0.3rem;
+  color: var(--aim-tag-ink);
+  background-color: var(--aim-callout);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
 }
 
 /* The hub link, set as a control rather than as prose so the correction reads as one sentence and
@@ -637,17 +676,4 @@ body {
 
 .md-typeset .myth .aim-myth-more::after {
   content: " \2197";
-}
-
-/* The tag naming what the reader is looking at, so the claim beside it is never mistaken for the
- * wiki asserting it. */
-.md-typeset .myth > .admonition-title::after,
-.md-typeset .myth > summary::after {
-  content: "Myth";
-  order: -1;
-  padding: 0.05rem 0.3rem;
-  color: var(--aim-chrome-fg);
-  background-color: var(--aim-accent);
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
 }

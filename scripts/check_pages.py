@@ -31,6 +31,9 @@ BYLINE = '!!! info "Written by '
 # heading word for word, or the link it ships with silently lands at the top of the page.
 MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
 MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
+# A key block marks the one point a reader should leave a page with. Two on a page means neither
+# is the one.
+KEY_BLOCK = re.compile(r'^!!! key "', re.M)
 
 # Readability. Most readers skim and many read with ADHD, so a page has to survive being read in
 # passes: short paragraphs, short sentences, the answer first, and a way out at the end. See
@@ -181,6 +184,9 @@ def check(path, drafts, headings):
                     f"{rel}: myth block title '{title}' has no matching heading on wiki/myths.md"
                 )
         errors += readability(rel, text, section in CONCEPT_DIRS and not is_index)
+        keys = len(KEY_BLOCK.findall(text))
+        if keys > 1:
+            errors.append(f"{rel}: {keys} key blocks, a page carries at most one")
     return errors
 
 
