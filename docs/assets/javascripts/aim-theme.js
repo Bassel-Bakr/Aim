@@ -306,4 +306,133 @@
     }
   }
 
+  function element(tag, attributes, children) {
+    var node = document.createElement(tag);
+    Object.keys(attributes || {}).forEach(function (name) { node.setAttribute(name, attributes[name]); });
+    (children || []).forEach(function (child) {
+      node.appendChild(typeof child === "string" ? document.createTextNode(child) : child);
+    });
+    return node;
+  }
+
+  function buildPicker(anchor) {
+    var button = element("button", {
+      type: "button",
+      class: "md-header__button md-icon aim-theme-picker__button",
+      "aria-label": "Change colour",
+      "aria-haspopup": "dialog",
+      "aria-expanded": "false",
+      "aria-controls": "aim-theme-panel"
+    }, [element("span", { class: "aim-theme-picker__dot", "aria-hidden": "true" })]);
+
+    var swatches = PRESETS.map(function (preset) {
+      return element("button", {
+        type: "button",
+        role: "radio",
+        class: "aim-theme-picker__swatch",
+        style: "--aim-swatch: " + preset.seed,
+        "aria-label": preset.name,
+        title: preset.name,
+        "data-seed": preset.seed
+      });
+    });
+    var group = element("div", {
+      role: "radiogroup",
+      "aria-label": "Preset colours",
+      class: "aim-theme-picker__swatches"
+    }, swatches);
+
+    var custom = element("input", { type: "color", class: "aim-theme-picker__input" });
+    var customLabel = element("label", { class: "aim-theme-picker__custom" }, ["Custom…", custom]);
+    var message = element("p", { class: "aim-theme-picker__message", role: "status", hidden: "" });
+    var resetButton = element("button", { type: "button", class: "aim-theme-picker__reset" }, ["Reset"]);
+
+    var panel = element("div", {
+      id: "aim-theme-panel",
+      class: "aim-theme-picker__panel",
+      role: "dialog",
+      "aria-label": "Site colour",
+      hidden: ""
+    }, [group, customLabel, message, resetButton]);
+
+    var wrapper = element("div", { class: "md-header__option aim-theme-picker" }, [button, panel]);
+    anchor.parentNode.insertBefore(wrapper, anchor.nextSibling);
+
+    function sync(seed) {
+      var preset = null;
+      swatches.forEach(function (swatch) {
+        var checked = swatch.getAttribute("data-seed") === seed;
+        if (checked) preset = swatch;
+        swatch.setAttribute("aria-checked", String(checked));
+        swatch.tabIndex = -1;
+      });
+      (preset || swatches[0]).tabIndex = 0;
+      customLabel.toggleAttribute("data-active", !preset);
+      custom.value = seed;
+    }
+
+    function open() {
+      panel.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+      var checked = swatches.filter(function (swatch) { return swatch.tabIndex === 0; })[0];
+      checked.focus();
+    }
+
+    function close(returnFocus) {
+      panel.hidden = true;
+      message.hidden = true;
+      button.setAttribute("aria-expanded", "false");
+      if (returnFocus) button.focus();
+    }
+
+    function choose(seed) {
+      message.hidden = true;
+      if (!apply(seed)) {
+        message.textContent = "That colour can't be made readable. Try a different one.";
+        message.hidden = false;
+      }
+    }
+
+    button.addEventListener("click", function () {
+      if (panel.hidden) open(); else close(false);
+    });
+
+    swatches.forEach(function (swatch, index) {
+      swatch.addEventListener("click", function () { choose(swatch.getAttribute("data-seed")); });
+      swatch.addEventListener("keydown", function (event) {
+        var step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
+        if (!step) return;
+        event.preventDefault();
+        var next = swatches[(index + step + swatches.length) % swatches.length];
+        next.focus();
+        choose(next.getAttribute("data-seed"));
+      });
+    });
+
+    custom.addEventListener("input", function () { choose(custom.value); });
+    resetButton.addEventListener("click", function () {
+      message.hidden = true;
+      reset();
+    });
+
+    panel.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close(true);
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!panel.hidden && !wrapper.contains(event.target)) close(false);
+    });
+
+    listeners.push(sync);
+    sync(active);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // The light/dark toggle's form. If a theme upgrade renames it, there is simply no picker.
+    var anchor = document.querySelector('.md-header__option[data-md-component="palette"]');
+    if (anchor) buildPicker(anchor);
+  });
 })(typeof globalThis !== "undefined" ? globalThis : this);

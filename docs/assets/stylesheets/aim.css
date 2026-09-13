@@ -7,7 +7,8 @@
  * Three parts, in order: the colour and type layer, which overrides the theme's own custom
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
- * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth, .aim-key.
+ * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth, .aim-key,
+ * .aim-theme-picker.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -772,4 +773,124 @@ body {
 
 .md-typeset .myth .aim-myth-more::after {
   content: " \2197";
+}
+
+/* .aim-theme-picker — the colour picker in the header. docs/assets/javascripts/aim-theme.js inserts
+ * it next to the light/dark toggle, so no Markdown produces it:
+ *
+ *   <div class="md-header__option aim-theme-picker">
+ *     <button class="md-header__button md-icon aim-theme-picker__button">…dot…</button>
+ *     <div class="aim-theme-picker__panel" role="dialog" hidden>
+ *       swatches, a Custom… colour input, a status line, and Reset
+ *     </div>
+ *   </div>
+ *
+ * Every colour here reads from the site's tokens, so the picker re-colours with the page it
+ * changes. The button's dot is the live accent, so it always shows the colour in use. */
+.aim-theme-picker {
+  position: relative;
+}
+
+.aim-theme-picker__button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.aim-theme-picker__dot {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--aim-accent);
+  box-shadow: 0 0 0 2px var(--aim-chrome), 0 0 0 3px var(--aim-chrome-fg-lighter);
+}
+
+.aim-theme-picker__panel {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  right: 0;
+  z-index: 10;
+  width: 12rem;
+  padding: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  background-color: var(--md-default-bg-color);
+  box-shadow: 0 0.3rem 1rem #0000002e;
+  font-size: 0.68rem;
+}
+
+.aim-theme-picker__panel:not([hidden]) {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.aim-theme-picker__swatches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.aim-theme-picker__swatch {
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--aim-swatch);
+  cursor: pointer;
+}
+
+/* The chosen swatch gets a ring in the page's own ink, clear of the swatch by a gap of page
+ * background, so it shows on every swatch colour in both schemes. */
+.aim-theme-picker__swatch[aria-checked="true"] {
+  box-shadow: 0 0 0 2px var(--md-default-bg-color), 0 0 0 4px var(--md-default-fg-color);
+}
+
+.aim-theme-picker__swatch:focus-visible,
+.aim-theme-picker__reset:focus-visible,
+.aim-theme-picker__input:focus-visible {
+  outline: 2px solid var(--aim-accent);
+  outline-offset: 3px;
+}
+
+.aim-theme-picker__custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.aim-theme-picker__custom[data-active] {
+  font-weight: 700;
+}
+
+.aim-theme-picker__input {
+  width: 2.2rem;
+  height: 1.4rem;
+  padding: 0;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: none;
+  cursor: pointer;
+}
+
+.aim-theme-picker__message {
+  margin: 0;
+  color: var(--aim-accent);
+}
+
+.aim-theme-picker__reset {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  color: var(--aim-accent);
+  background: none;
+  font: inherit;
+  font-family: var(--aim-display);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
 }
