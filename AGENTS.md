@@ -72,7 +72,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
-| `scripts/` | Repository checks. |
+| `scripts/` | Repository checks, `suggest_related.py`, and `move_page.py`, which moves a page and repoints every link, related entry, nav entry and redirect to it. |
 | `zensical.toml` | Site config and the `nav` tree. |
 
 ## Page components
@@ -143,6 +143,8 @@ agents most often miss:
     Draft a reason for each suggestion worth keeping from what both pages actually say, and drop the
     rest. A reason names how the other page connects to this one; do not invent a connection the
     pages do not support. Do the same for any bare link back the build shows on the other page.
+12. Move or rename a page only with `python scripts/move_page.py <old> <new>`, never with a plain
+    `git mv`. Review the other mentions it lists, then run `zensical build --clean`.
 
 ## Articles are not wiki pages
 

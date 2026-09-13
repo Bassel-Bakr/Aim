@@ -117,6 +117,18 @@ commit and reports anything of that kind:
 python scripts/check_rewrite.py main docs/wiki/glossary.md
 ```
 
+To move or rename a page, never move the file by hand. `scripts/move_page.py` moves it and repoints
+every relative link to it, the `related:` entries that list it, and its `nav` entry. It also adds a
+redirect from the old URL, so links from outside the wiki keep working:
+
+```bash
+python scripts/move_page.py wiki/categories/tracking.md wiki/skills/tracking.md
+```
+
+It ends by checking that every link in `docs/` resolves, and lists any other mention of the old
+path, such as in a template, for you to update by hand. Links stay ordinary relative Markdown, so
+they work on GitHub and in editors as well as on the site.
+
 ## Articles are not part of the wiki
 
 Articles live at `/articles`, outside `docs/wiki/`, because they run on a different trust model. A
