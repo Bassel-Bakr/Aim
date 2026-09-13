@@ -13,9 +13,10 @@ groups train, separate real progress from practice that just feels productive.
 
 - **Practice deliberately.** Target a weakness, check each attempt, and add difficulty once it holds.
 - **Quality over volume.** Run scenarios at a pace where your crosshair lands cleanly.
-- **Mix your scenarios.** Repeating the same few makes you better at those, not at aiming.
+- **Mix your scenarios.** Repeating the same few can make you better at those without improving
+  your aim in general.
 - **Train technique, not the score.** A high score can come from a scenario's quirks.
-- **Rest is part of training.** Shorter sessions with real rest beat one long session.
+- **Rest is part of training.** Shorter sessions with real rest tend to beat one long session.
 
 ## Explanation
 

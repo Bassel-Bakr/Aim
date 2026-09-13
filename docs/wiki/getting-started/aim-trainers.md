@@ -36,12 +36,13 @@ and hitboxes, so practice there transfers directly.
 The trade-off is that you can't isolate a single category the way a scenario does. Your reps are
 mixed in with everything else happening in that mode.
 
-Structured routines often split the two, mirroring isolated trainer practice versus in-game
-application. [Voltaic](../resources/communities/voltaic.md) is one example, per its
-[Getting Started guide](https://blog.voltaic.gg/getting-started-with-voltaic/).
+Structured routines often split the two. Per its
+[Getting Started guide](https://blog.voltaic.gg/getting-started-with-voltaic/),
+[Voltaic](../resources/communities/voltaic.md) organizes its routines into general Fundamental
+Routines for mouse control, and separate game-specific ones.
 
-It organizes its routines into general Fundamental Routines for mouse control, and separate
-game-specific routines for the aspects of aiming each game uses most.
+The game-specific ones target the aspects of aiming each game uses most. That mirrors isolated
+trainer practice versus in-game application.
 
 **What a trainer does not decide.** Which trainer you install matters less than whether you train
 deliberately in it.

@@ -25,8 +25,8 @@ is a target that's easier to judge, and a shot that's easier to time.[^matty]
 movements a shot doesn't need leaves fewer of them competing for your attention.
 
 That's why the technique is framed as making aim cleaner and more efficient, not slower. Matty
-points to it as a trait of professional play rather than a trainer habit. The players named include
-donk, sarah_frags, EliGE, and Prophet.[^matty]
+points to it as a trait of professional play rather than a trainer habit. Players it's visible in
+include donk, sarah_frags, EliGE, and Prophet.[^matty]
 
 **It belongs to no single category.** The restraint holds anywhere a target is in front of you. So
 it turns up in [clicking](../categories/clicking.md) and [switching](../categories/switching.md) as

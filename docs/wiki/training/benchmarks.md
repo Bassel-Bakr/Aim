@@ -12,8 +12,8 @@ and re-run later. It shows whether you're actually getting better, rather than t
 session felt.
 
 - **Read the breakdown, not the rank.** Your lowest subcategory is where to train.
-- **Re-run every few weeks.** Not every session.
-- **Ranks don't translate.** A rank on one benchmark doesn't carry over to another.
+- **Re-run every few weeks, not every session.** No schedule fits everyone.
+- **Ranks don't translate.** A Voltaic rank doesn't carry over to a Revosect rank.
 - **The rank is a check, not the goal.** Grinding one strength won't fix a weakness.
 
 ## Explanation

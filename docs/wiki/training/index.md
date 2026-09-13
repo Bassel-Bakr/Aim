@@ -12,9 +12,10 @@ How you train matters more across weeks than within any single session. A workab
 1. Run a [benchmark](benchmarks.md) to see which subcategory lags behind the others.
 2. Build a [routine](routines.md) around whichever weakness that turns up.
 3. Hold that routine's length and frequency steady long enough to judge whether it's working.
-4. Rest. Skill develops between sessions as well as during them, so rest is part of the plan. See
-   [Health and Rest](health.md).
-5. Re-run the benchmark every few weeks, not every session.
+4. Re-run the benchmark every few weeks, not every session.
+
+Skill develops between sessions as well as during them, so rest is part of the plan throughout, not
+a step. See [Health and Rest](health.md).
 
 A single day's result moves around too much on its own to prove anything. Judge your training by the
 trend across several runs, covered on [Progress and Plateaus](progress-and-plateaus.md), rather than

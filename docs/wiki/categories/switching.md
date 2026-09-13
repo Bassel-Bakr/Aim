@@ -76,8 +76,7 @@ Because this blends switching with tracking, alternate drills between wide-space
 switching and [Tracking](tracking.md) at a slower pace. That builds both halves before you combine
 them.
 
-**Do this next.** Start with speed switching, and widen target spacing only once you land most
-switches at the current one.
+**Do this next.** Widen target spacing only once you land most switches at the current one.
 
 ## Further resources
 

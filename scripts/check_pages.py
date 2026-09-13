@@ -48,7 +48,7 @@ SENTENCE_END = re.compile(r"(?<=[.!?:;])[\"”’)]*\s+(?=[A-Z0-9\"“(\[])")
 # The site writes US English, like its sources. Footnote definitions are exempt: they quote titles.
 BRITISH = re.compile(
     r"\b(practis(?:e|ed|es|ing)|organis(?:e|ed|es|ing|ation)|behaviours?|colour(?:ed|ing|s)?"
-    r"|centres?|analys(?:e|ed|es|ing)|labour|favourites?|defence|recognis(?:e|ed|es|ing)"
+    r"|centres?|analys(?:e|ed|ing)|labour|favourites?|defence|recognis(?:e|ed|es|ing)"
     r"|realis(?:e|ed|es|ing)|minimis(?:e|ed|es|ing)|optimis(?:e|ed|es|ing|ation))\b",
     re.I,
 )

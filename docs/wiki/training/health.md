@@ -11,32 +11,31 @@ tags:
     This page shares general information only. If you have pain, numbness, or tingling, stop
     training and see a medical professional.
 
-Long aiming sessions put steady, repetitive strain on your eyes, hands, wrists, and neck, the same
-strain anyone working at a screen for hours gets. None of it is specific to aim training: it's
+Long aiming sessions put steady, repetitive strain on your eyes, hands, wrists, and neck. It's the
+same strain anyone working at a screen and mouse for hours gets.
+
+None of it is specific to aim training: it's
 general ergonomics and rest advice from health and ergonomics organizations.
 
 - **Take regular breaks.** A few minutes away from the screen once an hour is a common pattern.
 - **Warm up before hard sessions.** Make it part of the routine, not an optional extra.
 - **Stop at pain, tingling, or numbness.** Scale training back, then ease it up again.
-- **Protect your sleep.** Short sleep slows the reaction time you're training.
+- **Protect your sleep.** Prolonged short sleep slows the reaction time you're training.
 
 ## Explanation
 
 **Regular breaks.** OSHA's guidance for computer workstations calls for pausing computer use
-periodically, rather than working in one long unbroken block.
+periodically, rather than working in one long unbroken block.[^osha]
 
 A commonly cited pattern is stepping away from the screen for a few minutes once an hour. That gives
 whatever you've held in one position all session a chance to loosen up again.[^osha]
 
 For your eyes, the American Academy of Ophthalmology recommends periodically looking at something
-farther off, instead of staring at one fixed distance for hours.
-
-It's often summarized as the 20-20-20 rule: roughly 20 feet away, for about 20 seconds, every 20
+farther off, instead of staring at one fixed distance for hours. It's often summarized as the 20-20-20 rule: roughly 20 feet away, for about 20 seconds, every 20
 minutes.[^aao]
 
 **Warm-up before intense sessions.** Long stretches of repetitive mouse movement and static posture
 build up strain on the same joints and tendons, session after session.
-
 [Aimlabs](../resources/trainers/aimlabs.md) argues a short stretch or warm-up belongs inside your
 training routine itself, not as an optional extra bolted on.[^aimlabs-body]
 

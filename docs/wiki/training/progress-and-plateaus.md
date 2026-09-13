@@ -12,7 +12,7 @@ Progress in aim training rarely moves in a straight line. Expect fast early gain
 and the occasional stretch where your score barely moves at all.
 
 - **Slowing gains are normal.** Early jumps shrink as you get more skilled.
-- **A flat stretch isn't a ceiling.** Plateaus are an expected stage of learning.
+- **A flat stretch isn't evidence of a ceiling.** Plateaus are an expected stage of learning.
 - **Judge the trend, not one run.** A single benchmark result is noisy.
 - **Rest first if you're run down.** Then vary your focus, scenarios, or sensitivity.
 

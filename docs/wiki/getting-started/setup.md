@@ -40,9 +40,9 @@ to lift and reset your mouse mid-turn.
 repeatable position for as long as you play.
 
 - **Palm grip** rests your whole hand flat on the mouse and moves it mostly from the elbow and
-  shoulder. It is the most comfortable grip to sustain over long sessions.
+  shoulder. It is the most comfortable grip to sustain over long sessions.[^grip]
 - **Claw grip** keeps your palm on the back of the mouse while your fingers arch up off the buttons.
-  It trades some comfort for faster flicks and clicking.
+  It trades some comfort for faster flicks and clicking.[^grip]
 - **Fingertip grip** lifts your palm off the mouse entirely, so only your fingertips make contact.
   It maximizes quick micro-adjustments, at the cost of finger stamina.[^grip]
 

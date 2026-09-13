@@ -29,8 +29,8 @@ mouse.
 **eDPI** (effective DPI) is your mouse DPI multiplied by your in-game sensitivity multiplier. For
 example, 800 DPI × 0.27 sensitivity = 216 eDPI.[^edpi]
 
-Two players with the same eDPI move their crosshair the same amount for the same hand movement in
-that game. Their raw DPI and sensitivity values don't matter.
+Two players with the same eDPI move their crosshair the same amount per hand movement in that game,
+whatever their raw settings.
 
 Unlike cm/360, eDPI is only comparable **within one game**. Different games apply different scaling
 to the sensitivity multiplier.[^edpi]

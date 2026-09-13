@@ -24,8 +24,7 @@ all three rather than lean on one.[^aimlabs-playlist]
 
 </div>
 
-Each page splits its category along the axis in the third column, under the benchmark
-communities' names. The hybrid subcategory comes last.[^voltaic-s5]
+Each page splits its category along the axis in the third column, under the benchmark communities' names, with the hybrid subcategory last.[^voltaic-s5]
 
 Those labels move between benchmark seasons, so each page explains the distinction underneath
 rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring

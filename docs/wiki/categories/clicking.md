@@ -74,8 +74,8 @@ near-future one.
 
 That makes it a reasonable middle step between the two cases above.
 
-**Do this next.** Start with static clicking, at a target size where you land most flicks clean,
-and shrink the target only once that holds.
+**Do this next.** Practice at a target size where you land most flicks clean, and shrink the target
+only once that holds.
 
 ## Further resources
 

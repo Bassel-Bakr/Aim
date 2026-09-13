@@ -11,7 +11,7 @@ A routine is the specific set of scenarios you run in a session, in some order, 
 time. This page covers how to assemble one.
 
 - **Warm up first.** Start on easier, slower versions of your usual scenarios.
-- **Build the focus block around your weakest subcategory.** Pick it from a benchmark, not a feeling.
+- **Build the focus block around your weakest subcategory.** Pick it from a benchmark or your own results, not a feeling.
 - **End with a review.** A replay or stat screen turns reps into feedback.
 - **Change it when it stops teaching you.** Not on a fixed schedule.
 

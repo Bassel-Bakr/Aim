@@ -12,7 +12,8 @@ a crosshair. A real match asks for a lot more. This page separates what trainer 
 from what it doesn't touch.
 
 - **Trainers build mechanics.** They give far more focused reps on one category than a match does.
-- **They don't build game sense.** Crosshair placement and positioning depend on your game's maps.
+- **They don't build game sense.** Crosshair placement and positioning depend on your game's angles,
+  sightlines, and abilities.
 - **Benchmarks measure one piece.** Voltaic says so about its own.
 - **Use both.** Trainer time for mechanics, game time for everything else.
 
@@ -24,7 +25,7 @@ category at a time: [Clicking](../categories/clicking.md), [Tracking](../categor
 [Switching](../categories/switching.md).
 
 That lets you put far more focused reps into, say, tracking a moving target than any single match
-would give you. That's per the [KovaaK's](../resources/trainers/kovaaks.md) and
+would give you. Both points are per the [KovaaK's](../resources/trainers/kovaaks.md) and
 [Aimlabs](../resources/trainers/aimlabs.md) resource pages.
 
 Benchmark communities such as [Voltaic](../resources/communities/voltaic.md) build tiered rankings
