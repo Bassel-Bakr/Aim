@@ -64,7 +64,8 @@ so a dead outbound link will not show up in the checks you run locally.
 | `docs/index.md` | Site landing page. Not a wiki page. |
 | `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
 | `docs/articles/` | Signed first-person pages. Not wiki pages, not open — see below. |
-| `docs/assets/` | Favicon and `stylesheets/aim.css`, which documents each page component it defines. |
+| `docs/assets/` | Favicon, `stylesheets/aim.css`, which documents each page component it defines, and `javascripts/aim-theme.js`, the colour picker. |
+| `overrides/` | Theme template overrides. `main.html` loads the colour picker script in `<head>`. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
@@ -98,6 +99,10 @@ All of these except `.aim-category` are wrappers:
 The `markdown` attribute and the blank lines around the content are both required, or the Markdown
 inside the wrapper is passed through as literal text. `.aim-category` goes on the link itself with
 `attr_list`: `[Clicking](clicking.md){ .aim-category .aim-category--clicking }`.
+
+Colour tokens in `aim.css` are also written by `docs/assets/javascripts/aim-theme.js` when a reader
+picks a colour. A new scheme-dependent colour token has to be added to `derive` there as well, or it
+keeps its default colour under every picked colour, and no test catches that.
 
 ## Rules that are easy to get wrong
 

@@ -179,7 +179,7 @@ stored value that is not a valid `#rrggbb` string is ignored and removed.
 
 ## Testing
 
-`scripts/aim-theme.test.mjs`, run with `node --test scripts/`, loads `aim-theme.js` into a `node:vm`
+`scripts/aim-theme.test.mjs`, run with `node --test scripts/aim-theme.test.mjs`, loads `aim-theme.js` into a `node:vm`
 context and checks:
 
 1. Every preset, Brick included, derives a full token set with no guard failure.
@@ -191,9 +191,12 @@ context and checks:
    Brick clears the override rather than deriving one.
 
 The page check and the site build stay green. CI's build job gains a Node setup step and
-`node --test scripts/` before `zensical build`. A manual check in a browser covers what the tests
+`node --test scripts/aim-theme.test.mjs` before `zensical build`. A manual check in a browser covers what the tests
 cannot: first paint without a flash, the popover's keyboard behaviour, and the light/dark toggle
 with a custom colour active.
+
+2026-09-13: the command was `node --test scripts/` at approval. Node 24 rejects a directory there,
+so the test file is named explicitly.
 
 ## Documentation
 
