@@ -219,6 +219,21 @@ body {
   font-weight: 400;
 }
 
+/* Entries inside a section sit visibly inside it. The theme's 0.6rem step is smaller than a link's
+ * own padding, so a page and its section read as the same level. Only the desktop sidebar changes:
+ * the mobile drawer shows each level as its own panel, where an indent has nothing to line up
+ * against. The top-level list keeps no indent, since three lists deep is the first list inside a
+ * section. */
+@media screen and (min-width: 76.25em) {
+  [dir="ltr"] .md-sidebar--primary .md-nav--primary .md-nav__list .md-nav__list .md-nav__list {
+    margin-left: 1.2rem;
+  }
+
+  [dir="rtl"] .md-sidebar--primary .md-nav--primary .md-nav__list .md-nav__list .md-nav__list {
+    margin-right: 1.2rem;
+  }
+}
+
 /* The tick marking where you are, matching the one under the page title. */
 .md-sidebar--primary .md-nav__link--active {
   box-shadow: -0.5rem 0 0 -0.36rem var(--aim-accent);
