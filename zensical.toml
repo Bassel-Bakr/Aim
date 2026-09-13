@@ -103,6 +103,9 @@ toggle.name = "Switch to light mode"
 # no analytics script is added. overrides/main.html renders the beacon.
 [project.extra]
 cloudflare_analytics_token = ""
+# Google Search Console ownership check for this site. A fork deploying elsewhere replaces it with
+# its own code from Search Console (HTML tag method, the content value only), or empties it.
+google_site_verification = "FGcY94GcYsusz2n50DU4UE4IOG4HTK8z-cnTo8a2M_s"
 
 [project.plugins]
 search = {}
