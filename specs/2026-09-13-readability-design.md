@@ -50,9 +50,13 @@ Four rules, all enforced by `scripts/check_pages.py`, on every page under `docs/
 5 items before its first `##` heading. One short intro paragraph may come before the list. A reader
 who stops at the list still has the page's point.
 
-**4. A training section ends on one next action.** A page with a `## How to train it` section ends
-that section with a paragraph opening `**Do this next.**`: a single concrete thing to do, for a
-reader who has lost the thread and needs somewhere to go.
+**4. A concept page ends on one next action.** The same concept pages carry a paragraph opening
+`**Do this next.**` before `## Further resources`: a single concrete thing to do, for a reader who
+has lost the thread and needs somewhere to go. It closes the page's last content section — `## How
+to train it` where the page has one, which on 2026-09-13 is only `how-aim-works.md` and
+`underaiming.md`, and otherwise whichever section the action follows from. The action stays within
+what the page's sources support: `underaiming.md` records that no public source gives drills for
+that technique, so its action is the principle, not an invented drill.
 
 ### What the limits measure
 
