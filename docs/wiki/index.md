@@ -7,11 +7,15 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-This wiki is for anyone who wants to train aim deliberately: the mechanics behind
-mouse aim, the categories that break aim down into parts you can practice on purpose, how to structure
-a training session, and the community benchmarks, routines, and trainers this wiki draws on to
-back it up. Every page is written in our own words from public guides and articles, with facts
-linked back to where they came from.
+This wiki is for anyone who wants to train aim deliberately. It covers:
+
+- the mechanics behind mouse aim
+- the categories that break aim down into parts you can practice on purpose
+- how to structure a training session
+- the community benchmarks, routines, and trainers it draws on
+
+Every page is written in our own words from public guides and articles, with facts linked back to
+where they came from.
 
 [**Start here**](getting-started/index.md) if this is your first visit. It walks through gear and
 sensitivity, picking a trainer, and running your first benchmark, roughly in the order most players
@@ -40,14 +44,13 @@ need them.
 
 ## About this wiki
 
-Every page here carries the "Draft" banner above because it is pending review: content is written
-from public sources and has not yet had a human check pass over it.
+Every page here carries the "Draft" banner above because it is pending review. Content is written
+from public sources, and has not yet had a human check pass over it.
 
-[Topics](../topics/index.md) are a separate part of this site, not part of the wiki. They are
-signed, first-person pages written from experience, so they carry their author's name instead of a
-citation trail, and they are not open to contributions.
+[Topics](../topics/index.md) are a separate part of this site, not part of the wiki. They are signed, first-person pages written from experience, so they carry their author's name
+instead of a citation trail. They are not open to contributions.
 
 If you spot something wrong, the pencil icon at the top of any page opens an edit against this
-wiki's source, see [CONTRIBUTING](https://github.com/Bassel-Bakr/aim/blob/main/CONTRIBUTING.md)
+wiki's source. See [CONTRIBUTING](https://github.com/Bassel-Bakr/aim/blob/main/CONTRIBUTING.md)
 for how that works, or browse the [source repository](https://github.com/Bassel-Bakr/aim)
 directly.
