@@ -46,7 +46,10 @@ zensical build --clean
 
 `scripts/check_pages.py` enforces three content rules: every `tags:` value is on the allowed list,
 each concept page carries a `## Further resources` section, and each resource page carries a
-`## Related wiki pages` section. Pass `--drafts` to also require the draft banner on every page.
+`## Related wiki pages` section. It also checks that every myth block's title matches a heading on
+`docs/wiki/myths.md`. Pass `--drafts` to also require the draft banner on every page, and
+`--readability` to also enforce the readability rules in [CONTRIBUTING.md](CONTRIBUTING.md#readability).
+Name pages after the flags to check only those.
 `zensical build` catches broken internal links and missing nav targets. The build no longer runs
 with `--strict`, so link problems appear as warnings rather than failures — read the build output,
 do not rely on the exit code alone.
@@ -120,6 +123,14 @@ agents most often miss:
 7. A page written from research but not yet fact-checked keeps the draft banner at the top, exactly
    as shown in [CONTRIBUTING.md](CONTRIBUTING.md).
 8. New abbreviations go in both `docs/wiki/glossary.md` and `includes/abbreviations.md`.
+9. Every wiki page follows the readability rules in
+   [CONTRIBUTING.md](CONTRIBUTING.md#readability): 45-word paragraphs, 25-word sentences, and on
+   concept pages three to five answer bullets up top and a `**Do this next.**` paragraph at the end.
+   Run `python scripts/check_pages.py --readability <page>` on any page you write or edit.
+10. When restructuring an existing page, run `python scripts/check_rewrite.py <base> <page>` before
+    committing, where `<base>` is the commit before you started. It must print
+    `Invariants unchanged`. A rewrite that drops a link or renames a heading breaks pages that link
+    to it, and the build does not always say so.
 
 ## Topics are not wiki pages
 

@@ -72,6 +72,37 @@ body.
    `<!-- REVIEW: what needs checking -->`. HTML comments are hidden on the page but still visible
    in the page source.
 
+## Readability
+
+Most people reading this wiki skim, and many read with ADHD. A page has to work when it is read in
+passes, so every page under `docs/wiki/` follows four rules:
+
+1. **Paragraphs run 45 words at most.** One idea per paragraph. A bold lead-in counts toward the
+   paragraph it opens.
+2. **Sentences run 25 words at most**, in lists as well as prose.
+3. **A concept page opens with its answer:** three to five bullets before its first `##` heading. A
+   reader who stops there still has the point.
+4. **A concept page ends on one next action:** a paragraph opening `**Do this next.**` before
+   `## Further resources`, giving a reader who lost the thread somewhere to go.
+
+Concept pages are those in `getting-started`, `fundamentals`, `categories`, `techniques`, and
+`training`, other than `index.md`. [How Aim Works](docs/wiki/fundamentals/how-aim-works.md) shows
+all four rules on a real page.
+
+Write in US English, as the sources do: `practice` as a verb, `organize`, `behavior`. Footnote
+definitions keep a source's own spelling, because they quote its title.
+
+None of this means a casual voice. Keep the register plain and technical, and keep every fact.
+
+When you restructure an existing page, do not rename a heading, add or remove a link or a footnote,
+or touch the front matter. Other pages link to headings, and a link that falls out of a split
+sentence is easy to miss in a diff. `scripts/check_rewrite.py` compares a page against an earlier
+commit and reports anything of that kind:
+
+```bash
+python scripts/check_rewrite.py main docs/wiki/glossary.md
+```
+
 ## Topics are not part of the wiki
 
 Topic pages live at `/topics`, outside `docs/wiki/`, because they run on a different trust model. A
@@ -105,7 +136,8 @@ still resolves. Write the one-line description in your own words, as the rest of
 Use only these tags in the `tags:` front matter field:
 
 - Type (resource pages only): `community`, `trainer`, `tool`
-- Topic: `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`
+- Topic: `clicking`, `tracking`, `switching`, `benchmarks`, `routines`, `sensitivity`, `beginner`,
+  `myth`
 
 To propose a new tag, open an issue.
 
@@ -122,6 +154,9 @@ zensical build --clean
 ```
 
 Both commands must finish without problems. The same checks run automatically on every pull request.
+
+While existing pages are being brought up to the readability rules, check the pages you changed
+against them by name: `python scripts/check_pages.py --readability docs/wiki/glossary.md`.
 
 ## License
 
