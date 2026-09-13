@@ -148,5 +148,3 @@ Underflicking (also called undershooting) is landing a flick just short of the t
 It's cheaper to fix than an overflick. Your hand is already moving in the right direction and only
 needs a small forward nudge, rather than a full reversal.[^REF-003] See
 [Clicking](categories/clicking.md) for how this wiki describes a clean flick.
-
-## References

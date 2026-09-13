@@ -176,5 +176,3 @@ different setting.[^REF-042]
 compare across games in cm/360 rather than raw sensitivity or eDPI.
 [Sensitivity](getting-started/sensitivity.md) covers both measures and the converters that move a
 setting between titles.
-
-## References

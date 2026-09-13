@@ -95,5 +95,3 @@ you can hold a clean continuous track.
   DLC with eleven tracking-focused modules and dynamic difficulty, built by the game's own
   developer.[^REF-034]
 - [Guides](../resources/guides.md#tracking): tracking guides, in every format.
-
-## References

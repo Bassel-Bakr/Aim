@@ -48,5 +48,3 @@ Some of Voltaic's material, such as exact rank thresholds, sits in a companion a
 - [Categories](../../categories/index.md)
 - [KovaaK's](../trainers/kovaaks.md)
 - [Aimlabs](../trainers/aimlabs.md)
-
-## References

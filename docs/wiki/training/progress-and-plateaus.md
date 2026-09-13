@@ -122,5 +122,3 @@ hand to adapt again, instead of coasting on one you've already mastered.
 - [Voltaic](../resources/communities/voltaic.md): source of the muscle-memory and
   sensitivity-change guidance.
 - [Guides](../resources/guides.md#practice-and-routines): guides on practice, routines and bad sessions.
-
-## References

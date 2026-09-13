@@ -50,5 +50,3 @@ So an Aimbeast player reads their progress off a different and more scattered se
 - [Benchmarks](../../training/benchmarks.md)
 - [Evxl Benchmark Tracker](../tools/evxl.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
-
-## References

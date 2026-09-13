@@ -39,5 +39,3 @@ A first pass through the wiki looks like this:
 
 You don't have to follow these steps in strict order. Doing setup and sensitivity first, though,
 saves relearning your aim on top of gear you later change.
-
-## References

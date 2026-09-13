@@ -101,5 +101,3 @@ for it. [Practice Principles](practice-principles.md) covers how to structure th
 - [Voltaic](../resources/communities/voltaic.md): benchmark categories built around these same
   fundamentals.
 - [Guides](../resources/guides.md#how-aim-works): guides on the mechanics of aim.
-
-## References

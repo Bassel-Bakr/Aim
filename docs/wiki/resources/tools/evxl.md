@@ -55,5 +55,3 @@ community's current season.
 - [KovaaK's](../trainers/kovaaks.md)
 - [Voltaic](../communities/voltaic.md)
 - [Progress and Plateaus](../../training/progress-and-plateaus.md)
-
-## References

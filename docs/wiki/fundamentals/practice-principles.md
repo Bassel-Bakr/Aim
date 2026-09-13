@@ -95,5 +95,3 @@ it until your crosshair lands cleanly.
 - [Revosect](../resources/communities/revosect.md): benchmark guide advising scenario variety over
   repeating only the benchmarks.
 - [Guides](../resources/guides.md#practice-and-routines): guides on practice and routines.
-
-## References

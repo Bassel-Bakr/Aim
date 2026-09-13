@@ -1057,3 +1057,18 @@ body {
 .md-typeset h2#references + .footnote > hr {
   display: none;
 }
+
+/* The References page, which the aim_references extension builds. Each entry starts with an empty
+ * anchor, id="ref-012", that a footnote's REF link points at. The entry followed to is tinted, so a
+ * reader lands on it instead of hunting for it, and the anchor stops short of the sticky header. */
+.md-typeset span[id^="ref-"] {
+  scroll-margin-top: 6rem;
+}
+
+.md-typeset li:has(> span[id^="ref-"]:target) {
+  margin-inline-start: -0.4rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  background-color: var(--md-accent-fg-color--transparent);
+}
+

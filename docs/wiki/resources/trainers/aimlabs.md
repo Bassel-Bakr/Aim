@@ -46,5 +46,3 @@ It is free to start, which makes it a low-friction entry point. Its most advance
 - [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
-
-## References

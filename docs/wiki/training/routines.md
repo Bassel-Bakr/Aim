@@ -123,5 +123,3 @@ subcategory.
 - [Revosect](../resources/communities/revosect.md): foundational and weakness-specific routines
   plus game-specific playlists.
 - [Guides](../resources/guides.md#practice-and-routines): guides on building and running routines.
-
-## References

@@ -80,5 +80,3 @@ or edge tracking. Leave this section at the level of the principle until one exi
 ## Resources
 
 - [Guides](../resources/guides.md#techniques): technique guides, in every format.
-
-## References

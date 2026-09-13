@@ -57,5 +57,3 @@ And a personal best is only as meaningful as the scenario it was set in.
 - [KovaaK's](../trainers/kovaaks.md)
 - [Progress and Plateaus](../../training/progress-and-plateaus.md)
 - [Benchmarks](../../training/benchmarks.md)
-
-## References

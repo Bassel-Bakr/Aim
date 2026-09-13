@@ -86,5 +86,3 @@ crosshair placement and positioning.
 
 - [Voltaic](../resources/communities/voltaic.md): states directly that its benchmarks are one
   piece of the puzzle, and splits routines into fundamental versus game-specific practice.
-
-## References

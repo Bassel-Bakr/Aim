@@ -44,5 +44,3 @@ It's a one-time Steam purchase rather than free-to-play. Its Sandbox-first desig
 - [Sensitivity](../../getting-started/sensitivity.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
-
-## References

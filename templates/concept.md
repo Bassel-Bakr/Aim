@@ -36,5 +36,3 @@ Concrete practice advice. Link to specific scenarios, playlists, or routines whe
 
 - [Resource page title](../resources/communities/voltaic.md): one line on why it is worth a look.
 - [Guides](../resources/guides.md#getting-started): external learning material on this subject.
-
-## References

@@ -138,9 +138,8 @@ A concept page ends with up to three sections, in this order, each with one job:
    pages.
 2. **Resources**: where to go to learn more — resource pages, and the matching section of
    [Guides](docs/wiki/resources/guides.md). These are recommendations, not evidence.
-3. **References**: the sources for this page's claims. Put `## References` as the last heading on
-   the page; the cited sources render below it. The checker requires it on any wiki page that cites
-   a source.
+3. **References**: the sources for this page's claims. Do not write this heading: it is added
+   automatically, with the cited sources under it, on any page that cites one.
 
 Keep the two kinds of external link apart. A link that supports a claim on the page is a
 reference and becomes a footnote. A link that is simply good material on the subject is a

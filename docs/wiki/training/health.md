@@ -89,5 +89,3 @@ training.
 ## Resources
 
 - [Guides](../resources/guides.md#health): guides on health, posture and recovery.
-
-## References

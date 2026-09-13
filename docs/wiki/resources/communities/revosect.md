@@ -45,5 +45,3 @@ Its own rank names and season numbering are separate from Voltaic's, so scores b
 - [Voltaic](voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
 - [Categories](../../categories/index.md)
-
-## References

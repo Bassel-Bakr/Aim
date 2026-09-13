@@ -31,12 +31,12 @@ BYLINE = '!!! info "Written by '
 # heading word for word, or the link it ships with silently lands at the top of the page.
 MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
 MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
-FOOTNOTE_DEFINITION = re.compile(r"^\[\^[^\]]+\]:", re.M)
 # Sources live once in references.yml and pages cite them by ID; see extensions/aim_references.py.
 REGISTRY = DOCS.parent / "references.yml"
 REFERENCE_ID = re.compile(r"^REF-\d{3}$")
 REFERENCE_CITATION = re.compile(r"\[\^(REF-\d{3})\](?!:)")
 REFERENCE_DEFINITION = re.compile(r"^\[\^(REF-[^\]]*)\]:", re.M)
+REFERENCES_HEADING = re.compile(r"^## References\s*$", re.M)
 REFERENCE_FIELDS = {"id", "author", "title", "url", "type", "publication", "notes"}
 REFERENCE_REQUIRED = {"id", "author", "title", "url", "type"}
 REFERENCE_TYPES = {"article", "document", "documentation", "encyclopedia", "post", "repository", "study", "video", "website"}
@@ -70,6 +70,8 @@ def registry_ids():
         ids.add(ref_id)
         urls.add(url)
     return ids, errors
+
+
 # A key block marks the one point a reader should leave a page with. Two on a page means neither
 # is the one.
 KEY_BLOCK = re.compile(r'^!!! key "', re.M)
@@ -208,8 +210,8 @@ def check(path, drafts, headings, known_ids):
     # References are the sources for claims on this page; they sit under their own heading, apart
     # from Resources, which point readers to material for learning more.
     cited = set(REFERENCE_CITATION.findall(text))
-    if in_wiki and (FOOTNOTE_DEFINITION.search(text) or cited) and "\n## References" not in text:
-        errors.append(f"{rel}: cites sources but has no '## References' heading")
+    if in_wiki and REFERENCES_HEADING.search(text):
+        errors.append(f"{rel}: remove '## References'; the references extension adds it")
     for ref_id in sorted(cited - known_ids):
         errors.append(f"{rel}: cites {ref_id}, which is not in references.yml")
     for label in REFERENCE_DEFINITION.findall(text):

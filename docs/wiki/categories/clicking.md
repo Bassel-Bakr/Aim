@@ -87,5 +87,3 @@ only once that holds.
 ## Resources
 
 - [Guides](../resources/guides.md#clicking): clicking guides, in every format.
-
-## References

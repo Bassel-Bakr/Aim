@@ -87,5 +87,3 @@ them.
 ## Resources
 
 - [Guides](../resources/guides.md#switching): switching guides, in every format.
-
-## References

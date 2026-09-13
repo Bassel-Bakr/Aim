@@ -107,5 +107,3 @@ you're training for.
 
 - [Evxl Benchmark Tracker](../resources/tools/evxl.md): scores your runs against community
   benchmarks automatically.
-
-## References

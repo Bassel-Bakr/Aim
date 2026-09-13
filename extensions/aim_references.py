@@ -2,8 +2,8 @@
 
 Sources live once, in references.yml, each under a stable ID such as REF-012. A wiki page cites one
 with an ordinary footnote marker, [^REF-012], and never defines it: this extension appends the
-definition for every REF ID the page cites, built from the registry, so the theme renders it as a
-normal footnote. It appends only the IDs the page actually cites, because Python-Markdown lists every
+definition for every REF ID the page cites, built from the registry, under a "References" heading,
+so the theme renders them as normal footnotes. It appends only the IDs the page actually cites, because Python-Markdown lists every
 defined footnote whether or not the page refers to it.
 
 Footnotes that are not sources, such as a clarifying aside, keep working as before: give them any
@@ -107,7 +107,9 @@ class ReferencesPreprocessor(Preprocessor):
         link_base = None
         if page:
             link_base = os.path.relpath(REFERENCES_PAGE, os.path.dirname(page) or ".").replace("\\", "/")
-        definitions = [""]
+        # The heading is added here, not written on the page, so it appears exactly when there are
+        # sources to list and always sits directly above them.
+        definitions = ["", "## References", ""]
         for ref_id in cited:
             entry = self.registry.get(ref_id)
             if entry is None:

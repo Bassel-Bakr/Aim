@@ -59,5 +59,3 @@ someone else's mouse.
 - [Setup](../../getting-started/setup.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
 - [Benchmarks](../../training/benchmarks.md)
-
-## References

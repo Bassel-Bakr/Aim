@@ -106,5 +106,3 @@ judge it fairly.
 - [Aimlabs](../resources/trainers/aimlabs.md): built-in Sensitivity Finder for calibrating
   sensitivity inside the trainer.
 - [Guides](../resources/guides.md#gear-and-settings): guides on sensitivity, gear and settings.
-
-## References

@@ -29,5 +29,3 @@ Each page splits its category along the axis in the third column, under the benc
 Those labels move between benchmark seasons, so each page explains the distinction underneath
 rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring
 works.
-
-## References
