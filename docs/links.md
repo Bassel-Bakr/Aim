@@ -28,6 +28,9 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Guides by MattyOW](https://www.youtube.com/playlist?list=PLqMr3im6WvTQ8Y7q7SCV5r0i_lx4oPaRX) —
   MattyOW — 25 guides, one per problem rather than one per skill, plus the Unraveling the Secrets
   of Aim series on how specific top players aim.
+- [Mouse Control Fundamentals](https://www.youtube.com/playlist?list=PLw_vDcimyfGc2DRSB4ScyJL-JCNVQpsog) —
+  Ben Staudt, 2026 — five parts on the body side of aim: grips, flick control, posture, a sample
+  Aimlabs setup, and what to do when long arms hit the desk.
 
 ## How aim works
 
@@ -37,6 +40,12 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   Aimlabs — speed matching, not moving slowly.
 - [Stop predicting and start reacting](https://aimlabs.com/articles/aimlabs/stop-predicting-and-start-reacting-get-better-at-reactive-tracking/) —
   Aimlabs — why anticipation loses to a bait.
+- [calm aim is a joke - this is why](https://www.youtube.com/watch?v=mRoPfhZ1Tm4) — minigod and
+  Lorys, 2024 — aiming discipline, the reflex habits that stop trainer practice transferring, and
+  what a clean micro-correction looks like.
+- [the KEY approach for AIM CONSISTENCY](https://www.youtube.com/watch?v=x9q6d0vBFag) — Lorys, 2024 —
+  micro adjustments: the approach that works, and aggressive micros and tension as the habits to
+  watch for.
 
 ## Clicking
 
@@ -54,11 +63,17 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
   does not exist and no public copy of the Chinese original could be found. M0NARK offers a
   higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
+- [PERFECCIONA tus FLICKS con esta TÉCNICA!](https://www.youtube.com/watch?v=VMLw5lC3pQU) — CARTOON,
+  2024, in Spanish — flick technique for tactical shooters taken stage by stage, from speed to
+  confirming the shot, with KovaaK's and Aimlabs routines to practice it.
 
 ## Tracking
 
 - [The Corporate Serf smoothness training method](https://www.youtube.com/watch?v=a-MShVYe3kY) —
   Corporate Serf, 2025 — a smoothness method for tracking, worked through on PGT.
+- [Aether bible](https://docs.google.com/document/d/1koaME0d2J6YJtneiWg5_vkT4CMi-dD5jumSJCpcHea4/edit) —
+  eA hundred — advice from top Aether players, bot by bot: which of fingers, wrist or arm leads, and
+  reading acceleration instead of flicking onto strafes.
 
 ## Switching
 
@@ -76,6 +91,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 
 - [Grinding versus intentional training](https://aimlabs.com/articles/aimlabs/whats-the-difference-between-grinding-and-intentional-training/) —
   Aimlabs — hours played against practice that moves a score.
+- [aim routines doesn't work... (and how to fix that)](https://www.youtube.com/watch?v=Yuro9LSQMjw) —
+  minigod, 2024 — the thinking behind a routine, instead of hunting for the best one for your game.
 - [How to build a well balanced playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/) —
   Aimlabs — draw on all three skills, not your best one.
 - [Constructing an improvement based mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/) —
