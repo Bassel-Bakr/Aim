@@ -13,9 +13,9 @@ tags:
 ## What it is
 
 A web-based benchmark tracker that pulls your scores from your aim trainer and scores them against
-community [benchmark](../../training/benchmarks.md) sheets, so you do not have to copy results into
-a spreadsheet by hand. It supports [KovaaK's](../trainers/kovaaks.md) and Aimbeast, and is credited
-on the site to EVIL.[^evxl]
+community [benchmark](../../training/benchmarks.md) sheets. You don't have to copy results into a
+spreadsheet by hand. It supports [KovaaK's](../trainers/kovaaks.md) and Aimbeast, and is credited on
+the site to EVIL.[^evxl]
 
 ## Who it suits
 
@@ -25,10 +25,10 @@ ID, or profile URL and the site reads your scores from there.[^evxl]
 
 ## What it covers
 
-- **Unified benchmarks**: community sheets gathered in one place rather than one site per
-  community, including [Voltaic](../communities/voltaic.md), [Revosect](../communities/revosect.md),
-  and [Jade Palace](../communities/jade-palace.md) alongside a long tail of smaller community
-  sheets.[^evxl]
+- **Unified benchmarks**: community sheets gathered in one place, rather than one site per
+  community. They include [Voltaic](../communities/voltaic.md),
+  [Revosect](../communities/revosect.md), and [Jade Palace](../communities/jade-palace.md), plus a
+  long tail of smaller community sheets.[^evxl]
 - **Leaderboards and rank history**: per-benchmark leaderboards and a record of how your rank has
   moved over time.[^evxl]
 - **Scenario browser**: a searchable index of the scenarios the tracked benchmarks are built
@@ -42,10 +42,12 @@ ID, or profile URL and the site reads your scores from there.[^evxl]
 
 ## Our take
 
-The practical value is breadth: checking your standing across several community benchmarks
-otherwise means visiting each community's own sheet separately. Because scores are read from your
-trainer profile rather than entered by hand, what it shows depends on that profile being public and
-current, and a community's own site remains the authority on that community's current season.
+The practical value is breadth. Checking your standing across several community benchmarks otherwise
+means visiting each community's own sheet separately.
+
+Scores are read from your trainer profile rather than entered by hand. So what it shows depends on
+that profile being public and current. A community's own site remains the authority on that
+community's current season.
 
 ## Related wiki pages
 
