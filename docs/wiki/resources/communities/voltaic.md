@@ -19,6 +19,8 @@ related:
     why: a community running comparable benchmark seasons and routines.
   - page: wiki/resources/tools/evxl.md
     why: scores Voltaic benchmark runs automatically.
+  - page: wiki/resources/communities/x76.md
+    why: a player-run arena-shooter community whose glossary draws on Voltaic's entries.
 ---
 
 !!! warning "Draft"

@@ -19,6 +19,8 @@ covers. That way you can decide where to spend time instead of guessing.
   and aim-training creators collaborate; not a general public resource.
 - [Revosect](communities/revosect.md): a community running its own benchmark seasons, training
   routines, and guides for KovaaK's and Aimlabs, with coaching planned but not yet live.
+- [x76](communities/x76.md): a player-run community for arena shooters, with game servers, an Elo
+  ladder, and a wiki of movement and aim guides.
 
 ## Trainers
 

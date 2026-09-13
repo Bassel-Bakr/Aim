@@ -351,3 +351,28 @@
   title: gaming mouse buying guide
   url: "https://www.xda-developers.com/gaming-mouse-buying-guide/"
   type: article
+
+- id: REF-58
+  author: x76
+  title: x76 home page
+  url: "https://x76.gg/"
+  type: website
+
+- id: REF-59
+  author: x76
+  title: The x76 wiki
+  url: "https://x76.gg/wiki/"
+  type: website
+
+- id: REF-60
+  author: x76
+  title: Welcome to the x76 wiki
+  url: "https://x76.gg/wiki/getting-started/welcome/"
+  type: article
+
+- id: REF-61
+  author: Bob
+  title: Strafe Aim Guide
+  url: "https://x76.gg/wiki/strafe-aim-guide/"
+  type: article
+  publication: x76

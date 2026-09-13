@@ -99,6 +99,8 @@ Score sheets and routines handed over without instructions stay on the [resource
 
 - [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076) — VT Matty,
   2024 — withholding motion, and why the two names are not interchangeable.
+- [Strafe Aim Guide](https://x76.gg/wiki/strafe-aim-guide/) — Bob, x76, 2026 — moving so that it
+  helps your aim, from the basic strafe-aim forms up to advanced ones.
 
 ## Practice and routines
 
