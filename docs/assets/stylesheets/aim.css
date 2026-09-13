@@ -66,7 +66,7 @@
 /* The theme sets its link colour per scheme and primary colour together, so these blocks have to
  * carry both attributes to override it rather than lose on specificity. */
 [data-md-color-scheme="default"][data-md-color-primary] {
-  --aim-chrome: #f5f0ea;
+  --aim-chrome: #ede3d8;
   --aim-chrome-fg: var(--aim-ink);
   --aim-chrome-fg-light: #14171cb3;
   /* 64% rather than the dark scheme's 45%: dark ink on paper loses contrast faster than light ink
