@@ -24,10 +24,12 @@ all three rather than lean on one.[^aimlabs-playlist]
 
 </div>
 
-Each page splits its category along the axis in the third column, under the names the benchmark
-communities use, with the hybrid subcategory last.[^voltaic-s5] Those labels move between benchmark
-seasons, so each page explains the distinction underneath rather than only the label. See
-[Benchmarks](../training/benchmarks.md) for how the scoring works.
+Each page splits its category along the axis in the third column, under the benchmark
+communities' names. The hybrid subcategory comes last.[^voltaic-s5]
+
+Those labels move between benchmark seasons, so each page explains the distinction underneath
+rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring
+works.
 
 [^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
 [^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
