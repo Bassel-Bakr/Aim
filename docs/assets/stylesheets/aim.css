@@ -21,12 +21,20 @@
    * table headers, buttons and badges, and never for running text. */
   --aim-display: "Chakra Petch", "Inter", -apple-system, system-ui, sans-serif;
 
-  /* The chrome is the same near-black in both schemes, so the site keeps one silhouette whichever
-   * scheme the reader is in. The accent on it has to hold up against that black, so it is the
-   * dark-scheme accent in both. */
-  --aim-chrome: #0b0d12;
-  --aim-chrome-fg: #e8eaf0;
-  --aim-chrome-accent: #ff7a52;
+  /* Night is the near-black the landing hero sits on in both schemes, and the ink on solid-colour
+   * tags. It never changes with the scheme, so anything that must stay dark reads from it. */
+  --aim-night: #0b0d12;
+  --aim-night-fg: #e8eaf0;
+  --aim-night-accent: #ff7a52;
+
+  /* The chrome is the header, tabs and footer. In the dark scheme it is night; the light scheme gives
+   * it a warm paper tone instead, set with the light scheme's tokens below, so a light page is not
+   * framed by two black bars. */
+  --aim-chrome: var(--aim-night);
+  --aim-chrome-fg: var(--aim-night-fg);
+  --aim-chrome-fg-light: #ffffffb3;
+  --aim-chrome-fg-lighter: #ffffff73;
+  --aim-chrome-accent: var(--aim-night-accent);
   --aim-chrome-line: #ffffff1f;
 
   --aim-ink: #14171c;
@@ -44,8 +52,8 @@
   --aim-key: #e0a800;
   --aim-key-ink: #7d5e00;
   --aim-key-wash: #e0a8001f;
-  --aim-key-tag-ink: var(--aim-chrome);
-  --aim-tag-ink: var(--aim-chrome-fg);
+  --aim-key-tag-ink: var(--aim-night);
+  --aim-tag-ink: var(--aim-night-fg);
   --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
   --aim-tracking: #1d6a8c;
@@ -58,6 +66,15 @@
 /* The theme sets its link colour per scheme and primary colour together, so these blocks have to
  * carry both attributes to override it rather than lose on specificity. */
 [data-md-color-scheme="default"][data-md-color-primary] {
+  --aim-chrome: #f5f0ea;
+  --aim-chrome-fg: var(--aim-ink);
+  --aim-chrome-fg-light: #14171cb3;
+  /* 64% rather than the dark scheme's 45%: dark ink on paper loses contrast faster than light ink
+   * on black, and the lighter tone sets small footer labels that still have to clear 4.5:1. */
+  --aim-chrome-fg-lighter: #14171ca3;
+  --aim-chrome-accent: var(--aim-accent);
+  --aim-chrome-line: #14171c17;
+
   --md-primary-fg-color: var(--aim-ink);
   --md-primary-fg-color--light: #2a2f39;
   --md-primary-fg-color--dark: #0b0d11;
@@ -75,7 +92,7 @@
   --aim-key: #f2c14e;
   --aim-key-ink: #f2c14e;
   --aim-key-wash: #f2c14e14;
-  --aim-tag-ink: var(--aim-chrome);
+  --aim-tag-ink: var(--aim-night);
   --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
   --aim-tracking: #56b6d8;
@@ -158,20 +175,20 @@ body {
   box-shadow: 0 -0.12rem 0 inset var(--aim-chrome-accent);
 }
 
-/* The footer is chrome in both schemes, so its foreground has to be set for the light scheme too,
- * or the copyright line comes out dark on black. The meta strip takes its colours from the default
- * tokens rather than the footer ones, so both sets are redefined here. */
+/* The footer is chrome, so its foreground follows the chrome tokens in both schemes. The meta strip
+ * takes its colours from the default tokens rather than the footer ones, so both sets are redefined
+ * here. */
 .md-footer,
 .md-footer-meta {
   --md-footer-bg-color: var(--aim-chrome);
   --md-footer-bg-color--dark: var(--aim-chrome);
   --md-footer-fg-color: var(--aim-chrome-fg);
-  --md-footer-fg-color--light: #ffffffb3;
-  --md-footer-fg-color--lighter: #ffffff73;
+  --md-footer-fg-color--light: var(--aim-chrome-fg-light);
+  --md-footer-fg-color--lighter: var(--aim-chrome-fg-lighter);
 
   --md-default-fg-color: var(--aim-chrome-fg);
-  --md-default-fg-color--light: #ffffffb3;
-  --md-default-fg-color--lighter: #ffffff73;
+  --md-default-fg-color--light: var(--aim-chrome-fg-light);
+  --md-default-fg-color--lighter: var(--aim-chrome-fg-lighter);
   --md-default-fg-color--lightest: var(--aim-chrome);
 
   color: var(--aim-chrome-fg);
@@ -362,8 +379,8 @@ body {
   overflow: hidden;
   margin: 0 0 2.5rem;
   padding: 2.4rem 2.2rem 2.6rem;
-  color: var(--aim-chrome-fg);
-  background-color: var(--aim-chrome);
+  color: var(--aim-night-fg);
+  background-color: var(--aim-night);
   background-image:
     linear-gradient(#ffffff0a 1px, transparent 1px),
     linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
@@ -379,7 +396,7 @@ body {
   width: 14rem;
   height: 14rem;
   transform: translateY(-50%);
-  background-color: var(--aim-chrome-accent);
+  background-color: var(--aim-night-accent);
   opacity: 0.22;
   mask: var(--aim-crosshair) center/contain no-repeat;
   -webkit-mask: var(--aim-crosshair) center/contain no-repeat;
@@ -408,13 +425,13 @@ body {
 }
 
 .md-typeset .aim-hero .md-button--primary {
-  color: var(--aim-chrome);
-  background-color: var(--aim-chrome-accent);
-  border-color: var(--aim-chrome-accent);
+  color: var(--aim-night);
+  background-color: var(--aim-night-accent);
+  border-color: var(--aim-night-accent);
 }
 
 .md-typeset .aim-hero .md-button--primary:is(:hover, :focus) {
-  color: var(--aim-chrome);
+  color: var(--aim-night);
   background-color: #fff;
   border-color: #fff;
 }
