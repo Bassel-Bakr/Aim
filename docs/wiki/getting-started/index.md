@@ -7,9 +7,9 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-This wiki is for anyone who wants to train aim deliberately instead of only playing and hoping to
-improve. It assumes no prior aim-training experience: you do not need to already own an aim trainer,
-know your sensitivity, or know what a benchmark is to start here.
+This wiki is for anyone who wants to train aim deliberately, instead of only playing and hoping to
+improve. It assumes no aim-training experience. You don't need an aim trainer, a known sensitivity,
+or any idea what a benchmark is to start here.
 
 A first pass through the wiki looks like this:
 
@@ -32,5 +32,5 @@ A first pass through the wiki looks like this:
 
 </div>
 
-You do not have to follow these steps in strict order, but doing setup and sensitivity first
-avoids relearning aim on top of gear you later change.
+You don't have to follow these steps in strict order. Doing setup and sensitivity first, though,
+saves relearning your aim on top of gear you later change.
