@@ -16,7 +16,7 @@ tags:
 A profile site for aim trainers, describing itself as "a portfolio for aimers who obsess over their
 gear." A profile collects your peripherals, your in-game settings, your recent
 [KovaaK's](../trainers/kovaaks.md) personal bests, and the aimgroup you belong to on one public
-page.[^kova]
+page.[^REF-030]
 
 ## Who it suits
 
@@ -30,14 +30,14 @@ or tells you what to practice.
 ## What it covers
 
 - **Peripherals**: a per-profile list of the mouse, mousepad, and other gear in use, drawn from a
-  shared catalog that also carries user reviews.[^kova]
+  shared catalog that also carries user reviews.[^REF-030]
 - **[Sensitivity](../../getting-started/sensitivity.md) and settings**: cm/360, DPI, polling rate,
   and grip style shown on the profile. Together, that's the set of numbers needed to reproduce
-  someone's setup.[^kova]
+  someone's setup.[^REF-030]
 - **Benchmark personal bests**: recent KovaaK's scores with the community
-  [benchmark](../../training/benchmarks.md) and rank they correspond to.[^kova]
+  [benchmark](../../training/benchmarks.md) and rank they correspond to.[^REF-030]
 - **Aimgroups**: group pages listing member profiles, for the aim communities and teams that use
-  the site.[^kova]
+  the site.[^REF-030]
 
 ## Key content
 
@@ -61,5 +61,3 @@ someone else's mouse.
 - [Benchmarks](../../training/benchmarks.md)
 
 ## References
-
-[^kova]: kova, [pyvno.xyz](https://pyvno.xyz)

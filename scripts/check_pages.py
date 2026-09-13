@@ -32,6 +32,44 @@ BYLINE = '!!! info "Written by '
 MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
 MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
 FOOTNOTE_DEFINITION = re.compile(r"^\[\^[^\]]+\]:", re.M)
+# Sources live once in references.yml and pages cite them by ID; see extensions/aim_references.py.
+REGISTRY = DOCS.parent / "references.yml"
+REFERENCE_ID = re.compile(r"^REF-\d{3}$")
+REFERENCE_CITATION = re.compile(r"\[\^(REF-\d{3})\](?!:)")
+REFERENCE_DEFINITION = re.compile(r"^\[\^(REF-[^\]]*)\]:", re.M)
+REFERENCE_FIELDS = {"id", "author", "title", "url", "type", "publication", "notes"}
+REFERENCE_REQUIRED = {"id", "author", "title", "url", "type"}
+REFERENCE_TYPES = {"article", "document", "documentation", "encyclopedia", "post", "repository", "study", "video", "website"}
+
+
+def registry_ids():
+    """Validate references.yml and return its IDs, with any problems found."""
+    errors = []
+    entries = yaml.safe_load(REGISTRY.read_text(encoding="utf-8")) or []
+    ids, urls = set(), set()
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            errors.append(f"references.yml entry {index + 1}: not a mapping")
+            continue
+        where = f"references.yml {entry.get('id', f'entry {index + 1}')}"
+        for field in sorted(REFERENCE_REQUIRED - entry.keys()):
+            errors.append(f"{where}: missing '{field}'")
+        for field in sorted(entry.keys() - REFERENCE_FIELDS):
+            errors.append(f"{where}: unknown field '{field}'")
+        ref_id, url = entry.get("id", ""), entry.get("url", "")
+        if not REFERENCE_ID.match(str(ref_id)):
+            errors.append(f"{where}: id must look like REF-001")
+        if ref_id in ids:
+            errors.append(f"{where}: duplicate id")
+        if url in urls:
+            errors.append(f"{where}: duplicate url {url}")
+        if not str(url).startswith("https://"):
+            errors.append(f"{where}: url must start with https://")
+        if entry.get("type") not in REFERENCE_TYPES:
+            errors.append(f"{where}: type '{entry.get('type')}' is not one of {', '.join(sorted(REFERENCE_TYPES))}")
+        ids.add(ref_id)
+        urls.add(url)
+    return ids, errors
 # A key block marks the one point a reader should leave a page with. Two on a page means neither
 # is the one.
 KEY_BLOCK = re.compile(r'^!!! key "', re.M)
@@ -150,7 +188,7 @@ def readability(rel, text, concept):
     return errors
 
 
-def check(path, drafts, headings):
+def check(path, drafts, headings, known_ids):
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(DOCS).as_posix()
     # Wiki pages live under docs/wiki/; their section is the first segment below that.
@@ -169,8 +207,13 @@ def check(path, drafts, headings):
         errors.append(f"{rel}: missing '## Related pages' section")
     # References are the sources for claims on this page; they sit under their own heading, apart
     # from Resources, which point readers to material for learning more.
-    if in_wiki and FOOTNOTE_DEFINITION.search(text) and "\n## References" not in text:
-        errors.append(f"{rel}: has footnotes but no '## References' heading above them")
+    cited = set(REFERENCE_CITATION.findall(text))
+    if in_wiki and (FOOTNOTE_DEFINITION.search(text) or cited) and "\n## References" not in text:
+        errors.append(f"{rel}: cites sources but has no '## References' heading")
+    for ref_id in sorted(cited - known_ids):
+        errors.append(f"{rel}: cites {ref_id}, which is not in references.yml")
+    for label in REFERENCE_DEFINITION.findall(text):
+        errors.append(f"{rel}: defines [^{label}] on the page; references are defined only in references.yml")
     if in_articles:
         # A byline replaces the draft banner: articles are signed, not pending review.
         if not is_index:
@@ -201,7 +244,8 @@ def main():
     named = [Path(arg).resolve() for arg in args if not arg.startswith("--")]
     paths = named or sorted(DOCS.rglob("*.md"))
     headings = myth_headings()
-    errors = [error for path in paths for error in check(path, drafts, headings)]
+    known_ids, errors = registry_ids()
+    errors += [error for path in paths for error in check(path, drafts, headings, known_ids)]
     for error in errors:
         print(error)
     print(f"{len(errors)} problem(s) found" if errors else "All pages OK")

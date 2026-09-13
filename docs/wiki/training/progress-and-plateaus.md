@@ -26,13 +26,13 @@ and those gains shrink as you get more skilled.
 
 General motor-learning research describes an early stage of large, inconsistent jumps in
 performance. A slower stage of smaller gains follows, spent on conscious adjustment and refinement.
-The pattern isn't specific to aim training.[^hk-stages]
+The pattern isn't specific to aim training.[^REF-028]
 
 Eventually most learners hit a stretch some researchers call a "learning plateau." Performance holds
 roughly steady for a while, however consistently you show up and train.
 
 Motor-learning research treats this as an ordinary, expected stage, not evidence that something in
-your training has broken.[^plateau-study]
+your training has broken.[^REF-029]
 
 Knowing a stall is expected doesn't fix it on its own. But it does mean a flat week or two isn't
 evidence you've hit a hard ceiling.
@@ -51,7 +51,7 @@ be noise.
 
 **Fatigue.** Training hard without enough recovery between sessions can tip into overreaching. If
 that continues, it can tip further into overtraining syndrome, where performance actually declines
-rather than just stalling.[^overtraining]
+rather than just stalling.[^REF-046]
 
 A plateau that shows up alongside feeling generally run down, not just a flat score, is worth
 treating as a fatigue problem first.
@@ -74,7 +74,7 @@ See [Practice Principles](../fundamentals/practice-principles.md) on deliberate 
 
 !!! key "Change the scenario when a score stalls"
     Swap in a different scenario for the same skill instead of grinding the one you've stalled on.
-    Aimlabs warns that a routine with little variety holds back your progress.[^aimlabs-regimen]
+    Aimlabs warns that a routine with little variety holds back your progress.[^REF-009]
 
 **Switch focus.** If your current weak subcategory has stopped moving, shift the bulk of your
 [routine](routines.md) to a different subcategory for a while. Don't just grind the same one harder.
@@ -124,8 +124,3 @@ hand to adapt again, instead of coasting on one you've already mastered.
 - [Guides](../resources/guides.md#practice-and-routines): guides on practice, routines and bad sessions.
 
 ## References
-
-[^hk-stages]: Human Kinetics, [Understanding motor learning stages improves skill instruction](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction)
-[^plateau-study]: Journal of Neuroscience via PMC, [a study on plateaued motor skill](https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/)
-[^overtraining]: Sports Health via PMC, [a clinical review of overtraining syndrome](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435910/)
-[^aimlabs-regimen]: Aimlabs, [How to develop your own aim training regimen](https://aimlabs.com/articles/aimlabs/how-to-develop-your-own-aim-training-regimen/)

@@ -21,19 +21,19 @@ Mouse sensitivity is how far your view turns for a given amount of hand movement
 full 360 degrees.
 
 You can measure it: aim at a fixed point, turn a full circle, and measure how far your hand moved.
-Or use a calculator that combines your DPI and in-game sensitivity value.[^cm360]
+Or use a calculator that combines your DPI and in-game sensitivity value.[^REF-004]
 
 Because it is measured in real-world distance, cm/360 is comparable across any game, engine, or
 mouse.
 
 **eDPI** (effective DPI) is your mouse DPI multiplied by your in-game sensitivity multiplier. For
-example, 800 DPI × 0.27 sensitivity = 216 eDPI.[^edpi]
+example, 800 DPI × 0.27 sensitivity = 216 eDPI.[^REF-042]
 
 Two players with the same eDPI move their crosshair the same amount per hand movement in that game,
 whatever their raw settings.
 
 Unlike cm/360, eDPI is only comparable **within one game**. Different games apply different scaling
-to the sensitivity multiplier.[^edpi]
+to the sensitivity multiplier.[^REF-042]
 
 **Low versus high sensitivity** is a trade-off in how much of the work your arm does versus your
 wrist and fingers.
@@ -83,7 +83,7 @@ title.
     [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
 
 Switching sensitivity on purpose is one way people try to break a plateau. Starting from an
-unfamiliar setting can reset your sense of what feels "normal" and open room to improve.[^muscle]
+unfamiliar setting can reset your sense of what feels "normal" and open room to improve.[^REF-053]
 
 So don't avoid changing your sensitivity at all. Avoid changing it constantly without a reason,
 since every change costs you some readjustment time. See
@@ -108,7 +108,3 @@ judge it fairly.
 - [Guides](../resources/guides.md#gear-and-settings): guides on sensitivity, gear and settings.
 
 ## References
-
-[^cm360]: Aimlabs, [A quick explainer on cm/360 and the common cm/360 by game](https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/)
-[^edpi]: ProSettings.net, [What is DPI and eDPI?](https://prosettings.net/blog/what-is-dpi-edpi/)
-[^muscle]: Voltaic, [Muscle memory](https://blog.voltaic.gg/muscle-memory/)

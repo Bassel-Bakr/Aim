@@ -54,13 +54,13 @@ Two communities run the benchmarks most players on this wiki will encounter. Bot
 
 - [Voltaic](../resources/communities/voltaic.md) runs a Season 5 KovaaK's benchmark and a Season 3
   [Aimlabs](../resources/trainers/aimlabs.md) one. Each splits into subcategories per category,
-  across three difficulty bands: Novice, Intermediate, and Advanced.[^voltaic-s5][^voltaic-s3] A
+  across three difficulty bands: Novice, Intermediate, and Advanced.[^REF-050][^REF-049] A
   rank is granted only once you have a score in every subcategory. It's driven by an overall
   "Energy" score that combines subcategories with a harmonic mean, which weights your weakest more
-  heavily than your strongest.[^volt-lb]
+  heavily than your strongest.[^REF-048]
 - [Revosect](../resources/communities/revosect.md) runs a Season 5 KovaaK's benchmark covering six
   subcategories across the same three categories. It has Entry, Intermediate, and Advanced tiers. A
-  recorded VOD is required to verify a score at the top tier.[^revo-bench]
+  recorded VOD is required to verify a score at the top tier.[^REF-043]
 
 Rank names and season numbering are independent between the two, so a rank on one doesn't translate
 to a rank on the other.
@@ -109,8 +109,3 @@ you're training for.
   benchmarks automatically.
 
 ## References
-
-[^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
-[^voltaic-s3]: Voltaic, [Announcing the Voltaic Season 3 aiming benchmarks beta for Aimlabs](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/)
-[^volt-lb]: Voltaic, [about the leaderboards](https://app.voltaic.gg/leaderboards/about)
-[^revo-bench]: Revosect, [benchmarks](https://revosect.com/benchmarks)

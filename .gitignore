@@ -5,3 +5,4 @@ __pycache__/
 .claude/
 .serena/
 graphify-out/
+*.egg-info/

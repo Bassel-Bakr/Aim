@@ -16,7 +16,7 @@ One short sentence on what this page covers.
 ## Explanation
 
 **A bold lead-in.** One idea per paragraph: 45 words at most, 25 words per sentence. Cite each
-fact with a footnote at the end of the sentence that makes it.[^source]
+fact with its references.yml ID at the end of the sentence that makes it.[^REF-001]
 
 ## Common mistakes
 
@@ -38,5 +38,3 @@ Concrete practice advice. Link to specific scenarios, playlists, or routines whe
 - [Guides](../resources/guides.md#getting-started): external learning material on this subject.
 
 ## References
-
-[^source]: Publisher, [Page title](https://voltaic.gg)

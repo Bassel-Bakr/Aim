@@ -25,7 +25,7 @@ is narrower than "practice on purpose."
 
 It is individualized training built around a specific, well-defined performance goal. It gives
 immediate feedback on each attempt, and a sequence of tasks that gets harder as the trainee
-improves. Traditionally, a qualified coach directs it.[^ericsson]
+improves. Traditionally, a qualified coach directs it.[^REF-036]
 
 Most solo aim training has no coach designing the sequence. The same shape still applies without
 one:
@@ -39,28 +39,28 @@ setting that beats you more often than it doesn't produces little more than frus
 
 Easy or slowed-down variants are worth taking seriously rather than skipping past. Running a
 scenario at a pace where your crosshair lands cleanly builds the technique that holds up once you
-push difficulty back up.[^speed-accuracy]
+push difficulty back up.[^REF-017]
 
 **Scenario variety versus repetition.** Running the same handful of scenarios forever can make you
 better at those scenarios without making you better at aiming in general.
 
 Benchmark authors say so about their own benchmarks. Training on the benchmark scenarios alone is
 possible but "not recommended." You risk getting better at those specific tasks rather than
-improving mechanically. Mixing in other scenarios is the suggested fix.[^revo-guide]
+improving mechanically. Mixing in other scenarios is the suggested fix.[^REF-044]
 
 **Score chasing versus technique focus.** A high score can come from finding a scenario's quirks as
 easily as from good technique. Treating the score itself as the goal can reward the wrong thing.
 
 [Voltaic](../resources/communities/voltaic.md)'s benchmark ranking system is deliberately built so a
 strong score in one favorite scenario can't carry a rank on its own. That pushes players to improve
-broadly instead of maximizing a single number.[^volt-lb]
+broadly instead of maximizing a single number.[^REF-048]
 
 **Rest and consistency.** Skill develops during the rest between sessions, as well as during the
 sessions themselves.
 
 General motor-learning research finds that shorter, more frequent sessions with real rest tend to
 beat one long session. That holds both for how well you retain a skill and for how fatigue affects
-your performance while training.[^hk-distribution]
+your performance while training.[^REF-026]
 
 Sleep factors in too. [Voltaic's own lifestyle guide](https://blog.voltaic.gg/lifestyle/) cites
 research tying insufficient sleep to measurably slower reaction time. That undercuts the same
@@ -70,7 +70,7 @@ mechanics you're trying to train.
 
 - Practicing whatever scenario you enjoy or are already good at, instead of the one that targets
   your actual weakness.
-- Running only the same benchmark scenarios and calling it training.[^revo-guide]
+- Running only the same benchmark scenarios and calling it training.[^REF-044]
 - Staying on a setting that's too hard to hit reliably, instead of stepping down until your
   technique is clean and working back up.
 - Treating a leaderboard score as the goal, rather than as a rough signal of whether your technique
@@ -97,9 +97,3 @@ it until your crosshair lands cleanly.
 - [Guides](../resources/guides.md#practice-and-routines): guides on practice and routines.
 
 ## References
-
-[^ericsson]: Macnamara & Hambrick, [a 2019 review examining Ericsson's original definition of deliberate practice](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full)
-[^speed-accuracy]: Aimlabs, [The speed-accuracy tradeoff and what it means for your aim training](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/)
-[^volt-lb]: Voltaic, [about the leaderboards](https://app.voltaic.gg/leaderboards/about)
-[^hk-distribution]: Human Kinetics, [Distribution of practice in motor learning and development](https://us.humankinetics.com/blogs/excerpt/distribution-of-practice-in-motor-learning-and-development)
-[^revo-guide]: Revosect, [Benchmarks guide](https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit)

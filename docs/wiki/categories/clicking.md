@@ -16,15 +16,15 @@ between your crosshair and the target, then time the click so it actually connec
 - **Land the first flick.** Don't rely on correcting a rough one.
 
 [Aimlabs](../resources/trainers/aimlabs.md) groups this under what it calls "flicking," one of aim's
-three foundational categories alongside tracking and switching.[^aimlabs-intro]
+three foundational categories alongside tracking and switching.[^REF-011]
 
 What varies between one flick and the next is whether the target is going anywhere. A stationary
 target makes the shot purely a question of precision. A moving one means the flick has to account
 for where the target will be when the click lands.
 
-Aimlabs splits flicking two ways, static and dynamic.[^aimlabs-intro]
+Aimlabs splits flicking two ways, static and dynamic.[^REF-011]
 [Voltaic](../resources/communities/voltaic.md)'s Season 5 KovaaK's benchmark adds linear between
-them.[^voltaic-s5]
+them.[^REF-050]
 
 ## Static clicking
 
@@ -50,7 +50,7 @@ where it started. It finishes with whatever small correction the target's ongoin
 needs.
 
 Aimlabs describes proper flicking technique in general as "the initial flicking motion with
-controlled microcorrections to adjust for the subtle motions of the targets."[^aimlabs-finals]
+controlled microcorrections to adjust for the subtle motions of the targets."[^REF-019]
 
 The common mistake is flicking to where the target was at the start of the motion, and only
 reacting to its movement afterward. That turns one clean flick into a chase.
@@ -62,7 +62,7 @@ as anywhere else.
 ## Linear clicking
 
 Linear clicking sits between the two. Voltaic added it in Season 5 as a hybrid category "bridging
-traditional subcategory gaps."[^voltaic-s5]
+traditional subcategory gaps."[^REF-050]
 
 The target moves, but along a single readable line rather than erratically. Good execution
 approaches its line of travel smoothly and times the click to where it will be, not reactively once
@@ -89,7 +89,3 @@ only once that holds.
 - [Guides](../resources/guides.md#clicking): clicking guides, in every format.
 
 ## References
-
-[^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)
-[^aimlabs-finals]: Aimlabs, [Train flicking and tracking in The Finals aim basics routine](https://aimlabs.com/articles/aimlabs/train-flicking-and-tracking-in-the-finals-aim-basics-routine/)
-[^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)

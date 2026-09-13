@@ -59,7 +59,7 @@ practiced in the actual game, per its
 Use trainer time for mechanics, and game time for everything a trainer can't reproduce.
 
 Keep the trainer part bounded. Aimlabs puts a solid daily playlist at 30 to 40 minutes. Past that,
-time in your own game does more for you than more trainer time.[^aimlabs-playlist]
+time in your own game does more for you than more trainer time.[^REF-008]
 
 [Voltaic](../resources/communities/voltaic.md) structures its own [routines](../training/routines.md)
 around this split. General Fundamental Routines cover overall mouse control. Separate game-specific
@@ -88,5 +88,3 @@ crosshair placement and positioning.
   piece of the puzzle, and splits routines into fundamental versus game-specific practice.
 
 ## References
-
-[^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)

@@ -62,6 +62,7 @@ nav = [
     ] },
     { "Myths" = "wiki/myths.md" },
     { "Glossary" = "wiki/glossary.md" },
+    { "References" = "wiki/references.md" },
     { "Tags" = "wiki/tags.md" },
   ] },
   { "Articles" = [
@@ -116,7 +117,9 @@ tags = {}
 abbr = {}
 admonition = {}
 attr_list = {}
-footnotes = {}
+# Number footnotes in the order a page first cites them, not the order their definitions appear:
+# references are defined by the aim_references extension, after the page's own text.
+footnotes = { USE_DEFINITION_ORDER = false }
 md_in_html = {}
 tables = {}
 toc.permalink = true
@@ -124,3 +127,4 @@ pymdownx.details = {}
 pymdownx.superfences = {}
 pymdownx.tabbed.alternate_style = true
 pymdownx.snippets.auto_append = ["includes/abbreviations.md"]
+aim_references = { registry = "references.yml" }

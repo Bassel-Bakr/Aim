@@ -12,7 +12,7 @@ tags:
 Aim breaks down into three underlying mechanical categories that show up in almost every
 scenario and benchmark: clicking, tracking, and switching. [Aimlabs](../resources/trainers/aimlabs.md)
 treats these as aim's three foundational categories and recommends a training playlist draw from
-all three rather than lean on one.[^aimlabs-playlist]
+all three rather than lean on one.[^REF-008]
 
 <div class="aim-table-stack" markdown>
 
@@ -24,13 +24,10 @@ all three rather than lean on one.[^aimlabs-playlist]
 
 </div>
 
-Each page splits its category along the axis in the third column, under the benchmark communities' names, with the hybrid subcategory last.[^voltaic-s5]
+Each page splits its category along the axis in the third column, under the benchmark communities' names, with the hybrid subcategory last.[^REF-050]
 
 Those labels move between benchmark seasons, so each page explains the distinction underneath
 rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring
 works.
 
 ## References
-
-[^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
-[^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)

@@ -43,22 +43,35 @@ body.
    ```markdown
    Matty defines it as a deliberate choice to "withhold extra motion on a target."[^matty]
    ```
-2. Cite facts with a footnote. Put a `[^label]` marker at the end of the sentence, and define the
-   source at the bottom of the file:
+2. Cite facts with a reference. Every source lives once in `references.yml` at the repository root,
+   under a stable ID. Put that ID as a footnote marker at the end of the sentence, and do not define
+   it on the page:
 
    ```markdown
-   Fingers make small adjustments and the arm drives large turns.[^wrist-vs-arm]
-
-   [^wrist-vs-arm]: Aimlabs, [Wrist aiming vs arm aiming: why not both?](https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/)
+   Fingers make small adjustments and the arm drives large turns.[^REF-015]
    ```
 
-   Reuse the same label whenever you cite that source again on the page; it renders as one numbered
-   entry with a link back to each use. Use descriptive labels (`wrist-vs-arm`), not numbers, so
-   citations never need renumbering. Footnotes are numbered in the order their definitions appear,
-   so keep the definition list in order of first use. Name the publisher first in the definition,
-   then link the page title.
+   The site fills in the source's name and link, and links it to its entry on the
+   [References](docs/wiki/references.md) page. To cite a source that is not in the registry yet, add
+   it with the next unused ID:
 
-   Two exceptions stay in the prose rather than becoming footnotes: links to other wiki pages,
+   ```yaml
+   - id: REF-058
+     author: Aimlabs
+     title: Wrist aiming vs arm aiming: why not both?
+     url: https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/
+     type: article
+   ```
+
+   `author` is the person or organization; `type` is one of article, document, documentation,
+   encyclopedia, post, repository, study, video, or website. `publication` and `notes` are
+   optional. Never renumber or reuse an ID: pages cite by ID. Footnotes are numbered in the order a
+   page cites them.
+
+   A footnote that is not a source, such as a short aside, still works the normal way: give it any
+   label other than a `REF-` ID and define it at the bottom of the page.
+
+   Two exceptions stay in the prose rather than becoming references: links to other wiki pages,
    which are navigation rather than citation, and cases where the source's identity is part of the
    claim, such as whose benchmark a rank belongs to.
 3. Pages written from research but not yet fact-checked keep this banner at the top:
@@ -125,8 +138,9 @@ A concept page ends with up to three sections, in this order, each with one job:
    pages.
 2. **Resources**: where to go to learn more — resource pages, and the matching section of
    [Guides](docs/wiki/resources/guides.md). These are recommendations, not evidence.
-3. **References**: the footnotes that source this page's claims. Put `## References` directly
-   above the footnote definitions; the checker requires it on any wiki page with footnotes.
+3. **References**: the sources for this page's claims. Put `## References` as the last heading on
+   the page; the cited sources render below it. The checker requires it on any wiki page that cites
+   a source.
 
 Keep the two kinds of external link apart. A link that supports a claim on the page is a
 reference and becomes a footnote. A link that is simply good material on the subject is a

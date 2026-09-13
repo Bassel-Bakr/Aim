@@ -16,7 +16,7 @@ tags:
 
 A small open-source desktop application that watches your [KovaaK's](../trainers/kovaaks.md) stats
 folder. When you set a personal best, it tells OBS to save a replay-buffer clip. The run is recorded
-without you reaching for a hotkey mid-scenario.[^readme]
+without you reaching for a hotkey mid-scenario.[^REF-035]
 
 ## Who it suits
 
@@ -27,17 +27,17 @@ nothing about your scores or ranks.
 ## What it covers
 
 - **Personal-best detection**: reads the stats files KovaaK's writes after each run and triggers
-  only when a run beats your previous best for that scenario.[^readme]
+  only when a run beats your previous best for that scenario.[^REF-035]
 - **Replay saving and screenshots**: saves the OBS replay buffer, optionally takes a screenshot,
-  and trims the resulting clip.[^readme]
-- **Aimbeast support**, marked experimental rather than finished.[^readme]
+  and trims the resulting clip.[^REF-035]
+- **Aimbeast support**, marked experimental rather than finished.[^REF-035]
 - **Setup without config files**: a graphical interface for choosing the stats folder and entering
-  the OBS WebSocket password.[^readme]
+  the OBS WebSocket password.[^REF-035]
 
 ## Requirements
 
 OBS Studio 28 or later with the built-in WebSocket server and Replay Buffer both enabled. Windows
-is the supported platform; the project notes Linux as reported working but untested.[^readme]
+is the supported platform; the project notes Linux as reported working but untested.[^REF-035]
 
 ## Key content
 
@@ -59,5 +59,3 @@ And a personal best is only as meaningful as the scenario it was set in.
 - [Benchmarks](../../training/benchmarks.md)
 
 ## References
-
-[^readme]: KovOBS, [README](https://github.com/Bassel-Bakr/KovOBS)

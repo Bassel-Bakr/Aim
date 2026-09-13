@@ -24,7 +24,7 @@ weakness-targeted practice beats just logging hours.
 and tendons over a session.
 
 [Aimlabs](../resources/trainers/aimlabs.md) argues a short stretch or warm-up belongs inside the
-routine itself, rather than sitting outside it.[^aimlabs-body]
+routine itself, rather than sitting outside it.[^REF-006]
 
 In practice, start on an easier, slower version of your usual scenarios, instead of jumping straight
 into your hardest setting cold.
@@ -40,7 +40,7 @@ minutes of honest self-assessment. That turns a session into feedback you can ac
 just more repetitions.
 
 Voltaic frames this kind of after-the-fact analysis as belonging to a separate "Learning Zone." That's
-distinct from staying focused and uncritical while you're actually training.[^volt-mentality]
+distinct from staying focused and uncritical while you're actually training.[^REF-051]
 
 **Session length.** There's no single correct length. General motor-learning research favors several
 shorter sessions with real rest over one marathon session.
@@ -49,7 +49,7 @@ That holds both for how well a skill sticks and for how fatigue affects performa
 See [Practice Principles](../fundamentals/practice-principles.md).
 
 As a starting number, Aimlabs puts a solid daily playlist at 30 to 40 minutes, with warm-ups no
-longer than 10 to 15. Past that, time in your own game does more for you.[^aimlabs-playlist]
+longer than 10 to 15. Past that, time in your own game does more for you.[^REF-008]
 
 If your accuracy drops late in a session and stays down the next day, end sooner rather than push
 through.
@@ -63,7 +63,7 @@ the moment. See [Benchmarks](benchmarks.md).
 
 Your own matches are the other place to look. Go back through fights you lost in replays or clips,
 and ask whether a decision or your mechanics lost each one. When it was mechanics, that tells you
-what to put in your next focus block.[^aimlabs-fortnite]
+what to put in your next focus block.[^REF-010]
 
 Build your focus block from scenarios in that subcategory. Keep at least a little time on the others,
 so a fixed weakness doesn't quietly become a new one. That's the variety-over-repetition point in
@@ -79,7 +79,7 @@ Voltaic splits its routines three ways:
 - fundamental routines for general mouse control
 - game-specific routines for the aiming your particular game leans on most
 - weakness-specific routines, layered on top of whichever of those you're already
-  running[^volt-start]
+  running[^REF-052]
 
 Revosect covers similar ground: foundational and weakness-specific routines, plus separate
 game-specific playlists for a wide range of shooters.
@@ -125,9 +125,3 @@ subcategory.
 - [Guides](../resources/guides.md#practice-and-routines): guides on building and running routines.
 
 ## References
-
-[^aimlabs-body]: Aimlabs, [Are you taking care of your body between gaming sessions?](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/)
-[^volt-mentality]: Voltaic, [Constructing an improvement based mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/)
-[^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
-[^aimlabs-fortnite]: Aimlabs, [How to start aim training for Fortnite](https://aimlabs.com/articles/fortnite/how-to-start-aim-training-for-fortnite/)
-[^volt-start]: Voltaic, [Getting started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/)
