@@ -2,9 +2,9 @@
 
 {% block analytics %}
   {{ super() }}
-  {% if config.extra.cloudflare_analytics_token %}
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon='{"token": "{{ config.extra.cloudflare_analytics_token }}"}'></script>
+  {% if config.extra.goatcounter_code %}
+    <script data-goatcounter="https://{{ config.extra.goatcounter_code }}.goatcounter.com/count"
+            async src="https://gc.zgo.at/count.js"></script>
   {% endif %}
 {% endblock %}
 

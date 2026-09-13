@@ -98,11 +98,12 @@ scheme = "slate"
 toggle.icon = "material/brightness-4"
 toggle.name = "Switch to light mode"
 
-# Cloudflare Web Analytics: page views without cookies, so the site needs no consent banner.
-# Paste the token from the dashboard's JavaScript snippet (Web Analytics, Manage site). Left empty,
-# no analytics script is added. overrides/main.html renders the beacon.
+# Site integrations, written into every page by overrides/main.html. Each is left out while empty,
+# so a fork deploying elsewhere sets its own values or clears them.
 [project.extra]
-cloudflare_analytics_token = ""
+# GoatCounter page views: the site code from <code>.goatcounter.com. It sets no cookies, so the
+# site needs no consent banner.
+goatcounter_code = "aim-wiki"
 # Google Search Console ownership check for this site. A fork deploying elsewhere replaces it with
 # its own code from Search Console (HTML tag method, the content value only), or empties it.
 google_site_verification = "FGcY94GcYsusz2n50DU4UE4IOG4HTK8z-cnTo8a2M_s"
