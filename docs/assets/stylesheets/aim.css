@@ -37,10 +37,14 @@
   /* The wash behind a myth block. Light enough to read body text on, strong enough that the block
    * is visibly not the draft banner. */
   --aim-myth-wash: #b3341b0f;
-  /* Key points are blue so red keeps meaning "wrong". The tag's text sits on the solid colour, so
-   * it is light on the light scheme's dark blue and dark on the dark scheme's light blue. */
-  --aim-key: #1d6a8c;
-  --aim-key-wash: #1d6a8c0f;
+  /* Notes are yellow so red keeps meaning "wrong". Yellow bright enough to read as yellow is too
+   * light to set text in on white, so the light scheme splits it: the bright yellow fills the bar and
+   * tag, and a dark amber sets the title. The tag always carries dark text, since light text on
+   * either yellow is unreadable. */
+  --aim-key: #e0a800;
+  --aim-key-ink: #7d5e00;
+  --aim-key-wash: #e0a8001f;
+  --aim-key-tag-ink: var(--aim-chrome);
   --aim-tag-ink: var(--aim-chrome-fg);
   --aim-grid: #14171c08;
   --aim-clicking: #b3341b;
@@ -68,8 +72,9 @@
   --aim-accent: #ff7a52;
   --aim-heading: #ff9c7a;
   --aim-myth-wash: #ff7a5214;
-  --aim-key: #56b6d8;
-  --aim-key-wash: #56b6d814;
+  --aim-key: #f2c14e;
+  --aim-key-ink: #f2c14e;
+  --aim-key-wash: #f2c14e14;
   --aim-tag-ink: var(--aim-chrome);
   --aim-grid: #ffffff08;
   --aim-clicking: #ff7a52;
@@ -581,8 +586,8 @@ body {
 
 /* .aim-myth and .aim-key are admonition types, not classes you write. They share one shape, a
  * coloured rule, a wash, and a tag naming the block, and differ only in colour and tag word:
- * red for something wrong, blue for something to remember. Red must keep meaning "wrong", so a key
- * point never borrows it.
+ * red for something wrong, yellow for something to remember. Red must keep meaning "wrong", so a
+ * note never borrows it.
  *
  * .aim-myth marks a claim that is repeated as fact and is wrong, on the page whose subject it gets
  * wrong, and sends the reader to the full answer on wiki/myths.md.
@@ -620,14 +625,18 @@ body {
  * tag already says what the block is. */
 .md-typeset .myth {
   --aim-callout: var(--aim-accent);
+  --aim-callout-ink: var(--aim-accent);
   --aim-callout-wash: var(--aim-myth-wash);
   --aim-callout-tag: "Myth";
+  --aim-callout-tag-ink: var(--aim-tag-ink);
 }
 
 .md-typeset .key {
   --aim-callout: var(--aim-key);
+  --aim-callout-ink: var(--aim-key-ink);
   --aim-callout-wash: var(--aim-key-wash);
   --aim-callout-tag: "Note";
+  --aim-callout-tag-ink: var(--aim-key-tag-ink);
 }
 
 .md-typeset :is(.admonition, details):is(.myth, .key) {
@@ -643,7 +652,7 @@ body {
    * is a filled box, so the indent is dropped and the tag's left edge starts on the same column
    * the body text below it starts on. */
   padding-left: 0;
-  color: var(--aim-callout);
+  color: var(--aim-callout-ink);
 }
 
 .md-typeset :is(.myth, .key) > :is(.admonition-title, summary)::before {
@@ -656,7 +665,7 @@ body {
   content: var(--aim-callout-tag);
   order: -1;
   padding: 0.05rem 0.3rem;
-  color: var(--aim-tag-ink);
+  color: var(--aim-callout-tag-ink);
   background-color: var(--aim-callout);
   font-size: 0.58rem;
   letter-spacing: 0.12em;
