@@ -6,9 +6,9 @@ title: "Aim training wiki"
 
 ## Aim training wiki
 
-Aim is a training wiki for anyone working on their aim. It explains how mouse aim works, breaks aim
-into categories you can practise on purpose, and collects the community benchmarks, routines, and
-trainers worth your time.
+A wiki for anyone working on their aim. It explains how mouse aim works, breaks aim into categories
+you can practice on purpose, and collects the community benchmarks, routines, and trainers that can
+help in your training journey.
 
 [**Open the wiki**](wiki/index.md){ .md-button .md-button--primary }
 
