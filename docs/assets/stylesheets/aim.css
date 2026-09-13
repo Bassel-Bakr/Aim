@@ -21,8 +21,8 @@
    * table headers, buttons and badges, and never for running text. */
   --aim-display: "Chakra Petch", "Inter", -apple-system, system-ui, sans-serif;
 
-  /* Night is the near-black the landing hero sits on in both schemes, and the ink on solid-colour
-   * tags. It never changes with the scheme, so anything that must stay dark reads from it. */
+  /* Night is the dark scheme's chrome colour and the ink on solid-colour tags. It never changes
+   * with the scheme, so anything that must stay dark reads from it. */
   --aim-night: #0b0d12;
   --aim-night-fg: #e8eaf0;
   --aim-night-accent: #ff7a52;
@@ -36,6 +36,12 @@
   --aim-chrome-fg-lighter: #ffffff73;
   --aim-chrome-accent: var(--aim-night-accent);
   --aim-chrome-line: #ffffff1f;
+  /* The landing hero is a panel of chrome, so it needs a grid line and button colours that hold up
+   * on the chrome in either scheme. */
+  --aim-chrome-grid: #ffffff0a;
+  --aim-chrome-on-accent: var(--aim-night);
+  --aim-chrome-hover: #fff;
+  --aim-chrome-on-hover: var(--aim-night);
 
   --aim-ink: #14171c;
   --aim-accent: #b3341b;
@@ -74,6 +80,10 @@
   --aim-chrome-fg-lighter: #14171ca3;
   --aim-chrome-accent: var(--aim-accent);
   --aim-chrome-line: #14171c17;
+  --aim-chrome-grid: #14171c0d;
+  --aim-chrome-on-accent: #fff;
+  --aim-chrome-hover: var(--aim-ink);
+  --aim-chrome-on-hover: #fff;
 
   --md-primary-fg-color: var(--aim-ink);
   --md-primary-fg-color--light: #2a2f39;
@@ -379,11 +389,11 @@ body {
   overflow: hidden;
   margin: 0 0 2.5rem;
   padding: 2.4rem 2.2rem 2.6rem;
-  color: var(--aim-night-fg);
-  background-color: var(--aim-night);
+  color: var(--aim-chrome-fg);
+  background-color: var(--aim-chrome);
   background-image:
-    linear-gradient(#ffffff0a 1px, transparent 1px),
-    linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+    linear-gradient(var(--aim-chrome-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--aim-chrome-grid) 1px, transparent 1px);
   background-size: 2rem 2rem;
 }
 
@@ -396,7 +406,7 @@ body {
   width: 14rem;
   height: 14rem;
   transform: translateY(-50%);
-  background-color: var(--aim-night-accent);
+  background-color: var(--aim-chrome-accent);
   opacity: 0.22;
   mask: var(--aim-crosshair) center/contain no-repeat;
   -webkit-mask: var(--aim-crosshair) center/contain no-repeat;
@@ -425,15 +435,15 @@ body {
 }
 
 .md-typeset .aim-hero .md-button--primary {
-  color: var(--aim-night);
-  background-color: var(--aim-night-accent);
-  border-color: var(--aim-night-accent);
+  color: var(--aim-chrome-on-accent);
+  background-color: var(--aim-chrome-accent);
+  border-color: var(--aim-chrome-accent);
 }
 
 .md-typeset .aim-hero .md-button--primary:is(:hover, :focus) {
-  color: var(--aim-night);
-  background-color: #fff;
-  border-color: #fff;
+  color: var(--aim-chrome-on-hover);
+  background-color: var(--aim-chrome-hover);
+  border-color: var(--aim-chrome-hover);
 }
 
 /* ---------------------------------------------------------------------------
