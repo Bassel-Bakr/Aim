@@ -155,9 +155,6 @@ zensical build --clean
 
 Both commands must finish without problems. The same checks run automatically on every pull request.
 
-While existing pages are being brought up to the readability rules, check the pages you changed
-against them by name: `python scripts/check_pages.py --readability docs/wiki/glossary.md`.
-
 ## License
 
 By contributing, you agree that your contribution is licensed under

@@ -1,10 +1,9 @@
 """Check wiki pages against the rules in CONTRIBUTING.md.
 
 Usage:
-    python scripts/check_pages.py                  # tags and required sections
-    python scripts/check_pages.py --drafts         # also require the draft banner
-    python scripts/check_pages.py --readability    # also enforce the readability rules
-    python scripts/check_pages.py --readability docs/wiki/glossary.md   # check named pages only
+    python scripts/check_pages.py                          # tags, sections, and readability
+    python scripts/check_pages.py --drafts                 # also require the draft banner
+    python scripts/check_pages.py docs/wiki/glossary.md    # check named pages only
 """
 import re
 import sys
@@ -147,7 +146,7 @@ def readability(rel, text, concept):
     return errors
 
 
-def check(path, drafts, headings, readable):
+def check(path, drafts, headings):
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(DOCS).as_posix()
     # Wiki pages live under docs/wiki/; their section is the first segment below that.
@@ -181,19 +180,17 @@ def check(path, drafts, headings, readable):
                 errors.append(
                     f"{rel}: myth block title '{title}' has no matching heading on wiki/myths.md"
                 )
-        if readable:
-            errors += readability(rel, text, section in CONCEPT_DIRS and not is_index)
+        errors += readability(rel, text, section in CONCEPT_DIRS and not is_index)
     return errors
 
 
 def main():
     args = sys.argv[1:]
     drafts = "--drafts" in args
-    readable = "--readability" in args
     named = [Path(arg).resolve() for arg in args if not arg.startswith("--")]
     paths = named or sorted(DOCS.rglob("*.md"))
     headings = myth_headings()
-    errors = [error for path in paths for error in check(path, drafts, headings, readable)]
+    errors = [error for path in paths for error in check(path, drafts, headings)]
     for error in errors:
         print(error)
     print(f"{len(errors)} problem(s) found" if errors else "All pages OK")
