@@ -15,8 +15,8 @@ tags:
 ## What it is
 
 A small open-source desktop application that watches your [KovaaK's](../trainers/kovaaks.md) stats
-folder and tells OBS to save a replay-buffer clip when you set a personal best, so the run is
-recorded without you reaching for a hotkey mid-scenario.[^readme]
+folder. When you set a personal best, it tells OBS to save a replay-buffer clip. The run is recorded
+without you reaching for a hotkey mid-scenario.[^readme]
 
 ## Who it suits
 
@@ -46,10 +46,11 @@ is the supported platform; the project notes Linux as reported working but untes
 
 ## Our take
 
-Narrow by design, which is the point: it removes the one step most likely to be missed, which is
-hitting save after a run you did not expect to be your best. The requirements are the real
-constraint, since it depends on OBS's replay buffer already running, and a personal best is only
-as meaningful as the scenario it was set in.
+Narrow by design, which is the point. It removes the one step most likely to be missed: hitting save
+after a run you did not expect to be your best.
+
+The requirements are the real constraint, since it depends on OBS's replay buffer already running.
+And a personal best is only as meaningful as the scenario it was set in.
 
 ## Related wiki pages
 
