@@ -1,7 +1,7 @@
 """Centralized references for the Aim wiki.
 
-Sources live once, in references.yml, each under a stable ID such as REF-012. A wiki page cites one
-with an ordinary footnote marker, [^REF-012], and never defines it: this extension appends the
+Sources live once, in references.yml, each under a stable ID such as REF-12. A wiki page cites one
+with an ordinary footnote marker, [^REF-12], and never defines it: this extension appends the
 definition for every REF ID the page cites, built from the registry, under a "References" heading,
 so the theme renders them as normal footnotes. It appends only the IDs the page actually cites, because Python-Markdown lists every
 defined footnote whether or not the page refers to it.
@@ -25,7 +25,7 @@ import yaml
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
-CITATION = re.compile(r"\[\^(REF-\d{3})\](?!:)")
+CITATION = re.compile(r"\[\^(REF-[1-9]\d*)\](?!:)")
 REFERENCES_MARKER = "<!-- aim:references -->"
 REFERENCES_PAGE = "wiki/references.md"
 TYPE_LABELS = {

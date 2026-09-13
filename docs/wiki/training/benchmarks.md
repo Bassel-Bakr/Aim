@@ -54,13 +54,13 @@ Two communities run the benchmarks most players on this wiki will encounter. Bot
 
 - [Voltaic](../resources/communities/voltaic.md) runs a Season 5 KovaaK's benchmark and a Season 3
   [Aimlabs](../resources/trainers/aimlabs.md) one. Each splits into subcategories per category,
-  across three difficulty bands: Novice, Intermediate, and Advanced.[^REF-050][^REF-049] A
+  across three difficulty bands: Novice, Intermediate, and Advanced.[^REF-50][^REF-49] A
   rank is granted only once you have a score in every subcategory. It's driven by an overall
   "Energy" score that combines subcategories with a harmonic mean, which weights your weakest more
-  heavily than your strongest.[^REF-048]
+  heavily than your strongest.[^REF-48]
 - [Revosect](../resources/communities/revosect.md) runs a Season 5 KovaaK's benchmark covering six
   subcategories across the same three categories. It has Entry, Intermediate, and Advanced tiers. A
-  recorded VOD is required to verify a score at the top tier.[^REF-043]
+  recorded VOD is required to verify a score at the top tier.[^REF-43]
 
 Rank names and season numbering are independent between the two, so a rank on one doesn't translate
 to a rank on the other.

@@ -19,14 +19,14 @@ Voltaic also offers paid coaching through a program called Amped. It's aimed at 
 
 ## Who it suits
 
-Players at any level who want a structured way to measure raw mouse-control skill. The benchmarks are split into Novice, Intermediate, and Advanced difficulty, so newer players and experienced players both have a track to climb.[^REF-050]
+Players at any level who want a structured way to measure raw mouse-control skill. The benchmarks are split into Novice, Intermediate, and Advanced difficulty, so newer players and experienced players both have a track to climb.[^REF-50]
 
 Amped coaching targets competitive and content-creator players specifically, rather than beginners.
 
 ## What it covers
 
-- **Benchmarks** for the three core categories, [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). The current KovaaK's season is Season 5, and the current Aimlabs season is Season 3. Each splits per skill into static/dynamic, precise/reactive, and speed/evasive subcategories, across three difficulty bands. A hybrid category bridges each pair: linear, control, and stability, respectively.[^REF-050][^REF-049] Ranks are grouped within each difficulty band. You climb them with an overall "Energy" score that combines your subcategory scores using a harmonic mean. That weights your weakest subcategory more heavily than your strongest.[^REF-048]
-- **[Routines](../../training/routines.md)**: fundamental routines for general mouse control, game-specific routines, and weakness-specific routines built from Voltaic's recommended scenario lists.[^REF-052]
+- **Benchmarks** for the three core categories, [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). The current KovaaK's season is Season 5, and the current Aimlabs season is Season 3. Each splits per skill into static/dynamic, precise/reactive, and speed/evasive subcategories, across three difficulty bands. A hybrid category bridges each pair: linear, control, and stability, respectively.[^REF-50][^REF-49] Ranks are grouped within each difficulty band. You climb them with an overall "Energy" score that combines your subcategory scores using a harmonic mean. That weights your weakest subcategory more heavily than your strongest.[^REF-48]
+- **[Routines](../../training/routines.md)**: fundamental routines for general mouse control, game-specific routines, and weakness-specific routines built from Voltaic's recommended scenario lists.[^REF-52]
 - **Guides** on health, lifestyle, and improvement mindset, also linked from the Getting Started guide.
 
 ## Key content

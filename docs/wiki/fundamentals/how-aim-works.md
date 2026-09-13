@@ -19,18 +19,18 @@ of aim that "feels off".
 
 **Arm, wrist, and finger aim.** Mouse aim is not one motion. Fingers make small, precise
 adjustments. The wrist handles moderate movements, and the upper arm and shoulder drive the large
-sweeping turns.[^REF-021]
+sweeping turns.[^REF-21]
 
 Which joint leads shifts with sensitivity and target speed. Wrist-led aim suits precision holds
 where corrections are small. Arm-led aim is needed for the larger motions a faster game
-demands.[^REF-021]
+demands.[^REF-21]
 
 Most players already blend both without thinking about it. Treating fingers, wrist, and arm as
 parts that each do their own job beats picking a side in an "arm versus wrist" debate.
 
 **Large corrections versus micro-adjustments.** The same division of labor explains why a big flick
 and a small correction feel like different skills. One leans on the arm and shoulder, the other on
-the fingers and wrist.[^REF-021]
+the fingers and wrist.[^REF-21]
 
 [Clicking](../categories/clicking.md) and [Switching](../categories/switching.md) scenarios
 emphasize acquisition: jumping to a new target. [Tracking](../categories/tracking.md) scenarios
@@ -40,10 +40,10 @@ emphasize correction: staying on one that is already moving.
 correct a movement mid-flight. A shorter window means more misses.
 
 Motor-control research formalizes this as Fitts's law. It ties movement time to how far the
-movement travels and how small the target is.[^REF-027]
+movement travels and how small the target is.[^REF-27]
 
 In practice: chase maximum speed before your accuracy is solid and you build habits that are hard
-to undo later. Build accuracy at a manageable pace first, then push speed.[^REF-017]
+to undo later. Build accuracy at a manageable pace first, then push speed.[^REF-17]
 
 **Smoothness.** Not a separate skill from tracking or flicking. A quality running through both:
 does your crosshair move as one continuous motion, or as a series of separate corrections?
@@ -53,23 +53,23 @@ right now, instead of lagging behind and snapping forward to catch up. Direction
 same rule: decelerate and re-accelerate, no hard stop.
 
 Most "smoothness problems" are really tension problems. Gripping the mouse too tightly blocks fluid
-motion no matter how much you practice.[^REF-020]
+motion no matter how much you practice.[^REF-20]
 
 **Reaction versus prediction.** Reactive tracking follows where a target actually is, responding to
 each change in direction as it happens. Predictive tracking aims ahead of it.
 
 Prediction looks tighter when it works, and breaks the moment an opponent changes direction to bait
-it. Reactive tracking carries a small built-in lag, but cannot be juked the same way.[^REF-015]
+it. Reactive tracking carries a small built-in lag, but cannot be juked the same way.[^REF-15]
 
 ## Common mistakes
 
 - Treating arm and wrist aim as an either/or instead of letting each joint do the motion it suits.
   See [Myths](../myths.md#arm-aiming-is-strictly-better-than-wrist-aiming).
 - Pushing scenario speed before accuracy is solid, which builds habits that are harder to unlearn
-  than they were to avoid.[^REF-017]
+  than they were to avoid.[^REF-17]
 - Aiming where a target is going instead of where it is, which falls apart against evasive
   movement. See [Myths](../myths.md#good-tracking-means-predicting-where-the-target-will-go).
-- Training through a jerky track when the cause is a tight grip.[^REF-020]
+- Training through a jerky track when the cause is a tight grip.[^REF-20]
 
 ## How to train it
 

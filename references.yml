@@ -1,6 +1,6 @@
 # Sources cited by wiki pages, one entry per source.
 #
-# A page cites a source with its ID as a footnote marker, [^REF-012], and never defines it: the
+# A page cites a source with its ID as a footnote marker, [^REF-12], and never defines it: the
 # aim_references Markdown extension adds the definition from this file. Give a new source the next
 # unused number; never renumber or reuse an ID, because pages cite by ID.
 #
@@ -8,345 +8,345 @@
 # it appeared, when that differs from the author) and notes. Types: article, document,
 # documentation, encyclopedia, post, repository, study, video, website.
 
-- id: REF-001
+- id: REF-1
   author: 1HP
   title: "Esports health: it starts with ergonomics and posture"
   url: "https://1-hp.org/blog/hpforgamers/esports-health-it-starts-with-ergonomics-and-posture/"
   type: article
 
-- id: REF-002
+- id: REF-2
   author: Aimbeast
   title: Steam store page
   url: "https://store.steampowered.com/app/1100990/Aimbeast/"
   type: website
 
-- id: REF-003
+- id: REF-3
   author: aimbetween.games
   title: flick training
   url: "https://aimbetween.games/modes/flick"
   type: website
 
-- id: REF-004
+- id: REF-4
   author: Aimlabs
   title: A quick explainer on cm/360 and the common cm/360 by game
   url: "https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/"
   type: article
 
-- id: REF-005
+- id: REF-5
   author: Aimlabs
   title: Aimlabs+
   url: "https://aimlabs.com/aimlabs-plus"
   type: article
 
-- id: REF-006
+- id: REF-6
   author: Aimlabs
   title: Are you taking care of your body between gaming sessions?
   url: "https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/"
   type: article
 
-- id: REF-007
+- id: REF-7
   author: Aimlabs
   title: homepage
   url: "https://aimlabs.com/"
   type: article
 
-- id: REF-008
+- id: REF-8
   author: Aimlabs
   title: How to build a well balanced aim training playlist
   url: "https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/"
   type: article
 
-- id: REF-009
+- id: REF-9
   author: Aimlabs
   title: How to develop your own aim training regimen
   url: "https://aimlabs.com/articles/aimlabs/how-to-develop-your-own-aim-training-regimen/"
   type: article
 
-- id: REF-010
+- id: REF-10
   author: Aimlabs
   title: How to start aim training for Fortnite
   url: "https://aimlabs.com/articles/fortnite/how-to-start-aim-training-for-fortnite/"
   type: article
 
-- id: REF-011
+- id: REF-11
   author: Aimlabs
   title: "Introduction to aim training: the basics of Aimlabs"
   url: "https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/"
   type: article
 
-- id: REF-012
+- id: REF-12
   author: Aimlabs
   title: "It came from the Workshop: our second look at trending tasks and playlists"
   url: "https://aimlabs.com/articles/aimlabs/it-came-from-the-workshop-our-second-look-at-trending-tasks-and-playlists-on-aimlabs/"
   type: article
 
-- id: REF-013
+- id: REF-13
   author: Aimlabs
   title: leaderboards
   url: "https://aimlabs.com/leaderboards"
   type: article
 
-- id: REF-014
+- id: REF-14
   author: Aimlabs
   title: Master tracking and switching with the Apex Legends aim basics routine
   url: "https://aimlabs.com/articles/aim-basics-routines/master-tracking-and-switching-with-the-apex-legends-aim-basics-routine/"
   type: article
 
-- id: REF-015
+- id: REF-15
   author: Aimlabs
   title: "Stop predicting and start reacting: get better at reactive tracking"
   url: "https://aimlabs.com/articles/aimlabs/stop-predicting-and-start-reacting-get-better-at-reactive-tracking/"
   type: article
 
-- id: REF-016
+- id: REF-16
   author: Aimlabs
   title: The Aimlabs official benchmarks first season is now live
   url: "https://aimlabs.com/articles/aimlabs/the-aimlabs-official-benchmarks-first-season-is-now-live/"
   type: article
 
-- id: REF-017
+- id: REF-17
   author: Aimlabs
   title: The speed-accuracy tradeoff and what it means for your aim training
   url: "https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/"
   type: article
 
-- id: REF-018
+- id: REF-18
   author: Aimlabs
   title: Tracking and switching moving targets in Apex Legends
   url: "https://aimlabs.com/articles/aimlabs/tracking-and-switching-moving-targets-in-apex-legends/"
   type: article
 
-- id: REF-019
+- id: REF-19
   author: Aimlabs
   title: Train flicking and tracking in The Finals aim basics routine
   url: "https://aimlabs.com/articles/aimlabs/train-flicking-and-tracking-in-the-finals-aim-basics-routine/"
   type: article
 
-- id: REF-020
+- id: REF-20
   author: Aimlabs
   title: What smoothness actually is and why it makes everything else better
   url: "https://aimlabs.com/articles/aimlabs/what-smoothness-actually-is-and-why-it-makes-everything-else-better/"
   type: article
 
-- id: REF-021
+- id: REF-21
   author: Aimlabs
   title: "Wrist aiming vs arm aiming: why not both?"
   url: "https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/"
   type: article
 
-- id: REF-022
+- id: REF-22
   author: American Academy of Ophthalmology
   title: What is eye strain?
   url: "https://www.aao.org/eye-health/diseases/what-is-eye-strain"
   type: article
 
-- id: REF-023
+- id: REF-23
   author: Blur Busters
   title: Benefits of frame rate above refresh rate
   url: "https://blurbusters.com/faq/benefits-of-frame-rate-above-refresh-rate/"
   type: article
 
-- id: REF-024
+- id: REF-24
   author: Evxl
   title: Aimbeast benchmarks
   url: "https://evxl.app/groups/aimbeast"
   type: website
 
-- id: REF-025
+- id: REF-25
   author: Evxl
   title: Benchmark Tracker
   url: "https://evxl.app"
   type: website
 
-- id: REF-026
+- id: REF-26
   author: Human Kinetics
   title: Distribution of practice in motor learning and development
   url: "https://us.humankinetics.com/blogs/excerpt/distribution-of-practice-in-motor-learning-and-development"
   type: article
 
-- id: REF-027
+- id: REF-27
   author: Human Kinetics
   title: "Understanding Fitts's law"
   url: "https://us.humankinetics.com/blogs/excerpt/understanding-fitts-law"
   type: article
 
-- id: REF-028
+- id: REF-28
   author: Human Kinetics
   title: Understanding motor learning stages improves skill instruction
   url: "https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction"
   type: article
 
-- id: REF-029
+- id: REF-29
   author: Journal of Neuroscience
   title: a study on plateaued motor skill
   url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/"
   type: study
   publication: PMC
 
-- id: REF-030
+- id: REF-30
   author: kova
   title: pyvno.xyz
   url: "https://pyvno.xyz"
   type: website
 
-- id: REF-031
+- id: REF-31
   author: "KovaaK's"
   title: sensitivity converter
   url: "https://kovaaks.com/kovaaks/sens-converter"
   type: website
 
-- id: REF-032
+- id: REF-32
   author: "KovaaK's"
   title: Sensitivity Matcher
   url: "https://www.kovaak.com/sensitivity-matcher/"
   type: website
 
-- id: REF-033
+- id: REF-33
   author: "KovaaK's"
   title: Steam store page
   url: "https://store.steampowered.com/app/824270/KovaaKs/"
   type: website
 
-- id: REF-034
+- id: REF-34
   author: "KovaaK's"
   title: Tracking Trainer on Steam
   url: "https://store.steampowered.com/app/1438210/KovaaKs_Tracking_Trainer/"
   type: website
 
-- id: REF-035
+- id: REF-35
   author: KovOBS
   title: README
   url: "https://github.com/Bassel-Bakr/KovOBS"
   type: repository
 
-- id: REF-036
+- id: REF-36
   author: "Macnamara & Hambrick"
   title: "a 2019 review examining Ericsson's original definition of deliberate practice"
   url: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full"
   type: study
 
-- id: REF-037
+- id: REF-37
   author: Mayo Clinic
   title: Office ergonomics
   url: "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/office-ergonomics/art-20046169"
   type: article
 
-- id: REF-038
+- id: REF-38
   author: Microsoft
   title: Change mouse settings
   url: "https://support.microsoft.com/en-us/windows/change-mouse-settings-e81356a4-0e74-fe38-7d01-9d79fbf8712b"
   type: documentation
 
-- id: REF-039
+- id: REF-39
   author: Mouse DPI Analyzer
   title: Best mouse settings for gaming
   url: "https://mousedpianalyzer.com/post/best-mouse-settings-for-gaming/"
   type: article
 
-- id: REF-040
+- id: REF-40
   author: NHS
   title: Repetitive strain injury (RSI)
   url: "https://www.nhs.uk/conditions/repetitive-strain-injury-rsi/"
   type: article
 
-- id: REF-041
+- id: REF-41
   author: OSHA
   title: "Computer workstations eTool: work process"
   url: "https://www.osha.gov/etools/computer-workstations/work-process"
   type: article
 
-- id: REF-042
+- id: REF-42
   author: ProSettings.net
   title: What is DPI and eDPI?
   url: "https://prosettings.net/blog/what-is-dpi-edpi/"
   type: article
 
-- id: REF-043
+- id: REF-43
   author: Revosect
   title: benchmarks
   url: "https://revosect.com/benchmarks"
   type: website
 
-- id: REF-044
+- id: REF-44
   author: Revosect
   title: Benchmarks guide
   url: "https://docs.google.com/document/d/1n-9BESnTSUxY8osjFbCIDd0tT7ufkFGSxpffe5ftoEQ/edit"
   type: document
 
-- id: REF-045
+- id: REF-45
   author: Revosect
   title: resources
   url: "https://revosect.com/resources"
   type: website
 
-- id: REF-046
+- id: REF-46
   author: Sports Health
   title: a clinical review of overtraining syndrome
   url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3435910/"
   type: study
   publication: PMC
 
-- id: REF-047
+- id: REF-47
   author: SteelSeries
   title: QcK Performance product page
   url: "https://steelseries.com/qck-performance"
   type: website
 
-- id: REF-048
+- id: REF-48
   author: Voltaic
   title: about the leaderboards
   url: "https://app.voltaic.gg/leaderboards/about"
   type: website
 
-- id: REF-049
+- id: REF-49
   author: Voltaic
   title: Announcing the Voltaic Season 3 aiming benchmarks beta for Aimlabs
   url: "https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/"
   type: article
 
-- id: REF-050
+- id: REF-50
   author: Voltaic
   title: "Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's"
   url: "https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/"
   type: article
 
-- id: REF-051
+- id: REF-51
   author: Voltaic
   title: Constructing an improvement based mentality
   url: "https://blog.voltaic.gg/constructing-an-improvement-based-mentality/"
   type: article
 
-- id: REF-052
+- id: REF-52
   author: Voltaic
   title: Getting started with Voltaic
   url: "https://blog.voltaic.gg/getting-started-with-voltaic/"
   type: article
 
-- id: REF-053
+- id: REF-53
   author: Voltaic
   title: Muscle memory
   url: "https://blog.voltaic.gg/muscle-memory/"
   type: article
 
-- id: REF-054
+- id: REF-54
   author: VT Matty
   title: Underaiming is not edge tracking
   url: "https://x.com/Matty_OW/status/1873563341408674076"
   type: post
 
-- id: REF-055
+- id: REF-55
   author: WASD Life
   title: mouse grip styles
   url: "https://wasdlife.com/mice/mouse-grip-styles/"
   type: article
 
-- id: REF-056
+- id: REF-56
   author: Wikipedia
   title: Field of view in video games
   url: "https://en.wikipedia.org/wiki/Field_of_view_in_video_games"
   type: encyclopedia
 
-- id: REF-057
+- id: REF-57
   author: XDA Developers
   title: gaming mouse buying guide
   url: "https://www.xda-developers.com/gaming-mouse-buying-guide/"

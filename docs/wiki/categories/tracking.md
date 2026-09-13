@@ -17,7 +17,7 @@ or hopping to the next one.
 
 [Aimlabs](../resources/trainers/aimlabs.md) describes it as making sure your "crosshair remains
 glued to your opponents." That matters most in longer engagements, where a target stays alive and
-mobile.[^REF-011]
+mobile.[^REF-11]
 
 What makes one track harder than another is mostly how readable the target's path is.
 
@@ -26,10 +26,10 @@ that changes direction without warning asks you to respond to each change as it 
 
 Those are different demands, and the benchmark communities separate them the same way.
 [Voltaic](../resources/communities/voltaic.md)'s Season 5 KovaaK's benchmark names the three cases
-below precise, reactive, and control.[^REF-050]
+below precise, reactive, and control.[^REF-50]
 
 [Aimlabs](../resources/trainers/aimlabs.md) frames the same split as "pure horizontal tracking and
-smoothness" against "raw reactivity and target reading."[^REF-014]
+smoothness" against "raw reactivity and target reading."[^REF-14]
 
 ## Precise tracking
 
@@ -37,7 +37,7 @@ Precise tracking is the readable case. The target moves smoothly along a path yo
 time. The difficulty is staying exactly on it, not reacting to surprises.
 
 Voltaic scores it on scenarios built around small targets, where the crosshair has to arrive and
-settle without wobbling. A target that small leaves nowhere to hide a correction.[^REF-050]
+settle without wobbling. A target that small leaves nowhere to hide a correction.[^REF-50]
 
 Good execution means the crosshair moves at the same rate as the target, instead of lagging and
 snapping forward to catch up. That's the smoothness quality covered in more depth on
@@ -66,7 +66,7 @@ fully predict as too easy to be useful practice for this category.
 
 Control tracking sits between the two. Voltaic added it in Season 5 as a hybrid category "bridging
 traditional subcategory gaps." The target strafes on all three axes, but its changes of direction
-are rounded rather than sharp.[^REF-050]
+are rounded rather than sharp.[^REF-50]
 
 Real targets rarely sit at either extreme. Tracking movement like this means switching between the
 two modes as the path demands. Stay smooth through the parts you can read, and react cleanly when it
@@ -93,5 +93,5 @@ you can hold a clean continuous track.
 
 - [KovaaK's](../resources/trainers/kovaaks.md): scenario library, plus a dedicated Tracking Trainer
   DLC with eleven tracking-focused modules and dynamic difficulty, built by the game's own
-  developer.[^REF-034]
+  developer.[^REF-34]
 - [Guides](../resources/guides.md#tracking): tracking guides, in every format.

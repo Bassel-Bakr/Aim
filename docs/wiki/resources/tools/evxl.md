@@ -15,25 +15,25 @@ tags:
 A web-based benchmark tracker that pulls your scores from your aim trainer and scores them against
 community [benchmark](../../training/benchmarks.md) sheets. You don't have to copy results into a
 spreadsheet by hand. It supports [KovaaK's](../trainers/kovaaks.md) and Aimbeast, and is credited on
-the site to EVIL.[^REF-025]
+the site to EVIL.[^REF-25]
 
 ## Who it suits
 
 Anyone running a community benchmark who wants their rank calculated automatically, and anyone
 comparing more than one benchmark at a time. There is no account step: you enter a Steam ID, vanity
-ID, or profile URL and the site reads your scores from there.[^REF-025]
+ID, or profile URL and the site reads your scores from there.[^REF-25]
 
 ## What it covers
 
 - **Unified benchmarks**: community sheets gathered in one place, rather than one site per
   community. They include [Voltaic](../communities/voltaic.md),
   [Revosect](../communities/revosect.md), and [Jade Palace](../communities/jade-palace.md), plus a
-  long tail of smaller community sheets.[^REF-025]
+  long tail of smaller community sheets.[^REF-25]
 - **Leaderboards and rank history**: per-benchmark leaderboards and a record of how your rank has
-  moved over time.[^REF-025]
+  moved over time.[^REF-25]
 - **Scenario browser**: a searchable index of the scenarios the tracked benchmarks are built
-  from.[^REF-025]
-- **Charts and comparisons**: score charts and side-by-side comparison against other players.[^REF-025]
+  from.[^REF-25]
+- **Charts and comparisons**: score charts and side-by-side comparison against other players.[^REF-25]
 
 ## Key content
 

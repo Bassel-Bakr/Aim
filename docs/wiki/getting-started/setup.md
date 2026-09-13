@@ -25,13 +25,13 @@ Shape matters most. A mouse that doesn't match your hand size and grip style cau
 inconsistent aim, however good its sensor, per the same guide.
 
 Weight is a smaller, personal factor after shape. Some players prefer very light mice for lower
-inertia; others find them harder to control.[^REF-057]
+inertia; others find them harder to control.[^REF-57]
 
 **Mousepad: control versus speed surfaces.** Pad surfaces trade glide against stopping power.
 
 - A **speed** surface uses a low-friction weave for fast, consistent glide in every direction.
 - A **control** surface uses a denser weave that adds drag, for finer, more deliberate movements.
-- A **balanced** surface sits between the two.[^REF-047]
+- A **balanced** surface sits between the two.[^REF-47]
 
 Pad size matters alongside surface. A pad too small to cover your full sensitivity range forces you
 to lift and reset your mouse mid-turn.
@@ -40,28 +40,28 @@ to lift and reset your mouse mid-turn.
 repeatable position for as long as you play.
 
 - **Palm grip** rests your whole hand flat on the mouse and moves it mostly from the elbow and
-  shoulder. It is the most comfortable grip to sustain over long sessions.[^REF-055]
+  shoulder. It is the most comfortable grip to sustain over long sessions.[^REF-55]
 - **Claw grip** keeps your palm on the back of the mouse while your fingers arch up off the buttons.
-  It trades some comfort for faster flicks and clicking.[^REF-055]
+  It trades some comfort for faster flicks and clicking.[^REF-55]
 - **Fingertip grip** lifts your palm off the mouse entirely, so only your fingertips make contact.
-  It maximizes quick micro-adjustments, at the cost of finger stamina.[^REF-055]
+  It maximizes quick micro-adjustments, at the cost of finger stamina.[^REF-55]
 
 **Posture and arm position.** Your wrist position, and how long you hold it, matter more for comfort
-than which mouse or keyboard you use.[^REF-001]
+than which mouse or keyboard you use.[^REF-1]
 
 Keep your upper arm relaxed against your torso, elbow supported, rather than reaching or lifting
 your shoulder to use the mouse. Keep your screen roughly an arm's length away, with your eyes
-meeting near the top quarter of the monitor.[^REF-001]
+meeting near the top quarter of the monitor.[^REF-1]
 
 A setup you can comfortably hold for a full practice session does more for your consistency than
 any single piece of gear.
 
 **Monitor refresh rate and FPS.** A higher refresh rate reduces the time between frames the display
 can show. For example, a 240Hz display refreshes roughly 2.7ms faster per frame than a 144Hz
-display.[^REF-023]
+display.[^REF-23]
 
 Blur Busters' testing also found that running your in-game frame rate above your monitor's refresh
-rate, with V-Sync off, still measurably reduces input lag.[^REF-023]
+rate, with V-Sync off, still measurably reduces input lag.[^REF-23]
 
 So both help you see and react to targets sooner: a higher refresh-rate monitor, and a frame rate
 that comfortably exceeds it.
@@ -70,7 +70,7 @@ that comfortably exceeds it.
 
 - **Raw input: on.** With raw input enabled, a game reads mouse movement more directly from the
   device, instead of relying only on the Windows pointer path. That makes sensitivity more
-  predictable. Turn it on in any first-person or third-person shooter that supports it.[^REF-039]
+  predictable. Turn it on in any first-person or third-person shooter that supports it.[^REF-39]
   It is not a substitute for a clean sensor or stable frame times, per the same guide. It is just a
   setting worth checking is enabled.
 - **Mouse acceleration: off.** Acceleration changes how far the cursor or camera moves based on how
@@ -79,7 +79,7 @@ that comfortably exceeds it.
   toggle.
 - **Windows "Enhance pointer precision": off.** This is Windows' own built-in pointer acceleration.
   It is under **Settings > Bluetooth & devices > Mouse > Additional mouse settings > Pointer
-  Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^REF-038] Most
+  Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^REF-38] Most
   competitive games apply raw input and bypass this setting entirely. But leaving it on can still
   affect desktop use and any game without raw input, so turning it off is the safer default.
 

@@ -55,7 +55,7 @@ rough first pass fixed up afterward. See [Clicking](categories/clicking.md).
 ### FOV
 
 Field of view (FOV) is the extent of the game world visible on screen at once, usually set in
-degrees.[^REF-056]
+degrees.[^REF-56]
 
 ### FPS
 
@@ -82,7 +82,7 @@ arm-driven motion. It's used to settle precisely onto a target or hold a track. 
 Overflicking (also called overshooting) is landing a flick past the target. The crosshair has to
 reverse direction and drag back onto it.
 
-That costs more correction time than landing slightly short in the same direction.[^REF-003] See
+That costs more correction time than landing slightly short in the same direction.[^REF-3] See
 [Clicking](categories/clicking.md) for how this wiki describes a clean flick.
 
 ### Playlist
@@ -146,5 +146,5 @@ that changes direction and speed less predictably. Control tracking is a hybrid 
 Underflicking (also called undershooting) is landing a flick just short of the target.
 
 It's cheaper to fix than an overflick. Your hand is already moving in the right direction and only
-needs a small forward nudge, rather than a full reversal.[^REF-003] See
+needs a small forward nudge, rather than a full reversal.[^REF-3] See
 [Clicking](categories/clicking.md) for how this wiki describes a clean flick.

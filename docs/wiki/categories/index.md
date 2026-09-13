@@ -12,7 +12,7 @@ tags:
 Aim breaks down into three underlying mechanical categories that show up in almost every
 scenario and benchmark: clicking, tracking, and switching. [Aimlabs](../resources/trainers/aimlabs.md)
 treats these as aim's three foundational categories and recommends a training playlist draw from
-all three rather than lean on one.[^REF-008]
+all three rather than lean on one.[^REF-8]
 
 <div class="aim-table-stack" markdown>
 
@@ -24,7 +24,7 @@ all three rather than lean on one.[^REF-008]
 
 </div>
 
-Each page splits its category along the axis in the third column, under the benchmark communities' names, with the hybrid subcategory last.[^REF-050]
+Each page splits its category along the axis in the third column, under the benchmark communities' names, with the hybrid subcategory last.[^REF-50]
 
 Those labels move between benchmark seasons, so each page explains the distinction underneath
 rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring

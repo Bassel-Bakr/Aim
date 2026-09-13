@@ -33,9 +33,10 @@ MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
 MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
 # Sources live once in references.yml and pages cite them by ID; see extensions/aim_references.py.
 REGISTRY = DOCS.parent / "references.yml"
-REFERENCE_ID = re.compile(r"^REF-\d{3}$")
-REFERENCE_CITATION = re.compile(r"\[\^(REF-\d{3})\](?!:)")
+REFERENCE_ID = re.compile(r"^REF-[1-9]\d*$")
+REFERENCE_CITATION = re.compile(r"\[\^(REF-[1-9]\d*)\](?!:)")
 REFERENCE_DEFINITION = re.compile(r"^\[\^(REF-[^\]]*)\]:", re.M)
+REFERENCE_MARKER = re.compile(r"\[\^(REF-[^\]]*)\](?!:)")
 REFERENCES_HEADING = re.compile(r"^## References\s*$", re.M)
 REFERENCE_FIELDS = {"id", "author", "title", "url", "type", "publication", "notes"}
 REFERENCE_REQUIRED = {"id", "author", "title", "url", "type"}
@@ -58,7 +59,7 @@ def registry_ids():
             errors.append(f"{where}: unknown field '{field}'")
         ref_id, url = entry.get("id", ""), entry.get("url", "")
         if not REFERENCE_ID.match(str(ref_id)):
-            errors.append(f"{where}: id must look like REF-001")
+            errors.append(f"{where}: id must look like REF-1, with no leading zeros")
         if ref_id in ids:
             errors.append(f"{where}: duplicate id")
         if url in urls:
@@ -212,6 +213,8 @@ def check(path, drafts, headings, known_ids):
     cited = set(REFERENCE_CITATION.findall(text))
     if in_wiki and REFERENCES_HEADING.search(text):
         errors.append(f"{rel}: remove '## References'; the references extension adds it")
+    for marker in sorted(set(REFERENCE_MARKER.findall(text)) - cited):
+        errors.append(f"{rel}: [^{marker}] is not a valid reference ID; use REF-1 style, no leading zeros")
     for ref_id in sorted(cited - known_ids):
         errors.append(f"{rel}: cites {ref_id}, which is not in references.yml")
     for label in REFERENCE_DEFINITION.findall(text):

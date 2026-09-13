@@ -25,19 +25,19 @@ general ergonomics and rest advice from health and ergonomics organizations.
 ## Explanation
 
 **Regular breaks.** OSHA's guidance for computer workstations calls for pausing computer use
-periodically, rather than working in one long unbroken block.[^REF-041]
+periodically, rather than working in one long unbroken block.[^REF-41]
 
 A commonly cited pattern is stepping away from the screen for a few minutes once an hour. That gives
-whatever you've held in one position all session a chance to loosen up again.[^REF-041]
+whatever you've held in one position all session a chance to loosen up again.[^REF-41]
 
 For your eyes, the American Academy of Ophthalmology recommends periodically looking at something
 farther off, instead of staring at one fixed distance for hours. It's often summarized as the 20-20-20 rule: roughly 20 feet away, for about 20 seconds, every 20
-minutes.[^REF-022]
+minutes.[^REF-22]
 
 **Warm-up before intense sessions.** Long stretches of repetitive mouse movement and static posture
 build up strain on the same joints and tendons, session after session.
 [Aimlabs](../resources/trainers/aimlabs.md) argues a short stretch or warm-up belongs inside your
-training routine itself, not as an optional extra bolted on.[^REF-006]
+training routine itself, not as an optional extra bolted on.[^REF-6]
 
 **Posture and desk setup.** Wrist position, arm support, and screen distance all affect how much
 strain a long session puts on your body. [Setup and Gear](../getting-started/setup.md) covers them
@@ -47,11 +47,11 @@ Mayo Clinic's office ergonomics guide also flags the mouse specifically:
 
 - Keep it on the same surface as your keyboard.
 - Keep it close enough that you're not reaching for it.
-- Avoid bending your wrist up, down, or sideways while you use it.[^REF-037]
+- Avoid bending your wrist up, down, or sideways while you use it.[^REF-37]
 
 **Signs of strain.** Pain, tingling, numbness, or a dull ache in your hand, wrist, forearm, or
 shoulder are common early symptoms of repetitive strain injury. They typically build up gradually
-rather than appearing suddenly.[^REF-040]
+rather than appearing suddenly.[^REF-40]
 
 Catching these early and backing off matters more than pushing through them.
 

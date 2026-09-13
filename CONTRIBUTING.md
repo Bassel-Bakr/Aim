@@ -48,7 +48,7 @@ body.
    it on the page:
 
    ```markdown
-   Fingers make small adjustments and the arm drives large turns.[^REF-015]
+   Fingers make small adjustments and the arm drives large turns.[^REF-15]
    ```
 
    The site fills in the source's name and link, and links it to its entry on the
@@ -56,7 +56,7 @@ body.
    it with the next unused ID:
 
    ```yaml
-   - id: REF-058
+   - id: REF-58
      author: Aimlabs
      title: Wrist aiming vs arm aiming: why not both?
      url: https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/

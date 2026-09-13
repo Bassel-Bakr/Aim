@@ -13,21 +13,21 @@ tags:
 
 ## What it is
 
-Aimlabs is a free-to-play aim-training platform used by more than 40 million players. It's available on Windows through [Steam](https://store.steampowered.com/app/714010/Aimlabs/) and the Epic Games Store, and on Xbox and PlayStation.[^REF-007] An optional Aimlabs+ subscription adds extra training and coaching features on top of the free tier.[^REF-005]
+Aimlabs is a free-to-play aim-training platform used by more than 40 million players. It's available on Windows through [Steam](https://store.steampowered.com/app/714010/Aimlabs/) and the Epic Games Store, and on Xbox and PlayStation.[^REF-7] An optional Aimlabs+ subscription adds extra training and coaching features on top of the free tier.[^REF-5]
 
 ## Who it suits
 
-Players who want built-in, game-specific practice rather than assembling their own routine: Aimlabs ships Training Programs that curate playlists per game or aim category and adapt task difficulty to the player's skill level.[^REF-007]
+Players who want built-in, game-specific practice rather than assembling their own routine: Aimlabs ships Training Programs that curate playlists per game or aim category and adapt task difficulty to the player's skill level.[^REF-7]
 
 Its scale and free access also suit complete beginners, while Aimlabs+ adds tools aimed at players chasing measurable improvement.
 
 ## What it covers
 
-- **Tasks and playlists**: 50,000+ tasks and playlists,[^REF-007] including community-built ones made with Aimlabs' Creator Studio and Playlist Editor and shared through the Aimlabs Steam Workshop.[^REF-012]
-- **Game-specific training** for hundreds of first-person and third-person shooter titles, covering [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). It includes official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege.[^REF-007]
-- **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings.[^REF-007]
-- **Benchmarks**: Aimlabs runs its own official Benchmarks, with Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories.[^REF-016] These are separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs.[^REF-049]
-- **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator.[^REF-013]
+- **Tasks and playlists**: 50,000+ tasks and playlists,[^REF-7] including community-built ones made with Aimlabs' Creator Studio and Playlist Editor and shared through the Aimlabs Steam Workshop.[^REF-12]
+- **Game-specific training** for hundreds of first-person and third-person shooter titles, covering [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). It includes official partnership content for VALORANT and Tom Clancy's Rainbow Six Siege.[^REF-7]
+- **[Sensitivity](../../getting-started/sensitivity.md) tools**: a built-in Sensitivity Finder for calibrating mouse settings.[^REF-7]
+- **Benchmarks**: Aimlabs runs its own official Benchmarks, with Entry, Intermediate, and Elite tiers across tapping, tracking, and switching categories.[^REF-16] These are separate from third-party benchmarks such as [Voltaic](../communities/voltaic.md) Season 3, which also runs inside Aimlabs.[^REF-49]
+- **Stats**: per-task leaderboards with filters for period, mode, and weapon, plus a personal ranking indicator.[^REF-13]
 
 ## Key content
 
@@ -39,7 +39,7 @@ Its scale and free access also suit complete beginners, while Aimlabs+ adds tool
 
 Aimlabs leans toward a guided, curated experience compared to KovaaK's. It has adaptive Training Programs, and its own official benchmark rather than relying only on third-party ones.
 
-It is free to start, which makes it a low-friction entry point. Its most advanced coaching and analysis tools, though, sit behind the Aimlabs+ subscription rather than the free tier.[^REF-005]
+It is free to start, which makes it a low-friction entry point. Its most advanced coaching and analysis tools, though, sit behind the Aimlabs+ subscription rather than the free tier.[^REF-5]
 
 ## Related pages
 

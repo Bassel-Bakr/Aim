@@ -1059,7 +1059,7 @@ body {
 }
 
 /* The References page, which the aim_references extension builds. Each entry starts with an empty
- * anchor, id="ref-012", that a footnote's REF link points at. The entry followed to is tinted, so a
+ * anchor, id="ref-12", that a footnote's REF link points at. The entry followed to is tinted, so a
  * reader lands on it instead of hunting for it, and the anchor stops short of the sticky header. */
 .md-typeset span[id^="ref-"] {
   scroll-margin-top: 6rem;

@@ -17,7 +17,7 @@ doesn't require, rather than chasing every part of the target you could.
 - **It's not underflicking.** An underflick is one flick that stopped short.
 
 Voltaic's Matty defines it as a deliberate choice to "withhold extra motion on a target." The point
-is a target that's easier to judge, and a shot that's easier to time.[^REF-054]
+is a target that's easier to judge, and a shot that's easier to time.[^REF-54]
 
 ## Explanation
 
@@ -26,36 +26,36 @@ movements a shot doesn't need leaves fewer of them competing for your attention.
 
 That's why the technique is framed as making aim cleaner and more efficient, not slower. Matty
 points to it as a trait of professional play rather than a trainer habit. Players it's visible in
-include donk, sarah_frags, EliGE, and Prophet.[^REF-054]
+include donk, sarah_frags, EliGE, and Prophet.[^REF-54]
 
 **It belongs to no single category.** The restraint holds anywhere a target is in front of you. So
 it turns up in [clicking](../categories/clicking.md) and [switching](../categories/switching.md) as
-readily as in [tracking](../categories/tracking.md).[^REF-054]
+readily as in [tracking](../categories/tracking.md).[^REF-54]
 
 **Edge tracking is one place it lands.** What aim trainers call edge tracking is underaiming worked
 out in a tracking scenario. The two names describe different scopes, one general and one specific,
-so they aren't interchangeable.[^REF-054]
+so they aren't interchangeable.[^REF-54]
 
 **Not the same as underflicking.** An underflick is a fact about one flick: it stopped short of the
 target (see [Glossary](../glossary.md)).
 
 Underaiming is a decision taken before the movement, about how much of it to commit at all. It
-carries across every target you face, rather than describing a single one.[^REF-054]
+carries across every target you face, rather than describing a single one.[^REF-54]
 
 ## Common mistakes
 
 **Reading it as a flicking rule.** Understood as "stop short and correct forward," the idea collapses
 into one category at one moment. It loses the part that makes it worth naming: it governs the
-quantity of movement everywhere, not the endpoint of a flick.[^REF-054]
+quantity of movement everywhere, not the endpoint of a flick.[^REF-54]
 
 **Answering every twitch with a correction.** Movements added in response to target motion that
 didn't threaten the shot are precisely the overhead this technique removes. They crowd the read they
-were meant to support.[^REF-054]
+were meant to support.[^REF-54]
 
 ## How to train it
 
 What's trainable here is the decision, not a motion. Commit no more movement than the shot calls
-for, and treat each extra correction as something that needs a reason.[^REF-054]
+for, and treat each extra correction as something that needs a reason.[^REF-54]
 
 It's a restraint rather than a technique with its own shape. So it's practiced inside scenarios you
 already run for [clicking](../categories/clicking.md), [tracking](../categories/tracking.md), and

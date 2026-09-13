@@ -16,15 +16,15 @@ gap quickly, without losing the accuracy you need to land the next click.
 - **Accuracy before speed.** Widen spacing only once you land most switches.
 
 [Aimlabs](../resources/trainers/aimlabs.md) calls it "the heart of dynamic decision-making in
-aiming," where focus transfers from target to target in a swift, seamless motion.[^REF-011]
+aiming," where focus transfers from target to target in a swift, seamless motion.[^REF-11]
 
 Two things make one switch harder than another: how far apart the targets sit, and how much they
 move once you arrive. Distance sets how fast the transition has to be. Target motion decides how
 much work is left after the flick lands.
 
-Aimlabs splits switching two ways, static and dynamic.[^REF-011]
+Aimlabs splits switching two ways, static and dynamic.[^REF-11]
 [Voltaic](../resources/communities/voltaic.md)'s Season 5 KovaaK's benchmark names the three cases
-below speed, evasive, and stability.[^REF-050]
+below speed, evasive, and stability.[^REF-50]
 
 ## Speed switching
 
@@ -49,7 +49,7 @@ switch still needs a beat of tracking to close it out.
 
 Aimlabs' guidance is to start tracking a target as it changes direction, which gives the best chance
 to stay smooth and finish it off. It also advises against pulling off a target too early once
-you've committed to it.[^REF-018]
+you've committed to it.[^REF-18]
 
 The common mistake is exactly that: bailing on a target the instant it gets harder to hit, and
 jumping to an easier one. That trades one clean kill for a scattered miss.
@@ -60,7 +60,7 @@ movement.
 ## Stability switching
 
 Stability switching sits between the two. Voltaic added it in Season 5 as a hybrid category
-"bridging traditional subcategory gaps."[^REF-050]
+"bridging traditional subcategory gaps."[^REF-50]
 
 The targets barely move at all, hopping or jittering slightly in place. It looks like switching
 between stationary targets, but the crosshair has to hold through that small movement instead of

@@ -24,7 +24,7 @@ weakness-targeted practice beats just logging hours.
 and tendons over a session.
 
 [Aimlabs](../resources/trainers/aimlabs.md) argues a short stretch or warm-up belongs inside the
-routine itself, rather than sitting outside it.[^REF-006]
+routine itself, rather than sitting outside it.[^REF-6]
 
 In practice, start on an easier, slower version of your usual scenarios, instead of jumping straight
 into your hardest setting cold.
@@ -40,7 +40,7 @@ minutes of honest self-assessment. That turns a session into feedback you can ac
 just more repetitions.
 
 Voltaic frames this kind of after-the-fact analysis as belonging to a separate "Learning Zone." That's
-distinct from staying focused and uncritical while you're actually training.[^REF-051]
+distinct from staying focused and uncritical while you're actually training.[^REF-51]
 
 **Session length.** There's no single correct length. General motor-learning research favors several
 shorter sessions with real rest over one marathon session.
@@ -49,7 +49,7 @@ That holds both for how well a skill sticks and for how fatigue affects performa
 See [Practice Principles](../fundamentals/practice-principles.md).
 
 As a starting number, Aimlabs puts a solid daily playlist at 30 to 40 minutes, with warm-ups no
-longer than 10 to 15. Past that, time in your own game does more for you.[^REF-008]
+longer than 10 to 15. Past that, time in your own game does more for you.[^REF-8]
 
 If your accuracy drops late in a session and stays down the next day, end sooner rather than push
 through.
@@ -63,7 +63,7 @@ the moment. See [Benchmarks](benchmarks.md).
 
 Your own matches are the other place to look. Go back through fights you lost in replays or clips,
 and ask whether a decision or your mechanics lost each one. When it was mechanics, that tells you
-what to put in your next focus block.[^REF-010]
+what to put in your next focus block.[^REF-10]
 
 Build your focus block from scenarios in that subcategory. Keep at least a little time on the others,
 so a fixed weakness doesn't quietly become a new one. That's the variety-over-repetition point in
@@ -79,7 +79,7 @@ Voltaic splits its routines three ways:
 - fundamental routines for general mouse control
 - game-specific routines for the aiming your particular game leans on most
 - weakness-specific routines, layered on top of whichever of those you're already
-  running[^REF-052]
+  running[^REF-52]
 
 Revosect covers similar ground: foundational and weakness-specific routines, plus separate
 game-specific playlists for a wide range of shooters.

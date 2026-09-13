@@ -16,7 +16,7 @@ One short sentence on what this page covers.
 ## Explanation
 
 **A bold lead-in.** One idea per paragraph: 45 words at most, 25 words per sentence. Cite each
-fact with its references.yml ID at the end of the sentence that makes it.[^REF-001]
+fact with its references.yml ID at the end of the sentence that makes it.[^REF-1]
 
 ## Common mistakes
 

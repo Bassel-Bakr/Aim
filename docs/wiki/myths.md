@@ -27,16 +27,16 @@ demand, so anything that disturbs it, a new sensitivity or a new mouse, wipes ou
 
 **What sources say.** Motor-learning research describes skill as moving through stages. Gains come
 large and inconsistent early, then slow into a stage spent consciously judging and correcting the
-movement.[^REF-028]
+movement.[^REF-28]
 
 That's a process of learning, not a motion filed away in storage.
 
 Research on spacing practice makes the same point from another angle. Retention comes from shorter
-sessions spread out over time, not from piling up enough reps to fill a store.[^REF-026]
+sessions spread out over time, not from piling up enough reps to fill a store.[^REF-26]
 
 The disturbance half doesn't hold either. Voltaic's muscle-memory piece finds no long-run drop in aim
 among players who change sensitivity often, the same evidence the next entry covers in
-full.[^REF-053]
+full.[^REF-53]
 
 **What to do instead.** Judge practice by whether your read of a target and your corrections are
 getting better. That's what carries across settings.
@@ -50,10 +50,10 @@ a stored motion.
 nothing, so the safe move is to never touch it again.
 
 **What sources say.** Voltaic's muscle-memory piece answers the claim directly: a change costs
-short-term readjustment, not a lasting setback.[^REF-053]
+short-term readjustment, not a lasting setback.[^REF-53]
 
 The same piece lists a deliberate sensitivity change among the ways players work past a stall. The
-logic is that an unfamiliar setting puts you back where there's obvious room to improve.[^REF-053]
+logic is that an unfamiliar setting puts you back where there's obvious room to improve.[^REF-53]
 
 **What to do instead.** Change it for a reason, then leave it alone long enough to judge it.
 
@@ -76,7 +76,7 @@ small tremor on screen.
 
 Aimlabs publishes typical cm/360 ranges per game. The same article notes the right number depends on
 your equipment, desk space, posture, and comfort. That makes the ranges a starting reference, not a
-target.[^REF-004]
+target.[^REF-4]
 
 **What to do instead.** Pick a sensitivity that reaches every part of your mousepad, while still
 letting you turn 180 degrees without lifting the mouse. Then leave it alone long enough to judge it
@@ -92,13 +92,13 @@ inconsistency is to aim from the arm and stop using your wrist.
 
 **What sources say.** Aimlabs treats the joints as a division of labor, not a choice. Fingers make
 small precise adjustments, and the wrist handles moderate movements. The upper arm and shoulder
-drive large sweeping turns.[^REF-021]
+drive large sweeping turns.[^REF-21]
 
 Which one leads shifts with sensitivity and target speed. Wrist-led aim suits precision holds where
 corrections are small. Arm-led aim is needed for the larger motions a faster game
-demands.[^REF-021]
+demands.[^REF-21]
 
-Most players already blend both without thinking about it.[^REF-021]
+Most players already blend both without thinking about it.[^REF-21]
 
 **What to do instead.** Ask which joint suits the movement in front of you rather than which one
 to commit to. [How Aim Works](fundamentals/how-aim-works.md) covers the same split as it applies to
@@ -113,7 +113,7 @@ going, and your crosshair is waiting when it arrives.
 opponent changes direction to bait it.
 
 Reactive tracking follows where the target actually is, responding to each change as it happens. It
-carries a small built-in lag, but can't be juked the same way.[^REF-015]
+carries a small built-in lag, but can't be juked the same way.[^REF-15]
 
 **What to do instead.** Train the reaction. Scenarios with evasive movement push you toward
 responding rather than anticipating, because anticipation stops paying there.
@@ -125,14 +125,14 @@ responding rather than anticipating, because anticipation stops paying there.
 training will not move it.
 
 **What sources say.** Motor-learning research treats a stretch of flat performance as an ordinary,
-expected stage of learning, not evidence that something has broken.[^REF-029]
+expected stage of learning, not evidence that something has broken.[^REF-29]
 
 The same literature describes early learning as large, inconsistent jumps, followed by a slower
-stage of smaller refinements. So gains shrinking is the normal shape of progress.[^REF-028]
+stage of smaller refinements. So gains shrinking is the normal shape of progress.[^REF-28]
 
 A flat stretch also has causes you can act on, fatigue among them. Training hard without enough
 recovery can tip into overreaching, then overtraining, where performance declines rather than
-stalls.[^REF-046]
+stalls.[^REF-46]
 
 **What to do instead.** Judge the trend across several [benchmark](training/benchmarks.md) runs
 spaced weeks apart, rather than any one result. If a flat score comes with feeling generally run
@@ -147,14 +147,14 @@ to get better faster is to train longer.
 
 **What sources say.** General motor-learning research finds shorter, more frequent sessions with
 real rest tend to beat one long session. That holds for retaining a skill, and for how fatigue
-affects performance while training.[^REF-026]
+affects performance while training.[^REF-26]
 
 Past a point, more stops helping at all. Sustained training without enough recovery can tip into
-overreaching, then overtraining syndrome, where performance actually declines.[^REF-046]
+overreaching, then overtraining syndrome, where performance actually declines.[^REF-46]
 
 Ericsson's original definition of deliberate practice is also narrower than time spent. It requires
 a specific performance goal, immediate feedback on each attempt, and tasks that get harder as you
-improve.[^REF-036]
+improve.[^REF-36]
 
 **What to do instead.** Spend the time on your current weakness in sessions short enough to stay
 sharp, with rest between them. [Practice Principles](fundamentals/practice-principles.md) covers
@@ -166,11 +166,11 @@ the five habits that decide what an hour is worth.
 variable, because those settings are the ones that win.
 
 **What sources say.** Aimlabs publishes the cm/360 ranges players use per game. The same article says
-the right number depends on your own equipment, desk space, posture, and comfort.[^REF-004]
+the right number depends on your own equipment, desk space, posture, and comfort.[^REF-4]
 
 A copied number also doesn't always mean what it appears to. eDPI is comparable only within one game,
 because games scale the sensitivity multiplier differently. The same eDPI in another title is a
-different setting.[^REF-042]
+different setting.[^REF-42]
 
 **What to do instead.** Treat someone else's number as a starting point to adjust from, and
 compare across games in cm/360 rather than raw sensitivity or eDPI.
