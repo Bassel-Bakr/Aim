@@ -7,60 +7,78 @@ tags:
 !!! warning "Draft"
     Written from public sources, pending review.
 
-How much you improve depends less on how many hours you put in than on what you do with them.
-This page lays out five practice habits, drawn from general motor-learning research and from how
-the community's own benchmark and coaching groups actually train, that separate practice that
-raises your ceiling from practice that just feels productive.
+How much you improve depends less on how many hours you put in than on what you do with them. Five
+habits, drawn from motor-learning research and from how the community's benchmark and coaching
+groups train, separate real progress from practice that just feels productive.
+
+- **Practice deliberately.** Target a weakness, check each attempt, and add difficulty once it holds.
+- **Quality over volume.** Run scenarios at a pace where your crosshair lands cleanly.
+- **Mix your scenarios.** Repeating the same few makes you better at those, not at aiming.
+- **Train technique, not the score.** A high score can come from a scenario's quirks.
+- **Rest is part of training.** Shorter sessions with real rest beat one long session.
 
 ## Explanation
 
 **Deliberate practice.** Psychologist Anders Ericsson's original definition of deliberate practice
-is narrower than "practice on purpose": it is individualized training built around a specific,
-well-defined performance goal, with immediate feedback on each attempt and a sequence of tasks
-that gets harder as the trainee improves, traditionally under the direction of a qualified coach.[^ericsson]
-Most solo aim training has no coach designing the sequence, but the same shape still applies
-without one: pick a scenario because it targets a specific weakness rather than because it's
-comfortable, use a stat or replay to check whether a given attempt actually improved, and only add
-difficulty once that weakness is under control.
+is narrower than "practice on purpose."
+
+It is individualized training built around a specific, well-defined performance goal. It gives
+immediate feedback on each attempt, and a sequence of tasks that gets harder as the trainee
+improves. Traditionally, a qualified coach directs it.[^ericsson]
+
+Most solo aim training has no coach designing the sequence. The same shape still applies without
+one:
+
+1. Pick a scenario because it targets a specific weakness, not because it's comfortable.
+2. Use a stat or replay to check whether a given attempt actually improved.
+3. Add difficulty only once that weakness is under control.
 
 **Quality over volume.** Hours logged is not the same as improvement. Repeating a scenario at a
-setting that beats you more often than it doesn't produces little more than frustration, and easy
-or slowed-down variants are worth taking seriously rather than skipping past, since running a
-scenario at a pace where your
-crosshair actually lands cleanly is what builds the technique that holds up once you push the
-difficulty back up.[^speed-accuracy]
+setting that beats you more often than it doesn't produces little more than frustration.
+
+Easy or slowed-down variants are worth taking seriously rather than skipping past. Running a
+scenario at a pace where your crosshair lands cleanly builds the technique that holds up once you
+push difficulty back up.[^speed-accuracy]
 
 **Scenario variety versus repetition.** Running the same handful of scenarios forever can make you
-better at those specific scenarios without making you better at aiming in general. Benchmark
-authors say so about their own benchmarks: training on the benchmark scenarios alone is possible
-but "not recommended," because you risk getting better at those specific tasks rather than
-improving mechanically, and mixing in other scenarios is the suggested fix.[^revo-guide]
+better at those scenarios without making you better at aiming in general.
 
-**Score chasing versus technique focus.** A high score can come from finding a scenario's quirks
-as easily as from good technique, so treating the score itself as the goal can reward the wrong
-thing. [Voltaic](../resources/communities/voltaic.md)'s benchmark ranking system is deliberately
-built so that a strong score in one favorite scenario cannot carry a rank on its own, pushing
-players to improve broadly instead of maximizing a single number.[^volt-lb]
+Benchmark authors say so about their own benchmarks. Training on the benchmark scenarios alone is
+possible but "not recommended." You risk getting better at those specific tasks rather than
+improving mechanically. Mixing in other scenarios is the suggested fix.[^revo-guide]
 
-**Rest and consistency.** Skill develops during the rest between sessions as well as during the
-sessions themselves. General motor-learning research finds that shorter, more frequent sessions
-with real rest between them tend to beat one long session, both for how well you retain a skill
-and for how fatigue affects your performance while training.[^hk-distribution]
-Sleep specifically factors in too: [Voltaic's own lifestyle guide](https://blog.voltaic.gg/lifestyle/)
-cites research tying insufficient sleep to measurably slower reaction time, which undercuts the
-same mechanics you're trying to train.
+**Score chasing versus technique focus.** A high score can come from finding a scenario's quirks as
+easily as from good technique. Treating the score itself as the goal can reward the wrong thing.
+
+[Voltaic](../resources/communities/voltaic.md)'s benchmark ranking system is deliberately built so a
+strong score in one favorite scenario can't carry a rank on its own. That pushes players to improve
+broadly instead of maximizing a single number.[^volt-lb]
+
+**Rest and consistency.** Skill develops during the rest between sessions, as well as during the
+sessions themselves.
+
+General motor-learning research finds that shorter, more frequent sessions with real rest tend to
+beat one long session. That holds both for how well you retain a skill and for how fatigue affects
+your performance while training.[^hk-distribution]
+
+Sleep factors in too. [Voltaic's own lifestyle guide](https://blog.voltaic.gg/lifestyle/) cites
+research tying insufficient sleep to measurably slower reaction time. That undercuts the same
+mechanics you're trying to train.
 
 ## Common mistakes
 
-- Practicing whatever scenario you enjoy or are already good at instead of the one that targets
+- Practicing whatever scenario you enjoy or are already good at, instead of the one that targets
   your actual weakness.
 - Running only the same benchmark scenarios and calling it training.[^revo-guide]
-- Staying on a setting that's currently too hard to hit reliably instead of stepping back down
-  until your technique is clean, then working back up from there.
-- Treating a leaderboard score as the goal rather than as a rough signal of whether your technique
-  is actually improving.
-- Skipping sleep or stacking long sessions with no rest between them and expecting consistency to
+- Staying on a setting that's too hard to hit reliably, instead of stepping down until your
+  technique is clean and working back up.
+- Treating a leaderboard score as the goal, rather than as a rough signal of whether your technique
+  is improving.
+- Skipping sleep, or stacking long sessions with no rest between them, and expecting consistency to
   hold up anyway.
+
+**Do this next.** Pick the scenario that targets your actual weakness, and run an easier variant of
+it until your crosshair lands cleanly.
 
 ## Further resources
 
