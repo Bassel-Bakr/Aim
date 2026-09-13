@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 import yaml
+from markdown.extensions.toc import slugify
 from aim_related import CONCEPT_DIRS, PLACEHOLDER, kind
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
@@ -27,10 +28,16 @@ BANNER = '!!! warning "Draft"'
 # wiki pages and do not follow wiki rules.
 ARTICLES = DOCS / "articles"
 BYLINE = '!!! info "Written by '
-# The inline .aim-myth block's title is the anchor into wiki/myths.md: it must match a hub
-# heading word for word, or the link it ships with silently lands at the top of the page.
-MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
-MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
+# A myth block elsewhere names its myth: its title must match a heading on wiki/myths.md word for
+# word, and its one link, "Evidence", goes to that heading's anchor. On the hub itself each entry
+# heading carries .aim-myth-title and is the title bar of an untitled myth block holding its verdict,
+# with no link; a myth block elsewhere repeats that verdict word for word.
+MYTH_BLOCK = re.compile(r'^!!! myth "([^"]*)"[ \t]*\n((?:(?:[ ]{4}.*)?\n)*)', re.M)
+MYTH_LINK = re.compile(r"\[([^\]]*)\]\(([^)]*)\)")
+MYTH_LINK_TEXT = "Evidence"
+MYTH_HEADING = re.compile(r"^## (.+?)(?:\s*\{[^}]*\})?\s*$", re.M)
+HUB_ENTRY = re.compile(r'^## (.+?)(\s*\{ \.aim-myth-title \})?[ \t]*\n\s*\n(!!! myth "")?', re.M)
+HUB_VERDICT = re.compile(r'^## (.+?) \{ \.aim-myth-title \}[ \t]*\n\s*\n!!! myth ""[ \t]*\n((?:[ ]{4}.*\n)+)', re.M)
 # Sources live once in references.yml and pages cite them by ID; see extensions/aim_references.py.
 REGISTRY = DOCS.parent / "references.yml"
 REFERENCE_ID = re.compile(r"^REF-[1-9]\d*$")
@@ -110,8 +117,10 @@ def front_matter(text):
 
 
 def myth_headings():
+    """Each heading on wiki/myths.md, mapped to the verdict in the myth block under it, if any."""
     text = (WIKI / "myths.md").read_text(encoding="utf-8")
-    return set(MYTH_HEADING.findall(text))
+    verdicts = {heading: " ".join(block.split()) for heading, block in HUB_VERDICT.findall(text)}
+    return {heading: verdicts.get(heading) for heading in MYTH_HEADING.findall(text)}
 
 
 def related_errors(rel, meta):
@@ -154,11 +163,17 @@ def body(text):
 def prose_blocks(text):
     """Paragraphs and lists that readers read as prose, with markup a reader never sees removed.
 
-    Headings, tables, footnote definitions, HTML, and admonitions are skipped: none of them is a
-    run of prose, and an admonition body is indented so it is caught by the same test.
+    Headings, tables, footnote definitions, and HTML are skipped: none of them is a run of prose.
+    Admonitions are skipped too, except myth and key blocks, whose bodies are read like any
+    paragraph because readers read them first.
     """
     for block in re.split(r"\n\s*\n", body(text)):
         stripped = block.strip()
+        if stripped.startswith(("!!! myth ", "!!! key ")):
+            content = "\n".join(line.strip() for line in stripped.split("\n")[1:])
+            if content:
+                yield content
+            continue
         if not stripped or block.startswith("    "):
             continue
         if stripped.startswith(("#", "|", "[^", "<", "!!!", "???")):
@@ -270,11 +285,38 @@ def check(path, drafts, headings, known_ids):
     elif drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
     if in_wiki:
-        for title in MYTH_BLOCK.findall(text):
+        if rel == "wiki/myths.md":
+            entries = HUB_ENTRY.findall(text)
+            for heading, marked, block in entries:
+                if not marked or not block:
+                    errors.append(
+                        f"{rel}: entry '{heading}' needs '{{ .aim-myth-title }}' on its heading and an "
+                        f'untitled \'!!! myth ""\' block holding the claim directly below it'
+                    )
+            if len(MYTH_BLOCK.findall(text)) != len(entries):
+                errors.append(f"{rel}: every myth block on this page sits directly under an entry heading")
+        for title, block in MYTH_BLOCK.findall(text):
+            links = MYTH_LINK.findall(block)
+            if rel == "wiki/myths.md":
+                if title:
+                    errors.append(f"{rel}: myth block '{title}' must be untitled here; its heading is the title")
+                if links:
+                    errors.append(f"{rel}: myth block under an entry links out; on this page the answer follows it")
+                continue
             if title not in headings:
                 errors.append(
                     f"{rel}: myth block title '{title}' has no matching heading on wiki/myths.md"
                 )
+            # The correction reads the same wherever the myth appears: the hub entry's verdict.
+            verdict = " ".join(MYTH_LINK.sub("", block).replace("{ .aim-myth-more }", "").split())
+            if headings.get(title) and verdict != headings[title]:
+                errors.append(
+                    f"{rel}: myth block '{title}' must say exactly its verdict on wiki/myths.md: "
+                    f'"{headings[title]}"'
+                )
+            anchor = "myths.md#" + slugify(title, "-")
+            if len(links) != 1 or links[0][0] != MYTH_LINK_TEXT or not links[0][1].endswith(anchor):
+                errors.append(f"{rel}: myth block '{title}' needs one link, [{MYTH_LINK_TEXT}](.../{anchor})")
         errors += readability(rel, text, section in CONCEPT_DIRS and not is_index)
         keys = len(KEY_BLOCK.findall(text))
         if keys > 1:

@@ -47,7 +47,9 @@ zensical build --clean
 `scripts/check_pages.py` enforces three content rules: every `tags:` value is on the allowed list,
 each concept page and each resource page carries a `related:` list in front matter where every
 entry has a real reason, and every citation names an ID in `references.yml`. It also checks that every myth block's title matches a heading on
-`docs/wiki/myths.md`, and enforces the readability rules in
+`docs/wiki/myths.md` and links there as "Evidence", that each entry on that page is a heading
+with `{ .aim-myth-title }` over an untitled myth block holding its verdict, that a myth block
+elsewhere repeats that verdict word for word, and enforces the readability rules in
 [CONTRIBUTING.md](CONTRIBUTING.md#readability). Pass `--drafts` to also require the draft banner on
 every page. Name pages after the flags to check only those.
 `zensical build` catches broken internal links and missing nav targets. The build no longer runs

@@ -692,13 +692,14 @@ body {
  *
  *   !!! myth "Changing your sensitivity will ruin your aim"
  *       A change costs short-term readjustment, not a lasting setback.
- *       [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
+ *       [Evidence](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
  *
  * Two rules. The title is the myth stated as the claim, word for word as its heading on the hub
  * page, because that heading is the anchor. The body is at most two sentences plus the hub link,
  * and carries no footnote: the citation lives on the hub, so a myth is only ever sourced in one
- * place and cannot go stale in two. The link takes .aim-myth-more and is written as the page name
- * alone, no "see" and no full stop.
+ * place and cannot go stale in two. The link takes .aim-myth-more and reads "Evidence", with no
+ * full stop. scripts/check_pages.py enforces the title, the link text and the anchor. The hub
+ * itself uses the block differently; see .aim-myth-title below.
  *
  * .aim-key marks the one point on a page a reader should leave with if they read nothing else.
  * Its tag reads NOTE, but the Markdown type stays key: note is the theme's built-in admonition, so
@@ -769,22 +770,62 @@ body {
   letter-spacing: 0.12em;
 }
 
-/* The hub link, set as a control rather than as prose so the correction reads as one sentence and
- * stops. It keeps its word: a bare arrow would leave a sighted reader guessing where it goes, and
- * the word is what a screen reader announces. */
+/* The hub link reads as an ordinary link at the end of the correction, named for what it opens,
+ * the sourced answer, rather than dressed as a second tag. The arrow points on, not out: it is a page
+ * on this site. It stays the myth's red under any picked colour, like the rest of the block, and
+ * never wraps away from its last word. */
 .md-typeset .myth .aim-myth-more {
-  margin-left: 0.3rem;
+  margin-left: 0.2rem;
   color: var(--aim-myth);
-  font-family: var(--aim-display);
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
 .md-typeset .myth .aim-myth-more::after {
-  content: " \2197";
+  content: " \2192";
+}
+
+/* On wiki/myths.md each entry's heading is the myth block's title bar, so the box reads the same as
+ * a myth block anywhere else, the myth and then why it is wrong, while the heading stays a real
+ * heading: the anchor inline blocks link to, and an entry in the page contents.
+ *
+ *   ## Lower sensitivity means better aim { .aim-myth-title }
+ *
+ *   !!! myth ""
+ *       Low and high sensitivity trade desk space against room to correct. Neither end is the
+ *       correct one.
+ *
+ * The body is the entry's verdict, which a myth block on another page repeats word for word. The
+ * heading carries the rule, wash and tag; the untitled block after it continues the same box. The
+ * verdict is set at body size, since on the hub it opens the entry rather than sitting aside. */
+.md-typeset h2.aim-myth-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  padding: 0.6rem 0.8rem 0.1rem;
+  border-left: 3px solid var(--aim-myth);
+  background-color: var(--aim-myth-wash);
+}
+
+.md-typeset h2.aim-myth-title::before {
+  content: "Myth";
+  flex: none;
+  position: relative;
+  top: -0.15em;
+  padding: 0.1rem 0.35rem;
+  color: var(--aim-tag-ink);
+  background-color: var(--aim-myth);
+  font-family: var(--aim-display);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.md-typeset h2.aim-myth-title + .admonition.myth {
+  margin-top: 0;
+  font-size: inherit;
 }
 
 /* .aim-theme-picker — the colour picker in the header. docs/assets/javascripts/aim-theme.js inserts

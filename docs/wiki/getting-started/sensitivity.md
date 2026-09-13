@@ -84,8 +84,8 @@ title.
 ## When to change sensitivity, and when not to
 
 !!! myth "Changing your sensitivity will ruin your aim"
-    A change costs some short-term readjustment rather than any lasting setback.
-    [Myths](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
+    A change costs short-term readjustment, not a lasting setback.
+    [Evidence](../myths.md#changing-your-sensitivity-will-ruin-your-aim){ .aim-myth-more }
 
 Switching sensitivity on purpose is one way people try to break a plateau. Starting from an
 unfamiliar setting can reset your sense of what feels "normal" and open room to improve.[^REF-53]
