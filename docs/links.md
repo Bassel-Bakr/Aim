@@ -8,6 +8,8 @@ title: "Links"
 Guides and videos that teach a method, a mechanism, or a mistake. Score sheets and routines handed
 over without instructions stay on the [resource pages](wiki/resources/index.md).
 
+<div class="aim-links" markdown>
+
 ## Getting started
 
 - [Getting started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/) — Voltaic,
@@ -58,7 +60,7 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [This simple aim tech makes flicking 10x easier](https://www.youtube.com/watch?v=PEkz4YncixM) —
   ARandomDeadDude, 2025 — finding and drilling your undershoot distance. Its "underflicking" is
   landing short, not the underaiming below.
-- [Weakness targeted static flowchart](https://x.com/m0_nark/status/1905578974505251059) — M0NARK,
+- [Weakness targeted static flowchart](https://x.com/m0_nark/status/1905578974505251059){ .aim-link--image } — M0NARK,
   2025 — symptom in, scenarios out.
   <!-- REVIEW: a reply in that thread credits violat3 with making the original, but x.com/violat3
   does not exist and no public copy of the Chinese original could be found. M0NARK offers a
@@ -141,6 +143,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   1HP — desk, chair, arm position.
 - [Taking care of your body between sessions](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/) —
   Aimlabs — recovery around practice, not during it.
+
+</div>
 
 ## Related wiki pages
 

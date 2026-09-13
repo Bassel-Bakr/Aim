@@ -8,7 +8,7 @@
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
  * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth, .aim-key,
- * .aim-theme-picker.
+ * .aim-theme-picker, .aim-links.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -912,4 +912,142 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+/* .aim-links — an icon before each entry on the Links page naming what the link opens: an article,
+ * a video, a playlist, a document, a spreadsheet, a post, or an image. Wrap the page's lists once:
+ *
+ *   <div class="aim-links" markdown>
+ *
+ *   ## A section
+ *
+ *   - [Title](https://www.youtube.com/watch?v=...) — Publisher, 2025 — what it teaches.
+ *
+ *   </div>
+ *
+ * The type is read from the link's address, so a new entry gets its icon with no markup: YouTube
+ * watch and youtu.be links are videos, YouTube playlist links are playlists, Google Docs and Sheets
+ * are documents and spreadsheets, x.com and twitter.com links are posts, and anything else is an
+ * article. When the address says the wrong thing, as with a post that is really an image, name the
+ * type on the link: [Title](https://x.com/...){ .aim-link--image }. The classes are
+ * .aim-link--article, --video, --playlist, --doc, --sheet, --post and --image.
+ *
+ * Only the entry's first link gets an icon, so a second link in its description does not. The icon
+ * is announced as its type, "Video" and so on, through the content property's alternative text. */
+:root {
+  --aim-icon-article: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>');
+  --aim-icon-video: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>');
+  --aim-icon-playlist: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h12M3 12h12M3 18h7"/><path d="m15 14 6 3.5-6 3.5z"/></svg>');
+  --aim-icon-doc: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>');
+  --aim-icon-sheet: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>');
+  --aim-icon-post: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>');
+  --aim-icon-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>');
+}
+
+.md-typeset .aim-links li > a:first-child::before,
+.md-typeset .aim-links li > p:first-child > a:first-child::before {
+  content: "" / "Article";
+  display: inline-block;
+  width: 0.95em;
+  height: 0.95em;
+  margin-right: 0.35em;
+  vertical-align: -0.12em;
+  background-color: var(--md-default-fg-color--light);
+  -webkit-mask: var(--aim-icon-article) center/contain no-repeat;
+  mask: var(--aim-icon-article) center/contain no-repeat;
+}
+
+.md-typeset .aim-links li > a:first-child:is(:hover, :focus)::before,
+.md-typeset .aim-links li > p:first-child > a:first-child:is(:hover, :focus)::before {
+  background-color: currentcolor;
+}
+
+/* Types read from the address. */
+.md-typeset .aim-links li > a:first-child[href*="youtube.com/watch"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href*="youtube.com/watch"]::before,
+.md-typeset .aim-links li > a:first-child[href*="youtu.be/"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href*="youtu.be/"]::before {
+  content: "" / "Video";
+  -webkit-mask-image: var(--aim-icon-video);
+  mask-image: var(--aim-icon-video);
+}
+
+.md-typeset .aim-links li > a:first-child[href*="youtube.com/playlist"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href*="youtube.com/playlist"]::before {
+  content: "" / "Playlist";
+  -webkit-mask-image: var(--aim-icon-playlist);
+  mask-image: var(--aim-icon-playlist);
+}
+
+.md-typeset .aim-links li > a:first-child[href*="docs.google.com/document"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href*="docs.google.com/document"]::before {
+  content: "" / "Document";
+  -webkit-mask-image: var(--aim-icon-doc);
+  mask-image: var(--aim-icon-doc);
+}
+
+.md-typeset .aim-links li > a:first-child[href*="docs.google.com/spreadsheets"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href*="docs.google.com/spreadsheets"]::before {
+  content: "" / "Spreadsheet";
+  -webkit-mask-image: var(--aim-icon-sheet);
+  mask-image: var(--aim-icon-sheet);
+}
+
+.md-typeset .aim-links li > a:first-child[href^="https://x.com/"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href^="https://x.com/"]::before,
+.md-typeset .aim-links li > a:first-child[href^="https://twitter.com/"]::before,
+.md-typeset .aim-links li > p:first-child > a:first-child[href^="https://twitter.com/"]::before {
+  content: "" / "Post";
+  -webkit-mask-image: var(--aim-icon-post);
+  mask-image: var(--aim-icon-post);
+}
+
+/* Types named on the link, for addresses that say the wrong thing. These come last so they win. */
+.md-typeset .aim-links li > a:first-child.aim-link--article::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--article::before {
+  content: "" / "Article";
+  -webkit-mask-image: var(--aim-icon-article);
+  mask-image: var(--aim-icon-article);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--video::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--video::before {
+  content: "" / "Video";
+  -webkit-mask-image: var(--aim-icon-video);
+  mask-image: var(--aim-icon-video);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--playlist::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--playlist::before {
+  content: "" / "Playlist";
+  -webkit-mask-image: var(--aim-icon-playlist);
+  mask-image: var(--aim-icon-playlist);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--doc::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--doc::before {
+  content: "" / "Document";
+  -webkit-mask-image: var(--aim-icon-doc);
+  mask-image: var(--aim-icon-doc);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--sheet::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--sheet::before {
+  content: "" / "Spreadsheet";
+  -webkit-mask-image: var(--aim-icon-sheet);
+  mask-image: var(--aim-icon-sheet);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--post::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--post::before {
+  content: "" / "Post";
+  -webkit-mask-image: var(--aim-icon-post);
+  mask-image: var(--aim-icon-post);
+}
+
+.md-typeset .aim-links li > a:first-child.aim-link--image::before,
+.md-typeset .aim-links li > p:first-child > a:first-child.aim-link--image::before {
+  content: "" / "Image";
+  -webkit-mask-image: var(--aim-icon-image);
+  mask-image: var(--aim-icon-image);
 }
