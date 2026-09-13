@@ -2,6 +2,11 @@
 title: "Health and Rest"
 tags:
   - beginner
+related:
+  - page: wiki/getting-started/setup.md
+    why: mouse, pad, grip, and posture in more detail.
+  - page: wiki/fundamentals/practice-principles.md
+    why: rest and consistency as part of effective practice, not separate from it.
 ---
 
 !!! warning "Draft"
@@ -79,12 +84,6 @@ training.
 - Cutting sleep to fit in more practice time, which works against the reaction time you're training.
 
 **Do this next.** In your next session, step away from the screen for a few minutes once an hour.
-
-## Related pages
-
-- [Setup and Gear](../getting-started/setup.md): mouse, pad, grip, and posture in more detail.
-- [Practice Principles](../fundamentals/practice-principles.md): rest and consistency as part of
-  effective practice, not separate from it.
 
 ## Resources
 

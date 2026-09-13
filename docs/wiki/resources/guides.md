@@ -1,5 +1,14 @@
 ---
 title: "Guides"
+related:
+  - page: wiki/resources/index.md
+    why: who publishes these.
+  - page: wiki/categories/index.md
+    why: the same ground in this wiki's words.
+  - page: wiki/techniques/underaiming.md
+    why: a technique covered in this wiki's words.
+  - page: wiki/training/index.md
+    why: practice, routines and benchmarks in this wiki's words.
 ---
 
 !!! warning "Draft"
@@ -147,9 +156,3 @@ Score sheets and routines handed over without instructions stay on the [resource
   Aimlabs — recovery around practice, not during it.
 
 </div>
-
-## Related pages
-
-- [Resources](index.md) — who publishes these.
-- [Categories](../categories/index.md), [Techniques](../techniques/underaiming.md),
-  [Training](../training/index.md) — the same ground in this wiki's words.

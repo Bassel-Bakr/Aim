@@ -2,6 +2,13 @@
 title: "KovOBS"
 tags:
   - tool
+related:
+  - page: wiki/resources/trainers/kovaaks.md
+    why: the trainer whose stats files it watches.
+  - page: wiki/training/progress-and-plateaus.md
+    why: tracking score trends, which KovOBS leaves to other tools.
+  - page: wiki/training/benchmarks.md
+    why: scoring and ranking runs, which KovOBS does not do.
 ---
 
 !!! warning "Draft"
@@ -51,9 +58,3 @@ after a run you did not expect to be your best.
 
 The requirements are the real constraint, since it depends on OBS's replay buffer already running.
 And a personal best is only as meaningful as the scenario it was set in.
-
-## Related pages
-
-- [KovaaK's](../trainers/kovaaks.md)
-- [Progress and Plateaus](../../training/progress-and-plateaus.md)
-- [Benchmarks](../../training/benchmarks.md)

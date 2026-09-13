@@ -45,8 +45,8 @@ zensical build --clean
 ```
 
 `scripts/check_pages.py` enforces three content rules: every `tags:` value is on the allowed list,
-each concept page and each resource page carries a `## Related pages` section, and every wiki page
-with footnotes carries a `## References` heading above them. It also checks that every myth block's title matches a heading on
+each concept page and each resource page carries a `related:` list in front matter whose links run
+both ways between pages of the same kind, and every citation names an ID in `references.yml`. It also checks that every myth block's title matches a heading on
 `docs/wiki/myths.md`, and enforces the readability rules in
 [CONTRIBUTING.md](CONTRIBUTING.md#readability). Pass `--drafts` to also require the draft banner on
 every page. Name pages after the flags to check only those.
@@ -68,6 +68,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `overrides/` | Theme template overrides. `main.html` loads the colour picker script in `<head>`. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `references.yml` | Every source the wiki cites, once, under a stable `REF-<number>` ID. |
+| `extensions/aim_related.py` | Markdown extension that writes the Related pages section from a page's `related:` front matter. |
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |

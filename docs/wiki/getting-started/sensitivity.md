@@ -3,6 +3,11 @@ title: "Sensitivity"
 tags:
   - sensitivity
   - beginner
+related:
+  - page: wiki/getting-started/setup.md
+    why: the mouse, pad and settings a sensitivity sits on.
+  - page: wiki/training/progress-and-plateaus.md
+    why: when a sensitivity change helps a stalled score.
 ---
 
 !!! warning "Draft"
@@ -92,12 +97,6 @@ score.
 
 **Do this next.** Work out your current cm/360, then leave that sensitivity alone long enough to
 judge it fairly.
-
-## Related pages
-
-- [Setup and Gear](setup.md): the mouse, pad and settings a sensitivity sits on.
-- [Progress and Plateaus](../training/progress-and-plateaus.md): when a sensitivity change helps
-  a stalled score.
 
 ## Resources
 

@@ -4,6 +4,19 @@ tags:
   - trainer
   - benchmarks
   - sensitivity
+related:
+  - page: wiki/getting-started/aim-trainers.md
+    why: choosing a trainer and what to expect from one.
+  - page: wiki/getting-started/sensitivity.md
+    why: choosing the sensitivity its converter and Matcher carry across games.
+  - page: wiki/resources/communities/voltaic.md
+    why: the community whose Season 5 benchmark runs on KovaaK's.
+  - page: wiki/training/benchmarks.md
+    why: how the benchmark seasons built on KovaaK's are scored.
+  - page: wiki/resources/tools/evxl.md
+    why: tracks KovaaK's benchmark scores against community sheets.
+  - page: wiki/resources/tools/kovobs.md
+    why: saves an OBS clip when a KovaaK's run sets a personal best.
 ---
 
 !!! warning "Draft"
@@ -37,10 +50,3 @@ Players comfortable choosing and configuring their own scenarios and playlists, 
 KovaaK's has the larger scenario library of the two main trainers on this wiki. It's also the base game most benchmark communities, including [Voltaic](../communities/voltaic.md) and Revosect, build their seasons on.
 
 It's a one-time Steam purchase rather than free-to-play. Its Sandbox-first design rewards players who are willing to find and set up scenarios and playlists themselves.[^REF-33]
-
-## Related pages
-
-- [Aim Trainers](../../getting-started/aim-trainers.md)
-- [Sensitivity](../../getting-started/sensitivity.md)
-- [Voltaic](../communities/voltaic.md)
-- [Benchmarks](../../training/benchmarks.md)

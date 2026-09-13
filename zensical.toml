@@ -128,3 +128,4 @@ pymdownx.superfences = {}
 pymdownx.tabbed.alternate_style = true
 pymdownx.snippets.auto_append = ["includes/abbreviations.md"]
 aim_references = { registry = "references.yml" }
+aim_related = {}

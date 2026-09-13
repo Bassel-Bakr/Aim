@@ -4,6 +4,21 @@ tags:
   - community
   - benchmarks
   - routines
+related:
+  - page: wiki/training/benchmarks.md
+    why: how community benchmarks like Voltaic's are scored and used.
+  - page: wiki/training/routines.md
+    why: turning Voltaic's scenario lists into a session plan.
+  - page: wiki/categories/index.md
+    why: the three categories its benchmarks are split into.
+  - page: wiki/resources/trainers/kovaaks.md
+    why: the trainer its Season 5 benchmark runs on.
+  - page: wiki/resources/trainers/aimlabs.md
+    why: the trainer its Season 3 benchmark runs on.
+  - page: wiki/resources/communities/revosect.md
+    why: a community running comparable benchmark seasons and routines.
+  - page: wiki/resources/tools/evxl.md
+    why: scores Voltaic benchmark runs automatically.
 ---
 
 !!! warning "Draft"
@@ -40,11 +55,3 @@ Amped coaching targets competitive and content-creator players specifically, rat
 Voltaic is one of the most established benchmark providers covering both KovaaK's and Aimlabs. That makes it a reasonable default for checking your raw aim against a wide player base. Its coaching arm (Amped) is aimed at competitive and creator-level players rather than beginners.
 
 Some of Voltaic's material, such as exact rank thresholds, sits in a companion app and spreadsheets rather than on the public blog. Treat this page as an overview, and follow the links above for current detail.
-
-## Related pages
-
-- [Benchmarks](../../training/benchmarks.md)
-- [Routines](../../training/routines.md)
-- [Categories](../../categories/index.md)
-- [KovaaK's](../trainers/kovaaks.md)
-- [Aimlabs](../trainers/aimlabs.md)

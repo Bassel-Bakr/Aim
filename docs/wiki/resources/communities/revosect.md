@@ -4,6 +4,13 @@ tags:
   - community
   - benchmarks
   - routines
+related:
+  - page: wiki/resources/communities/voltaic.md
+    why: a community with a similar benchmark-and-routine model.
+  - page: wiki/training/benchmarks.md
+    why: how tiered benchmarks like Revosect's measure raw aim.
+  - page: wiki/categories/index.md
+    why: the three categories its benchmark subcategories fall under.
 ---
 
 !!! warning "Draft"
@@ -39,9 +46,3 @@ Revosect covers similar ground to [Voltaic](voltaic.md): benchmarks and routines
 Its current benchmark focus leans toward KovaaK's. Its routine library leans toward Aimlabs, and toward game-specific practice for a wide range of shooters beyond the two main trainers.
 
 Its own rank names and season numbering are separate from Voltaic's, so scores between the two are not directly comparable. Coaching is not yet available, unlike Voltaic's Amped program.
-
-## Related pages
-
-- [Voltaic](voltaic.md)
-- [Benchmarks](../../training/benchmarks.md)
-- [Categories](../../categories/index.md)

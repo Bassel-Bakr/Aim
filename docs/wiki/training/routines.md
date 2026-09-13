@@ -2,6 +2,13 @@
 title: "Routines"
 tags:
   - routines
+related:
+  - page: wiki/fundamentals/practice-principles.md
+    why: the deliberate-practice reasoning behind focus blocks and session length.
+  - page: wiki/training/benchmarks.md
+    why: how to find which subcategory to build a routine around.
+  - page: wiki/getting-started/aim-trainers.md
+    why: the software a routine runs in, and choosing one.
 ---
 
 !!! warning "Draft"
@@ -109,12 +116,6 @@ others, rebuild the routine. Build it around whatever is now your lowest score.
 **Do this next.** Start from a ready-made routine by [Voltaic](../resources/communities/voltaic.md)
 or [Revosect](../resources/communities/revosect.md), and point its focus block at your weakest
 subcategory.
-
-## Related pages
-
-- [Practice Principles](../fundamentals/practice-principles.md): the deliberate-practice reasoning
-  behind focus blocks and session length.
-- [Benchmarks](benchmarks.md): how to find which subcategory to build a routine around.
 
 ## Resources
 

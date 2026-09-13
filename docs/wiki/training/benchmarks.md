@@ -2,6 +2,15 @@
 title: "Benchmarks"
 tags:
   - benchmarks
+related:
+  - page: wiki/training/routines.md
+    why: building a routine around whatever a benchmark shows is your weakest area.
+  - page: wiki/fundamentals/practice-principles.md
+    why: why benchmark scoring resists score chasing.
+  - page: wiki/getting-started/aim-trainers.md
+    why: the trainers community benchmarks run on.
+  - page: wiki/training/progress-and-plateaus.md
+    why: what to do when a benchmark score stops climbing.
 ---
 
 !!! warning "Draft"
@@ -95,13 +104,6 @@ you're training for.
 
 **Do this next.** Run one full benchmark, note your lowest subcategory, and build your next
 [routine](routines.md) around it.
-
-## Related pages
-
-- [Routines](routines.md): building a routine around whatever a benchmark shows is your weakest
-  area.
-- [Practice Principles](../fundamentals/practice-principles.md): why benchmark scoring resists
-  score chasing.
 
 ## Resources
 

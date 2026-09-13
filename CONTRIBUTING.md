@@ -96,7 +96,8 @@ passes, so every page under `docs/wiki/` follows four rules:
 3. **A concept page opens with its answer:** three to five bullets before its first `##` heading. A
    reader who stops there still has the point.
 4. **A concept page ends on one next action:** a paragraph opening `**Do this next.**` before
-   `## Related pages`, giving a reader who lost the thread somewhere to go.
+   `## Resources`, giving a reader who lost the thread somewhere to go. Related pages are added
+   between the two.
 
 Concept pages are those in `getting-started`, `fundamentals`, `categories`, `techniques`, and
 `training`, other than `index.md`. [How Aim Works](docs/wiki/fundamentals/how-aim-works.md) shows
@@ -135,7 +136,19 @@ To suggest an article, or a correction to one, open an issue rather than a pull 
 A concept page ends with up to three sections, in this order, each with one job:
 
 1. **Related pages**: other wiki pages that connect to this one. Required on concept and resource
-   pages.
+   pages. Do not write this section: list the pages in front matter, each with a reason, and it is
+   added above Resources with each page's current title:
+
+   ```yaml
+   related:
+     - page: wiki/training/routines.md
+       why: turning these habits into a session plan.
+   ```
+
+   Paths are relative to `docs/`. A related link between two concept pages, or between two
+   resource pages, must run both ways: the other page links back, in its related list or its text.
+   A resource page listing a concept page is one-way, and so is a link to a page with no related
+   list, such as the Glossary.
 2. **Resources**: where to go to learn more — resource pages, and the matching section of
    [Guides](docs/wiki/resources/guides.md). These are recommendations, not evidence.
 3. **References**: the sources for this page's claims. Do not write this heading: it is added

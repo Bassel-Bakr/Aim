@@ -5,6 +5,7 @@ Usage:
     python scripts/check_pages.py --drafts                 # also require the draft banner
     python scripts/check_pages.py docs/wiki/glossary.md    # check named pages only
 """
+import posixpath
 import re
 import sys
 from pathlib import Path
@@ -41,6 +42,10 @@ REFERENCES_HEADING = re.compile(r"^## References\s*$", re.M)
 REFERENCE_FIELDS = {"id", "author", "title", "url", "type", "publication", "notes"}
 REFERENCE_REQUIRED = {"id", "author", "title", "url", "type"}
 REFERENCE_TYPES = {"article", "document", "documentation", "encyclopedia", "post", "repository", "study", "video", "website"}
+# Related pages are listed in front matter and written out by extensions/aim_related.py.
+RELATED_HEADING = re.compile(r"^## Related pages\s*$", re.M)
+RELATED_FIELDS = {"page", "why"}
+PAGE_LINK = re.compile(r"\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 
 def registry_ids():
@@ -111,6 +116,57 @@ def myth_headings():
     return set(MYTH_HEADING.findall(text))
 
 
+def kind(rel):
+    """'concept' or 'resource' for a wiki page in those sections, else None."""
+    parts = rel.split("/")
+    if len(parts) < 3 or parts[0] != "wiki":
+        return None
+    return "concept" if parts[1] in CONCEPT_DIRS else "resource" if parts[1] == "resources" else None
+
+
+def related_errors(rel, meta):
+    """Problems with a page's related list, including links that do not run both ways."""
+    related = meta.get("related")
+    if related is None:
+        return []
+    if not isinstance(related, list):
+        return [f"{rel}: 'related' must be a list of pages"]
+    errors, seen = [], set()
+    for index, entry in enumerate(related):
+        where = f"{rel}: related entry {index + 1}"
+        if not isinstance(entry, dict) or entry.keys() != RELATED_FIELDS:
+            errors.append(f"{where}: expected exactly 'page' and 'why'")
+            continue
+        page, why = entry["page"], entry["why"]
+        if not isinstance(why, str) or not why.strip():
+            errors.append(f"{where}: 'why' must say how {page} connects to this page")
+        if not isinstance(page, str) or not page.startswith("wiki/") or not page.endswith(".md"):
+            errors.append(f"{where}: 'page' must be a docs-relative wiki page, like wiki/training/routines.md")
+            continue
+        if not (DOCS / page).is_file():
+            errors.append(f"{where}: {page} does not exist")
+            continue
+        if page == rel:
+            errors.append(f"{where}: a page cannot list itself")
+        if page in seen:
+            errors.append(f"{where}: {page} is listed twice")
+        seen.add(page)
+        # A related link between two concept pages, or two resource pages, runs both ways: the
+        # other page links back, in its own related list or anywhere in its text. Links across the
+        # two kinds are one-way by design, since concept pages point to resources under Resources
+        # only where they are worth a look. Hub pages without a related list are exempt.
+        target = (DOCS / page).read_text(encoding="utf-8")
+        target_related = front_matter(target).get("related")
+        if kind(page) is None or kind(page) != kind(rel) or not isinstance(target_related, list):
+            continue
+        back = {item.get("page") for item in target_related if isinstance(item, dict)}
+        back |= {posixpath.normpath(posixpath.join(posixpath.dirname(page), href))
+                 for href in PAGE_LINK.findall(body(target))}
+        if rel not in back:
+            errors.append(f"{where}: {page} does not link back; add this page to its related list")
+    return errors
+
+
 def body(text):
     """The page without its front matter, comments, or fenced code."""
     text = re.sub(r"\A---\r?\n.*?\r?\n---\r?\n", "", text, flags=re.S)
@@ -176,6 +232,9 @@ def readability(rel, text, concept):
                         f'"{excerpt(sentence)}"'
                     )
     prose = re.sub(r"^\[\^[^\]]+\]:.*$", "", body(text), flags=re.M)
+    related = front_matter(text).get("related")
+    if isinstance(related, list):
+        prose += "\n" + "\n".join(str(entry.get("why", "")) for entry in related if isinstance(entry, dict))
     for spelling in sorted({match.lower() for match in BRITISH.findall(prose)}):
         errors.append(f"{rel}: British spelling '{spelling}', the site writes US English")
     if concept:
@@ -185,9 +244,10 @@ def readability(rel, text, concept):
             errors.append(
                 f"{rel}: opens with {bullets} bullets before its first heading, expected 3 to 5"
             )
-        before_related = text.split("\n## Related pages", 1)[0]
-        if NEXT_ACTION not in before_related:
-            errors.append(f"{rel}: missing a '{NEXT_ACTION}' paragraph before Related pages")
+        # Related pages are written directly above Resources, so this keeps the action above both.
+        before_resources = text.split("\n## Resources", 1)[0]
+        if NEXT_ACTION not in before_resources:
+            errors.append(f"{rel}: missing a '{NEXT_ACTION}' paragraph before Resources")
     return errors
 
 
@@ -204,10 +264,12 @@ def check(path, drafts, headings, known_ids):
     for tag in front_matter(text).get("tags") or []:
         if tag not in ALLOWED_TAGS:
             errors.append(f"{rel}: tag '{tag}' is not allowed")
-    if section in CONCEPT_DIRS and not is_index and "\n## Related pages" not in text:
-        errors.append(f"{rel}: missing '## Related pages' section")
-    if section == "resources" and not is_index and "\n## Related pages" not in text:
-        errors.append(f"{rel}: missing '## Related pages' section")
+    meta = front_matter(text)
+    if kind(rel) and not is_index and not meta.get("related"):
+        errors.append(f"{rel}: missing a 'related' list in front matter")
+    if in_wiki and RELATED_HEADING.search(text):
+        errors.append(f"{rel}: remove '## Related pages'; list related pages in front matter instead")
+    errors += related_errors(rel, meta)
     # References are the sources for claims on this page; they sit under their own heading, apart
     # from Resources, which point readers to material for learning more.
     cited = set(REFERENCE_CITATION.findall(text))

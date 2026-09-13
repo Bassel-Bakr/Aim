@@ -2,6 +2,9 @@
 title: "Jade Palace"
 tags:
   - community
+related:
+  - page: wiki/training/routines.md
+    why: where to find practice routines, since Jade Palace publishes none of its own.
 ---
 
 !!! warning "Draft"
@@ -34,7 +37,3 @@ What is confirmed publicly: applications to join open and close over time. They 
 Jade Palace is worth knowing about as a landmark in the elite aim-training scene, but it is not a public resource. There is no open Discord invite, benchmark, or routine to point to here.
 
 Most readers will get more direct value from the public output of its individual members than from the server itself.
-
-## Related pages
-
-- [Routines](../../training/routines.md)

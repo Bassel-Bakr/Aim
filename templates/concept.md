@@ -2,6 +2,9 @@
 title: "Concept Name"
 tags:
   - beginner
+related:
+  - page: wiki/fundamentals/how-aim-works.md
+    why: one line on how it connects to this page.
 ---
 
 !!! warning "Draft"
@@ -27,10 +30,6 @@ fact with its references.yml ID at the end of the sentence that makes it.[^REF-1
 Concrete practice advice. Link to specific scenarios, playlists, or routines where possible.
 
 **Do this next.** One concrete action a reader can take today, using a link this page already has.
-
-## Related pages
-
-- [Wiki page title](../fundamentals/how-aim-works.md): one line on how it connects to this page.
 
 ## Resources
 

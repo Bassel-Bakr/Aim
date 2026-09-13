@@ -1,5 +1,5 @@
-# Installs the site's one local Markdown extension, extensions/aim_references.py, so Zensical can
-# import it. requirements.txt pulls this in with "-e .".
+# Installs the site's local Markdown extensions, extensions/aim_*.py, so Zensical can
+# import them. requirements.txt pulls this in with "-e .".
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
@@ -12,4 +12,4 @@ dependencies = ["markdown", "pyyaml>=6"]
 
 [tool.setuptools]
 package-dir = { "" = "extensions" }
-py-modules = ["aim_references"]
+py-modules = ["aim_references", "aim_related"]

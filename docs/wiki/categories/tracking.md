@@ -2,6 +2,17 @@
 title: "Tracking"
 tags:
   - tracking
+related:
+  - page: wiki/fundamentals/how-aim-works.md
+    why: smoothness and reactive-versus-predictive tracking explained in more depth.
+  - page: wiki/techniques/underaiming.md
+    why: withholding motion a shot does not need, and the technique behind what aim trainers call edge tracking.
+  - page: wiki/training/benchmarks.md
+    why: how community benchmarks score these subcategories.
+  - page: wiki/categories/clicking.md
+    why: the counterpart category, acquiring a target rather than staying on it.
+  - page: wiki/categories/switching.md
+    why: moving between targets, which partly depends on tracking.
 ---
 
 !!! warning "Draft"
@@ -80,14 +91,6 @@ makes them a bridge between the two.
 
 **Do this next.** Start with precise tracking on a slow, predictable path, and add speed only once
 you can hold a clean continuous track.
-
-## Related pages
-
-- [How Aim Works](../fundamentals/how-aim-works.md): smoothness and reactive-versus-predictive
-  tracking explained in more depth.
-- [Underaiming](../techniques/underaiming.md): withholding motion a shot does not need, and the
-  technique behind what aim trainers call edge tracking.
-- [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 
 ## Resources
 

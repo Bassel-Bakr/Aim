@@ -2,6 +2,9 @@
 title: "Resource Name"
 tags:
   - community
+related:
+  - page: wiki/categories/tracking.md
+    why: one line on how it connects to this page.
 ---
 
 !!! warning "Draft"
@@ -28,7 +31,3 @@ Topics and skills covered, with links to the matching wiki pages.
 ## Our take
 
 Strengths, limits, and when to use this resource.
-
-## Related pages
-
-- [Page title](../../categories/tracking.md)

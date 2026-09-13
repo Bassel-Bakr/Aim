@@ -3,6 +3,15 @@ title: "Evxl Benchmark Tracker"
 tags:
   - tool
   - benchmarks
+related:
+  - page: wiki/training/benchmarks.md
+    why: what the community benchmarks it tracks measure.
+  - page: wiki/resources/trainers/kovaaks.md
+    why: one of the trainers it reads scores from.
+  - page: wiki/resources/communities/voltaic.md
+    why: one of the communities whose benchmark sheets it collects.
+  - page: wiki/training/progress-and-plateaus.md
+    why: reading a score trend, which its rank history records.
 ---
 
 !!! warning "Draft"
@@ -14,7 +23,7 @@ tags:
 
 A web-based benchmark tracker that pulls your scores from your aim trainer and scores them against
 community [benchmark](../../training/benchmarks.md) sheets. You don't have to copy results into a
-spreadsheet by hand. It supports [KovaaK's](../trainers/kovaaks.md) and Aimbeast, and is credited on
+spreadsheet by hand. It supports [KovaaK's](../trainers/kovaaks.md) and [Aimbeast](../trainers/aimbeast.md), and is credited on
 the site to EVIL.[^REF-25]
 
 ## Who it suits
@@ -48,10 +57,3 @@ means visiting each community's own sheet separately.
 Scores are read from your trainer profile rather than entered by hand. So what it shows depends on
 that profile being public and current. A community's own site remains the authority on that
 community's current season.
-
-## Related pages
-
-- [Benchmarks](../../training/benchmarks.md)
-- [KovaaK's](../trainers/kovaaks.md)
-- [Voltaic](../communities/voltaic.md)
-- [Progress and Plateaus](../../training/progress-and-plateaus.md)

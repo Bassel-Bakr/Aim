@@ -2,6 +2,15 @@
 title: "Switching"
 tags:
   - switching
+related:
+  - page: wiki/categories/tracking.md
+    why: the category that switching onto moving targets partly depends on.
+  - page: wiki/categories/clicking.md
+    why: the acquisition half of a switch, in isolation.
+  - page: wiki/training/benchmarks.md
+    why: how community benchmarks score these subcategories.
+  - page: wiki/techniques/underaiming.md
+    why: withholding motion a shot does not need, which applies to switches too.
 ---
 
 !!! warning "Draft"
@@ -77,12 +86,6 @@ switching and [Tracking](tracking.md) at a slower pace. That builds both halves 
 them.
 
 **Do this next.** Widen target spacing only once you land most switches at the current one.
-
-## Related pages
-
-- [Tracking](tracking.md): the category that switching onto moving targets partly depends on.
-- [Clicking](clicking.md): the acquisition half of a switch, in isolation.
-- [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 
 ## Resources
 

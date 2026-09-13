@@ -3,6 +3,17 @@ title: "Underaiming"
 tags:
   - clicking
   - tracking
+related:
+  - page: wiki/fundamentals/how-aim-works.md
+    why: smoothness and correction, the mechanics this restraint operates on.
+  - page: wiki/categories/tracking.md
+    why: where underaiming shows up as edge tracking.
+  - page: wiki/categories/clicking.md
+    why: another category the same restraint applies to.
+  - page: wiki/categories/switching.md
+    why: another category the same restraint applies to.
+  - page: wiki/glossary.md
+    why: underflick and overflick, which describe single flicks rather than this habit.
 ---
 
 !!! warning "Draft"
@@ -66,16 +77,6 @@ and make each extra correction earn its place.
 
 <!-- REVIEW: no public source found for scenario-level guidance or drills specific to underaiming
 or edge tracking. Leave this section at the level of the principle until one exists. -->
-
-## Related pages
-
-- [How Aim Works](../fundamentals/how-aim-works.md): smoothness and correction, the mechanics this
-  restraint operates on.
-- [Tracking](../categories/tracking.md): where underaiming shows up as edge tracking.
-- [Clicking](../categories/clicking.md) and [Switching](../categories/switching.md): the other two categories
-  the same restraint applies to.
-- [Glossary](../glossary.md): underflick and overflick, which describe single flicks rather than
-  this habit.
 
 ## Resources
 

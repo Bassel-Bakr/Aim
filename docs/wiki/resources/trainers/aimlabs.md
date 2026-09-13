@@ -4,6 +4,13 @@ tags:
   - trainer
   - benchmarks
   - sensitivity
+related:
+  - page: wiki/getting-started/aim-trainers.md
+    why: choosing a trainer and what to expect from one.
+  - page: wiki/resources/communities/voltaic.md
+    why: a community whose Season 3 benchmark runs inside Aimlabs.
+  - page: wiki/training/benchmarks.md
+    why: how official and community benchmarks are scored.
 ---
 
 !!! warning "Draft"
@@ -40,9 +47,3 @@ Its scale and free access also suit complete beginners, while Aimlabs+ adds tool
 Aimlabs leans toward a guided, curated experience compared to KovaaK's. It has adaptive Training Programs, and its own official benchmark rather than relying only on third-party ones.
 
 It is free to start, which makes it a low-friction entry point. Its most advanced coaching and analysis tools, though, sit behind the Aimlabs+ subscription rather than the free tier.[^REF-5]
-
-## Related pages
-
-- [Aim Trainers](../../getting-started/aim-trainers.md)
-- [Voltaic](../communities/voltaic.md)
-- [Benchmarks](../../training/benchmarks.md)

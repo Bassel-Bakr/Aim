@@ -2,6 +2,11 @@
 title: "Setup and Gear"
 tags:
   - beginner
+related:
+  - page: wiki/getting-started/sensitivity.md
+    why: choosing and converting the sensitivity your setup runs.
+  - page: wiki/training/health.md
+    why: posture and recovery over long sessions.
 ---
 
 !!! warning "Draft"
@@ -85,11 +90,6 @@ that comfortably exceeds it.
 
 **Do this next.** Before your next session, check all three settings above, in your game and in
 Windows.
-
-## Related pages
-
-- [Sensitivity](sensitivity.md): choosing and converting the sensitivity your setup runs.
-- [Health and Rest](../training/health.md): posture and recovery over long sessions.
 
 ## Resources
 

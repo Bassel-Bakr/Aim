@@ -2,6 +2,9 @@
 title: "Transfer to Games"
 tags:
   - beginner
+related:
+  - page: wiki/getting-started/aim-trainers.md
+    why: covers the same trainer-versus-in-game trade-off from the other side.
 ---
 
 !!! warning "Draft"
@@ -76,11 +79,6 @@ sense you can rely on in a match.
 
 **Do this next.** Split your practice: trainer time for one weak category, and game time for
 crosshair placement and positioning.
-
-## Related pages
-
-- [Aim Trainers](../getting-started/aim-trainers.md): covers the same trainer-versus-in-game
-  trade-off from the other side.
 
 ## Resources
 

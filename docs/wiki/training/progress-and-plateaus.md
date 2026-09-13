@@ -3,6 +3,13 @@ title: "Progress and Plateaus"
 tags:
   - routines
   - benchmarks
+related:
+  - page: wiki/fundamentals/practice-principles.md
+    why: deliberate practice, variety, and rest as the habits that prevent a plateau in the first place.
+  - page: wiki/training/benchmarks.md
+    why: how to track a score trend rather than a single result.
+  - page: wiki/getting-started/sensitivity.md
+    why: sensitivity change as one supported way to break a plateau.
 ---
 
 !!! warning "Draft"
@@ -108,14 +115,6 @@ hand to adapt again, instead of coasting on one you've already mastered.
 
 **Do this next.** If you feel run down, take a stretch of lighter training first. If not, shift your
 [routine](routines.md)'s focus to a different subcategory for a while.
-
-## Related pages
-
-- [Practice Principles](../fundamentals/practice-principles.md): deliberate practice, variety, and
-  rest as the habits that prevent a plateau in the first place.
-- [Benchmarks](benchmarks.md): how to track a score trend rather than a single result.
-- [Sensitivity](../getting-started/sensitivity.md): sensitivity change as one supported way to
-  break a plateau.
 
 ## Resources
 

@@ -2,6 +2,13 @@
 title: "Aim Trainers"
 tags:
   - beginner
+related:
+  - page: wiki/training/routines.md
+    why: what to actually run once a trainer is installed.
+  - page: wiki/training/benchmarks.md
+    why: how to find the weakness a routine should target.
+  - page: wiki/fundamentals/transfer-to-games.md
+    why: what trainer practice carries into a match, and what it does not.
 ---
 
 !!! warning "Draft"
@@ -71,13 +78,6 @@ trainer.
 
 **Do this next.** Open [Resources](../resources/index.md), read the pages for the trainers you're
 considering, and install the one you'll actually open.
-
-## Related pages
-
-- [Routines](../training/routines.md): what to actually run once a trainer is installed.
-- [Benchmarks](../training/benchmarks.md): how to find the weakness a routine should target.
-- [Transfer to Games](../fundamentals/transfer-to-games.md): what trainer practice carries into a
-  match, and what it does not.
 
 ## Resources
 

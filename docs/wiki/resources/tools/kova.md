@@ -4,6 +4,13 @@ tags:
   - tool
   - benchmarks
   - sensitivity
+related:
+  - page: wiki/getting-started/setup.md
+    why: the gear and settings a profile lists.
+  - page: wiki/getting-started/sensitivity.md
+    why: the cm/360 and DPI values a profile records.
+  - page: wiki/training/benchmarks.md
+    why: the community benchmarks its personal bests are ranked against.
 ---
 
 !!! warning "Draft"
@@ -53,9 +60,3 @@ Treat the peripherals side as reference rather than recommendation. Knowing what
 player uses tells you what works for them, not what will work for you. The wiki's
 [Setup](../../getting-started/setup.md) page covers why grip and hand size matter more than matching
 someone else's mouse.
-
-## Related pages
-
-- [Setup](../../getting-started/setup.md)
-- [Sensitivity](../../getting-started/sensitivity.md)
-- [Benchmarks](../../training/benchmarks.md)

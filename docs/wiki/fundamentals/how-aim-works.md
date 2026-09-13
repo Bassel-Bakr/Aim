@@ -2,6 +2,13 @@
 title: "How Aim Works"
 tags:
   - beginner
+related:
+  - page: wiki/fundamentals/practice-principles.md
+    why: how to structure practice around these mechanics.
+  - page: wiki/categories/index.md
+    why: the three categories these mechanics add up to.
+  - page: wiki/techniques/underaiming.md
+    why: restraint over the corrections covered here.
 ---
 
 !!! warning "Draft"
@@ -85,12 +92,6 @@ speed, evasive, stability) map onto the same fundamentals.
 
 **Do this next.** Pick the one fundamental your aim fails on most and run a single slow scenario
 for it. [Practice Principles](practice-principles.md) covers how to structure that so it sticks.
-
-## Related pages
-
-- [Practice Principles](practice-principles.md): how to structure practice around these mechanics.
-- [Categories](../categories/index.md): the three categories these mechanics add up to.
-- [Underaiming](../techniques/underaiming.md): restraint over the corrections covered here.
 
 ## Resources
 

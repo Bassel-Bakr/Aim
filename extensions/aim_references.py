@@ -19,11 +19,11 @@ Configured in zensical.toml:
 """
 import os
 import re
-import sys
 
 import yaml
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
+from zensical.extensions.context import ContextPreprocessor
 
 CITATION = re.compile(r"\[\^(REF-[1-9]\d*)\](?!:)")
 REFERENCES_MARKER = "<!-- aim:references -->"
@@ -53,23 +53,6 @@ def anchor(ref_id):
 
 def sort_key(entry):
     return (entry["author"].casefold(), entry["title"].casefold())
-
-
-def current_page():
-    """The docs-relative path of the page being rendered, or None.
-
-    Python-Markdown does not tell extensions which page they are rendering. Zensical's renderer holds
-    it in a local named `path` a few frames up; reading it lets a footnote link to its entry on the
-    References page with a correct relative path. If a future Zensical renames that local, the
-    footnote still renders, just without that link.
-    """
-    frame = sys._getframe(1)
-    while frame is not None:
-        path = frame.f_locals.get("path")
-        if frame.f_code.co_name == "render" and isinstance(path, str) and path.endswith(".md"):
-            return path.replace("\\", "/")
-        frame = frame.f_back
-    return None
 
 
 def source_text(entry):
@@ -103,7 +86,10 @@ class ReferencesPreprocessor(Preprocessor):
                 cited += [ref_id for ref_id in CITATION.findall(line) if ref_id not in cited]
         if not cited:
             return lines
-        page = current_page()
+        # Zensical's rendering context names the page, so a footnote can link to its entry on the
+        # References page with a correct relative path.
+        context = ContextPreprocessor.from_markdown(self.md)
+        page = context.page.path.replace("\\", "/") if context else None
         link_base = None
         if page:
             link_base = os.path.relpath(REFERENCES_PAGE, os.path.dirname(page) or ".").replace("\\", "/")

@@ -4,6 +4,15 @@ tags:
   - trainer
   - benchmarks
   - sensitivity
+related:
+  - page: wiki/getting-started/aim-trainers.md
+    why: choosing a trainer and what to expect from one.
+  - page: wiki/training/benchmarks.md
+    why: how the community benchmarks written for Aimbeast are scored.
+  - page: wiki/resources/tools/evxl.md
+    why: the tracker that collects Aimbeast benchmark sheets.
+  - page: wiki/getting-started/sensitivity.md
+    why: choosing a sensitivity, which Aimbeast can match to another game.
 ---
 
 !!! warning "Draft"
@@ -43,10 +52,3 @@ Aimbeast is the third trainer worth knowing about, and the arena is the reason. 
 The trade-off is ecosystem. The benchmark seasons this wiki covers, [Voltaic](../communities/voltaic.md)'s and Revosect's, are published for [KovaaK's](kovaaks.md) and [Aimlabs](aimlabs.md).
 
 So an Aimbeast player reads their progress off a different and more scattered set of sheets. They're gathered on [Evxl](../tools/evxl.md) rather than issued as one season.[^REF-24] Picking it means picking its own ladders, rather than the ones most routines and guides are written against.
-
-## Related pages
-
-- [Aim Trainers](../../getting-started/aim-trainers.md)
-- [Benchmarks](../../training/benchmarks.md)
-- [Evxl Benchmark Tracker](../tools/evxl.md)
-- [Sensitivity](../../getting-started/sensitivity.md)

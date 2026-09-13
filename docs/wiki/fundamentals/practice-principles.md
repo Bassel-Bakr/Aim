@@ -2,6 +2,17 @@
 title: "Practice Principles"
 tags:
   - routines
+related:
+  - page: wiki/training/routines.md
+    why: turning these habits into a session plan.
+  - page: wiki/training/progress-and-plateaus.md
+    why: what these habits do for a stalled score.
+  - page: wiki/fundamentals/how-aim-works.md
+    why: the mechanics this practice is built around.
+  - page: wiki/training/benchmarks.md
+    why: measuring the broad improvement these habits aim at.
+  - page: wiki/training/health.md
+    why: posture, rest, and recovery in more detail.
 ---
 
 !!! warning "Draft"
@@ -80,13 +91,6 @@ mechanics you're trying to train.
 
 **Do this next.** Pick the scenario that targets your actual weakness, and run an easier variant of
 it until your crosshair lands cleanly.
-
-## Related pages
-
-- [Routines](../training/routines.md): turning these habits into a session plan.
-- [Progress and Plateaus](../training/progress-and-plateaus.md): what these habits do for a stalled
-  score.
-- [How Aim Works](how-aim-works.md): the mechanics this practice is built around.
 
 ## Resources
 

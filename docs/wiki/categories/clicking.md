@@ -2,6 +2,17 @@
 title: "Clicking"
 tags:
   - clicking
+related:
+  - page: wiki/fundamentals/how-aim-works.md
+    why: the speed-accuracy trade-off, and why acquisition and correction feel like different skills.
+  - page: wiki/categories/tracking.md
+    why: the counterpart category, staying on a target rather than acquiring it.
+  - page: wiki/training/benchmarks.md
+    why: how community benchmarks score these subcategories.
+  - page: wiki/categories/switching.md
+    why: chaining acquisitions across several targets.
+  - page: wiki/techniques/underaiming.md
+    why: withholding motion a shot does not need, which applies to flicks too.
 ---
 
 !!! warning "Draft"
@@ -76,13 +87,6 @@ That makes it a reasonable middle step between the two cases above.
 
 **Do this next.** Practice at a target size where you land most flicks clean, and shrink the target
 only once that holds.
-
-## Related pages
-
-- [How Aim Works](../fundamentals/how-aim-works.md): the speed-accuracy trade-off, and why
-  acquisition and correction feel like different skills.
-- [Tracking](tracking.md): the counterpart category, staying on a target rather than acquiring it.
-- [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
 
 ## Resources
 
