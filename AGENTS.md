@@ -68,7 +68,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `overrides/` | Theme template overrides. `main.html` loads the colour picker script in `<head>`. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `references.yml` | Every source the wiki cites, once, under a stable `REF-<number>` ID. |
-| `extensions/aim_related.py` | Markdown extension that writes the Related pages section from a page's `related:` front matter. |
+| `extensions/aim_related.py` | Markdown extension that writes the Related section from a page's `related:` front matter. |
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |

@@ -43,7 +43,7 @@ REFERENCE_FIELDS = {"id", "author", "title", "url", "type", "publication", "note
 REFERENCE_REQUIRED = {"id", "author", "title", "url", "type"}
 REFERENCE_TYPES = {"article", "document", "documentation", "encyclopedia", "post", "repository", "study", "video", "website"}
 # Related pages are listed in front matter and written out by extensions/aim_related.py.
-RELATED_HEADING = re.compile(r"^## Related pages\s*$", re.M)
+RELATED_HEADING = re.compile(r"^## Related( pages)?\s*$", re.M)
 RELATED_FIELDS = {"page", "why"}
 PAGE_LINK = re.compile(r"\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
@@ -244,7 +244,7 @@ def readability(rel, text, concept):
             errors.append(
                 f"{rel}: opens with {bullets} bullets before its first heading, expected 3 to 5"
             )
-        # Related pages are written directly above Resources, so this keeps the action above both.
+        # The Related section is written directly above Resources, so this keeps the action above both.
         before_resources = text.split("\n## Resources", 1)[0]
         if NEXT_ACTION not in before_resources:
             errors.append(f"{rel}: missing a '{NEXT_ACTION}' paragraph before Resources")
@@ -268,7 +268,7 @@ def check(path, drafts, headings, known_ids):
     if kind(rel) and not is_index and not meta.get("related"):
         errors.append(f"{rel}: missing a 'related' list in front matter")
     if in_wiki and RELATED_HEADING.search(text):
-        errors.append(f"{rel}: remove '## Related pages'; list related pages in front matter instead")
+        errors.append(f"{rel}: remove the Related heading; list related pages in front matter instead")
     errors += related_errors(rel, meta)
     # References are the sources for claims on this page; they sit under their own heading, apart
     # from Resources, which point readers to material for learning more.

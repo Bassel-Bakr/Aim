@@ -96,7 +96,7 @@ passes, so every page under `docs/wiki/` follows four rules:
 3. **A concept page opens with its answer:** three to five bullets before its first `##` heading. A
    reader who stops there still has the point.
 4. **A concept page ends on one next action:** a paragraph opening `**Do this next.**` before
-   `## Resources`, giving a reader who lost the thread somewhere to go. Related pages are added
+   `## Resources`, giving a reader who lost the thread somewhere to go. The Related section is added
    between the two.
 
 Concept pages are those in `getting-started`, `fundamentals`, `categories`, `techniques`, and
@@ -135,7 +135,7 @@ To suggest an article, or a correction to one, open an issue rather than a pull 
 
 A concept page ends with up to three sections, in this order, each with one job:
 
-1. **Related pages**: other wiki pages that connect to this one. Required on concept and resource
+1. **Related**: other wiki pages that connect to this one. Required on concept and resource
    pages. Do not write this section: list the pages in front matter, each with a reason, and it is
    added above Resources with each page's current title:
 

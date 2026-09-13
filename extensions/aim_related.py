@@ -1,4 +1,4 @@
-"""Related pages for the Aim wiki.
+"""Related pages for the Aim wiki, listed under a "Related" heading.
 
 A wiki page lists the pages it connects to in its front matter, each with a reason:
 
@@ -6,7 +6,7 @@ A wiki page lists the pages it connects to in its front matter, each with a reas
       - page: wiki/training/routines.md
         why: turning these habits into a session plan.
 
-Paths are relative to docs/. This extension writes the "Related pages" section from that list: the
+Paths are relative to docs/. This extension writes the "Related" section from that list: the
 heading, then one bullet per page, linked with the target page's title and a path relative to the
 page being rendered. The section goes directly above "## Resources", or at the end of the page when
 there is no Resources section; the references extension appends References after it.
@@ -55,7 +55,7 @@ class RelatedPreprocessor(Preprocessor):
             return lines
         docs_dir = context.config["docs_dir"]
         here = os.path.dirname(context.page.path.replace("\\", "/")) or "."
-        section = ["## Related pages", ""]
+        section = ["## Related", ""]
         for entry in related:
             page = entry["page"]
             if not os.path.isfile(os.path.join(docs_dir, page)):
