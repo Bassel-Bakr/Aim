@@ -5,10 +5,11 @@ title: "Resources"
 !!! warning "Draft"
     Written from public sources, pending review.
 
-These pages cover the aim-training communities, dedicated trainers, and supporting tools this
-wiki's benchmarks, routines, and scenario recommendations are drawn from. Each one summarizes what
-the resource is, who it suits, and links back to the wiki pages it covers, so you can decide where
-to spend time instead of guessing.
+These pages cover the aim-training communities, dedicated trainers, and supporting tools this wiki's
+benchmarks, routines, and scenario recommendations are drawn from.
+
+Each one summarizes what the resource is and who it suits, and links back to the wiki pages it
+covers. That way you can decide where to spend time instead of guessing.
 
 ## Communities
 
