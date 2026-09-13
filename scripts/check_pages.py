@@ -22,10 +22,10 @@ ALLOWED_TAGS = {
 }
 CONCEPT_DIRS = {"getting-started", "fundamentals", "categories", "techniques", "training"}
 BANNER = '!!! warning "Draft"'
-# Topics live outside docs/wiki/ because they run on a different trust model: signed opinion
+# Articles live outside docs/wiki/ because they run on a different trust model: signed opinion
 # written from experience, carrying the author's name instead of a citation trail. They are not
 # wiki pages and do not follow wiki rules.
-TOPICS = DOCS / "topics"
+ARTICLES = DOCS / "articles"
 BYLINE = '!!! info "Written by '
 # The inline .aim-myth block's title is the anchor into wiki/myths.md: it must match a hub
 # heading word for word, or the link it ships with silently lands at the top of the page.
@@ -155,7 +155,7 @@ def check(path, drafts, headings):
     # Wiki pages live under docs/wiki/; their section is the first segment below that.
     in_wiki = path.is_relative_to(WIKI)
     section = path.relative_to(WIKI).as_posix().split("/")[0] if in_wiki else ""
-    in_topics = path.is_relative_to(TOPICS)
+    in_articles = path.is_relative_to(ARTICLES)
     is_index = path.name == "index.md"
     errors = []
 
@@ -166,15 +166,15 @@ def check(path, drafts, headings):
         errors.append(f"{rel}: missing '## Further resources' section")
     if section == "resources" and not is_index and "\n## Related wiki pages" not in text:
         errors.append(f"{rel}: missing '## Related wiki pages' section")
-    if in_topics:
-        # A byline replaces the draft banner: topic pages are signed, not pending review.
+    if in_articles:
+        # A byline replaces the draft banner: articles are signed, not pending review.
         if not is_index:
             if BYLINE not in text:
                 errors.append(f'{rel}: missing byline, expected \'{BYLINE}<name>"\'')
             if "\n## Further resources" not in text:
                 errors.append(f"{rel}: missing '## Further resources' section")
         if front_matter(text).get("tags"):
-            errors.append(f"{rel}: topic pages do not carry tags")
+            errors.append(f"{rel}: articles do not carry tags")
     elif drafts and rel not in EXEMPT_FROM_BANNER and BANNER not in text:
         errors.append(f"{rel}: missing draft banner")
     if in_wiki:

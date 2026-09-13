@@ -26,7 +26,7 @@ help in your training journey.
   including Voltaic, Revosect, KovaaK's, and Aimlabs.
 - **[Links](links.md)**: guides and videos from across the community, grouped by what they help
   you fix.
-- **[Topics](topics/index.md)**: signed, first-person pages written from experience rather than
+- **[Articles](articles/index.md)**: signed, first-person pages written from experience rather than
   from sources.
 - **[Myths](wiki/myths.md)**: the claims players repeat as fact, answered from the same sources
   the rest of the wiki cites.
@@ -34,5 +34,5 @@ help in your training journey.
 </div>
 
 Every wiki page cites where its facts came from, and pages still marked "Draft" are waiting on a
-review pass. Topics work differently: they carry their author's name instead of citations, because
+review pass. Articles work differently: they carry their author's name instead of citations, because
 they are one person's view rather than sourced reference.

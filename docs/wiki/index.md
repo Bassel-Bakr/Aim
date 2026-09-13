@@ -47,7 +47,7 @@ need them.
 Every page here carries the "Draft" banner above because it is pending review. Content is written
 from public sources, and has not yet had a human check pass over it.
 
-[Topics](../topics/index.md) are a separate part of this site, not part of the wiki. They are signed, first-person pages written from experience, so they carry their author's name
+[Articles](../articles/index.md) are a separate part of this site, not part of the wiki. They are signed, first-person pages written from experience, so they carry their author's name
 instead of a citation trail. They are not open to contributions.
 
 If you spot something wrong, the pencil icon at the top of any page opens an edit against this

@@ -63,7 +63,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | --- | --- |
 | `docs/index.md` | Site landing page. Not a wiki page. |
 | `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
-| `docs/topics/` | Signed first-person pages. Not wiki pages, not open — see below. |
+| `docs/articles/` | Signed first-person pages. Not wiki pages, not open — see below. |
 | `docs/assets/` | Favicon and `stylesheets/aim.css`, which documents each page component it defines. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `templates/` | Page templates. Not published. |
@@ -132,14 +132,14 @@ agents most often miss:
     `Invariants unchanged`. A rewrite that drops a link or renames a heading breaks pages that link
     to it, and the build does not always say so.
 
-## Topics are not wiki pages
+## Articles are not wiki pages
 
-`docs/topics/` is a separate part of the site at `/topics`, and none of the rules above apply to
-it. Topic pages are signed opinion written from the maintainer's own experience: they use
-`templates/topic.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
+`docs/articles/` is a separate part of the site at `/articles`, and none of the rules above apply to
+it. Articles are signed opinion written from the maintainer's own experience: they use
+`templates/article.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
 take no tags, and do not require footnotes. `scripts/check_pages.py` enforces that.
 
-Never write or edit a topic page on your own initiative. A byline names a real person as
+Never write or edit an article on your own initiative. A byline names a real person as
 accountable for every claim on the page, so its content is theirs to decide. Fix a typo or a dead
 link if asked; send anything touching the argument itself back to the author.
 

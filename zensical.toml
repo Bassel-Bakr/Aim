@@ -64,8 +64,8 @@ nav = [
     { "Tags" = "wiki/tags.md" },
   ] },
   { "Links" = "links.md" },
-  { "Topics" = [
-    "topics/index.md",
+  { "Articles" = [
+    "articles/index.md",
   ] },
 ]
 
@@ -102,7 +102,8 @@ tags = {}
 # Pages that moved after the site was already live. Keep an entry here rather
 # than letting an old link 404.
 [project.plugins.redirects.redirect_maps]
-"guides/index.md" = "topics/index.md"
+"guides/index.md" = "articles/index.md"
+"topics/index.md" = "articles/index.md"
 "wiki/resources/links.md" = "links.md"
 "wiki/skills/index.md" = "wiki/categories/index.md"
 "wiki/skills/clicking.md" = "wiki/categories/clicking.md"

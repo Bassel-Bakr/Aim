@@ -2,7 +2,7 @@
 
 Thank you for helping. This guide explains how to add or change wiki pages.
 
-It covers the wiki at `/wiki` only. [Topics](#topics-are-not-part-of-the-wiki) at `/topics` are
+It covers the wiki at `/wiki` only. [Articles](#articles-are-not-part-of-the-wiki) at `/articles` are
 signed, authored pages and are not open to contributions.
 
 ## Ways to contribute
@@ -21,8 +21,8 @@ Follow the steps in [README.md](README.md#run-the-site-locally).
    - `concept.md` for pages that explain aim concepts or training advice.
    - `resource.md` for pages about a community, a trainer, or a tool.
 
-   `templates/topic.md` is not a wiki template; see
-   [Topics are not part of the wiki](#topics-are-not-part-of-the-wiki).
+   `templates/article.md` is not a wiki template; see
+   [Articles are not part of the wiki](#articles-are-not-part-of-the-wiki).
 2. Save the file in the matching folder under `docs/wiki/`. (`docs/index.md` is the site's landing page, not a wiki page.)
 3. Add the page to the `nav` list in `zensical.toml`.
 4. Link the new page from at least one related page.
@@ -103,19 +103,19 @@ commit and reports anything of that kind:
 python scripts/check_rewrite.py main docs/wiki/glossary.md
 ```
 
-## Topics are not part of the wiki
+## Articles are not part of the wiki
 
-Topic pages live at `/topics`, outside `docs/wiki/`, because they run on a different trust model. A
-wiki page earns trust by citing a public source for each claim, and anyone may correct it. A topic
-page earns trust by carrying its author's name, and is not open to contributions. Keeping them in
+Articles live at `/articles`, outside `docs/wiki/`, because they run on a different trust model. A
+wiki page earns trust by citing a public source for each claim, and anyone may correct it. An
+article earns trust by carrying its author's name, and is not open to contributions. Keeping them in
 separate trees means neither set of rules needs an exception clause for the other.
 
-Nothing in this document applies to topic pages. They are written by the site's maintainer from
-`templates/topic.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
+Nothing in this document applies to articles. They are written by the site's maintainer from
+`templates/article.md`, carry a `!!! info "Written by <name>"` byline instead of the draft banner,
 take no tags, and do not require footnotes. `scripts/check_pages.py` enforces those rules for
-anything under `docs/topics/`.
+anything under `docs/articles/`.
 
-To suggest a topic page, or a correction to one, open an issue rather than a pull request.
+To suggest an article, or a correction to one, open an issue rather than a pull request.
 
 ## The Links page
 

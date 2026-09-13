@@ -1,5 +1,5 @@
 ---
-title: "Topic Title"
+title: "Article Title"
 ---
 
 !!! info "Written by Bassel Bakr"
@@ -11,7 +11,7 @@ would use themselves.
 
 ## A heading of your own
 
-Topic pages are signed, so their shape is the author's to decide: an argument, a walkthrough, a
+Articles are signed, so their shape is the author's to decide: an argument, a walkthrough, a
 correction of something commonly repeated, an account of what worked. Use whatever headings the
 subject needs and delete this note.
 
@@ -22,4 +22,4 @@ claim, the case for it, and the strongest objection to it. Neither is required.
 
 ## Further resources
 
-- [Tracking](../wiki/skills/tracking.md): why the wiki page is worth reading next.
+- [Tracking](../wiki/categories/tracking.md): why the wiki page is worth reading next.
