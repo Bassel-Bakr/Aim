@@ -11,6 +11,10 @@ This wiki is for anyone who wants to train aim deliberately, instead of only pla
 improve. It assumes no aim-training experience. You don't need an aim trainer, a known sensitivity,
 or any idea what a benchmark is to start here.
 
+!!! key "Keep the trainer to a slice of your practice"
+    Aimlabs puts a solid daily playlist at 30 to 40 minutes. Past that, time in your own game does
+    more for you than more trainer time.[^aimlabs-playlist]
+
 A first pass through the wiki looks like this:
 
 <div class="aim-steps" markdown>
@@ -22,8 +26,9 @@ A first pass through the wiki looks like this:
    both. See [Aim Trainers](aim-trainers.md).
 3. **Learn the fundamentals.** Understand what "aim" is actually made of and how deliberate
    practice works before you start drilling. See [Fundamentals](../fundamentals/index.md).
-4. **Run a benchmark to find weaknesses.** A benchmark score tells you which of the core categories,
-   clicking, tracking, or switching, is holding you back. See [Benchmarks](../training/benchmarks.md).
+4. **Find your weaknesses.** Run a benchmark to see which core category, clicking, tracking, or
+   switching, is holding you back. Then review fights you lose in your own games, and train the ones
+   your mechanics lost.[^aimlabs-fortnite] See [Benchmarks](../training/benchmarks.md).
 5. **Follow a routine.** Turn your benchmark result into a repeatable practice session instead of
    randomly picking scenarios. See [Routines](../training/routines.md).
 6. **Track progress and handle plateaus.** Improvement is not linear; know how to measure it and
@@ -34,3 +39,6 @@ A first pass through the wiki looks like this:
 
 You don't have to follow these steps in strict order. Doing setup and sensitivity first, though,
 saves relearning your aim on top of gear you later change.
+
+[^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
+[^aimlabs-fortnite]: Aimlabs, [How to start aim training for Fortnite](https://aimlabs.com/articles/fortnite/how-to-start-aim-training-for-fortnite/)

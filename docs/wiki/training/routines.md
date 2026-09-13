@@ -48,6 +48,9 @@ shorter sessions with real rest over one marathon session.
 That holds both for how well a skill sticks and for how fatigue affects performance while training.
 See [Practice Principles](../fundamentals/practice-principles.md).
 
+As a starting number, Aimlabs puts a solid daily playlist at 30 to 40 minutes, with warm-ups no
+longer than 10 to 15. Past that, time in your own game does more for you.[^aimlabs-playlist]
+
 If your accuracy drops late in a session and stays down the next day, end sooner rather than push
 through.
 
@@ -57,6 +60,10 @@ Your weakest area is whichever [Clicking](../categories/clicking.md),
 [Tracking](../categories/tracking.md), or [Switching](../categories/switching.md) subcategory scores
 lowest relative to the others on a benchmark. That's not necessarily the one that feels hardest in
 the moment. See [Benchmarks](benchmarks.md).
+
+Your own matches are the other place to look. Go back through fights you lost in replays or clips,
+and ask whether a decision or your mechanics lost each one. When it was mechanics, that tells you
+what to put in your next focus block.[^aimlabs-fortnite]
 
 Build your focus block from scenarios in that subcategory. Keep at least a little time on the others,
 so a fixed weakness doesn't quietly become a new one. That's the variety-over-repetition point in
@@ -115,4 +122,6 @@ subcategory.
 
 [^aimlabs-body]: Aimlabs, [Are you taking care of your body between gaming sessions?](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/)
 [^volt-mentality]: Voltaic, [Constructing an improvement based mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/)
+[^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
+[^aimlabs-fortnite]: Aimlabs, [How to start aim training for Fortnite](https://aimlabs.com/articles/fortnite/how-to-start-aim-training-for-fortnite/)
 [^volt-start]: Voltaic, [Getting started with Voltaic](https://blog.voltaic.gg/getting-started-with-voltaic/)

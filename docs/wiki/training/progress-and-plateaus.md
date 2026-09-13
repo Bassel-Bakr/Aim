@@ -72,6 +72,10 @@ See [Practice Principles](../fundamentals/practice-principles.md) on deliberate 
 
 ## Ways past a plateau
 
+!!! key "Change the scenario when a score stalls"
+    Swap in a different scenario for the same skill instead of grinding the one you've stalled on.
+    Aimlabs warns that a routine with little variety holds back your progress.[^aimlabs-regimen]
+
 **Switch focus.** If your current weak subcategory has stopped moving, shift the bulk of your
 [routine](routines.md) to a different subcategory for a while. Don't just grind the same one harder.
 
@@ -118,3 +122,4 @@ hand to adapt again, instead of coasting on one you've already mastered.
 [^hk-stages]: Human Kinetics, [Understanding motor learning stages improves skill instruction](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction)
 [^plateau-study]: Journal of Neuroscience via PMC, [a study on plateaued motor skill](https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/)
 [^overtraining]: Sports Health via PMC, [a clinical review of overtraining syndrome](https://pmc.ncbi.nlm.nih.gov/articles/PMC3435910/)
+[^aimlabs-regimen]: Aimlabs, [How to develop your own aim training regimen](https://aimlabs.com/articles/aimlabs/how-to-develop-your-own-aim-training-regimen/)
