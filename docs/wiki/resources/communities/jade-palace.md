@@ -35,6 +35,6 @@ Jade Palace is worth knowing about as a landmark in the elite aim-training scene
 
 Most readers will get more direct value from the public output of its individual members than from the server itself.
 
-## Related wiki pages
+## Related pages
 
 - [Routines](../../training/routines.md)

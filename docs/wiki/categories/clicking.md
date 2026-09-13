@@ -77,12 +77,18 @@ That makes it a reasonable middle step between the two cases above.
 **Do this next.** Practice at a target size where you land most flicks clean, and shrink the target
 only once that holds.
 
-## Further resources
+## Related pages
 
 - [How Aim Works](../fundamentals/how-aim-works.md): the speed-accuracy trade-off, and why
   acquisition and correction feel like different skills.
 - [Tracking](tracking.md): the counterpart category, staying on a target rather than acquiring it.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
+
+## Resources
+
+- [Guides](../resources/guides.md#clicking): clicking guides, in every format.
+
+## References
 
 [^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)
 [^aimlabs-finals]: Aimlabs, [Train flicking and tracking in The Finals aim basics routine](https://aimlabs.com/articles/aimlabs/train-flicking-and-tracking-in-the-finals-aim-basics-routine/)

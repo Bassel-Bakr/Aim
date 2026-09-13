@@ -49,11 +49,13 @@ Scores are read from your trainer profile rather than entered by hand. So what i
 that profile being public and current. A community's own site remains the authority on that
 community's current season.
 
-## Related wiki pages
+## Related pages
 
 - [Benchmarks](../../training/benchmarks.md)
 - [KovaaK's](../trainers/kovaaks.md)
 - [Voltaic](../communities/voltaic.md)
 - [Progress and Plateaus](../../training/progress-and-plateaus.md)
+
+## References
 
 [^evxl]: Evxl, [Benchmark Tracker](https://evxl.app)

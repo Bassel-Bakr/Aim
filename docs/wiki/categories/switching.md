@@ -78,11 +78,17 @@ them.
 
 **Do this next.** Widen target spacing only once you land most switches at the current one.
 
-## Further resources
+## Related pages
 
 - [Tracking](tracking.md): the category that switching onto moving targets partly depends on.
 - [Clicking](clicking.md): the acquisition half of a switch, in isolation.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
+
+## Resources
+
+- [Guides](../resources/guides.md#switching): switching guides, in every format.
+
+## References
 
 [^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)
 [^aimlabs-apex-moving]: Aimlabs, [Tracking and switching moving targets in Apex Legends](https://aimlabs.com/articles/aimlabs/tracking-and-switching-moving-targets-in-apex-legends/)

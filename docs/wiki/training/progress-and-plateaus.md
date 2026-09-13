@@ -109,15 +109,21 @@ hand to adapt again, instead of coasting on one you've already mastered.
 **Do this next.** If you feel run down, take a stretch of lighter training first. If not, shift your
 [routine](routines.md)'s focus to a different subcategory for a while.
 
-## Further resources
+## Related pages
 
 - [Practice Principles](../fundamentals/practice-principles.md): deliberate practice, variety, and
   rest as the habits that prevent a plateau in the first place.
 - [Benchmarks](benchmarks.md): how to track a score trend rather than a single result.
 - [Sensitivity](../getting-started/sensitivity.md): sensitivity change as one supported way to
   break a plateau.
+
+## Resources
+
 - [Voltaic](../resources/communities/voltaic.md): source of the muscle-memory and
   sensitivity-change guidance.
+- [Guides](../resources/guides.md#practice-and-routines): guides on practice, routines and bad sessions.
+
+## References
 
 [^hk-stages]: Human Kinetics, [Understanding motor learning stages improves skill instruction](https://us.humankinetics.com/blogs/excerpt/understanding-motor-learning-stages-improves-skill-instruction)
 [^plateau-study]: Journal of Neuroscience via PMC, [a study on plateaued motor skill](https://pmc.ncbi.nlm.nih.gov/articles/PMC3186792/)

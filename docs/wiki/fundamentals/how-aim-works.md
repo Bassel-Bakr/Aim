@@ -86,7 +86,13 @@ speed, evasive, stability) map onto the same fundamentals.
 **Do this next.** Pick the one fundamental your aim fails on most and run a single slow scenario
 for it. [Practice Principles](practice-principles.md) covers how to structure that so it sticks.
 
-## Further resources
+## Related pages
+
+- [Practice Principles](practice-principles.md): how to structure practice around these mechanics.
+- [Categories](../categories/index.md): the three categories these mechanics add up to.
+- [Underaiming](../techniques/underaiming.md): restraint over the corrections covered here.
+
+## Resources
 
 - [Aimlabs](../resources/trainers/aimlabs.md): source of the mechanics articles above, and the
   trainer to practice arm/wrist balance, pacing, smoothness, and reactive tracking directly.
@@ -94,6 +100,9 @@ for it. [Practice Principles](practice-principles.md) covers how to structure th
   static/dynamic and precise/reactive split.
 - [Voltaic](../resources/communities/voltaic.md): benchmark categories built around these same
   fundamentals.
+- [Guides](../resources/guides.md#how-aim-works): guides on the mechanics of aim.
+
+## References
 
 [^wrist-vs-arm]: Aimlabs, [Wrist aiming vs arm aiming: why not both?](https://aimlabs.com/articles/aimlabs/wrist-aiming-vs-arm-aiming-why-not-both/)
 [^fitts]: Human Kinetics, [Understanding Fitts's law](https://us.humankinetics.com/blogs/excerpt/understanding-fitts-law)

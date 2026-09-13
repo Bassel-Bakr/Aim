@@ -96,14 +96,19 @@ you're training for.
 **Do this next.** Run one full benchmark, note your lowest subcategory, and build your next
 [routine](routines.md) around it.
 
-## Further resources
+## Related pages
 
 - [Routines](routines.md): building a routine around whatever a benchmark shows is your weakest
   area.
 - [Practice Principles](../fundamentals/practice-principles.md): why benchmark scoring resists
   score chasing.
+
+## Resources
+
 - [Evxl Benchmark Tracker](../resources/tools/evxl.md): scores your runs against community
   benchmarks automatically.
+
+## References
 
 [^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
 [^voltaic-s3]: Voltaic, [Announcing the Voltaic Season 3 aiming benchmarks beta for Aimlabs](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/)

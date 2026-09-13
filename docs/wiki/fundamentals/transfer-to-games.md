@@ -77,11 +77,16 @@ sense you can rely on in a match.
 **Do this next.** Split your practice: trainer time for one weak category, and game time for
 crosshair placement and positioning.
 
-## Further resources
+## Related pages
+
+- [Aim Trainers](../getting-started/aim-trainers.md): covers the same trainer-versus-in-game
+  trade-off from the other side.
+
+## Resources
 
 - [Voltaic](../resources/communities/voltaic.md): states directly that its benchmarks are one
   piece of the puzzle, and splits routines into fundamental versus game-specific practice.
-- [Aim Trainers](../getting-started/aim-trainers.md): covers the same trainer-versus-in-game
-  trade-off from the other side.
+
+## References
 
 [^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)

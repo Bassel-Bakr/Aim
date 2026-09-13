@@ -914,7 +914,7 @@ body {
   cursor: pointer;
 }
 
-/* .aim-links — an icon before each entry on the Links page naming what the link opens: an article,
+/* .aim-links — an icon before each entry on the Guides page naming what the link opens: an article,
  * a video, a playlist, a document, a spreadsheet, a post, or an image. Wrap the page's lists once:
  *
  *   <div class="aim-links" markdown>
@@ -1050,4 +1050,10 @@ body {
   content: "" / "Image";
   -webkit-mask-image: var(--aim-icon-image);
   mask-image: var(--aim-icon-image);
+}
+
+/* A wiki page's footnotes render below a "References" heading, which already separates them from
+ * the page, so the rule the theme draws above its footnote list is dropped there. */
+.md-typeset h2#references + .footnote > hr {
+  display: none;
 }

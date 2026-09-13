@@ -31,6 +31,7 @@ BYLINE = '!!! info "Written by '
 # heading word for word, or the link it ships with silently lands at the top of the page.
 MYTH_BLOCK = re.compile(r'!!! myth "([^"]*)"')
 MYTH_HEADING = re.compile(r"^## (.+)$", re.M)
+FOOTNOTE_DEFINITION = re.compile(r"^\[\^[^\]]+\]:", re.M)
 # A key block marks the one point a reader should leave a page with. Two on a page means neither
 # is the one.
 KEY_BLOCK = re.compile(r'^!!! key "', re.M)
@@ -143,9 +144,9 @@ def readability(rel, text, concept):
             errors.append(
                 f"{rel}: opens with {bullets} bullets before its first heading, expected 3 to 5"
             )
-        before_resources = text.split("\n## Further resources", 1)[0]
-        if NEXT_ACTION not in before_resources:
-            errors.append(f"{rel}: missing a '{NEXT_ACTION}' paragraph before Further resources")
+        before_related = text.split("\n## Related pages", 1)[0]
+        if NEXT_ACTION not in before_related:
+            errors.append(f"{rel}: missing a '{NEXT_ACTION}' paragraph before Related pages")
     return errors
 
 
@@ -162,10 +163,14 @@ def check(path, drafts, headings):
     for tag in front_matter(text).get("tags") or []:
         if tag not in ALLOWED_TAGS:
             errors.append(f"{rel}: tag '{tag}' is not allowed")
-    if section in CONCEPT_DIRS and not is_index and "\n## Further resources" not in text:
-        errors.append(f"{rel}: missing '## Further resources' section")
-    if section == "resources" and not is_index and "\n## Related wiki pages" not in text:
-        errors.append(f"{rel}: missing '## Related wiki pages' section")
+    if section in CONCEPT_DIRS and not is_index and "\n## Related pages" not in text:
+        errors.append(f"{rel}: missing '## Related pages' section")
+    if section == "resources" and not is_index and "\n## Related pages" not in text:
+        errors.append(f"{rel}: missing '## Related pages' section")
+    # References are the sources for claims on this page; they sit under their own heading, apart
+    # from Resources, which point readers to material for learning more.
+    if in_wiki and FOOTNOTE_DEFINITION.search(text) and "\n## References" not in text:
+        errors.append(f"{rel}: has footnotes but no '## References' heading above them")
     if in_articles:
         # A byline replaces the draft banner: articles are signed, not pending review.
         if not is_index:

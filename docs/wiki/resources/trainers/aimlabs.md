@@ -41,11 +41,13 @@ Aimlabs leans toward a guided, curated experience compared to KovaaK's. It has a
 
 It is free to start, which makes it a low-friction entry point. Its most advanced coaching and analysis tools, though, sit behind the Aimlabs+ subscription rather than the free tier.[^plus]
 
-## Related wiki pages
+## Related pages
 
 - [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
+
+## References
 
 [^home]: Aimlabs, [homepage](https://aimlabs.com/)
 [^plus]: Aimlabs, [Aimlabs+](https://aimlabs.com/aimlabs-plus)

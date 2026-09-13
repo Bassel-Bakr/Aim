@@ -45,8 +45,8 @@ zensical build --clean
 ```
 
 `scripts/check_pages.py` enforces three content rules: every `tags:` value is on the allowed list,
-each concept page carries a `## Further resources` section, and each resource page carries a
-`## Related wiki pages` section. It also checks that every myth block's title matches a heading on
+each concept page and each resource page carries a `## Related pages` section, and every wiki page
+with footnotes carries a `## References` heading above them. It also checks that every myth block's title matches a heading on
 `docs/wiki/myths.md`, and enforces the readability rules in
 [CONTRIBUTING.md](CONTRIBUTING.md#readability). Pass `--drafts` to also require the draft banner on
 every page. Name pages after the flags to check only those.

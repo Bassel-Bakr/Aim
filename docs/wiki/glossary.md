@@ -149,5 +149,7 @@ It's cheaper to fix than an overflick. Your hand is already moving in the right 
 needs a small forward nudge, rather than a full reversal.[^flick] See
 [Clicking](categories/clicking.md) for how this wiki describes a clean flick.
 
+## References
+
 [^fov]: Wikipedia, [Field of view in video games](https://en.wikipedia.org/wiki/Field_of_view_in_video_games)
 [^flick]: aimbetween.games, [flick training](https://aimbetween.games/modes/flick)

@@ -28,8 +28,15 @@ Concrete practice advice. Link to specific scenarios, playlists, or routines whe
 
 **Do this next.** One concrete action a reader can take today, using a link this page already has.
 
-## Further resources
+## Related pages
 
-- [Resource page title](../resources/communities/voltaic.md): one line on why it is relevant here.
+- [Wiki page title](../fundamentals/how-aim-works.md): one line on how it connects to this page.
+
+## Resources
+
+- [Resource page title](../resources/communities/voltaic.md): one line on why it is worth a look.
+- [Guides](../resources/guides.md#getting-started): external learning material on this subject.
+
+## References
 
 [^source]: Publisher, [Page title](https://voltaic.gg)

@@ -54,10 +54,12 @@ player uses tells you what works for them, not what will work for you. The wiki'
 [Setup](../../getting-started/setup.md) page covers why grip and hand size matter more than matching
 someone else's mouse.
 
-## Related wiki pages
+## Related pages
 
 - [Setup](../../getting-started/setup.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
 - [Benchmarks](../../training/benchmarks.md)
+
+## References
 
 [^kova]: kova, [pyvno.xyz](https://pyvno.xyz)

@@ -177,6 +177,8 @@ compare across games in cm/360 rather than raw sensitivity or eDPI.
 [Sensitivity](getting-started/sensitivity.md) covers both measures and the converters that move a
 setting between titles.
 
+## References
+
 [^muscle]: Voltaic, [Muscle memory](https://blog.voltaic.gg/muscle-memory/)
 [^cm360]: Aimlabs, [A quick explainer on cm/360 and the common cm/360 by game](https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/)
 [^edpi]: ProSettings.net, [What is DPI and eDPI?](https://prosettings.net/blog/what-is-dpi-edpi/)

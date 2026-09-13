@@ -81,12 +81,22 @@ mechanics you're trying to train.
 **Do this next.** Pick the scenario that targets your actual weakness, and run an easier variant of
 it until your crosshair lands cleanly.
 
-## Further resources
+## Related pages
+
+- [Routines](../training/routines.md): turning these habits into a session plan.
+- [Progress and Plateaus](../training/progress-and-plateaus.md): what these habits do for a stalled
+  score.
+- [How Aim Works](how-aim-works.md): the mechanics this practice is built around.
+
+## Resources
 
 - [Voltaic](../resources/communities/voltaic.md): benchmark ranking system built around broad
   improvement, plus lifestyle guides on rest and recovery.
 - [Revosect](../resources/communities/revosect.md): benchmark guide advising scenario variety over
   repeating only the benchmarks.
+- [Guides](../resources/guides.md#practice-and-routines): guides on practice and routines.
+
+## References
 
 [^ericsson]: Macnamara & Hambrick, [a 2019 review examining Ericsson's original definition of deliberate practice](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02396/full)
 [^speed-accuracy]: Aimlabs, [The speed-accuracy tradeoff and what it means for your aim training](https://aimlabs.com/articles/aimlabs/the-speed-accuracy-tradeoff-and-what-it-means-for-your-aim-training/)

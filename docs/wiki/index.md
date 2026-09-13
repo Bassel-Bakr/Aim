@@ -33,8 +33,8 @@ need them.
   every scenario and benchmark on this wiki is built from.
 - **[Training](training/index.md)**: building a routine, reading a benchmark, and handling progress
   that stalls out.
-- **[Resources](resources/index.md)**: the communities and trainers this wiki's benchmarks, routines,
-  and scenario recommendations come from.
+- **[Resources](resources/index.md)**: the communities, trainers and tools this wiki draws on, plus
+  guides from across the community.
 - **[Myths](myths.md)**: the claims about aim training that get repeated as fact, and what the
   sources actually say.
 - **[Glossary](glossary.md)**: short definitions of the aim-training terms used across the wiki.

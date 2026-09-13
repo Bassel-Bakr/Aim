@@ -86,10 +86,18 @@ that comfortably exceeds it.
 **Do this next.** Before your next session, check all three settings above, in your game and in
 Windows.
 
-## Further resources
+## Related pages
+
+- [Sensitivity](sensitivity.md): choosing and converting the sensitivity your setup runs.
+- [Health and Rest](../training/health.md): posture and recovery over long sessions.
+
+## Resources
 
 - [KovaaK's](../resources/trainers/kovaaks.md): where to put a consistent sensitivity and settings
   to work once your gear and Windows settings are sorted out.
+- [Guides](../resources/guides.md#gear-and-settings): guides on gear, grips and settings.
+
+## References
 
 [^xda]: XDA Developers, [gaming mouse buying guide](https://www.xda-developers.com/gaming-mouse-buying-guide/)
 [^qck]: SteelSeries, [QcK Performance product page](https://steelseries.com/qck-performance)

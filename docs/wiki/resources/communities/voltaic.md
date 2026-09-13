@@ -41,13 +41,15 @@ Voltaic is one of the most established benchmark providers covering both KovaaK'
 
 Some of Voltaic's material, such as exact rank thresholds, sits in a companion app and spreadsheets rather than on the public blog. Treat this page as an overview, and follow the links above for current detail.
 
-## Related wiki pages
+## Related pages
 
 - [Benchmarks](../../training/benchmarks.md)
 - [Routines](../../training/routines.md)
 - [Categories](../../categories/index.md)
 - [KovaaK's](../trainers/kovaaks.md)
 - [Aimlabs](../trainers/aimlabs.md)
+
+## References
 
 [^s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)
 [^s3]: Voltaic, [Announcing the Voltaic Season 3 aiming benchmarks beta for Aimlabs](https://blog.voltaic.gg/announcing-the-voltaic-season-3-aiming-benchmarks-beta-for-aimlabs/)

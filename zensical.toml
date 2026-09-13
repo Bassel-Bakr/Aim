@@ -58,12 +58,12 @@ nav = [
         "wiki/resources/tools/kova.md",
         "wiki/resources/tools/kovobs.md",
       ] },
+      "wiki/resources/guides.md",
     ] },
     { "Myths" = "wiki/myths.md" },
     { "Glossary" = "wiki/glossary.md" },
     { "Tags" = "wiki/tags.md" },
   ] },
-  { "Links" = "links.md" },
   { "Articles" = [
     "articles/index.md",
   ] },
@@ -105,7 +105,8 @@ tags = {}
 [project.plugins.redirects.redirect_maps]
 "guides/index.md" = "articles/index.md"
 "topics/index.md" = "articles/index.md"
-"wiki/resources/links.md" = "links.md"
+"wiki/resources/links.md" = "wiki/resources/guides.md"
+"links.md" = "wiki/resources/guides.md"
 "wiki/skills/index.md" = "wiki/categories/index.md"
 "wiki/skills/clicking.md" = "wiki/categories/clicking.md"
 "wiki/skills/tracking.md" = "wiki/categories/tracking.md"

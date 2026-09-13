@@ -110,15 +110,21 @@ others, rebuild the routine. Build it around whatever is now your lowest score.
 or [Revosect](../resources/communities/revosect.md), and point its focus block at your weakest
 subcategory.
 
-## Further resources
+## Related pages
+
+- [Practice Principles](../fundamentals/practice-principles.md): the deliberate-practice reasoning
+  behind focus blocks and session length.
+- [Benchmarks](benchmarks.md): how to find which subcategory to build a routine around.
+
+## Resources
 
 - [Voltaic](../resources/communities/voltaic.md): fundamental, game-specific, and
   weakness-specific routine library.
 - [Revosect](../resources/communities/revosect.md): foundational and weakness-specific routines
   plus game-specific playlists.
-- [Practice Principles](../fundamentals/practice-principles.md): the deliberate-practice reasoning
-  behind focus blocks and session length.
-- [Benchmarks](benchmarks.md): how to find which subcategory to build a routine around.
+- [Guides](../resources/guides.md#practice-and-routines): guides on building and running routines.
+
+## References
 
 [^aimlabs-body]: Aimlabs, [Are you taking care of your body between gaming sessions?](https://aimlabs.com/articles/aimlabs/are-you-taking-care-of-your-body-between-gaming-sessions/)
 [^volt-mentality]: Voltaic, [Constructing an improvement based mentality](https://blog.voltaic.gg/constructing-an-improvement-based-mentality/)

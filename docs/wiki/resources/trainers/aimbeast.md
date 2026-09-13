@@ -44,12 +44,14 @@ The trade-off is ecosystem. The benchmark seasons this wiki covers, [Voltaic](..
 
 So an Aimbeast player reads their progress off a different and more scattered set of sheets. They're gathered on [Evxl](../tools/evxl.md) rather than issued as one season.[^evxl] Picking it means picking its own ladders, rather than the ones most routines and guides are written against.
 
-## Related wiki pages
+## Related pages
 
 - [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Benchmarks](../../training/benchmarks.md)
 - [Evxl Benchmark Tracker](../tools/evxl.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
+
+## References
 
 [^steam]: Aimbeast, [Steam store page](https://store.steampowered.com/app/1100990/Aimbeast/)
 [^evxl]: Evxl, [Aimbeast benchmarks](https://evxl.app/groups/aimbeast)

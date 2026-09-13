@@ -40,5 +40,7 @@ A first pass through the wiki looks like this:
 You don't have to follow these steps in strict order. Doing setup and sensitivity first, though,
 saves relearning your aim on top of gear you later change.
 
+## References
+
 [^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
 [^aimlabs-fortnite]: Aimlabs, [How to start aim training for Fortnite](https://aimlabs.com/articles/fortnite/how-to-start-aim-training-for-fortnite/)

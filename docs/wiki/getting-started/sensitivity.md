@@ -93,12 +93,21 @@ score.
 **Do this next.** Work out your current cm/360, then leave that sensitivity alone long enough to
 judge it fairly.
 
-## Further resources
+## Related pages
+
+- [Setup and Gear](setup.md): the mouse, pad and settings a sensitivity sits on.
+- [Progress and Plateaus](../training/progress-and-plateaus.md): when a sensitivity change helps
+  a stalled score.
+
+## Resources
 
 - [KovaaK's](../resources/trainers/kovaaks.md): built-in sensitivity converter and the
   Sensitivity Matcher tool for matching sensitivity to games it does not directly support.
 - [Aimlabs](../resources/trainers/aimlabs.md): built-in Sensitivity Finder for calibrating
   sensitivity inside the trainer.
+- [Guides](../resources/guides.md#gear-and-settings): guides on sensitivity, gear and settings.
+
+## References
 
 [^cm360]: Aimlabs, [A quick explainer on cm/360 and the common cm/360 by game](https://aimlabs.com/articles/aimlabs/a-quick-explainer-on-cm-360-and-the-common-cm-360-by-game/)
 [^edpi]: ProSettings.net, [What is DPI and eDPI?](https://prosettings.net/blog/what-is-dpi-edpi/)

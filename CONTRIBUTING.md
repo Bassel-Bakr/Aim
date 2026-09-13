@@ -83,7 +83,7 @@ passes, so every page under `docs/wiki/` follows four rules:
 3. **A concept page opens with its answer:** three to five bullets before its first `##` heading. A
    reader who stops there still has the point.
 4. **A concept page ends on one next action:** a paragraph opening `**Do this next.**` before
-   `## Further resources`, giving a reader who lost the thread somewhere to go.
+   `## Related pages`, giving a reader who lost the thread somewhere to go.
 
 Concept pages are those in `getting-started`, `fundamentals`, `categories`, `techniques`, and
 `training`, other than `index.md`. [How Aim Works](docs/wiki/fundamentals/how-aim-works.md) shows
@@ -117,10 +117,26 @@ anything under `docs/articles/`.
 
 To suggest an article, or a correction to one, open an issue rather than a pull request.
 
-## The Links page
+## How a wiki page ends
 
-`docs/links.md` catalogues individual guides, articles, and videos, grouped by what
-they help with. It works differently from the rest of the wiki in two ways.
+A concept page ends with up to three sections, in this order, each with one job:
+
+1. **Related pages**: other wiki pages that connect to this one. Required on concept and resource
+   pages.
+2. **Resources**: where to go to learn more — resource pages, and the matching section of
+   [Guides](docs/wiki/resources/guides.md). These are recommendations, not evidence.
+3. **References**: the footnotes that source this page's claims. Put `## References` directly
+   above the footnote definitions; the checker requires it on any wiki page with footnotes.
+
+Keep the two kinds of external link apart. A link that supports a claim on the page is a
+reference and becomes a footnote. A link that is simply good material on the subject is a
+resource; it goes on Guides, not into this page's footnotes.
+
+## The Guides page
+
+`docs/wiki/resources/guides.md` catalogues external learning material — guides, videos,
+playlists, documents, posts — grouped by what it helps with, never by format. It works differently
+from the rest of the wiki in two ways.
 
 The entry is the citation. A line there names the piece, its publisher, and its year where the
 source states one, so it takes no footnote; adding one would double every line.

@@ -52,10 +52,12 @@ after a run you did not expect to be your best.
 The requirements are the real constraint, since it depends on OBS's replay buffer already running.
 And a personal best is only as meaningful as the scenario it was set in.
 
-## Related wiki pages
+## Related pages
 
 - [KovaaK's](../trainers/kovaaks.md)
 - [Progress and Plateaus](../../training/progress-and-plateaus.md)
 - [Benchmarks](../../training/benchmarks.md)
+
+## References
 
 [^readme]: KovOBS, [README](https://github.com/Bassel-Bakr/KovOBS)

@@ -72,11 +72,15 @@ trainer.
 **Do this next.** Open [Resources](../resources/index.md), read the pages for the trainers you're
 considering, and install the one you'll actually open.
 
-## Further resources
+## Related pages
 
-- [Resources](../resources/index.md): the trainers this wiki covers, each with what it is, who it
-  suits, and what it ships with.
 - [Routines](../training/routines.md): what to actually run once a trainer is installed.
 - [Benchmarks](../training/benchmarks.md): how to find the weakness a routine should target.
 - [Transfer to Games](../fundamentals/transfer-to-games.md): what trainer practice carries into a
   match, and what it does not.
+
+## Resources
+
+- [Resources](../resources/index.md): the trainers this wiki covers, each with what it is, who it
+  suits, and what it ships with.
+- [Guides](../resources/guides.md#getting-started): first-week guides for a new trainer.

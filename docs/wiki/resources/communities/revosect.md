@@ -40,11 +40,13 @@ Its current benchmark focus leans toward KovaaK's. Its routine library leans tow
 
 Its own rank names and season numbering are separate from Voltaic's, so scores between the two are not directly comparable. Coaching is not yet available, unlike Voltaic's Amped program.
 
-## Related wiki pages
+## Related pages
 
 - [Voltaic](voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
 - [Categories](../../categories/index.md)
+
+## References
 
 [^bench]: Revosect, [benchmarks](https://revosect.com/benchmarks)
 [^res]: Revosect, [resources](https://revosect.com/resources)

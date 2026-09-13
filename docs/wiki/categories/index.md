@@ -30,5 +30,7 @@ Those labels move between benchmark seasons, so each page explains the distincti
 rather than only the label. See [Benchmarks](../training/benchmarks.md) for how the scoring
 works.
 
+## References
+
 [^aimlabs-playlist]: Aimlabs, [How to build a well balanced aim training playlist](https://aimlabs.com/articles/aimlabs/how-to-build-a-well-balanced-aim-training-playlist/)
 [^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)

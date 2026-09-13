@@ -1,12 +1,14 @@
 ---
-title: "Links"
+title: "Guides"
 ---
 
 !!! warning "Draft"
     Written from public sources, pending review.
 
-Guides and videos that teach a method, a mechanism, or a mistake. Score sheets and routines handed
-over without instructions stay on the [resource pages](wiki/resources/index.md).
+External learning material that teaches a method, a mechanism, or a mistake. It comes as articles,
+videos, playlists, documents and posts, grouped by what it helps with rather than by format.
+
+Score sheets and routines handed over without instructions stay on the [resource pages](index.md).
 
 <div class="aim-links" markdown>
 
@@ -28,10 +30,10 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Aim Training Crash Course](https://www.youtube.com/playlist?list=PL-uHvMUvTR9RZMJ_8lzf30V19hgtf4htU) —
   RiddBTW — twelve parts, two on each category.
 - [Guides by MattyOW](https://www.youtube.com/playlist?list=PLqMr3im6WvTQ8Y7q7SCV5r0i_lx4oPaRX) —
-  MattyOW — 25 guides, one per problem rather than one per skill, plus the Unraveling the Secrets
-  of Aim series on how specific top players aim.
+  MattyOW — 25 guides, one per problem rather than one per skill. Also the Unraveling the Secrets
+  of Aim series, on how specific top players aim.
 - [Mouse Control Fundamentals](https://www.youtube.com/playlist?list=PLw_vDcimyfGc2DRSB4ScyJL-JCNVQpsog) —
-  Ben Staudt, 2026 — five parts on the body side of aim: grips, flick control, posture, a sample
+  Ben Staudt, 2026 — five parts on the body side of aim. Grips, flick control, posture, a sample
   Aimlabs setup, and what to do when long arms hit the desk.
 
 ## How aim works
@@ -43,8 +45,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Stop predicting and start reacting](https://aimlabs.com/articles/aimlabs/stop-predicting-and-start-reacting-get-better-at-reactive-tracking/) —
   Aimlabs — why anticipation loses to a bait.
 - [calm aim is a joke - this is why](https://www.youtube.com/watch?v=mRoPfhZ1Tm4) — minigod and
-  Lorys, 2024 — aiming discipline, the reflex habits that stop trainer practice transferring, and
-  what a clean micro-correction looks like.
+  Lorys, 2024 — aiming discipline, and the reflex habits that stop trainer practice transferring.
+  Also what a clean micro-correction looks like.
 - [the KEY approach for AIM CONSISTENCY](https://www.youtube.com/watch?v=x9q6d0vBFag) — Lorys, 2024 —
   micro adjustments: the approach that works, and aggressive micros and tension as the habits to
   watch for.
@@ -66,15 +68,15 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
   does not exist and no public copy of the Chinese original could be found. M0NARK offers a
   higher-resolution copy by Discord DM (m0nark) and could confirm the author. -->
 - [PERFECCIONA tus FLICKS con esta TÉCNICA!](https://www.youtube.com/watch?v=VMLw5lC3pQU) — CARTOON,
-  2024, in Spanish — flick technique for tactical shooters taken stage by stage, from speed to
-  confirming the shot, with KovaaK's and Aimlabs routines to practice it.
+  2024, in Spanish — flick technique for tactical shooters, stage by stage from speed to confirming
+  the shot. Comes with KovaaK's and Aimlabs routines to practice it.
 
 ## Tracking
 
 - [The Corporate Serf smoothness training method](https://www.youtube.com/watch?v=a-MShVYe3kY) —
   Corporate Serf, 2025 — a smoothness method for tracking, worked through on PGT.
 - [Aether bible](https://docs.google.com/document/d/1koaME0d2J6YJtneiWg5_vkT4CMi-dD5jumSJCpcHea4/edit) —
-  eA hundred — advice from top Aether players, bot by bot: which of fingers, wrist or arm leads, and
+  eA hundred — advice from top Aether players, bot by bot. Which of fingers, wrist or arm leads, and
   reading acceleration instead of flicking onto strafes.
 
 ## Switching
@@ -102,8 +104,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 - [Why 'muscle memory' is seen as a meme](https://blog.voltaic.gg/muscle-memory/) — Voltaic, 2023 —
   what the phrase hides.
 - [e1se routines scoresheet](https://docs.google.com/spreadsheets/d/1KxW46nYH3pVZoCK-dtWHISbYC41X6O_o8h5KnSFICys/edit) —
-  e1se, 2022 — tracking, flicking and dodge routines, each scenario carrying its own notes, a
-  target score, and the rule for when to move up.
+  e1se, 2022 — tracking, flicking and dodge routines. Each scenario carries its own notes, a target
+  score, and the rule for when to move up.
 
 ## Making and editing scenarios
 
@@ -146,8 +148,8 @@ over without instructions stay on the [resource pages](wiki/resources/index.md).
 
 </div>
 
-## Related wiki pages
+## Related pages
 
-- [Resources](wiki/resources/index.md) — who publishes these.
-- [Categories](wiki/categories/index.md), [Techniques](wiki/techniques/underaiming.md),
-  [Training](wiki/training/index.md) — the same ground in this wiki's words.
+- [Resources](index.md) — who publishes these.
+- [Categories](../categories/index.md), [Techniques](../techniques/underaiming.md),
+  [Training](../training/index.md) — the same ground in this wiki's words.

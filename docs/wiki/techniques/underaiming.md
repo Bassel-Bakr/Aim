@@ -67,7 +67,7 @@ and make each extra correction earn its place.
 <!-- REVIEW: no public source found for scenario-level guidance or drills specific to underaiming
 or edge tracking. Leave this section at the level of the principle until one exists. -->
 
-## Further resources
+## Related pages
 
 - [How Aim Works](../fundamentals/how-aim-works.md): smoothness and correction, the mechanics this
   restraint operates on.
@@ -76,5 +76,11 @@ or edge tracking. Leave this section at the level of the principle until one exi
   the same restraint applies to.
 - [Glossary](../glossary.md): underflick and overflick, which describe single flicks rather than
   this habit.
+
+## Resources
+
+- [Guides](../resources/guides.md#techniques): technique guides, in every format.
+
+## References
 
 [^matty]: VT Matty, [Underaiming is not edge tracking](https://x.com/Matty_OW/status/1873563341408674076)

@@ -80,11 +80,17 @@ training.
 
 **Do this next.** In your next session, step away from the screen for a few minutes once an hour.
 
-## Further resources
+## Related pages
 
 - [Setup and Gear](../getting-started/setup.md): mouse, pad, grip, and posture in more detail.
 - [Practice Principles](../fundamentals/practice-principles.md): rest and consistency as part of
   effective practice, not separate from it.
+
+## Resources
+
+- [Guides](../resources/guides.md#health): guides on health, posture and recovery.
+
+## References
 
 [^aao]: American Academy of Ophthalmology, [What is eye strain?](https://www.aao.org/eye-health/diseases/what-is-eye-strain)
 [^osha]: OSHA, [Computer workstations eTool: work process](https://www.osha.gov/etools/computer-workstations/work-process)

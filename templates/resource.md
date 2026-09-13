@@ -29,6 +29,6 @@ Topics and skills covered, with links to the matching wiki pages.
 
 Strengths, limits, and when to use this resource.
 
-## Related wiki pages
+## Related pages
 
-- [Page title](../../skills/tracking.md)
+- [Page title](../../categories/tracking.md)

@@ -38,12 +38,14 @@ KovaaK's has the larger scenario library of the two main trainers on this wiki. 
 
 It's a one-time Steam purchase rather than free-to-play. Its Sandbox-first design rewards players who are willing to find and set up scenarios and playlists themselves.[^steam]
 
-## Related wiki pages
+## Related pages
 
 - [Aim Trainers](../../getting-started/aim-trainers.md)
 - [Sensitivity](../../getting-started/sensitivity.md)
 - [Voltaic](../communities/voltaic.md)
 - [Benchmarks](../../training/benchmarks.md)
+
+## References
 
 [^steam]: KovaaK's, [Steam store page](https://store.steampowered.com/app/824270/KovaaKs/)
 [^revo]: Revosect, [benchmarks](https://revosect.com/benchmarks)

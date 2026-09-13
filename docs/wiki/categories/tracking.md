@@ -81,16 +81,22 @@ makes them a bridge between the two.
 **Do this next.** Start with precise tracking on a slow, predictable path, and add speed only once
 you can hold a clean continuous track.
 
-## Further resources
+## Related pages
 
 - [How Aim Works](../fundamentals/how-aim-works.md): smoothness and reactive-versus-predictive
   tracking explained in more depth.
-- [KovaaK's](../resources/trainers/kovaaks.md): scenario library, plus a dedicated Tracking Trainer
-  DLC with eleven tracking-focused modules and dynamic difficulty, built by the game's own
-  developer.[^kovaaks-dlc]
 - [Underaiming](../techniques/underaiming.md): withholding motion a shot does not need, and the
   technique behind what aim trainers call edge tracking.
 - [Benchmarks](../training/benchmarks.md): how community benchmarks score these subcategories.
+
+## Resources
+
+- [KovaaK's](../resources/trainers/kovaaks.md): scenario library, plus a dedicated Tracking Trainer
+  DLC with eleven tracking-focused modules and dynamic difficulty, built by the game's own
+  developer.[^kovaaks-dlc]
+- [Guides](../resources/guides.md#tracking): tracking guides, in every format.
+
+## References
 
 [^aimlabs-intro]: Aimlabs, [Introduction to aim training: the basics of Aimlabs](https://aimlabs.com/articles/aimlabs/introduction-to-aim-training-the-basics-of-aimlabs/)
 [^voltaic-s5]: Voltaic, [Announcing the Voltaic Season 5 aiming benchmarks beta for KovaaK's](https://blog.voltaic.gg/announcing-the-voltaic-season-5-aiming-benchmarks-beta-for-kovaaks/)

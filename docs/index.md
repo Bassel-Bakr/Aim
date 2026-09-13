@@ -24,8 +24,8 @@ help in your training journey.
   every scenario and benchmark is built from.
 - **[Resources](wiki/resources/index.md)**: the communities and trainers this wiki draws on,
   including Voltaic, Revosect, KovaaK's, and Aimlabs.
-- **[Links](links.md)**: guides and videos from across the community, grouped by what they help
-  you fix.
+- **[Guides](wiki/resources/guides.md)**: guides and videos from across the community, grouped by
+  what they help you fix.
 - **[Articles](articles/index.md)**: signed, first-person pages written from experience rather than
   from sources.
 - **[Myths](wiki/myths.md)**: the claims players repeat as fact, answered from the same sources
