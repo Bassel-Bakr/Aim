@@ -91,6 +91,9 @@
    * ---------------------------------------------------------------------------------------- */
 
   var DEFAULT_SEED = "#9c3522";
+  /* The accent aim.css sets for each scheme. Brick applies no override, so its swatch shows these
+   * rather than a derived approximation of them. */
+  var DEFAULT_ACCENT = { light: "#9c3522", dark: "#e38268" };
   var TEXT_CONTRAST = 4.5;
   var WHITE = [1, 1, 1];
   var NIGHT_FG = parseHex("#e8eaf0");
@@ -311,12 +314,17 @@
       "aria-controls": "aim-theme-panel"
     }, [element("span", { class: "aim-theme-picker__dot", "aria-hidden": "true" })]);
 
+    // Each swatch shows the accent the site will actually use, per scheme, not the raw seed: the
+    // derivation adjusts a seed until it is readable, so the seed itself can differ visibly.
     var swatches = PRESETS.map(function (preset) {
+      var tokens = isDefault(preset.seed) ? null : derive(preset.seed);
+      var light = tokens ? tokens.light["--aim-accent"] : DEFAULT_ACCENT.light;
+      var dark = tokens ? tokens.dark["--aim-accent"] : DEFAULT_ACCENT.dark;
       return element("button", {
         type: "button",
         role: "radio",
         class: "aim-theme-picker__swatch",
-        style: "--aim-swatch: " + preset.seed,
+        style: "--aim-swatch-light: " + light + "; --aim-swatch-dark: " + dark,
         "aria-label": preset.name,
         title: preset.name,
         "data-seed": preset.seed

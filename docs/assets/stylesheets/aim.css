@@ -843,8 +843,14 @@ body {
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background-color: var(--aim-swatch);
+  background-color: var(--aim-swatch-light);
   cursor: pointer;
+}
+
+/* A swatch shows the accent its colour produces in the scheme on screen, so it matches the dot,
+ * links and headings it is about to set. aim-theme.js computes both values per swatch. */
+[data-md-color-scheme="slate"] .aim-theme-picker__swatch {
+  background-color: var(--aim-swatch-dark);
 }
 
 /* The chosen swatch gets a ring in the page's own ink, clear of the swatch by a gap of page
