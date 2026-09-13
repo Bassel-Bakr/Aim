@@ -2,7 +2,8 @@
  *
  * A reader picks one colour; this file derives the site's colour tokens for both schemes from it
  * and writes them over the stylesheet's defaults. With nothing picked it writes nothing, so the
- * stylesheet stays the default palette. See specs/2026-09-13-theme-picker-design.md.
+ * stylesheet stays the default palette. Myth and NOTE blocks are not derived: their red and yellow
+ * mean the same thing whatever colour is picked. See specs/2026-09-13-theme-picker-design.md.
  *
  * Three parts, in order: colour maths, derivation, and wiring. The first two are pure and load in
  * Node for tests; wiring runs only where there is a document. */
@@ -91,8 +92,6 @@
 
   var DEFAULT_SEED = "#9c3522";
   var TEXT_CONTRAST = 4.5;
-  /* Today's accent and NOTE sit about 50 degrees apart in OKLCH hue: 51.8 light, 49.5 dark. */
-  var KEY_HUE_OFFSET = 50;
   var WHITE = [1, 1, 1];
   var NIGHT_FG = parseHex("#e8eaf0");
 
@@ -112,20 +111,21 @@
   }
 
   /* The first colour from a starting lightness, stepping 0.01 in one direction, that reaches
-   * 4.5:1 against every background. When lightness runs out, chroma halves and the walk restarts;
-   * null when even a near-grey cannot pass. */
+   * 4.5:1 against every background. When lightness runs out, chroma halves and the walk restarts,
+   * down to grey; null when even grey cannot pass. The walk always runs at the chroma it is given
+   * first, so a grey seed, whose chroma is already near zero, is tried rather than skipped. */
   function guard(L, C, H, backgrounds, step) {
-    for (var chroma = C; chroma >= 0.004; chroma /= 2) {
+    for (var chroma = C; ; chroma /= 2) {
       for (var l = L; l >= 0 && l <= 1; l += step) {
         var rgb = fit(l, chroma, H);
         var passes = backgrounds.every(function (bg) { return contrast(rgb, bg) >= TEXT_CONTRAST; });
         if (passes) return rgb;
       }
+      if (chroma < 0.004) return null;
     }
-    return null;
   }
 
-  /* The ink with more contrast on a solid tag colour, or null if neither reaches 4.5:1. */
+  /* The ink with more contrast on a solid colour, or null if neither reaches 4.5:1. */
   function tagInk(tag, night) {
     var best = contrast(night, tag) >= contrast(NIGHT_FG, tag) ? night : NIGHT_FG;
     return contrast(best, tag) >= TEXT_CONTRAST ? best : null;
@@ -135,57 +135,43 @@
   function derive(seed) {
     var rgb = parseHex(seed);
     if (!rgb) return null;
-    var base = rgbToOklch(rgb), h = base.h, c = base.c, keyH = (h + KEY_HUE_OFFSET) % 360;
+    var base = rgbToOklch(rgb), h = base.h, c = base.c;
+    // Tints scale with the seed's own colourfulness, so a grey seed gives neutral chrome and pages.
+    var tint = Math.min(1, c / 0.05);
 
-    var chrome = fit(0.915, 0.012, h);
+    var chrome = fit(0.915, 0.012 * tint, h);
     var lAccent = guard(0.48, Math.min(c, 0.14), h, [WHITE, chrome], -0.01);
     var lHeading = guard(0.38, Math.min(c, 0.12), h, [WHITE], -0.01);
-    var lKey = fit(0.76, 0.15, keyH);
-    var lKeyInk = guard(0.45, 0.1, keyH, [WHITE], -0.01);
 
-    var page = fit(0.15, 0.008, h);
-    var night = fit(0.16, 0.008, h);
+    var page = fit(0.15, 0.008 * tint, h);
+    var night = fit(0.16, 0.008 * tint, h);
     var dAccent = guard(0.71, Math.min(c, 0.13), h, [page, night], 0.01);
     var dHeading = guard(0.8, Math.min(c, 0.1), h, [page], 0.01);
-    var dKey = fit(0.82, 0.13, keyH);
-    var dKeyInk = guard(0.82, 0.13, keyH, [page], 0.01);
 
-    if (!lAccent || !lHeading || !lKeyInk || !dAccent || !dHeading || !dKeyInk) return null;
-    var lTag = tagInk(lAccent, night), lKeyTag = tagInk(lKey, night);
-    var dTag = tagInk(dAccent, night), dKeyTag = tagInk(dKey, night);
-    if (!lTag || !lKeyTag || !dTag || !dKeyTag) return null;
+    if (!lAccent || !lHeading || !dAccent || !dHeading) return null;
+    // Ink for text set on the solid accent: the dark scheme's hero button.
+    var dOnAccent = tagInk(dAccent, night);
+    if (!dOnAccent) return null;
 
     return {
       light: {
         "--aim-accent": toHex(lAccent),
         "--aim-heading": toHex(lHeading),
-        "--aim-myth-wash": toHex(lAccent, 0.06),
         "--md-accent-fg-color--transparent": toHex(lAccent, 0.08),
-        "--aim-chrome": toHex(chrome),
-        "--aim-key": toHex(lKey),
-        "--aim-key-ink": toHex(lKeyInk),
-        "--aim-key-wash": toHex(lKey, 0.12),
-        "--aim-tag-ink": toHex(lTag),
-        "--aim-key-tag-ink": toHex(lKeyTag)
+        "--aim-chrome": toHex(chrome)
       },
       dark: {
         "--aim-accent": toHex(dAccent),
         "--aim-heading": toHex(dHeading),
-        "--aim-myth-wash": toHex(dAccent, 0.08),
         "--md-accent-fg-color--transparent": toHex(dAccent, 0.12),
         "--md-default-bg-color": toHex(page),
         "--aim-night": toHex(night),
         "--aim-night-accent": toHex(dAccent),
-        "--aim-key": toHex(dKey),
-        "--aim-key-ink": toHex(dKeyInk),
-        "--aim-key-wash": toHex(dKey, 0.08),
-        "--aim-tag-ink": toHex(dTag),
-        "--aim-key-tag-ink": toHex(dKeyTag),
         // aim.css sets these at :root from night and the accent, and var() resolves there, before
         // the scheme block, so they are written again here or they keep the default night.
         "--aim-chrome": toHex(night),
         "--aim-chrome-accent": toHex(dAccent),
-        "--aim-chrome-on-accent": toHex(dTag),
+        "--aim-chrome-on-accent": toHex(dOnAccent),
         "--aim-chrome-on-hover": toHex(night)
       }
     };
@@ -343,7 +329,7 @@
     }, swatches);
 
     var custom = element("input", { type: "color", class: "aim-theme-picker__input" });
-    var customLabel = element("label", { class: "aim-theme-picker__custom" }, ["Custom…", custom]);
+    var customLabel = element("label", { class: "aim-theme-picker__custom" }, ["Custom", custom]);
     var message = element("p", { class: "aim-theme-picker__message", role: "status", hidden: "" });
     var resetButton = element("button", { type: "button", class: "aim-theme-picker__reset" }, ["Reset"]);
 

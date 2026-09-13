@@ -51,6 +51,9 @@
   --aim-heading: #7a291b;
   /* The wash behind a myth block. Light enough to read body text on, strong enough that the block
    * is visibly not the draft banner. */
+  /* Myth and NOTE blocks keep fixed colours whatever colour a reader picks: red means wrong and
+   * yellow means remember on every page, so aim-theme.js never writes these. */
+  --aim-myth: #9c3522;
   --aim-myth-wash: #9c35220f;
   /* Notes are yellow so red keeps meaning "wrong". Yellow bright enough to read as yellow is too
    * light to set text in on white, so the light scheme splits it: the bright yellow fills the bar and
@@ -102,6 +105,7 @@
 [data-md-color-scheme="slate"][data-md-color-primary] {
   --aim-accent: #e38268;
   --aim-heading: #f0a590;
+  --aim-myth: #e38268;
   --aim-myth-wash: #e3826814;
   --aim-key: #f2c14e;
   --aim-key-ink: #f2c14e;
@@ -673,7 +677,8 @@ body {
 /* .aim-myth and .aim-key are admonition types, not classes you write. They share one shape, a
  * coloured rule, a wash, and a tag naming the block, and differ only in colour and tag word:
  * red for something wrong, yellow for something to remember. Red must keep meaning "wrong", so a
- * note never borrows it.
+ * note never borrows it. Both colours are fixed: the colour picker re-colours the accent, but a
+ * myth stays red and a note stays yellow under every picked colour.
  *
  * .aim-myth marks a claim that is repeated as fact and is wrong, on the page whose subject it gets
  * wrong, and sends the reader to the full answer on wiki/myths.md.
@@ -710,8 +715,8 @@ body {
  * to match the hub heading character for character. The theme's admonition icon is dropped: the
  * tag already says what the block is. */
 .md-typeset .myth {
-  --aim-callout: var(--aim-accent);
-  --aim-callout-ink: var(--aim-accent);
+  --aim-callout: var(--aim-myth);
+  --aim-callout-ink: var(--aim-myth);
   --aim-callout-wash: var(--aim-myth-wash);
   --aim-callout-tag: "Myth";
   --aim-callout-tag-ink: var(--aim-tag-ink);
@@ -762,7 +767,7 @@ body {
  * the word is what a screen reader announces. */
 .md-typeset .myth .aim-myth-more {
   margin-left: 0.3rem;
-  color: var(--aim-accent);
+  color: var(--aim-myth);
   font-family: var(--aim-display);
   font-size: 0.58rem;
   font-weight: 700;
@@ -856,6 +861,7 @@ body {
 }
 
 .aim-theme-picker__custom {
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: space-between;

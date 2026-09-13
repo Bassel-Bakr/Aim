@@ -31,15 +31,9 @@ function assertReadable(seed, tokens) {
     ["light accent on white", l["--aim-accent"], "#ffffff"],
     ["light accent on chrome", l["--aim-accent"], l["--aim-chrome"]],
     ["light heading on white", l["--aim-heading"], "#ffffff"],
-    ["light NOTE title on white", l["--aim-key-ink"], "#ffffff"],
     ["dark accent on page", d["--aim-accent"], d["--md-default-bg-color"]],
     ["dark accent on night", d["--aim-accent"], d["--aim-night"]],
     ["dark heading on page", d["--aim-heading"], d["--md-default-bg-color"]],
-    ["dark NOTE title on page", d["--aim-key-ink"], d["--md-default-bg-color"]],
-    ["light MYTH tag ink", l["--aim-tag-ink"], l["--aim-accent"]],
-    ["light NOTE tag ink", l["--aim-key-tag-ink"], l["--aim-key"]],
-    ["dark MYTH tag ink", d["--aim-tag-ink"], d["--aim-accent"]],
-    ["dark NOTE tag ink", d["--aim-key-tag-ink"], d["--aim-key"]],
     ["dark hero button ink", d["--aim-chrome-on-accent"], d["--aim-chrome-accent"]]
   ];
   for (const [name, fg, bg] of pairs) {
@@ -67,6 +61,19 @@ test("a sweep of 36 hues at 3 chroma levels derives readable palettes", () => {
   }
 });
 
+test("grey seeds derive readable, neutral palettes", () => {
+  for (const seed of ["#656565", "#000000", "#ffffff", "#808080", "#1a1a1a", "#f0f0f0"]) {
+    const tokens = theme.derive(seed);
+    assert.ok(tokens, `${seed} did not derive`);
+    assertReadable(seed, tokens);
+    // A grey seed must not tint the chrome or the dark page: every channel within 2 of each other.
+    for (const hex of [tokens.light["--aim-chrome"], tokens.dark["--md-default-bg-color"], tokens.dark["--aim-night"]]) {
+      const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+      assert.ok(Math.max(r, g, b) - Math.min(r, g, b) <= 2, `${seed}: ${hex} is tinted`);
+    }
+  }
+});
+
 test("every derived value is a lower-case hex colour", () => {
   for (const seed of [...theme.PRESETS.map((p) => p.seed), ...sweep()]) {
     const tokens = theme.derive(seed);
@@ -78,14 +85,19 @@ test("every derived value is a lower-case hex colour", () => {
   }
 });
 
-test("tag ink is one of the two night inks", () => {
+test("the dark hero button's ink is one of the two night inks", () => {
   for (const preset of theme.PRESETS) {
-    const tokens = theme.derive(preset.seed);
+    const dark = theme.derive(preset.seed).dark;
+    assert.ok([dark["--aim-night"], NIGHT_FG].includes(dark["--aim-chrome-on-accent"]), preset.name);
+  }
+});
+
+test("myth and NOTE colours are never derived", () => {
+  const fixed = ["--aim-myth", "--aim-myth-wash", "--aim-key", "--aim-key-ink", "--aim-key-wash", "--aim-tag-ink", "--aim-key-tag-ink"];
+  for (const seed of [...theme.PRESETS.map((p) => p.seed), "#656565"]) {
+    const tokens = theme.derive(seed);
     for (const scheme of ["light", "dark"]) {
-      const night = tokens.dark["--aim-night"];
-      for (const name of ["--aim-tag-ink", "--aim-key-tag-ink"]) {
-        assert.ok([night, NIGHT_FG].includes(tokens[scheme][name]), `${preset.name} ${scheme} ${name}`);
-      }
+      for (const name of fixed) assert.equal(tokens[scheme][name], undefined, `${seed} ${scheme} writes ${name}`);
     }
   }
 });

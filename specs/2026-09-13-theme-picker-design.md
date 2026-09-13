@@ -109,6 +109,15 @@ C 0.126; light NOTE `#e0a800` is L 0.763, C 0.157, h 84.4; dark NOTE `#f2c14e` i
 The NOTE hue offset of +50° is the gap between accent and NOTE in those measurements, 51.8° light
 and 49.5° dark, so the default pair's relationship carries to every seed.
 
+2026-09-13: two changes after the first build. Myth and NOTE blocks are no longer derived: they keep
+fixed colours under every picked colour, so red means wrong and yellow means remember on every page.
+The myth block reads a new fixed `--aim-myth` token instead of the accent, and `--aim-myth-wash`,
+the `--aim-key` family and both tag inks drop out of the derived set; `derive` still writes
+`--aim-chrome-on-accent` for the dark hero button. Grey seeds, which have almost no chroma, were
+rejected because the guard's chroma loop never ran below its minimum; the guard now always tries the
+chroma it is given, and the chrome and dark page tints scale with the seed's chroma so a grey seed
+gives neutral ones.
+
 ### Guards
 
 After the targets above, each guard adjusts lightness in steps of 0.01 until it passes, moving away
