@@ -191,6 +191,13 @@ body {
   opacity: 1;
 }
 
+/* The active tab is marked by one accent line under its label. The theme also draws its own border
+ * under the whole tab item; where the item is taller than the label, as on narrow screens, that
+ * showed as a second line below the first, so it is removed. */
+.md-tabs__item--active {
+  border-bottom: 0;
+}
+
 .md-tabs__item--active .md-tabs__link {
   box-shadow: 0 -0.12rem 0 inset var(--aim-chrome-accent);
 }
