@@ -66,11 +66,12 @@ so a dead outbound link will not show up in the checks you run locally.
 | `docs/index.md` | Site landing page. Not a wiki page. |
 | `docs/wiki/` | All wiki pages, grouped by section. Sourced, open to contributions. |
 | `docs/articles/` | Signed first-person pages. Not wiki pages, not open — see below. |
-| `docs/assets/` | Favicon, `stylesheets/aim.css`, which documents each page component it defines, and `javascripts/aim-theme.js`, the colour picker. |
+| `docs/assets/` | Favicon, `stylesheets/aim.css`, which documents each page component it defines, `javascripts/aim-theme.js`, the colour picker, and `javascripts/aim-stats.js`, which counts the landing page's stats up from 0. |
 | `overrides/` | Theme template overrides. `main.html` loads the colour picker script in `<head>`, the Google Search Console verification tag from `extra.google_site_verification`, and the GoatCounter script from `extra.goatcounter_code`, both in `zensical.toml` and each left out while empty. |
 | `includes/abbreviations.md` | Abbreviation definitions shown as tooltips site-wide. |
 | `references.yml` | Every source the wiki cites, once, under a stable `REF-<number>` ID. |
 | `extensions/aim_related.py` | Markdown extension that writes the Related section from a page's `related:` front matter, adding bare links back from pages of the same kind that list it. Its helpers are shared by the checker and `scripts/suggest_related.py`. |
+| `extensions/aim_stats.py` | Markdown extension that replaces `<!-- aim:stats -->` on the landing page with counts of wiki pages, cited sources and guides, each linking to the page it counts, so the hero's numbers follow the content. |
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |

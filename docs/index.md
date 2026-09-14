@@ -12,6 +12,8 @@ help in your training journey.
 
 [**Open the wiki**](wiki/index.md){ .md-button .md-button--primary }
 
+<!-- aim:stats -->
+
 </div>
 
 ## Where to start

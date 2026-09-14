@@ -8,6 +8,7 @@ edit_uri = "edit/main/docs/"
 copyright = "Content licensed under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a>"
 
 extra_css = ["assets/stylesheets/aim.css"]
+extra_javascript = ["assets/javascripts/aim-stats.js"]
 
 nav = [
   { "Home" = "index.md" },
@@ -140,3 +141,4 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.snippets.auto_append = ["includes/abbreviations.md"]
 aim_references = { registry = "references.yml" }
 aim_related = {}
+aim_stats = { registry = "references.yml" }

@@ -37,9 +37,8 @@
   --aim-chrome-fg-lighter: #ffffff73;
   --aim-chrome-accent: var(--aim-night-accent);
   --aim-chrome-line: #ffffff1f;
-  /* The landing hero is a panel of chrome, so it needs a grid line and button colours that hold up
-   * on the chrome in either scheme. */
-  --aim-chrome-grid: #ffffff0a;
+  /* The landing hero is a panel of chrome, so it needs button colours that hold up on the chrome in
+   * either scheme. */
   --aim-chrome-on-accent: var(--aim-night);
   --aim-chrome-hover: #fff;
   --aim-chrome-on-hover: var(--aim-night);
@@ -68,9 +67,6 @@
   --aim-clicking: #9c3522;
   --aim-tracking: #1d6a8c;
   --aim-switching: #6a4396;
-
-  /* The site mark: a ring, four ticks, and a centre dot. Used as a mask so it takes a colour. */
-  --aim-crosshair: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round"><circle cx="16" cy="16" r="11"/><path d="M16 1.5v5M16 25.5v5M1.5 16h5M25.5 16h5"/><circle cx="16" cy="16" r="2" fill="black" stroke="none"/></svg>');
 }
 
 /* The theme sets its link colour per scheme and primary colour together, so these blocks have to
@@ -87,7 +83,6 @@
   /* The page you are on sits on the header's stone in dark text, tying the sidebar to the chrome. */
   --aim-nav-active-bg: var(--aim-chrome);
   --aim-nav-active-fg: var(--aim-ink);
-  --aim-chrome-grid: #14171c0d;
   --aim-chrome-on-accent: #fff;
   --aim-chrome-hover: var(--aim-ink);
   --aim-chrome-on-hover: #fff;
@@ -392,12 +387,19 @@ body {
  *   Lead paragraph.
  *
  *   [Open the wiki](wiki/index.md){ .md-button .md-button--primary }
+ *
+ *   <!-- aim:stats -->
+ *
  *   </div>
  *
- * A page with a hero has the theme's generated page title hidden: the hero is the title.
+ * Diagonal hatching and an outlined "AIM" sit behind the content. The stats marker is optional;
+ * see .aim-stats below. A page with a hero has the theme's generated page title hidden: the hero
+ * is the title.
  * ------------------------------------------------------------------------ */
 
-.md-content__inner:has(> .aim-hero) > h1 {
+/* The landing page drops the theme's edit button too: it floats beside the hero, and the hero's
+ * overflow clipping makes the hero shrink to clear it instead of running full width. */
+.md-content__inner:has(> .aim-hero) > :is(h1, .md-content__button) {
   display: none;
 }
 
@@ -408,25 +410,41 @@ body {
   padding: 2.4rem 2.2rem 2.6rem;
   color: var(--aim-chrome-fg);
   background-color: var(--aim-chrome);
-  background-image:
-    linear-gradient(var(--aim-chrome-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--aim-chrome-grid) 1px, transparent 1px);
-  background-size: 2rem 2rem;
+  /* Lets the outlined mark below size itself to the hero's width. */
+  container-type: inline-size;
 }
 
-/* A crosshair sitting off the right edge, drawn as a mask so it takes the accent colour. */
+/* Thin diagonal hatching that fades in towards the right edge, keeping the text side plain. */
 .md-typeset .aim-hero::before {
   content: "";
   position: absolute;
-  top: 50%;
-  right: -2.5rem;
-  width: 14rem;
-  height: 14rem;
-  transform: translateY(-50%);
-  background-color: var(--aim-chrome-accent);
-  opacity: 0.22;
-  mask: var(--aim-crosshair) center/contain no-repeat;
-  -webkit-mask: var(--aim-crosshair) center/contain no-repeat;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--aim-chrome-fg) 8%, transparent) 0 1px,
+    transparent 1px 0.7rem
+  );
+  mask: linear-gradient(100deg, transparent 45%, #000 85%);
+  -webkit-mask: linear-gradient(100deg, transparent 45%, #000 85%);
+}
+
+/* A large outlined "AIM" behind the top right corner, cut off by the hero's edge. It scales with
+ * the hero, so a phone gets a smaller mark rather than one that swallows the title. The empty
+ * alternative text keeps screen readers from announcing the word a second time. */
+.md-typeset .aim-hero::after {
+  content: "AIM";
+  content: "AIM" / "";
+  position: absolute;
+  top: -1rem;
+  right: -0.5rem;
+  pointer-events: none;
+  color: transparent;
+  font-family: var(--aim-display);
+  font-size: min(11rem, 30cqi);
+  font-weight: 700;
+  line-height: 1;
+  -webkit-text-stroke: 1.5px color-mix(in srgb, var(--aim-chrome-accent) 35%, transparent);
 }
 
 .md-typeset .aim-hero > * {
@@ -461,6 +479,95 @@ body {
   color: var(--aim-chrome-on-hover);
   background-color: var(--aim-chrome-hover);
   border-color: var(--aim-chrome-hover);
+}
+
+/* ---------------------------------------------------------------------------
+ * .aim-stats — a row of site counts under a rule, each linking to the page it counts, written into
+ * the hero by the aim_stats extension in place of the marker line:
+ *
+ *   <!-- aim:stats -->
+ *
+ * The extension emits a list, one item per count:
+ *
+ *   <li><a href="wiki/resources/guides/"><span class="aim-stats__count">46</span>
+ *   <span class="aim-stats__label">Guides</span></a></li>
+ *
+ * so a screen reader reads each link as "46 Guides". docs/assets/javascripts/aim-stats.js counts
+ * the numbers up from 0 when the row scrolls into view; digits are equal width so the count does
+ * not shift the row.
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-hero .aim-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.2rem;
+  max-width: none;
+  margin: 1.6rem 0 0;
+  padding: 1.2rem 0 0;
+  border-top: 1px solid var(--aim-chrome-line);
+  list-style: none;
+}
+
+/* The theme indents list items under a direction attribute selector, so this needs the extra class. */
+.md-typeset .aim-hero .aim-stats > li {
+  margin: 0;
+}
+
+.md-typeset .aim-stats a {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  color: inherit;
+  text-decoration: none;
+}
+
+.md-typeset .aim-stats a:focus-visible {
+  outline: 2px solid var(--aim-chrome-accent);
+  outline-offset: 0.3rem;
+}
+
+.md-typeset .aim-stats__count {
+  color: var(--aim-chrome-accent);
+  font-family: var(--aim-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset .aim-stats__label {
+  color: var(--aim-chrome-fg-light);
+  font-family: var(--aim-display);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  /* The theme lets typeset text break inside a word; a label breaks only between its words. */
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.md-typeset .aim-stats a:is(:hover, :focus-visible) .aim-stats__label {
+  color: var(--aim-chrome-fg);
+  text-decoration: underline;
+  text-decoration-color: var(--aim-chrome-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+
+/* In a hero too narrow for one row, such as on a phone, the counts stay side by side in three
+ * columns rather than wrapping one per line. A two-word label may break between its words, never
+ * inside one, since each column is at least as wide as its longest word. */
+@container (max-width: 24rem) {
+  .md-typeset .aim-hero .aim-stats {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 1rem 1.4rem;
+  }
+
+  .md-typeset .aim-stats__label {
+    letter-spacing: 0.08em;
+  }
 }
 
 /* ---------------------------------------------------------------------------

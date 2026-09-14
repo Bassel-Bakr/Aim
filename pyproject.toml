@@ -12,4 +12,4 @@ dependencies = ["markdown", "pyyaml>=6"]
 
 [tool.setuptools]
 package-dir = { "" = "extensions" }
-py-modules = ["aim_references", "aim_related"]
+py-modules = ["aim_references", "aim_related", "aim_stats"]
