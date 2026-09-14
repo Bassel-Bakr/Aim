@@ -392,7 +392,8 @@ body {
  *
  *   </div>
  *
- * Diagonal hatching and an outlined "AIM" sit behind the content. The stats marker is optional;
+ * The hero is a HUD rail: corners cut like Chakra Petch's, an accent rail with a slanted tab along
+ * the top, and measuring ticks at the right. The stats marker is optional;
  * see .aim-stats below. A page with a hero has the theme's generated page title hidden: the hero
  * is the title.
  * ------------------------------------------------------------------------ */
@@ -410,41 +411,56 @@ body {
   padding: 2.4rem 2.2rem 2.6rem;
   color: var(--aim-chrome-fg);
   background-color: var(--aim-chrome);
-  /* Lets the outlined mark below size itself to the hero's width. */
+  border-top: 3px solid var(--aim-chrome-accent);
+  /* Cuts the top right and bottom left corners at 45°, the way Chakra Petch cuts its letters. */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 1.8rem) 0,
+    100% 1.8rem,
+    100% 100%,
+    1.8rem 100%,
+    0 calc(100% - 1.8rem)
+  );
+  /* Lets .aim-stats switch layout by the hero's own width. */
   container-type: inline-size;
 }
 
-/* Thin diagonal hatching that fades in towards the right edge, keeping the text side plain. */
+/* The slanted tab on the top rail, leaning the same way as the display face's italics. */
 .md-typeset .aim-hero::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 2.2rem;
+  width: 9rem;
+  height: 0.55rem;
   pointer-events: none;
-  background: repeating-linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--aim-chrome-fg) 8%, transparent) 0 1px,
-    transparent 1px 0.7rem
-  );
-  mask: linear-gradient(100deg, transparent 45%, #000 85%);
-  -webkit-mask: linear-gradient(100deg, transparent 45%, #000 85%);
+  background-color: var(--aim-chrome-accent);
+  transform: skewX(-35deg);
+  transform-origin: top left;
 }
 
-/* A large outlined "AIM" behind the top right corner, cut off by the hero's edge. It scales with
- * the hero, so a phone gets a smaller mark rather than one that swallows the title. The empty
- * alternative text keeps screen readers from announcing the word a second time. */
+/* Measuring ticks along the top and bottom right, every third tick long, and two accent bars down the
+ * right edge. All of it sits in the hero's padding, fading out towards the text, so it never runs
+ * behind the words. */
 .md-typeset .aim-hero::after {
-  content: "AIM";
-  content: "AIM" / "";
+  --aim-tick: color-mix(in srgb, var(--aim-chrome-fg) 28%, transparent);
+  --aim-tick-long: color-mix(in srgb, var(--aim-chrome-fg) 45%, transparent);
+  --aim-bar: color-mix(in srgb, var(--aim-chrome-accent) 70%, transparent);
+  content: "";
   position: absolute;
-  top: -1rem;
-  right: -0.5rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 40%;
   pointer-events: none;
-  color: transparent;
-  font-family: var(--aim-display);
-  font-size: min(11rem, 30cqi);
-  font-weight: 700;
-  line-height: 1;
-  -webkit-text-stroke: 1.5px color-mix(in srgb, var(--aim-chrome-accent) 35%, transparent);
+  background:
+    repeating-linear-gradient(90deg, var(--aim-tick) 0 1px, transparent 1px 0.6rem) top / 100% 0.45rem no-repeat,
+    repeating-linear-gradient(90deg, var(--aim-tick-long) 0 2px, transparent 2px 1.8rem) top / 100% 0.9rem no-repeat,
+    repeating-linear-gradient(90deg, var(--aim-tick) 0 1px, transparent 1px 0.6rem) bottom / 100% 0.45rem no-repeat,
+    linear-gradient(var(--aim-bar), var(--aim-bar)) right 0 top 1.6rem / 2px 30% no-repeat,
+    linear-gradient(var(--aim-bar), var(--aim-bar)) right 0.5rem top 1.6rem / 2px 12% no-repeat;
+  mask: linear-gradient(90deg, transparent, #000 40%);
+  -webkit-mask: linear-gradient(90deg, transparent, #000 40%);
 }
 
 .md-typeset .aim-hero > * {
