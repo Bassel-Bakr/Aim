@@ -23,11 +23,11 @@ expensive hardware.
 ## Explanation
 
 **Mouse: shape and weight over sensor.** Nearly every modern gaming mouse sensor is accurate enough
-that most players can't feel the difference. So the sensor spec sheet matters far less than fit, per
-an [XDA Developers gaming mouse buying guide](https://www.xda-developers.com/gaming-mouse-buying-guide/).
+that most players can't feel the difference. So the sensor spec sheet matters far less than
+fit.[^REF-57]
 
 Shape matters most. A mouse that doesn't match your hand size and grip style causes fatigue and
-inconsistent aim, however good its sensor, per the same guide.
+inconsistent aim, however good its sensor.[^REF-57]
 
 Weight is a smaller, personal factor after shape. Some players prefer very light mice for lower
 inertia; others find them harder to control.[^REF-57]
@@ -73,21 +73,27 @@ that comfortably exceeds it.
 
 ## Essential settings
 
-- **Raw input: on.** With raw input enabled, a game reads mouse movement more directly from the
-  device, instead of relying only on the Windows pointer path. That makes sensitivity more
-  predictable. Turn it on in any first-person or third-person shooter that supports it.[^REF-39]
-  It is not a substitute for a clean sensor or stable frame times, per the same guide. It is just a
-  setting worth checking is enabled.
-- **Mouse acceleration: off to start.** Acceleration changes how far the cursor or camera moves based
-  on how fast you physically move the mouse. Off is a sensible default while you learn, so one hand
-  movement always means one turn. Some players choose acceleration on purpose later; [Raw
-  Accel](../resources/tools/rawaccel.md) is the tool for that. Check both your game's settings and your
-  mouse manufacturer's software for an acceleration toggle.
-- **Windows "Enhance pointer precision": off.** This is Windows' own built-in pointer acceleration.
-  It is under **Settings > Bluetooth & devices > Mouse > Additional mouse settings > Pointer
-  Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^REF-38] Most
-  competitive games apply raw input and bypass this setting entirely. But leaving it on can still
-  affect desktop use and any game without raw input, so turning it off is the safer default.
+**Raw input: on.** With raw input enabled, a game reads mouse movement more directly from the
+device, instead of only through the Windows pointer path. That makes sensitivity more
+predictable.[^REF-39]
+
+Turn it on in any first-person or third-person shooter that supports it. It is no substitute for a
+clean sensor or stable frame times, but it is worth checking.[^REF-39]
+
+**Mouse acceleration: off to start.** Acceleration changes how far the cursor or camera moves based
+on how fast you physically move the mouse. Off is a sensible default while you learn, so one hand
+movement always means one turn.
+
+Some players choose acceleration on purpose later, and [Raw Accel](../resources/tools/rawaccel.md)
+is the tool for that. Check both your game's settings and your mouse software for an acceleration
+toggle.
+
+**Windows "Enhance pointer precision": off.** This is Windows' own built-in pointer acceleration.
+It is under **Settings > Bluetooth & devices > Mouse > Additional mouse settings > Pointer
+Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^REF-38]
+
+Most competitive games apply raw input and bypass this setting. Leaving it on still affects desktop
+use and any game without raw input, so turning it off is the safer default.
 
 **Do this next.** Before your next session, check all three settings above, in your game and in
 Windows.
