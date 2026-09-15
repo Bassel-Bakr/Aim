@@ -11,9 +11,6 @@ related:
     why: practice, routines and benchmarks in this wiki's words.
 ---
 
-!!! warning "Draft"
-    Written from public sources, pending review.
-
 External learning material that teaches a method, a mechanism, or a mistake. It comes as articles,
 videos, playlists, documents and posts, grouped by what it helps with rather than by format.
 
