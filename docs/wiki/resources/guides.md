@@ -84,18 +84,18 @@ Score sheets and routines handed over without instructions stay on the [resource
 
 - [Speed Matching in Precise Tracking](https://www.youtube.com/watch?v=-7n6q33We28) — MattyOW,
   2025 — keeping one continuous motion through long strafes by balancing grip tension. Too tight
-  skips ahead of the target, too loose lags behind it. Also why to squeeze the mouse from the sides
-  rather than press it into the pad.
+  skips ahead of the target, too loose lags behind it. Also why to squeeze from the sides rather than
+  press into the pad.
 - [KovaaK's Precise Tracking - Mouse Grip and Tension](https://www.youtube.com/watch?v=BFDkOvX7vIw) —
-  Corporate Serf, 2025 — posture and grip for precise tracking, demonstrated on a $3 thrift-store
-  mouse. A thumb-and-pinky squeeze for stability on long strafes, plus downward pressure for control
-  at direction changes. A different approach to downward pressure from MattyOW's video above.
+  Corporate Serf, 2025 — posture and grip for precise tracking, shown on a $3 thrift-store mouse. A
+  thumb-and-pinky squeeze steadies long strafes, and downward pressure adds control at direction
+  changes, a different approach from MattyOW's video above.
 - [The Corporate Serf smoothness training method](https://www.youtube.com/watch?v=a-MShVYe3kY) —
   Corporate Serf, 2025 — a smoothness method for tracking, worked through on PGT.
 - [Aim Experimentation - Adjusting to Faster Speeds in Tracking](https://www.youtube.com/watch?v=EqbxpArxYHc) —
-  Corporate Serf, 2025 — training bot speed separately from bot size. He edits copies of Snake Track so
-  a hard tier's speed runs at an easier tier's target size, then plays them as a timed playlist.
-  Comes with the playlist's share code.
+  Corporate Serf, 2025 — training bot speed separately from bot size. He edits Snake Track copies so a
+  hard tier's speed runs at an easier tier's target size, played as a playlist. Comes with its share
+  code.
 - [How to Get Astra in Control Tracking](https://www.youtube.com/watch?v=FNK1LFBBZP8) — MattyOW,
   2024 — control tracking, the Voltaic subcategory between precise and reactive. Reading strafes,
   spending tension in short bursts, and smooth micro-corrections instead of flicks, practiced on
