@@ -100,7 +100,7 @@ setting to someone else's.
 **Why people believe it.** Arm aim is the correct technique and wrist aim is a beginner habit. So
 the fix for inconsistency is to aim from the arm and stop using your wrist.
 
-**What sources say.** Aimlabs describes the joints as a division of labor. Fingers make small
+**What sources say.** The joints divide the labor. Fingers make small
 precise adjustments, and the wrist handles moderate movements. The upper arm and shoulder drive
 large sweeping turns.[^REF-21]
 

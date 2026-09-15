@@ -55,7 +55,7 @@ shorter sessions with real rest over one marathon session.
 That holds both for how well a skill sticks and for how fatigue affects performance while training.
 See [Practice Principles](../fundamentals/practice-principles.md).
 
-As a starting number, Aimlabs puts a solid daily playlist at 30 to 40 minutes, with warm-ups no
+As a starting number, a solid daily playlist runs 30 to 40 minutes, with warm-ups no
 longer than 10 to 15. Past that, time in your own game does more for you.[^REF-8]
 
 If your accuracy drops late in a session and stays down the next day, end sooner rather than push

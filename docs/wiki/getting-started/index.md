@@ -12,7 +12,7 @@ improve. It assumes no aim-training experience. You don't need an aim trainer, a
 or any idea what a benchmark is to start here.
 
 !!! key "Keep the trainer to a slice of your practice"
-    Aimlabs puts a solid daily playlist at 30 to 40 minutes. Past that, time in your own game does
+    A solid daily playlist runs 30 to 40 minutes. Past that, time in your own game does
     more for you than more trainer time.[^REF-8]
 
 A first pass through the wiki looks like this:

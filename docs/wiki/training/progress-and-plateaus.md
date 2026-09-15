@@ -81,7 +81,7 @@ See [Practice Principles](../fundamentals/practice-principles.md) on deliberate 
 
 !!! key "Change the scenario when a score stalls"
     Swap in a different scenario for the same skill instead of grinding the one you've stalled on.
-    Aimlabs warns that a routine with little variety holds back your progress.[^REF-9]
+    A routine with little variety holds back your progress.[^REF-9]
 
 **Switch focus.** If your current weak subcategory has stopped moving, shift the bulk of your
 [routine](routines.md) to a different subcategory for a while. Don't just grind the same one harder.

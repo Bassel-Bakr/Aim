@@ -74,6 +74,12 @@ body.
    Two exceptions stay in the prose rather than becoming references: links to other wiki pages,
    which are navigation rather than citation, and cases where the source's identity is part of the
    claim, such as whose benchmark a rank belongs to.
+
+   Outside those exceptions, do not name the source in the sentence as well. The footnote already
+   says who, and "a coach recommends", "an article notes" only stands between the reader and the
+   point. State the claim or the advice directly and let the marker carry the source. Where sources
+   disagree, set the approaches side by side, each with its own citation, rather than naming who
+   holds which.
 3. Pages written from research but not yet fact-checked keep this banner at the top:
 
    ```markdown

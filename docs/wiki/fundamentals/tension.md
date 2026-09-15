@@ -36,22 +36,21 @@ using the right amount, in the right place, at the right moment.
 moving, which turns them into a firmer structure around the mouse. That structure gives you
 control.[^REF-78]
 
-Held for long stretches, the same contraction irritates the muscles doing it. A physical therapist
-at 1HP calls the extreme version [death gripping](../glossary.md#death-grip).[^REF-78]
+Held for long stretches, the same contraction irritates the muscles doing it. The extreme version
+is called [death gripping](../glossary.md#death-grip).[^REF-78]
 
-**A balance, not an enemy.** Aim advice often sounds like tension should be zero. MattyOW argues
-the opposite: using none is as harmful as using too much, and some tension always keeps you stable
-on a target.[^REF-67]
+**A balance, not an enemy.** Aim advice often sounds like tension should be zero. It should not:
+using none is as harmful as using too much, and some tension always keeps you stable on a
+target.[^REF-67]
 
-Ben Staudt describes the goal as a secure hold that needs little tension and leaves some finger
-control free.[^REF-73]
+The goal is a secure hold that needs little tension and leaves some finger control free.[^REF-73]
 
 **Speed against stability.** More tension makes faster movement possible. It also makes that
 movement less stable, which is why a flick needs a lot of it and a micro-correction needs
 little.[^REF-77]
 
-**A budget you can overspend.** MattyOW treats tension as a limited resource you allocate between
-your forearm, wrist and fingertips.[^REF-68] Spend past the limit and you reach lockout, where you lose
+**A budget you can overspend.** Tension is a limited resource you spend across your forearm, wrist
+and fingertips.[^REF-68] Spend past the limit and you reach lockout, where you lose
 control of the whole motion.[^REF-68]
 
 <figure class="aim-figure">
@@ -62,22 +61,21 @@ control of the whole motion.[^REF-68]
 ## Where tension lives
 
 **Forearm and shoulder: wide and fast.** The arm suits motions that cover distance, and steadying
-fast reactions to fast targets.[^REF-70] Corporate Serf feels shoulder tension carrying the long
-strafes in precise tracking.[^REF-72]
+fast reactions to fast targets.[^REF-70] In precise tracking, you can feel the shoulder carrying the
+long strafes.[^REF-72]
 
 **Wrist: narrow and smooth.** The wrist is more efficient for short, narrow motions, such as a target
-making short strafes. It is also the joint MattyOW prefers when smooth tracking matters most.[^REF-70]
+making short strafes. It is also the joint to favor when smooth tracking matters most.[^REF-70]
 
 **Fingertips: micros.** Small corrections belong in your lower muscle groups, the fingertips or the
 wrist, which cuts wasted motion at the end of a fast movement.[^REF-71] In control tracking, fingertip
 tension handles vertical adjustments better than the forearm does.[^REF-69]
 
-**Blend the joints.** Moving with arm and fingers together means neither has to work hard. Ben
-Staudt uses that blend to take the edge off tension spikes during large motions.[^REF-74]
+**Blend the joints.** Moving with arm and fingers together means neither has to work hard, which
+takes the edge off tension spikes during large motions.[^REF-74]
 
 **Sensitivity moves the load.** On a low sensitivity, micros shift into the upper muscle groups,
-which is easier. MattyOW notes that this sidesteps the harder skill of balancing fingertip
-tension.[^REF-71]
+which is easier. It also sidesteps the harder skill of balancing fingertip tension.[^REF-71]
 
 <figure class="aim-figure">
 <img src="../../assets/images/tension/grip-zones.webp" alt="A mannequin hand in a claw grip on a mouse. The fingers are orange for micro-corrections, a band at the wrist is blue for narrow smooth motion, and the forearm is purple for wide fast motion." width="1600" height="1000" loading="lazy">
@@ -89,22 +87,21 @@ tension.[^REF-71]
 Two forces hold the mouse, and players weigh them differently. Neither approach is the one right
 answer.
 
-**Side squeeze.** Your thumb pressing against your ring finger or pinky, across the mouse. Corporate
-Serf treats it as the source of stability, strongest on long strafes where speed matching
-matters.[^REF-72]
+**Side squeeze.** Your thumb pressing against your ring finger or pinky, across the mouse. It gives
+stability, most of all on long strafes where speed matching matters.[^REF-72]
 
-MattyOW also prefers squeezing from the sides. He finds that pushing down makes tracking sticky and
-harder to break out of for a direction change.[^REF-67]
+Relying on it instead of pushing down keeps tracking from turning sticky, so it is easier to break
+out of for a direction change.[^REF-67]
 
-**Downward press.** Your index finger or the base of your palm pushing into the pad. Corporate Serf
-uses it as control, adding force at direction changes such as the top of a PGT arc.[^REF-72]
+**Downward press.** Your index finger or the base of your palm pushing into the pad. It adds control,
+with extra force at direction changes such as the top of a PGT arc.[^REF-72]
 
-Lorys notes that pressing hard into the pad often comes with holding the click. In his view it does
-not speed up micro-corrections and can restrict their fluidity.[^REF-75]
+Pressing hard into the pad often comes with holding the click. It does not speed up
+micro-corrections and can restrict their fluidity.[^REF-75]
 
-**Your grip changes the recipe.** For a claw grip, Ben Staudt pinches firmly, not hard, with thumb,
-ring finger and pinky.[^REF-73] A fingertip grip has less support, so he finds it more prone to
-lockout and uses a lighter two-finger pinch.[^REF-73]
+**Your grip changes the recipe.** A claw grip holds with a firm, not hard, pinch between thumb, ring
+finger and pinky.[^REF-73] A fingertip grip has less support, so it is more prone to lockout and
+suits a lighter two-finger pinch.[^REF-73]
 
 <figure class="aim-figure">
 <img src="../../assets/images/tension/grip-forces.webp" alt="The same hand seen from in front of the mouse. Blue arrows push in from both sides at the thumb and ring finger for the side squeeze. An orange arrow pushes down at the index finger for the downward press." width="1600" height="1000" loading="lazy">
@@ -135,14 +132,14 @@ quickly.[^REF-74]
 breaks in smoothness.[^REF-67] If a track breaks at the same point every strafe, check what your hand
 did there.
 
-**Look at your fingertips.** Pressing turns the skin of a fingertip pale. Ben Staudt uses that color
-change to show how much pressure a single finger is applying.[^REF-73]
+**Look at your fingertips.** Pressing turns the skin of a fingertip pale, so that color change shows
+how much pressure a single finger is applying.[^REF-73]
 
-**Rate your grip.** Picture your grip on a scale from 1 to 10. 1HP's physical therapist treats
-anything past 8 out of 10 as the grip to train yourself out of.[^REF-78]
+**Rate your grip.** Picture your grip on a scale from 1 to 10. Anything past 8 out of 10 is the grip
+to train yourself out of.[^REF-78]
 
-**Treat pain as a signal.** Pain from gripping hard signals inflamed tendons. 1HP advises building
-tendon endurance so the problem does not become lasting damage.[^REF-78]
+**Treat pain as a signal.** Pain from gripping hard signals inflamed tendons. Build tendon endurance
+so the problem does not become lasting damage.[^REF-78]
 
 ## How to control it
 
@@ -152,17 +149,16 @@ long strafe, keep that tension constant instead of adjusting it mid-track.[^REF-
 **Tense, flick, release.** Use a lot of tension to start a flick, release it as you approach the
 target, and keep only a little for the micro-correction.[^REF-77]
 
-Ben Staudt compares the cycle to breathing: prepare the tension for the next flick, flick, then
-relax.[^REF-74] He does not shoot until the next flick is prepared, and notes that muscles do not like
-staying tense for long.[^REF-74]
+Think of the cycle as breathing: prepare the tension for the next flick, flick, then relax.[^REF-74]
+Do not shoot until the next flick is prepared, and do not stay tense for long.[^REF-74]
 
 <figure class="aim-figure">
 <svg viewBox="0 0 760 300" role="img" aria-labelledby="fig-flick-title"><title id="fig-flick-title">Tension over one flick. A managed flick builds tension while preparing, peaks during the flick, releases before landing, stays low for the micro-correction, and builds again for the next flick. A held flick keeps tension high through the landing and drifts into lockout.</title><rect x="70" y="50.0" width="660" height="23.8" class="fig-accent-fill" opacity="0.14"/><text x="80" y="67.0" class="fig-accent-text" text-anchor="start" font-size="13" font-weight="700">lockout</text><text x="129.4" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Prepare</text><path d="M188.8 44 L188.8 220" class="fig-grid-stroke" stroke-width="1" stroke-dasharray="3 5"/><text x="248.20000000000002" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Flick</text><path d="M307.6 44 L307.6 220" class="fig-grid-stroke" stroke-width="1" stroke-dasharray="3 5"/><text x="353.8" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Release</text><path d="M400.0 44 L400.0 220" class="fig-grid-stroke" stroke-width="1" stroke-dasharray="3 5"/><text x="472.6" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Micro</text><path d="M545.2 44 L545.2 220" class="fig-grid-stroke" stroke-width="1" stroke-dasharray="3 5"/><text x="571.6" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Shoot</text><path d="M598.0 44 L598.0 220" class="fig-grid-stroke" stroke-width="1" stroke-dasharray="3 5"/><text x="664.0" y="248" class="fig-muted" text-anchor="middle" font-size="14" font-weight="600">Prepare</text><path d="M70 220 L730 220 M70 220 L70 40" class="fig-grid-stroke" stroke-width="1.5"/><text transform="rotate(-90 24 135.0)" x="24" y="135.0" class="fig-muted" text-anchor="middle" font-size="13" font-weight="500">tension</text><path d="M70.0 186.0 L72.2 185.9 L74.4 185.7 L76.6 185.4 L78.8 185.0 L81.0 184.5 L83.2 183.8 L85.4 183.1 L87.6 182.2 L89.8 181.3 L92.0 180.3 L94.2 179.2 L96.4 178.0 L98.6 176.8 L100.8 175.5 L103.0 174.2 L105.2 172.8 L107.4 171.3 L109.6 169.9 L111.8 168.4 L114.0 166.8 L116.2 165.3 L118.4 163.7 L120.6 162.1 L122.8 160.5 L125.0 158.9 L127.2 157.3 L129.4 155.7 L131.6 154.2 L133.8 152.6 L136.0 151.1 L138.2 149.7 L140.4 148.2 L142.6 146.8 L144.8 145.5 L147.0 144.2 L149.2 143.0 L151.4 141.8 L153.6 140.7 L155.8 139.7 L158.0 138.8 L160.2 137.9 L162.4 137.2 L164.6 136.5 L166.8 136.0 L169.0 135.6 L171.2 135.3 L173.4 135.1 L175.6 135.0 L177.8 134.8 L180.0 134.4 L182.2 133.6 L184.4 132.5 L186.6 131.2 L188.8 129.7 L191.0 128.0 L193.2 126.1 L195.4 124.0 L197.6 121.8 L199.8 119.5 L202.0 117.0 L204.2 114.6 L206.4 112.0 L208.6 109.5 L210.8 107.0 L213.0 104.4 L215.2 102.0 L217.4 99.5 L219.6 97.2 L221.8 95.0 L224.0 92.9 L226.2 91.0 L228.4 89.3 L230.6 87.8 L232.8 86.5 L235.0 85.4 L237.2 84.6 L239.4 84.2 L241.6 84.0 L243.8 84.0 L246.0 84.0 L248.2 84.0 L250.4 84.0 L252.6 84.0 L254.8 84.0 L257.0 84.0 L259.2 84.0 L261.4 84.0 L263.6 84.0 L265.8 84.0 L268.0 84.0 L270.2 84.0 L272.4 84.0 L274.6 84.0 L276.8 84.0 L279.0 84.0 L281.2 84.0 L283.4 84.0 L285.6 84.0 L287.8 84.0 L290.0 84.0 L292.2 84.0 L294.4 84.0 L296.6 84.0 L298.8 84.0 L301.0 84.0 L303.2 84.0 L305.4 84.0 L307.6 84.0 L309.8 84.0 L312.0 84.0 L314.2 84.0 L316.4 84.0 L318.6 84.0 L320.8 84.0 L323.0 84.0 L325.2 84.0 L327.4 84.0 L329.6 84.0 L331.8 84.0 L334.0 84.0 L336.2 84.0 L338.4 83.9 L340.6 83.8 L342.8 83.7 L345.0 83.5 L347.2 83.3 L349.4 83.1 L351.6 82.8 L353.8 82.5 L356.0 82.2 L358.2 81.9 L360.4 81.6 L362.6 81.3 L364.8 80.9 L367.0 80.6 L369.2 80.3 L371.4 79.9 L373.6 79.6 L375.8 79.3 L378.0 79.0 L380.2 78.7 L382.4 78.4 L384.6 78.1 L386.8 77.9 L389.0 77.7 L391.2 77.5 L393.4 77.4 L395.6 77.3 L397.8 77.2 L400.0 77.2 L402.2 77.2 L404.4 77.2 L406.6 77.1 L408.8 77.1 L411.0 77.0 L413.2 77.0 L415.4 76.9 L417.6 76.8 L419.8 76.7 L422.0 76.6 L424.2 76.4 L426.4 76.3 L428.6 76.2 L430.8 76.0 L433.0 75.9 L435.2 75.7 L437.4 75.5 L439.6 75.3 L441.8 75.2 L444.0 75.0 L446.2 74.8 L448.4 74.6 L450.6 74.3 L452.8 74.1 L455.0 73.9 L457.2 73.7 L459.4 73.5 L461.6 73.3 L463.8 73.0 L466.0 72.8 L468.2 72.6 L470.4 72.3 L472.6 72.1 L474.8 71.9 L477.0 71.6 L479.2 71.4 L481.4 71.2 L483.6 70.9 L485.8 70.7 L488.0 70.5 L490.2 70.3 L492.4 70.1 L494.6 69.9 L496.8 69.6 L499.0 69.4 L501.2 69.2 L503.4 69.0 L505.6 68.9 L507.8 68.7 L510.0 68.5 L512.2 68.3 L514.4 68.2 L516.6 68.0 L518.8 67.9 L521.0 67.8 L523.2 67.6 L525.4 67.5 L527.6 67.4 L529.8 67.3 L532.0 67.2 L534.2 67.2 L536.4 67.1 L538.6 67.1 L540.8 67.0 L543.0 67.0 L545.2 67.0 L547.4 67.0 L549.6 66.9 L551.8 66.8 L554.0 66.6 L556.2 66.4 L558.4 66.2 L560.6 66.0 L562.8 65.7 L565.0 65.4 L567.2 65.1 L569.4 64.8 L571.6 64.4 L573.8 64.1 L576.0 63.8 L578.2 63.5 L580.4 63.2 L582.6 62.9 L584.8 62.7 L587.0 62.5 L589.2 62.3 L591.4 62.1 L593.6 62.0 L595.8 61.9 L598.0 61.9 L600.2 61.9 L602.4 61.9 L604.6 61.9 L606.8 61.8 L609.0 61.8 L611.2 61.8 L613.4 61.7 L615.6 61.6 L617.8 61.6 L620.0 61.5 L622.2 61.4 L624.4 61.4 L626.6 61.3 L628.8 61.2 L631.0 61.1 L633.2 61.0 L635.4 60.9 L637.6 60.8 L639.8 60.7 L642.0 60.6 L644.2 60.5 L646.4 60.4 L648.6 60.3 L650.8 60.2 L653.0 60.1 L655.2 60.0 L657.4 59.9 L659.6 59.8 L661.8 59.7 L664.0 59.6 L666.2 59.5 L668.4 59.4 L670.6 59.3 L672.8 59.2 L675.0 59.1 L677.2 59.0 L679.4 59.0 L681.6 58.9 L683.8 58.8 L686.0 58.8 L688.2 58.7 L690.4 58.6 L692.6 58.6 L694.8 58.6 L697.0 58.5 L699.2 58.5 L701.4 58.5 L703.6 58.5 L705.8 58.5 L708.0 58.4 L710.2 58.2 L712.4 58.1 L714.6 57.9 L716.8 57.7 L719.0 57.4 L721.2 57.2 L723.4 57.1 L725.6 56.9 L727.8 56.8 L730.0 56.8" class="fig-accent-stroke" stroke-width="3" stroke-dasharray="8 6" fill="none"/><path d="M70.0 186.0 L72.2 185.9 L74.4 185.7 L76.6 185.4 L78.8 185.0 L81.0 184.5 L83.2 183.8 L85.4 183.1 L87.6 182.2 L89.8 181.3 L92.0 180.3 L94.2 179.2 L96.4 178.0 L98.6 176.8 L100.8 175.5 L103.0 174.2 L105.2 172.8 L107.4 171.3 L109.6 169.9 L111.8 168.4 L114.0 166.8 L116.2 165.3 L118.4 163.7 L120.6 162.1 L122.8 160.5 L125.0 158.9 L127.2 157.3 L129.4 155.7 L131.6 154.2 L133.8 152.6 L136.0 151.1 L138.2 149.7 L140.4 148.2 L142.6 146.8 L144.8 145.5 L147.0 144.2 L149.2 143.0 L151.4 141.8 L153.6 140.7 L155.8 139.7 L158.0 138.8 L160.2 137.9 L162.4 137.2 L164.6 136.5 L166.8 136.0 L169.0 135.6 L171.2 135.3 L173.4 135.1 L175.6 135.0 L177.8 134.8 L180.0 134.4 L182.2 133.6 L184.4 132.5 L186.6 131.2 L188.8 129.7 L191.0 128.0 L193.2 126.1 L195.4 124.0 L197.6 121.8 L199.8 119.5 L202.0 117.0 L204.2 114.6 L206.4 112.0 L208.6 109.5 L210.8 107.0 L213.0 104.4 L215.2 102.0 L217.4 99.5 L219.6 97.2 L221.8 95.0 L224.0 92.9 L226.2 91.0 L228.4 89.3 L230.6 87.8 L232.8 86.5 L235.0 85.4 L237.2 84.6 L239.4 84.2 L241.6 84.0 L243.8 84.1 L246.0 84.5 L248.2 85.1 L250.4 86.0 L252.6 87.1 L254.8 88.3 L257.0 89.8 L259.2 91.4 L261.4 93.2 L263.6 95.2 L265.8 97.3 L268.0 99.5 L270.2 101.8 L272.4 104.3 L274.6 106.8 L276.8 109.4 L279.0 112.1 L281.2 114.8 L283.4 117.5 L285.6 120.3 L287.8 123.1 L290.0 125.9 L292.2 128.7 L294.4 131.4 L296.6 134.1 L298.8 136.8 L301.0 139.4 L303.2 141.9 L305.4 144.4 L307.6 146.7 L309.8 148.9 L312.0 151.0 L314.2 153.0 L316.4 154.8 L318.6 156.4 L320.8 157.9 L323.0 159.1 L325.2 160.2 L327.4 161.1 L329.6 161.7 L331.8 162.1 L334.0 162.2 L336.2 162.3 L338.4 162.5 L340.6 162.9 L342.8 163.4 L345.0 164.0 L347.2 164.7 L349.4 165.5 L351.6 166.4 L353.8 167.3 L356.0 168.4 L358.2 169.5 L360.4 170.6 L362.6 171.7 L364.8 172.9 L367.0 174.1 L369.2 175.3 L371.4 176.5 L373.6 177.6 L375.8 178.7 L378.0 179.8 L380.2 180.9 L382.4 181.8 L384.6 182.7 L386.8 183.5 L389.0 184.2 L391.2 184.8 L393.4 185.3 L395.6 185.7 L397.8 185.9 L400.0 186.0 L402.2 186.0 L404.4 186.0 L406.6 186.0 L408.8 186.0 L411.0 186.1 L413.2 186.1 L415.4 186.1 L417.6 186.1 L419.8 186.2 L422.0 186.2 L424.2 186.3 L426.4 186.3 L428.6 186.3 L430.8 186.4 L433.0 186.4 L435.2 186.5 L437.4 186.6 L439.6 186.6 L441.8 186.7 L444.0 186.7 L446.2 186.8 L448.4 186.9 L450.6 187.0 L452.8 187.0 L455.0 187.1 L457.2 187.2 L459.4 187.2 L461.6 187.3 L463.8 187.4 L466.0 187.5 L468.2 187.5 L470.4 187.6 L472.6 187.7 L474.8 187.8 L477.0 187.9 L479.2 187.9 L481.4 188.0 L483.6 188.1 L485.8 188.2 L488.0 188.2 L490.2 188.3 L492.4 188.4 L494.6 188.4 L496.8 188.5 L499.0 188.6 L501.2 188.7 L503.4 188.7 L505.6 188.8 L507.8 188.8 L510.0 188.9 L512.2 189.0 L514.4 189.0 L516.6 189.1 L518.8 189.1 L521.0 189.1 L523.2 189.2 L525.4 189.2 L527.6 189.3 L529.8 189.3 L532.0 189.3 L534.2 189.3 L536.4 189.4 L538.6 189.4 L540.8 189.4 L543.0 189.4 L545.2 189.4 L547.4 189.4 L549.6 189.3 L551.8 189.1 L554.0 188.9 L556.2 188.6 L558.4 188.3 L560.6 188.0 L562.8 187.6 L565.0 187.2 L567.2 186.8 L569.4 186.4 L571.6 186.0 L573.8 185.6 L576.0 185.2 L578.2 184.8 L580.4 184.4 L582.6 184.0 L584.8 183.7 L587.0 183.4 L589.2 183.1 L591.4 182.9 L593.6 182.7 L595.8 182.6 L598.0 182.6 L600.2 182.5 L602.4 182.4 L604.6 182.1 L606.8 181.7 L609.0 181.2 L611.2 180.6 L613.4 179.9 L615.6 179.1 L617.8 178.2 L620.0 177.3 L622.2 176.2 L624.4 175.2 L626.6 174.0 L628.8 172.8 L631.0 171.6 L633.2 170.3 L635.4 168.9 L637.6 167.5 L639.8 166.1 L642.0 164.7 L644.2 163.2 L646.4 161.8 L648.6 160.3 L650.8 158.8 L653.0 157.3 L655.2 155.8 L657.4 154.4 L659.6 152.9 L661.8 151.5 L664.0 150.1 L666.2 148.7 L668.4 147.3 L670.6 146.0 L672.8 144.8 L675.0 143.6 L677.2 142.4 L679.4 141.4 L681.6 140.3 L683.8 139.4 L686.0 138.5 L688.2 137.7 L690.4 137.0 L692.6 136.4 L694.8 135.9 L697.0 135.5 L699.2 135.2 L701.4 135.1 L703.6 135.0 L705.8 134.9 L708.0 134.5 L710.2 133.9 L712.4 133.2 L714.6 132.4 L716.8 131.6 L719.0 130.8 L721.2 130.0 L723.4 129.3 L725.6 128.7 L727.8 128.3 L730.0 128.2" class="fig-ink-stroke" stroke-width="3.4" fill="none"/><text x="466.0" y="172.0" class="fig-ink" text-anchor="middle" font-size="14" font-weight="700">managed</text><text x="360.4" y="108.0" class="fig-accent-text" text-anchor="middle" font-size="14" font-weight="700">held</text></svg>
 <figcaption>A managed flick spends tension on the move and drops it for the landing. Holding it through the landing drifts toward lockout.</figcaption>
 </figure>
 
-**Reflex flicks are the exception.** In tactical shooters, Ben Staudt adds a little tension before a
-reflex flick. That locks the hand into a small, one-direction zone your reflexes can use
+**Reflex flicks are the exception.** In tactical shooters, add a little tension before a reflex
+flick. That locks the hand into a small, one-direction zone your reflexes can use
 quickly.[^REF-74]
 
 **Hand tension to the joint that needs it.** Landing a flick onto an evasive target works by moving
@@ -172,20 +168,19 @@ Against targets with instant acceleration, you spike wrist tension for each flic
 smoothly that flick lands depends on how cleanly you let the tension go.[^REF-69]
 
 **Withhold it on purpose.** Edge tracking needs you to hold back tension so a pivot does not
-overshoot to the far edge of the target.[^REF-70] In control tracking, MattyOW starts with loose
-fingers and smooth, unhurried micro-corrections.[^REF-68]
+overshoot to the far edge of the target.[^REF-70] In control tracking, start with loose fingers and
+smooth, unhurried micro-corrections.[^REF-68]
 
 **Ease into a track.** Snapping onto a target with a fast flick makes the following track feel
 jarring. Keep tension fairly low and adjust smoothly onto the target instead.[^REF-67]
 
-**Read before you commit.** minigod and Lorys take a brief moment to process where a target is
-before moving. That reduces panic reactions without making the aim slower.[^REF-76]
+**Read before you commit.** Take a brief moment to process where a target is before moving. That
+reduces panic reactions without making the aim slower.[^REF-76]
 
-They also find that lower tension makes the target easier to see, which feeds that reading.[^REF-76]
+Lower tension also makes the target easier to see, which feeds that reading.[^REF-76]
 
-**Practice under stress.** 1HP suggests 3 to 5 minutes of hard cardio right before aim training, so
-you learn to stay composed with your heart rate up.[^REF-78] Its cue for staying composed is to hold
-the mouse like a baby rabbit.[^REF-78]
+**Practice under stress.** Do 3 to 5 minutes of hard cardio right before aim training, so you learn
+to stay composed with your heart rate up.[^REF-78] Hold the mouse like a baby rabbit.[^REF-78]
 
 ## Common mistakes
 
@@ -198,8 +193,8 @@ the mouse like a baby rabbit.[^REF-78]
 
 ## Drills
 
-**Smoothness scenarios.** Zeonlo recommends the TSK benchmarks for tension management, especially
-their smoothness scenarios.[^REF-77]
+**Smoothness scenarios.** The TSK benchmarks train tension management, especially their smoothness
+scenarios.[^REF-77]
 
 **Control Sphere and Whisphere.** Control Sphere has a strict, learnable pattern that tests how smoothly
 you react to small changes in acceleration.[^REF-68] It suits low sensitivities and wrist or finger
@@ -212,8 +207,8 @@ back your tension and movement to gain time on target and edge track.[^REF-68]
 **One shot per target.** In static clicking, take one attempt per target and do not shoot until the
 tension for the next flick is ready.[^REF-74] It builds the tense, flick, release cycle.
 
-**Reflex flicks at 100%.** Play Reflex Flicks Easy, Fair and Hard. Ben Staudt suggests aiming for full
-accuracy on the easy variants to practice consistency.[^REF-74]
+**Reflex flicks at 100%.** Play Reflex Flicks Easy, Fair and Hard, and aim for full accuracy on the
+easy variants to practice consistency.[^REF-74]
 
 **Arm and finger blend.** Move the mouse up and down with your arm, then add your fingers at the
 edges of each motion.[^REF-74] Repeat side to side with arm and wrist, so no single joint has to

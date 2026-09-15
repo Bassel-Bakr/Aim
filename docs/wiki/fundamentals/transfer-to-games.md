@@ -61,7 +61,7 @@ practiced in the actual game, per its
 
 Use trainer time for mechanics, and game time for everything a trainer can't reproduce.
 
-Keep the trainer part bounded. Aimlabs puts a solid daily playlist at 30 to 40 minutes. Past that,
+Keep the trainer part bounded. A solid daily playlist runs 30 to 40 minutes. Past that,
 time in your own game does more for you than more trainer time.[^REF-8]
 
 [Voltaic](../resources/communities/voltaic.md) structures its own [routines](../training/routines.md)

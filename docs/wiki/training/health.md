@@ -35,8 +35,7 @@ periodically, rather than working in one long unbroken block.[^REF-41]
 A commonly cited pattern is stepping away from the screen for a few minutes once an hour. That gives
 whatever you've held in one position all session a chance to loosen up again.[^REF-41]
 
-For your eyes, the American Academy of Ophthalmology recommends periodically looking at something
-farther off, instead of staring at one fixed distance for hours. It's often summarized as the 20-20-20 rule: roughly 20 feet away, for about 20 seconds, every 20
+For your eyes, periodically look at something farther off, instead of staring at one fixed distance for hours. It's often summarized as the 20-20-20 rule: roughly 20 feet away, for about 20 seconds, every 20
 minutes.[^REF-22]
 
 **Warm-up before intense sessions.** Long stretches of repetitive mouse movement and static posture

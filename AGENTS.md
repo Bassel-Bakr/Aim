@@ -127,7 +127,8 @@ agents most often miss:
    source's ID from `references.yml` as a footnote marker, `[^REF-15]`, and never define it on the
    page: `extensions/aim_references.py` adds the definition. Add a missing source to the registry
    with the next unused ID; never renumber one. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full
-   rule and its two exceptions.
+   rule and its two exceptions. Outside those exceptions, do not name the source in the sentence
+   ("Aimlabs puts…", "a coach recommends…"): state the claim and let the footnote say who.
    Never copy guides, tables, or images from other sites — content here is CC BY-SA 4.0 and the
    sources are not.
 6. Do not assert a claim you cannot verify from a public source. Leave it out, or mark it with
