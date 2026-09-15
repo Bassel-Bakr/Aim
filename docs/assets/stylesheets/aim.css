@@ -1247,10 +1247,13 @@ body {
  *   </figure>
  *
  * An inline SVG takes its colors from the classes below, so it follows the reader's scheme and picked
- * colour: ink and muted for text and lines, grid for axes, panel for backgrounds, and accent (too much)
- * and cool (too little) for the two ends of a comparison. Each class has a -fill and -stroke form;
- * plain fig-ink, fig-muted and fig-accent-text set text colour. An <img> render works too, and gets
- * rounded corners. Keep the SVG free of blank lines, or Markdown splits it apart.
+ * colour: ink and muted for text and lines, grid for axes, panel for backgrounds, accent (too much)
+ * and cool (too little) for the two ends of a comparison, and target for the thing aimed at. Each
+ * has a -fill and -stroke form; plain fig-ink, fig-muted and fig-accent-text set text colour.
+ *
+ * A diagram may animate with CSS keyframes in its own <style>. It has to pause on a telling frame
+ * under prefers-reduced-motion. An <img> render works too, and gets rounded corners. Keep the SVG
+ * free of blank lines, or Markdown splits it apart.
  * ------------------------------------------------------------------------ */
 
 .md-typeset .aim-figure {
@@ -1274,6 +1277,20 @@ body {
 
 .md-typeset .aim-figure > svg {
   min-width: 34rem;
+}
+
+/* An animation is hard to follow while scrolled halfway, so an SVG with fig-fit always fits the width.
+ * On phones its labels grow to make up for the scaling: fig-name for lane names, fig-note for their
+ * notes, fig-phase for step labels and fig-caption for small captions. */
+.md-typeset .aim-figure > svg.fig-fit {
+  min-width: 0;
+}
+
+@media screen and (max-width: 30em) {
+  .aim-figure .fig-fit .fig-name { font-size: 25px; }
+  .aim-figure .fig-fit .fig-note { font-size: 20px; }
+  .aim-figure .fig-fit .fig-phase { font-size: 21px; }
+  .aim-figure .fig-fit .fig-caption { font-size: 12px; }
 }
 
 .md-typeset .aim-figure img {
@@ -1301,3 +1318,4 @@ body {
 .aim-figure .fig-accent-text { fill: var(--aim-accent); }
 .aim-figure .fig-cool-fill { fill: var(--aim-tracking); }
 .aim-figure .fig-cool-stroke { stroke: var(--aim-tracking); }
+.aim-figure .fig-target { fill: var(--aim-key); }
