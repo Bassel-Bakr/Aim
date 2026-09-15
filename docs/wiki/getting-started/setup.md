@@ -78,10 +78,11 @@ that comfortably exceeds it.
   predictable. Turn it on in any first-person or third-person shooter that supports it.[^REF-39]
   It is not a substitute for a clean sensor or stable frame times, per the same guide. It is just a
   setting worth checking is enabled.
-- **Mouse acceleration: off.** Acceleration changes how far the cursor or camera moves based on how
-  fast you physically move the mouse. That breaks the consistent muscle memory aim training depends
-  on. Check both your game's settings and your mouse manufacturer's software for an acceleration
-  toggle.
+- **Mouse acceleration: off to start.** Acceleration changes how far the cursor or camera moves based
+  on how fast you physically move the mouse. Off is a sensible default while you learn, so one hand
+  movement always means one turn. Some players choose acceleration on purpose later; [Raw
+  Accel](../resources/tools/rawaccel.md) is the tool for that. Check both your game's settings and your
+  mouse manufacturer's software for an acceleration toggle.
 - **Windows "Enhance pointer precision": off.** This is Windows' own built-in pointer acceleration.
   It is under **Settings > Bluetooth & devices > Mouse > Additional mouse settings > Pointer
   Options**, or **Control Panel > Mouse > Pointer Options** on older builds.[^REF-38] Most

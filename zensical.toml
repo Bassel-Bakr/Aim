@@ -59,6 +59,7 @@ nav = [
         "wiki/resources/tools/evxl.md",
         "wiki/resources/tools/kova.md",
         "wiki/resources/tools/kovobs.md",
+        "wiki/resources/tools/rawaccel.md",
       ] },
       "wiki/resources/guides.md",
     ] },

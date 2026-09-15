@@ -37,6 +37,8 @@ covers. That way you can decide where to spend time instead of guessing.
   them against community benchmark sheets, with no account needed.
 - [kova](tools/kova.md): a public profile for your peripherals, sensitivity settings, and recent
   personal bests.
+- [Raw Accel](tools/rawaccel.md): a Windows driver for consistent, custom mouse acceleration and
+  sensitivity curves.
 - [KovOBS](tools/kovobs.md): saves an OBS replay clip automatically whenever you set a personal
   best in KovaaK's.
 

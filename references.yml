@@ -376,3 +376,17 @@
   url: "https://x76.gg/wiki/strafe-aim-guide/"
   type: article
   publication: x76
+
+- id: REF-62
+  author: Raw Accel
+  title: Raw Accel README
+  url: "https://github.com/RawAccelOfficial/rawaccel"
+  type: repository
+  publication: GitHub
+
+- id: REF-63
+  author: Raw Accel
+  title: Raw Accel guide
+  url: "https://github.com/RawAccelOfficial/rawaccel/blob/master/doc/Guide.md"
+  type: documentation
+  publication: GitHub
