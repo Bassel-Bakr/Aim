@@ -87,6 +87,22 @@ Score sheets and routines handed over without instructions stay on the [resource
 - [Aether bible](https://docs.google.com/document/d/1koaME0d2J6YJtneiWg5_vkT4CMi-dD5jumSJCpcHea4/edit) —
   eA hundred — advice from top Aether players, bot by bot. Which of fingers, wrist or arm leads, and
   reading acceleration instead of flicking onto strafes.
+- [Speed Matching in Precise Tracking](https://www.youtube.com/watch?v=-7n6q33We28) — MattyOW,
+  2025 — keeping one continuous motion through long strafes by balancing grip tension. Too tight
+  skips ahead of the target, too loose lags behind it. Also why to squeeze the mouse from the sides
+  rather than press it into the pad.
+- [KovaaK's Precise Tracking - Mouse Grip and Tension](https://www.youtube.com/watch?v=BFDkOvX7vIw) —
+  Corporate Serf, 2025 — posture and grip for precise tracking, demonstrated on a $3 thrift-store
+  mouse. A thumb-and-pinky squeeze for stability on long strafes, plus downward pressure for control
+  at direction changes. A different approach to downward pressure from MattyOW's video above.
+- [How to Get Astra in Control Tracking](https://www.youtube.com/watch?v=FNK1LFBBZP8) — MattyOW,
+  2024 — control tracking, the Voltaic subcategory between precise and reactive. Reading strafes,
+  spending tension in short bursts, and smooth micro-corrections instead of flicks, practiced on
+  Control Sphere and Whisphere.
+- [Aim Experimentation - Adjusting to Faster Speeds in Tracking](https://www.youtube.com/watch?v=EqbxpArxYHc) —
+  Corporate Serf, 2025 — training bot speed separately from bot size. He edits copies of Snake Track so
+  a hard tier's speed runs at an easier tier's target size, then plays them as a timed playlist.
+  Comes with the playlist's share code.
 
 ## Switching
 
