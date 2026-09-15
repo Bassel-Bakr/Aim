@@ -28,6 +28,14 @@ full 360 degrees.
 Because it's measured in real-world distance, it's comparable across any game, engine, or mouse,
 unlike raw DPI or sensitivity numbers on their own. See [Sensitivity](getting-started/sensitivity.md).
 
+### Death grip
+
+Death gripping is holding the mouse far harder than control needs, often under pressure or when
+coordination is still developing.[^REF-78]
+
+Held for long stretches, that grip irritates the hand and forearm muscles, and pain from it signals
+inflamed tendons.[^REF-78] See [Tension](fundamentals/tension.md).
+
 ### DPI
 
 DPI (dots per inch) is how far your mouse cursor moves on screen per inch of physical mouse

@@ -75,7 +75,7 @@ so a dead outbound link will not show up in the checks you run locally.
 | `extensions/aim_references.py` | Markdown extension that turns `[^REF-<number>]` citations into footnotes and builds the References page. Installed by `pyproject.toml` through `requirements.txt`. |
 | `templates/` | Page templates. Not published. |
 | `specs/` | Design documents. Not published. |
-| `scripts/` | Repository checks, `suggest_related.py`, and `move_page.py`, which moves a page and repoints every link, related entry, nav entry and redirect to it. |
+| `scripts/` | Repository checks, `suggest_related.py`, `move_page.py`, which moves a page and repoints every link, related entry, nav entry and redirect to it, and `figures/`, the code that draws a page's diagrams and renders. Regenerate a page's figures with its `build.py` rather than editing them by hand. |
 | `zensical.toml` | Site config and the `nav` tree. |
 
 ## Page components
@@ -91,6 +91,7 @@ that before using one, and add a new component only when a page actually needs i
 | `.aim-steps` | Turns an ordered list into a numbered route. |
 | `.aim-category` | Inline badge on a link naming a skill, with `.aim-category--clicking`, `--tracking` or `--switching` alongside it. |
 | `.aim-table-stack` | Wraps a table whose last column should drop onto its own line below 38em instead of squeezing. |
+| `.aim-figure` | A `<figure>` holding an inline SVG diagram or an image render, with a caption. Diagram colours come from its `fig-` classes, so they follow the scheme and picked colour. |
 
 All of these except `.aim-category` are wrappers:
 

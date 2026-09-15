@@ -23,6 +23,7 @@ nav = [
     { "Fundamentals" = [
       "wiki/fundamentals/index.md",
       "wiki/fundamentals/how-aim-works.md",
+      "wiki/fundamentals/tension.md",
       "wiki/fundamentals/practice-principles.md",
       "wiki/fundamentals/transfer-to-games.md",
     ] },

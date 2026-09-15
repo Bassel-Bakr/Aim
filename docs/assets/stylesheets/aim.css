@@ -8,7 +8,7 @@
  * properties; the chrome, which restyles the header, tabs, footer and typeset defaults; and the
  * page components. Each component is documented above its rules with the Markdown that produces
  * it: .aim-hero, .aim-cards, .aim-steps, .aim-category, .aim-table-stack, .aim-myth, .aim-key,
- * .aim-theme-picker, .aim-links.
+ * .aim-theme-picker, .aim-links, .aim-figure.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
@@ -1237,3 +1237,67 @@ body {
   box-shadow: 0 0 0 0.3rem var(--md-accent-fg-color--transparent);
 }
 
+
+/* ---------------------------------------------------------------------------
+ * .aim-figure — a diagram or render with a caption.
+ *
+ *   <figure class="aim-figure">
+ *   <svg viewBox="0 0 760 250" role="img" aria-labelledby="id">...</svg>
+ *   <figcaption>What the reader should take from it.</figcaption>
+ *   </figure>
+ *
+ * An inline SVG takes its colors from the classes below, so it follows the reader's scheme and picked
+ * colour: ink and muted for text and lines, grid for axes, panel for backgrounds, and accent (too much)
+ * and cool (too little) for the two ends of a comparison. Each class has a -fill and -stroke form;
+ * plain fig-ink, fig-muted and fig-accent-text set text colour. An <img> render works too, and gets
+ * rounded corners. Keep the SVG free of blank lines, or Markdown splits it apart.
+ * ------------------------------------------------------------------------ */
+
+.md-typeset .aim-figure {
+  width: 100%;
+  max-width: none;
+  margin: 1.6em 0;
+}
+
+.md-typeset .aim-figure :is(svg, img) {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--aim-display);
+}
+
+/* A diagram's labels shrink with it, so on a phone it keeps a readable width and scrolls sideways
+ * instead. Renders have no small text and simply scale down. */
+.md-typeset .aim-figure:has(> svg) {
+  overflow-x: auto;
+}
+
+.md-typeset .aim-figure > svg {
+  min-width: 34rem;
+}
+
+.md-typeset .aim-figure img {
+  border-radius: 0.4rem;
+}
+
+.md-typeset .aim-figure figcaption {
+  max-width: none;
+  margin-top: 0.6em;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  text-align: left;
+}
+
+.aim-figure .fig-ink,
+.aim-figure .fig-ink-fill { fill: var(--md-default-fg-color); }
+.aim-figure .fig-muted { fill: var(--md-default-fg-color--light); }
+.aim-figure .fig-ink-stroke { stroke: var(--md-default-fg-color); }
+.aim-figure .fig-muted-stroke { stroke: var(--md-default-fg-color--light); }
+.aim-figure .fig-grid-stroke { stroke: var(--md-default-fg-color--lighter); }
+.aim-figure .fig-grid-fill { fill: var(--md-default-fg-color--lighter); }
+.aim-figure .fig-panel { fill: var(--md-code-bg-color); }
+.aim-figure .fig-accent-fill { fill: var(--aim-accent); }
+.aim-figure .fig-accent-stroke { stroke: var(--aim-accent); }
+.aim-figure .fig-accent-text { fill: var(--aim-accent); }
+.aim-figure .fig-cool-fill { fill: var(--aim-tracking); }
+.aim-figure .fig-cool-stroke { stroke: var(--aim-tracking); }
