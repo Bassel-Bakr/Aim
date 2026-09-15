@@ -1,0 +1,11 @@
+Model Information:
+* title:	Razer Viper Mini
+* source:	https://sketchfab.com/3d-models/razer-viper-mini-85e1735704c645e5aaead0278a1038fe
+* author:	kimberly.h (https://sketchfab.com/kimberly.h)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Razer Viper Mini" (https://sketchfab.com/3d-models/razer-viper-mini-85e1735704c645e5aaead0278a1038fe) by kimberly.h (https://sketchfab.com/kimberly.h) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

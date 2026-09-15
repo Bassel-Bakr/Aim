@@ -1,8 +1,20 @@
-"""Theme-aware inline SVG diagrams for the Tension page. Colours come from the .aim-figure classes in
-aim.css, so each diagram follows the reader's scheme and picked colour. build.py splices them into the
-page; call it rather than this module.
+"""Theme-aware inline SVG diagrams for the Tension Management page. Colours come from the .aim-figure
+classes in aim.css, so each diagram follows the reader's scheme and picked colour. build.py splices them
+into the page; call it rather than this module.
 """
 import math
+
+AUTHOR = "Bassel Bakr"
+SOURCE = "https://github.com/Bassel-Bakr/aim"
+LICENSE = "https://creativecommons.org/licenses/by-sa/4.0/"
+
+
+def metadata():
+    """Authorship inside each SVG, so a copied diagram still names its author, source and licence."""
+    return ('<metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" '
+            'xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#">'
+            f'<cc:Work rdf:about=""><dc:creator>{AUTHOR}</dc:creator><dc:source>{SOURCE}</dc:source>'
+            f'<cc:license rdf:resource="{LICENSE}"/></cc:Work></rdf:RDF></metadata>')
 
 def text(x, y, s, cls="fig-ink", anchor="middle", size=15, weight=600):
     return (f'<text x="{x}" y="{y}" class="{cls}" text-anchor="{anchor}" font-size="{size}" '
@@ -14,7 +26,7 @@ def scale():
     out = [f'<svg viewBox="0 0 {w} {h}" role="img" aria-labelledby="fig-scale-title">',
            '<title id="fig-scale-title">A tension scale from too loose to too tight. Too loose lags behind '
            'and stops. Balanced is a firm hold and one continuous motion. Too tight jitters ahead, '
-           'overcorrects and locks out.</title>']
+           'overcorrects and locks out.</title>', metadata()]
     x0, x1, y = 40, 720, 92
     seg = (x1 - x0) / 3
     names = [("Too loose", "fig-cool-fill", ["Lags behind the target", "Stops and restarts", "Feels sluggish"]),
@@ -163,7 +175,7 @@ def tracking():
             '<title id="fig-tracking-title">Three crosshairs chase a target that strafes left and right at '
             'a constant speed. Too tight: the crosshair runs ahead, overshoots at each turn and shakes. '
             'Too loose: it stalls, falls behind, then catches up in bursts. Balanced: it stays on the '
-            'target.</title>'
+            'target.</title>' + metadata() +
             f'<style>{"".join(css)}</style>' + "".join(body) + "</svg>")
 
 
@@ -291,7 +303,7 @@ def flick():
             '<title id="fig-flick-title">Two crosshairs flick between the same three targets, each with a '
             'tension meter. Managed: tension rises to prepare, peaks for the flick and drops before landing, '
             'and a small smooth correction finishes each flick. Held: tension stays near lockout, and every '
-            'flick overshoots and wobbles before it settles.</title>'
+            'flick overshoots and wobbles before it settles.</title>' + metadata() +
             f'<style>{"".join(css)}</style>' + "".join(body) + "</svg>")
 
 

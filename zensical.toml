@@ -23,7 +23,7 @@ nav = [
     { "Fundamentals" = [
       "wiki/fundamentals/index.md",
       "wiki/fundamentals/how-aim-works.md",
-      "wiki/fundamentals/tension.md",
+      "wiki/fundamentals/tension-management.md",
       "wiki/fundamentals/practice-principles.md",
       "wiki/fundamentals/transfer-to-games.md",
     ] },
@@ -126,6 +126,7 @@ tags = {}
 "wiki/skills/clicking.md" = "wiki/categories/clicking.md"
 "wiki/skills/tracking.md" = "wiki/categories/tracking.md"
 "wiki/skills/switching.md" = "wiki/categories/switching.md"
+"wiki/fundamentals/tension.md" = "wiki/fundamentals/tension-management.md"
 
 [project.markdown_extensions]
 abbr = {}

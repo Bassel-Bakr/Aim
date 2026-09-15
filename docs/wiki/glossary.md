@@ -34,7 +34,7 @@ Death gripping is holding the mouse far harder than control needs, often under p
 coordination is still developing.[^REF-78]
 
 Held for long stretches, that grip irritates the hand and forearm muscles, and pain from it signals
-inflamed tendons.[^REF-78] See [Tension](fundamentals/tension.md).
+inflamed tendons.[^REF-78] See [Tension Management](fundamentals/tension-management.md).
 
 ### DPI
 

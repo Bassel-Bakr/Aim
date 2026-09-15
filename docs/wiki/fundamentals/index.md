@@ -19,8 +19,8 @@ The four pages below are the prerequisite reading behind everything else in
 
 - [How Aim Works](how-aim-works.md): the physical mechanics behind mouse aim, from arm, wrist, and
   finger movement to the speed-accuracy trade-off, smoothness, and reacting versus predicting.
-- [Tension](tension.md): how hard your hand and arm work on the mouse. How to feel too much or too
-  little, and drills to control it.
+- [Tension Management](tension-management.md): how hard your hand and arm work on the mouse. How
+  to feel too much or too little, and drills to control it.
 - [Practice Principles](practice-principles.md): the practice habits, from deliberate practice to
   rest, that decide whether your training time actually improves your aim.
 - [Transfer to Games](transfer-to-games.md): what aim-trainer practice does and does not carry over

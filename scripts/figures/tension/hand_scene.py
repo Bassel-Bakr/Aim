@@ -1,20 +1,20 @@
-"""A right hand in a claw grip on a modern symmetrical mouse, rendered for the Tension page.
+"""A right hand in a claw grip on a modern symmetrical mouse, rendered for Tension Management.
 
-    blender -b -P hand_scene.py -- --out file.png [--view front|threequarter|side|top] [--zones] [--forces] [--final]
+    blender -b -P hand_scene.py -- --out file.png [--view front|threequarter|side|top|mouse]
+        [--forces] [--final] [--no-hand] [--mouse-color r,g,b]
 
 build.py runs this for the page; call it directly only to try a new view.
 
-The mouse is a parametric shell loosely modelled on current lightweight symmetrical mice. The hand
-and forearm are metaballs, so joints blend into one smooth surface, converted to a mesh whose faces
-are coloured by the part of the skeleton they are nearest to. Every finger is posed by flexion angles
-only, so no joint can bend backwards. A sidecar JSON gives label anchor points in image space.
+The mouse is "Razer Viper Mini" by kimberly.h, CC BY 4.0, from Sketchfab; see the note above MODEL.
+The hand and forearm are metaballs, so joints blend into one smooth surface, converted to a mesh. The
+hand is one flat grey, and the forearm wears a compression sleeve. Every finger is posed by flexion
+angles only, so no joint can bend backwards. A sidecar JSON gives label anchor points in image space.
 """
 import json
 import math
 import sys
 from pathlib import Path
 
-import bmesh
 import bpy
 from mathutils import Vector
 
@@ -27,71 +27,89 @@ def arg(name, default=None):
 
 OUT = arg("--out", "render.png")
 VIEW = arg("--view", "front")
-ZONES, FORCES, FINAL = "--zones" in argv, "--forces" in argv, "--final" in argv
+FORCES, FINAL = "--forces" in argv, "--final" in argv
 
 K = 0.574  # a metaball's surface sits at K * radius at the default threshold
 
-# Mouse: 1 unit is about 10 mm. Length 12.5, width about 6.2, height 4.0 with the hump behind centre.
-HALF_L = 6.25
-SECTION_N = 2.7
+# Mouse: 1 unit is 10 mm. The mouse is "Razer Viper Mini" by kimberly.h
+# (https://sketchfab.com/3d-models/razer-viper-mini-85e1735704c645e5aaead0278a1038fe), licensed under
+# CC BY 4.0. It is scaled to the real mouse's 118 mm length, turned so its front faces +y, recoloured
+# in MOUSE_COLOR, and its logo and underside light strip are removed.
+# models/razer-viper-mini/license.txt holds the credit.
+MODEL = Path(__file__).resolve().parent / "models" / "razer-viper-mini" / "scene.gltf"
+MOUSE_LENGTH = 11.8
+# Shell colour as linear RGB, with metallic and roughness for the textured body and the smoother
+# buttons. Glossy dark grey by default; --mouse-color r,g,b overrides the colour for a trial render.
+MOUSE_COLOR = tuple(float(c) for c in arg("--mouse-color", "0.07,0.07,0.075").split(","))
+MOUSE_METALLIC = 0.0
+MOUSE_ROUGHNESS = {"Grain": 0.22, "Gloss": 0.12}
+BVH = None
 
 
-def planform(y):
-    """Half width at y: slight waist in the middle, blunt rounded front and back."""
-    t = y / HALF_L
-    base = 3.12 - 0.2 * math.exp(-((y - 0.4) / 2.3) ** 2) + 0.04 * max(0.0, y - 2.0) / 4.25
-    p = 3.2 if y < 0 else 5.5
-    return base * max(0.0, 1 - abs(t) ** p) ** (1 / p)
+def load_mouse():
+    """Import the mouse, place it on the pad centred at the origin, and keep a BVH of its surface for
+    placing the hand."""
+    from mathutils import Matrix
+    from mathutils.bvhtree import BVHTree
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+    bpy.ops.import_scene.gltf(filepath=str(MODEL))
+    bpy.context.view_layer.update()
+    meshes = [o for o in bpy.context.scene.objects if o.type == "MESH"]
+    points = [o.matrix_world @ v.co for o in meshes for v in o.data.vertices]
+    lo = Vector((min(q.x for q in points), min(q.y for q in points), min(q.z for q in points)))
+    hi = Vector((max(q.x for q in points), max(q.y for q in points), max(q.z for q in points)))
+    centre = Vector(((lo.x + hi.x) / 2, (lo.y + hi.y) / 2, lo.z))
+    place = (Matrix.Rotation(math.pi / 2, 4, "Z") @ Matrix.Scale(MOUSE_LENGTH / (hi.x - lo.x), 4) @
+             Matrix.Translation(-centre))
+    verts, polys = [], []
+    for o in meshes:
+        o.data.transform(place @ o.matrix_world)
+        o.parent = None
+        o.matrix_world = Matrix.Identity(4)
+        name = o.data.materials[0].name
+        if name == "Green":
+            o.hide_render = True
+            continue
+        if name in ("Grain", "Gloss"):
+            bsdf = next(n for n in o.data.materials[0].node_tree.nodes if n.type == "BSDF_PRINCIPLED")
+            # The body's normal map carries the embossed logo, so the body goes without it.
+            sockets = ("Base Color", "Metallic", "Roughness") + (("Normal",) if name == "Grain" else ())
+            for socket in sockets:
+                for link in list(bsdf.inputs[socket].links):
+                    o.data.materials[0].node_tree.links.remove(link)
+            bsdf.inputs["Base Color"].default_value = (*MOUSE_COLOR, 1)
+            bsdf.inputs["Metallic"].default_value = MOUSE_METALLIC
+            bsdf.inputs["Roughness"].default_value = MOUSE_ROUGHNESS[name]
+        if name != "Skates":
+            offset = len(verts)
+            verts += [v.co.copy() for v in o.data.vertices]
+            polys += [[offset + i for i in poly.vertices] for poly in o.data.polygons]
+    for o in list(bpy.context.scene.objects):
+        if o.type == "EMPTY":
+            bpy.data.objects.remove(o)
+    return BVHTree.FromPolygons(verts, polys)
 
 
-def height(y):
-    """Crown height at y: hump at y = -1.6, long gentle slope to the buttons, rounded back."""
-    t = y / HALF_L
-    hump = 2.15 + 1.85 * math.exp(-((y + 1.6) / 4.0) ** 2)
-    p = 2.6 if y < 0 else 7.0
-    return hump * max(0.0, 1 - abs(t) ** p) ** (1 / p)
-
-
-def section(y, theta):
-    """Surface point on the cross-section at y; theta 0 = right side at the pad, pi/2 = crown."""
-    a, b = planform(y), height(y)
-    c, s = math.cos(theta), math.sin(theta)
-    return Vector((a * math.copysign(abs(c) ** (2 / SECTION_N), c), y, b * abs(s) ** (2 / SECTION_N)))
-
-
-def surface_frame(y, theta):
-    p = section(y, theta)
-    y0, y1 = max(y - 0.01, -HALF_L + 0.02), min(y + 0.01, HALF_L - 0.02)
-    dy = section(y1, theta) - section(y0, theta)
-    dt = section(y, theta + 0.01) - section(y, theta - 0.01)
-    n = dt.cross(dy).normalized()
-    outward = Vector((p.x, 0, p.z - 0.5)).normalized()
-    return p, (n if n.dot(outward) > 0 else -n)
-
-
-def theta_at_x(x, y):
-    lo, hi = 0.02, math.pi - 0.02
-    for _ in range(40):
-        mid = (lo + hi) / 2
-        if section(y, mid).x > x:
-            lo = mid
-        else:
-            hi = mid
-    return (lo + hi) / 2
+def surface_hit(origin, direction, lift):
+    loc, normal, _index, _dist = BVH.ray_cast(Vector(origin), Vector(direction).normalized())
+    if loc is None:
+        raise ValueError(f"no mouse surface from {origin} toward {direction}")
+    if normal.dot(Vector(direction)) > 0:
+        normal = -normal
+    return loc + normal * lift
 
 
 def on_top(x, y, lift):
-    p, n = surface_frame(y, theta_at_x(x, y))
-    return p + n * lift
+    """The mouse surface straight below (x, y), lifted along its normal."""
+    return surface_hit((x, y, 20.0), (0, 0, -1), lift)
 
 
 def on_side(side, y, z, lift):
-    s = min(0.999, max(0.0, z / height(y))) ** (SECTION_N / 2)
-    theta = math.asin(s)
-    if side < 0:
-        theta = math.pi - theta
-    p, n = surface_frame(y, theta)
-    return p + n * lift
+    """The mouse's right (side 1) or left (side -1) flank at height z."""
+    return surface_hit((side * 20.0, y, z), (-side, 0, 0), lift)
+
+
+BVH = load_mouse()
 
 
 # Skeleton.
@@ -146,25 +164,22 @@ THUMB = ((2.4, 2.3, 1.85), (0.8, 0.66, 0.54), lambda r: on_side(-1, -0.2, 1.35, 
 THUMB_BASE = PALM_BACK + F * 2.2 - X * 2.6 - U * 0.35
 
 
-JOINTS = {}
-
-
 def build_skeleton():
-    """Metaball elements as (kind, data, zone), and each finger's joints and radii."""
+    """Metaball elements as (kind, data), and each finger's joints and radii."""
     elements, joints = [], {}
     palm_mid = (PALM_BACK + PALM_FRONT) / 2
-    elements.append(("ellipsoid", (palm_mid, (3.35, (PALM_FRONT - PALM_BACK).length / 2 + 0.2, 1.0), F), "palm"))
-    elements.append(("capsule", (PALM_FRONT - X * 2.1 - F * 0.35 - U * 0.25, PALM_FRONT + X * 2.5 - F * 0.95 - U * 0.25, 0.85), "palm"))
-    elements.append(("ball", (PALM_BACK + F * 1.3 - X * 1.9 - U * 0.35, 1.3), "palm"))
-    elements.append(("ball", (PALM_BACK + F * 1.0 + X * 1.8 - U * 0.3, 1.15), "palm"))
+    elements.append(("ellipsoid", (palm_mid, (3.35, (PALM_FRONT - PALM_BACK).length / 2 + 0.2, 1.0), F)))
+    elements.append(("capsule", (PALM_FRONT - X * 2.1 - F * 0.35 - U * 0.25, PALM_FRONT + X * 2.5 - F * 0.95 - U * 0.25, 0.85)))
+    elements.append(("ball", (PALM_BACK + F * 1.3 - X * 1.9 - U * 0.35, 1.3)))
+    elements.append(("ball", (PALM_BACK + F * 1.0 + X * 1.8 - U * 0.3, 1.15)))
     # Wrist and forearm: closely spaced ovals, so the surface stays smooth instead of ribbed.
     arm_axis = (ELBOW - WRIST).normalized()
     for i in range(4):
         t = i / 3
-        elements.append(("ellipsoid", (PALM_BACK.lerp(WRIST, t) - U * 0.15, (2.7 - 0.45 * t, 1.0, 1.05 - 0.05 * t), F), "wrist"))
+        elements.append(("ellipsoid", (PALM_BACK.lerp(WRIST, t) - U * 0.15, (2.7 - 0.45 * t, 1.0, 1.05 - 0.05 * t), F)))
     for i in range(1, 29):
         t = i / 28
-        elements.append(("ellipsoid", (WRIST.lerp(ELBOW, t), (2.25 + 0.6 * t, 1.0, 1.25 + 0.55 * t), arm_axis), "arm"))
+        elements.append(("ellipsoid", (WRIST.lerp(ELBOW, t), (2.25 + 0.6 * t, 1.0, 1.25 + 0.55 * t), arm_axis)))
     for name, (dx, back, lengths, radii, contact) in FINGERS.items():
         radii = [v * 1.18 for v in radii]
         knuckle = PALM_FRONT - F * back + X * dx - U * 0.05
@@ -172,14 +187,14 @@ def build_skeleton():
         joints[name] = (pts, radii)
         r = (radii[0], radii[1], radii[2], radii[2] * 0.92)
         for i in range(3):
-            elements.append(("capsule", (pts[i], pts[i + 1], (r[i] + r[i + 1]) / 2), "fingers"))
+            elements.append(("capsule", (pts[i], pts[i + 1], (r[i] + r[i + 1]) / 2)))
     lengths, radii, contact = THUMB
     radii = [v * 1.15 for v in radii]
     pts = finger_chain(THUMB_BASE, contact(radii[2]), lengths, (1, 0.1, -0.55))
     joints["thumb"] = (pts, radii)
     r = (radii[0], radii[1], radii[2], radii[2] * 0.92)
     for i in range(3):
-        elements.append(("capsule", (pts[i], pts[i + 1], (r[i] + r[i + 1]) / 2), "fingers" if i else "palm"))
+        elements.append(("capsule", (pts[i], pts[i + 1], (r[i] + r[i + 1]) / 2)))
     return elements, joints
 
 
@@ -209,51 +224,9 @@ def look(obj, target):
     obj.rotation_quaternion = (Vector(target) - obj.location).to_track_quat("-Z", "Y")
 
 
-def tube(a, b, r, mat):
-    a, b = Vector(a), Vector(b)
-    bpy.ops.mesh.primitive_cylinder_add(vertices=24, radius=r, depth=max((b - a).length, 1e-3), location=(a + b) / 2)
-    obj = bpy.context.object
-    obj.rotation_mode = "QUATERNION"
-    obj.rotation_quaternion = (b - a).to_track_quat("Z", "Y")
-    obj.data.materials.append(mat)
-    shade_smooth(obj)
-    for end in (a, b):
-        bpy.ops.mesh.primitive_uv_sphere_add(radius=r, location=end, segments=24, ring_count=12)
-        s = bpy.context.object
-        s.data.materials.append(mat)
-        shade_smooth(s)
-
-
-def build_mouse():
-    rows, cols = 140, 72
-    ys = [-HALF_L + 2 * HALF_L * (0.5 - 0.5 * math.cos(math.pi * i / (rows - 1))) for i in range(rows)]
-    bm = bmesh.new()
-    grid = [[bm.verts.new(section(y, math.pi * j / (cols - 1))) for j in range(cols)] for y in ys]
-    for i in range(rows - 1):
-        for j in range(cols - 1):
-            bm.faces.new((grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j]))
-        bm.faces.new((grid[i][cols - 1], grid[i][0], grid[i + 1][0], grid[i + 1][cols - 1]))
-    bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-4)
-    me = bpy.data.meshes.new("mouse")
-    bm.to_mesh(me)
-    obj = bpy.data.objects.new("mouse", me)
-    bpy.context.collection.objects.link(obj)
-    shade_smooth(obj)
-    me.materials.append(material("mouse", (0.03, 0.032, 0.038), 0.42))
-
-    seam = material("seam", (0.0, 0.0, 0.0), 0.9)
-
-    def groove(points):
-        for a, b in zip(points, points[1:]):
-            tube(a, b, 0.035, seam)
-
-    groove([on_top(0.0, 0.6 + 0.3 * i, -0.005) for i in range(19)])
-    for side in (-1, 1):
-        groove([on_top(side * 0.1 * i, 0.6 - 0.008 * i * i, -0.005) for i in range(29)])
-    tube(on_top(0, 2.3, 0.14), on_top(0, 3.35, 0.14), 0.26, material("wheel", (0.16, 0.16, 0.18), 0.5))
-    side_btn = material("side", (0.05, 0.052, 0.06), 0.35)
-    for y0, y1 in ((1.9, 0.9), (0.6, -0.4)):
-        tube(on_side(-1, y0, 2.05, 0.02), on_side(-1, y1, 2.05, 0.02), 0.2, side_btn)
+def smoothstep(e0, e1, x):
+    t = max(0.0, min(1.0, (x - e0) / (e1 - e0)))
+    return t * t * (3 - 2 * t)
 
 
 def build_hand(elements):
@@ -262,7 +235,7 @@ def build_hand(elements):
     mb.render_resolution = 0.06 if FINAL else 0.1
     obj = bpy.data.objects.new("hand", mb)
     bpy.context.collection.objects.link(obj)
-    for kind, data, _zone in elements:
+    for kind, data in elements:
         e = mb.elements.new()
         if kind == "ball":
             c, r = data
@@ -285,58 +258,81 @@ def build_hand(elements):
     bpy.context.collection.objects.link(hand)
     shade_smooth(hand)
 
-    skin = material("skin", (0.8, 0.62, 0.48), 0.5, sss=0.12)
-    mats = {"palm": skin, "fingers": skin, "wrist": skin, "arm": skin}
-    if ZONES:
-        mats["fingers"] = material("z_fingers", (0.93, 0.42, 0.16), 0.5, 0.25)
-        mats["wrist"] = material("z_wrist", (0.1, 0.55, 0.88), 0.5, 0.25)
-        mats["arm"] = material("z_arm", (0.52, 0.34, 0.9), 0.5, 0.25)
-    order = ["palm", "fingers", "wrist", "arm"]
-    for name in order:
-        mesh.materials.append(mats[name])
+    # The sleeve starts in a clean ring past the wrist, cut in the shader rather than along mesh faces.
+    # It stands slightly proud of the skin, so the cuff reads as an edge. UVs unwrap the arm, u around
+    # and v along from the cuff, for the knit pattern.
+    cuff = WRIST - F * 1.6
+    axis = (ELBOW - cuff).normalized()
+    e1 = (Vector((0, 0, 1)) - axis * axis.z).normalized()
+    e2 = axis.cross(e1)
+    for v in mesh.vertices:
+        v.co = v.co + v.normal * 0.07 * smoothstep(-0.03, 0.03, (v.co - cuff).dot(axis))
+    uv = mesh.uv_layers.new(name="sleeve")
+    for loop in mesh.loops:
+        p = mesh.vertices[loop.vertex_index].co - cuff
+        along = p.dot(axis)
+        d = p - axis * along
+        uv.data[loop.index].uv = (math.atan2(d.dot(e2), d.dot(e1)) * 2.6, along)
+    mesh.update()
+    mesh.materials.append(hand_material())
 
-    def dist(p, kind, data):
-        if kind == "ball":
-            return (p - Vector(data[0])).length - data[1]
-        if kind == "capsule":
-            a, b, r = Vector(data[0]), Vector(data[1]), data[2]
-            ab = b - a
-            t = max(0.0, min(1.0, (p - a).dot(ab) / ab.length_squared))
-            return (p - (a + ab * t)).length - r
-        return (p - Vector(data[0])).length - min(data[1]) * 0.8
 
-    # A face is a finger's when it hugs that finger's bones and lies past its knuckle, so the colour
-    # boundary is a clean ring at the knuckle rather than following whichever blob is nearest.
-    chains = []
-    for name, (pts, radii) in JOINTS.items():
-        start = 1 if name == "thumb" else 0
-        # Fingers cut at a plane across the knuckles, along the palm; the thumb at its own joint.
-        axis = (pts[start + 1] - pts[start]).normalized() if name == "thumb" else F
-        chains.append((pts, radii, pts[start], axis))
+def hand_material():
+    """Flat grey skin, and past the cuff a compression sleeve: matte black knit with a ribbed cuff and
+    two accent bands near it."""
+    skin, base = (0.2, 0.2, 0.205), (0.012, 0.013, 0.015)
+    m = bpy.data.materials.new("hand")
+    m.use_nodes = True
+    nt = m.node_tree
+    bsdf = nt.nodes["Principled BSDF"]
+    bsdf.inputs["Sheen Roughness"].default_value = 0.4
+    uvn = nt.nodes.new("ShaderNodeUVMap")
+    uvn.uv_map = "sleeve"
+    sep = nt.nodes.new("ShaderNodeSeparateXYZ")
+    nt.links.new(uvn.outputs["UV"], sep.inputs["Vector"])
 
-    def on_finger(p):
-        for pts, radii, knuckle, axis in chains:
-            if (p - knuckle).dot(axis) < 0.35:
+    def math_node(op, a, b=None):
+        n = nt.nodes.new("ShaderNodeMath")
+        n.operation = op
+        for i, x in enumerate((a, b)):
+            if x is None:
                 continue
-            for i in range(3):
-                a, b = pts[i], pts[i + 1]
-                ab = b - a
-                t = max(0.0, min(1.0, (p - a).dot(ab) / ab.length_squared))
-                if (p - (a + ab * t)).length < radii[min(i, 2)] + 0.22:
-                    return True
-        return False
+            if isinstance(x, (int, float)):
+                n.inputs[i].default_value = x
+            else:
+                nt.links.new(x, n.inputs[i])
+        return n.outputs["Value"]
 
-    # The wrist is one band across the joint, whichever element a face happens to sit nearest.
-    band_a, band_b = PALM_BACK - F * 0.9, WRIST - F * 1.6
-    ab = band_b - band_a
-    for poly in mesh.polygons:
-        p = poly.center
-        if on_finger(p):
-            zone = "fingers"
-        else:
-            t = (p - band_a).dot(ab) / ab.length_squared
-            zone = "wrist" if 0 <= t <= 1 else ("arm" if t > 1 else "palm")
-        poly.material_index = order.index(zone)
+    u, v = sep.outputs["X"], sep.outputs["Y"]
+    color = (0.78, 0.2, 0.12)
+    band1 = math_node("MULTIPLY", math_node("GREATER_THAN", v, 1.4), math_node("LESS_THAN", v, 1.85))
+    band2 = math_node("MULTIPLY", math_node("GREATER_THAN", v, 2.15), math_node("LESS_THAN", v, 2.35))
+    mark = math_node("MAXIMUM", band1, band2)
+    sleeve = math_node("GREATER_THAN", v, 0.0)
+    mix = nt.nodes.new("ShaderNodeMix")
+    mix.data_type = "RGBA"
+    mix.inputs["A"].default_value = (*base, 1)
+    mix.inputs["B"].default_value = (*color, 1)
+    nt.links.new(mark, mix.inputs["Factor"])
+    cloth = nt.nodes.new("ShaderNodeMix")
+    cloth.data_type = "RGBA"
+    cloth.inputs["A"].default_value = (*skin, 1)
+    nt.links.new(sleeve, cloth.inputs["Factor"])
+    nt.links.new(mix.outputs["Result"], cloth.inputs["B"])
+    nt.links.new(cloth.outputs["Result"], bsdf.inputs["Base Color"])
+    nt.links.new(math_node("ADD", 0.55, math_node("MULTIPLY", sleeve, 0.1)), bsdf.inputs["Roughness"])
+    nt.links.new(math_node("MULTIPLY", sleeve, 0.1), bsdf.inputs["Sheen Weight"])
+    # Ribbed cuff: fine rings over the first stretch of sleeve, and a fine knit along the rest.
+    ribs = math_node("MULTIPLY", math_node("SINE", math_node("MULTIPLY", v, 60)),
+                     math_node("LESS_THAN", v, 0.8))
+    knit = math_node("MULTIPLY", math_node("SINE", math_node("MULTIPLY", u, 90)), sleeve)
+    bump = nt.nodes.new("ShaderNodeBump")
+    bump.inputs["Strength"].default_value = 0.2
+    bump.inputs["Distance"].default_value = 0.01
+    height = math_node("MULTIPLY", math_node("ADD", ribs, math_node("MULTIPLY", knit, 0.08)), sleeve)
+    nt.links.new(height, bump.inputs["Height"])
+    nt.links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
+    return m
 
 
 def arrow(tip, direction, length, mat, radius=0.12):
@@ -358,13 +354,11 @@ def arrow(tip, direction, length, mat, radius=0.12):
 
 
 def build():
-    bpy.ops.wm.read_factory_settings(use_empty=True)
-    build_mouse()
     bpy.ops.mesh.primitive_plane_add(size=120, location=(0, -6, -0.01))
     bpy.context.object.data.materials.append(material("pad", (0.085, 0.09, 0.1), 0.95))
     elements, joints = build_skeleton()
-    JOINTS.update(joints)
-    build_hand(elements)
+    if "--no-hand" not in argv:
+        build_hand(elements)
     mp, mr = joints["middle"]
     anchors = {
         "fingers": (mp[1] + mp[2]) / 2 + Vector((0, 0, mr[1])),
@@ -398,9 +392,10 @@ def lights_camera():
         look(light, (0, -2, 3))
     cams = {
         "front": ((-13.5, 16.0, 16.0), (0.3, -2.6, 3.2), 42),
+        "mouse": ((-7.5, 11.5, 9.0), (0.2, 0.6, 1.6), 50),
         "threequarter": ((-6.5, 20.5, 17.5), (0.2, -1.6, 2.9), 42),
-        "side": ((-26, -1.5, 6.5), (0, -2.8, 3.4), 48),
-        "top": ((-4, -2, 30), (0, -2.5, 2.5), 40),
+        "side": ((-60, 0.0, 2.2), (0, 0.0, 2.0), 110),
+        "top": ((0, 0, 60), (0, 0.01, 0), 110),
     }
     loc, target, lens = cams[VIEW]
     bpy.ops.object.camera_add(location=loc)

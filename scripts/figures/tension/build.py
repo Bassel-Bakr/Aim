@@ -1,4 +1,4 @@
-"""Regenerates the figures on docs/wiki/fundamentals/tension.md.
+"""Regenerates the figures on docs/wiki/fundamentals/tension-management.md.
 
     python scripts/figures/tension/build.py              # diagrams and renders
     python scripts/figures/tension/build.py --diagrams   # only the three inline SVG diagrams
@@ -20,12 +20,18 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-PAGE = ROOT / "docs" / "wiki" / "fundamentals" / "tension.md"
+PAGE = ROOT / "docs" / "wiki" / "fundamentals" / "tension-management.md"
 IMAGES = ROOT / "docs" / "assets" / "images" / "tension"
+# The renders' mouse is a CC BY 4.0 model, so its credit travels inside each image as well as under it.
+MODEL_CREDIT = ('Mouse model: "Razer Viper Mini" (https://sketchfab.com/3d-models/'
+                'razer-viper-mini-85e1735704c645e5aaead0278a1038fe) by kimberly.h (https://sketchfab.com/kimberly.h), '
+                'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Recoloured, logo removed.')
+sys.path.insert(0, str(HERE))
+import diagrams as d  # noqa: E402
 
 # name: (scene arguments, labels as anchor, text, offset x, offset y in render pixels)
 RENDERS = {
-    "grip-zones": (["--view", "front", "--zones"], [
+    "grip-zones": (["--view", "front"], [
         ("fingers", "Fingertips  ·  micro-corrections", -80, 330),
         ("wrist", "Wrist  ·  narrow, smooth motion", 160, 300),
         ("arm", "Forearm and shoulder  ·  wide, fast motion", -520, -80),
@@ -39,9 +45,6 @@ RENDERS = {
 
 
 def diagrams():
-    sys.path.insert(0, str(HERE))
-    import diagrams as d
-
     text = PAGE.read_text(encoding="utf-8")
     for name, svg in (("scale", d.scale()), ("tracking", d.tracking()), ("flick", d.flick())):
         pattern = re.compile(r'<svg [^>]*aria-labelledby="fig-%s-title".*?</svg>' % name, re.S)
@@ -75,7 +78,33 @@ def label(render, anchors, labels, out):
         draw.ellipse((ax - 9, ay - 9, ax + 9, ay + 9), fill=fill, outline=ink, width=3)
         draw.rounded_rectangle((bx - w / 2, by - h / 2, bx + w / 2, by + h / 2), radius=h / 2, fill=fill)
         draw.text((bx - (right - left) / 2 - left, by - (bottom - top) / 2 - top), text, font=font, fill=ink)
-    img.save(out, quality=88)
+    img.save(out, quality=88, exif=authorship_exif(), xmp=authorship_xmp())
+
+
+def authorship_exif():
+    from PIL import Image
+
+    exif = Image.Exif()
+    exif[0x013B] = d.AUTHOR                                           # Artist
+    exif[0x8298] = f"{d.AUTHOR}, CC BY-SA 4.0, {d.SOURCE}. {MODEL_CREDIT}"   # Copyright
+    exif[0x010E] = MODEL_CREDIT                                       # ImageDescription
+    return exif
+
+
+def authorship_xmp():
+    return (
+        '<?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?>'
+        '<x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">'
+        '<rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" '
+        'xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:cc="http://creativecommons.org/ns#">'
+        f'<dc:creator><rdf:Seq><rdf:li>{d.AUTHOR}</rdf:li></rdf:Seq></dc:creator>'
+        f'<dc:source>{d.SOURCE}</dc:source>'
+        f'<xmpRights:WebStatement>{d.SOURCE}</xmpRights:WebStatement>'
+        f'<dc:contributor><rdf:Bag><rdf:li>kimberly.h (Razer Viper Mini model, CC BY 4.0)</rdf:li></rdf:Bag></dc:contributor>'
+        f'<dc:description><rdf:Alt><rdf:li xml:lang="x-default">{MODEL_CREDIT}</rdf:li></rdf:Alt></dc:description>'
+        f'<cc:license rdf:resource="{d.LICENSE}"/>'
+        '</rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>'
+    ).encode("utf-8")
 
 
 def renders():

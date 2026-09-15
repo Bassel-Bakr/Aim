@@ -64,7 +64,7 @@ right now, instead of lagging behind and snapping forward to catch up. Direction
 same rule: decelerate and re-accelerate, no hard stop.
 
 Most "smoothness problems" are really tension problems. Gripping the mouse too tightly blocks fluid
-motion no matter how much you practice.[^REF-20] [Tension](tension.md) covers how to feel and control it.
+motion no matter how much you practice.[^REF-20] [Tension Management](tension-management.md) covers how to feel and control it.
 
 **Reaction versus prediction.** Reactive tracking follows where a target actually is, responding to
 each change in direction as it happens. Predictive tracking aims ahead of it.

@@ -1297,6 +1297,14 @@ body {
   border-radius: 0.4rem;
 }
 
+/* A render built from someone else's model credits it on its own line under the caption:
+ *   <figcaption>What it shows. <span class="aim-figure-credit">Model: ... by ..., licence.</span></figcaption> */
+.md-typeset .aim-figure-credit {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.85em;
+}
+
 .md-typeset .aim-figure figcaption {
   max-width: none;
   margin-top: 0.6em;
