@@ -212,9 +212,11 @@ def readability(rel, text, concept):
     errors = []
     for block in prose_blocks(text):
         for is_paragraph, unit in units(block):
-            if is_paragraph and words(unit) > PARAGRAPH_LIMIT:
+            # A list item is read as a paragraph, so it gets the same limit.
+            if words(unit) > PARAGRAPH_LIMIT:
+                kind = "paragraph" if is_paragraph else "list item"
                 errors.append(
-                    f"{rel}: paragraph of {words(unit)} words (limit {PARAGRAPH_LIMIT}): "
+                    f"{rel}: {kind} of {words(unit)} words (limit {PARAGRAPH_LIMIT}): "
                     f'"{excerpt(unit)}"'
                 )
             for sentence in sentences(unit):

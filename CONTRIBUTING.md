@@ -90,8 +90,8 @@ body.
 Most people reading this wiki skim, and many read with ADHD. A page has to work when it is read in
 passes, so every page under `docs/wiki/` follows four rules:
 
-1. **Paragraphs run 45 words at most.** One idea per paragraph. A bold lead-in counts toward the
-   paragraph it opens.
+1. **Paragraphs run 45 words at most**, and so does each list item. One idea per paragraph. A bold
+   lead-in counts toward the paragraph it opens.
 2. **Sentences run 25 words at most**, in lists as well as prose.
 3. **A concept page opens with its answer:** three to five bullets before its first `##` heading. A
    reader who stops there still has the point.
