@@ -334,11 +334,8 @@
   url: "https://x.com/Matty_OW/status/1873563341408674076"
   type: post
 
-- id: REF-55
-  author: WASD Life
-  title: mouse grip styles
-  url: "https://wasdlife.com/mice/mouse-grip-styles/"
-  type: article
+# REF-55 is retired: it was wasdlife.com's grip styles article, replaced by REF-64 to REF-66. Do not
+# reuse the number.
 
 - id: REF-56
   author: Wikipedia
@@ -390,3 +387,23 @@
   url: "https://github.com/RawAccelOfficial/rawaccel/blob/master/doc/Guide.md"
   type: documentation
   publication: GitHub
+
+- id: REF-64
+  author: Corsair
+  title: "Mouse grip styles: fingertip vs palm vs claw"
+  url: "https://www.corsair.com/us/en/explorer/gamer/mice/mouse-grips-explained-fingertip-vs-palm-vs-claw/"
+  type: article
+
+- id: REF-65
+  author: Sanchis-Sanchis et al.
+  title: Influence of Mouse Grip Type on Flicking and Tracking Tasks Performance
+  url: "https://www.mdpi.com/2076-3417/14/16/7112"
+  type: study
+  publication: Applied Sciences
+  notes: 22 participants, each using their own grip. The tracking target moved at a constant speed.
+
+- id: REF-66
+  author: 1HP
+  title: "The best mouse grip of all time? (Highest accuracy & control for aiming)"
+  url: "https://1-hp.org/blog/hpforgamers/the-best-mouse-grip-of-all-time-highest-accuracy-control-for-aiming/"
+  type: article

@@ -42,14 +42,18 @@ Pad size matters alongside surface. A pad too small to cover your full sensitivi
 to lift and reset your mouse mid-turn.
 
 **Grip styles.** No grip is strictly correct. Pick the one that lets you hold a comfortable,
-repeatable position for as long as you play.
+repeatable position for as long as you play.[^REF-66]
 
-- **Palm grip** rests your whole hand flat on the mouse and moves it mostly from the elbow and
-  shoulder. It is the most comfortable grip to sustain over long sessions.[^REF-55]
-- **Claw grip** keeps your palm on the back of the mouse while your fingers arch up off the buttons.
-  It trades some comfort for faster flicks and clicking.[^REF-55]
-- **Fingertip grip** lifts your palm off the mouse entirely, so only your fingertips make contact.
-  It maximizes quick micro-adjustments, at the cost of finger stamina.[^REF-55]
+- **Palm grip** rests your whole palm and fingers on the mouse and moves it mostly from the forearm
+  and elbow. It is the most stable and comfortable, with less wrist mobility.[^REF-64]
+- **Claw grip** keeps the heel of your palm on the back while your fingers arch onto the buttons. It
+  balances stability and mobility, but can tire the fingers over long sessions.[^REF-64]
+- **Fingertip grip** touches the mouse with your fingertips only and moves it with fingers and
+  wrist. It allows fast micro-adjustments, with less stability.[^REF-64]
+
+In a 2024 study of 22 players using their own grips, grip made no significant difference to
+flicking or tracking performance.[^REF-65] Its tracking target moved at a constant speed, so that
+result is narrower than it sounds.
 
 **Posture and arm position.** Your wrist position, and how long you hold it, matter more for comfort
 than which mouse or keyboard you use.[^REF-1]

@@ -54,9 +54,9 @@ These are claims where the source was hard to verify, or where reviewers disagre
 - **Tone drift.** The Getting Started and resource pages avoid contractions; Fundamentals, Skills, and
   Training pages use them. Pick one and normalize.
 - **Secondary sources.** Most citations are primary (Steam, official blogs, OSHA, NHS, Mayo Clinic,
-  AAO, peer-reviewed papers). Three lean on smaller sites: `mousedpianalyzer.com` (raw input),
-  `wasdlife.com` (grip styles), and a SteelSeries product page (pad surfaces). Replace them if you
-  know better sources.
+  AAO, peer-reviewed papers). Two lean on smaller sites: `mousedpianalyzer.com` (raw input) and a
+  SteelSeries product page (pad surfaces). Replace them if you know better sources. `wasdlife.com`
+  (grip styles) was replaced on 2026-09-15.
 
 ## Before you push
 
