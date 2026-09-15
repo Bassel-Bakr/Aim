@@ -32,7 +32,7 @@ import diagrams as d  # noqa: E402
 # name: (scene arguments, labels as anchor, text, offset x, offset y in render pixels)
 RENDERS = {
     "grip-zones": (["--view", "front"], [
-        ("fingers", "Fingertips  ·  micro-corrections", -80, 330),
+        ("fingers", "Fingertips  ·  micro-corrections", -110, -270),
         ("wrist", "Wrist  ·  narrow, smooth motion", 160, 300),
         ("arm", "Forearm and shoulder  ·  wide, fast motion", -520, -80),
     ]),

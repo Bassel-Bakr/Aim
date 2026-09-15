@@ -129,7 +129,8 @@ def finger_chain(base, target, lengths, bend):
     """Joints from base to target for a finger that only flexes toward `bend`.
 
     Segment directions are cos(a)*forward + sin(a)*bend, with cumulative angles knuckle,
-    knuckle + middle and knuckle + middle * 5/3, as the last two joints of a finger move together.
+    knuckle + middle and knuckle + middle again: the joint nearest the tip stays straight, so the
+    finger bends at two joints and rests on its pad.
     """
     base, target = Vector(base), Vector(target)
     b = Vector(bend).normalized()
@@ -139,7 +140,7 @@ def finger_chain(base, target, lengths, bend):
     best = None
     for knuckle in range(-35, 71):
         for middle in range(0, 101):
-            angles = (knuckle, knuckle + middle, knuckle + middle * 5 / 3)
+            angles = (knuckle, knuckle + middle, knuckle + middle)
             px = sum(l * math.cos(math.radians(a)) for l, a in zip(lengths, angles))
             py = sum(l * math.sin(math.radians(a)) for l, a in zip(lengths, angles))
             err = (px - goal[0]) ** 2 + (py - goal[1]) ** 2 + 0.003 * middle
@@ -152,6 +153,9 @@ def finger_chain(base, target, lengths, bend):
     return pts
 
 
+# Phalanx lengths below are an adult hand's; the render uses them at FINGER_LENGTH, and the thumb at
+# THUMB_LENGTH, so the fingers do not dwarf the mouse.
+FINGER_LENGTH, THUMB_LENGTH = 0.85, 0.91
 # name: knuckle offset across the palm, knuckle offset back along F, phalanx lengths,
 # radii at knuckle / middle / tip, fingertip contact as a function of fingertip radius.
 FINGERS = {
@@ -183,6 +187,7 @@ def build_skeleton():
     for name, (dx, back, lengths, radii, contact) in FINGERS.items():
         radii = [v * 1.18 for v in radii]
         knuckle = PALM_FRONT - F * back + X * dx - U * 0.05
+        lengths = [v * FINGER_LENGTH for v in lengths]
         pts = finger_chain(knuckle, contact(radii[2]), lengths, (0, 0, -1))
         joints[name] = (pts, radii)
         r = (radii[0], radii[1], radii[2], radii[2] * 0.92)
@@ -190,6 +195,7 @@ def build_skeleton():
             elements.append(("capsule", (pts[i], pts[i + 1], (r[i] + r[i + 1]) / 2)))
     lengths, radii, contact = THUMB
     radii = [v * 1.15 for v in radii]
+    lengths = [v * THUMB_LENGTH for v in lengths]
     pts = finger_chain(THUMB_BASE, contact(radii[2]), lengths, (1, 0.1, -0.55))
     joints["thumb"] = (pts, radii)
     r = (radii[0], radii[1], radii[2], radii[2] * 0.92)
