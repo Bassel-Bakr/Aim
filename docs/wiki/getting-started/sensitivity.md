@@ -72,10 +72,10 @@ sensitivity. That keeps your muscle memory consistent instead of forcing you to 
 title.
 
 - **KovaaK's** publishes an official web-based [sensitivity converter](https://kovaaks.com/kovaaks/sens-converter)
-  for a fixed list of supported games. It also maintains an open-source
-  [Sensitivity Matcher](https://github.com/KovaaK/SensitivityMatcher) tool. That tool measures your
-  actual in-game turn rate, to match sensitivity for games not on that list. Both are per the
-  [KovaaK's](../resources/trainers/kovaaks.md) resource page.
+  for a fixed list of supported games. Its open-source
+  [Sensitivity Matcher](https://github.com/KovaaK/SensitivityMatcher) measures your actual in-game
+  turn rate, for games not on that list. Both are on the [KovaaK's](../resources/trainers/kovaaks.md)
+  resource page.
 - **Aimlabs** has a built-in Sensitivity Finder for calibrating your in-app sensitivity, per the
   [Aimlabs](../resources/trainers/aimlabs.md) resource page.
 - **Independent cross-game calculators** such as [mouse-sensitivity.com](https://www.mouse-sensitivity.com/)

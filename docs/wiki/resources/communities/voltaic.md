@@ -42,7 +42,8 @@ Amped coaching targets competitive and content-creator players specifically, rat
 
 ## What it covers
 
-- **Benchmarks** for the three core categories, [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md). The current KovaaK's season is Season 5, and the current Aimlabs season is Season 3. Each splits per skill into static/dynamic, precise/reactive, and speed/evasive subcategories, across three difficulty bands. A hybrid category bridges each pair: linear, control, and stability, respectively.[^REF-50][^REF-49] Ranks are grouped within each difficulty band. You climb them with an overall "Energy" score that combines your subcategory scores using a harmonic mean. That weights your weakest subcategory more heavily than your strongest.[^REF-48]
+- **Benchmarks** for the three core categories, [Clicking](../../categories/clicking.md), [Tracking](../../categories/tracking.md), and [Switching](../../categories/switching.md), currently Season 5 on KovaaK's and Season 3 on Aimlabs. Each splits into static/dynamic, precise/reactive, and speed/evasive subcategories across three difficulty bands. A hybrid bridges each pair: linear, control, and stability, respectively.[^REF-50][^REF-49]
+- **Ranks** are grouped within each difficulty band. You climb them with an overall "Energy" score that combines your subcategory scores using a harmonic mean. That weights your weakest subcategory more heavily than your strongest.[^REF-48]
 - **[Routines](../../training/routines.md)**: fundamental routines for general mouse control, game-specific routines, and weakness-specific routines built from Voltaic's recommended scenario lists.[^REF-52]
 - **Guides** on health, lifestyle, and improvement mindset, also linked from the Getting Started guide.
 
